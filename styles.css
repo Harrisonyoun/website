@@ -435,44 +435,22 @@ button:focus {
   transition: color 0.15s ease, background-color 0.15s ease, border-color 0.15s ease, transform 0.15s ease;
 }
 
-/* Remove any unwanted margins/padding */
-.quarto-title-block {
-  margin: 0;
-  padding: 0;
-}
-
-.quarto-title {
-  margin: 0;
-  padding: 0;
-}
-
-/* Remove duplicate title from about section */
+/* Hide only the top duplicate title, keep the one under the image */
 .quarto-title-block {
   display: none !important;
 }
 
-.quarto-title {
-  display: none !important;
-}
-
-/* Hide the auto-generated title in about section */
-#hero-heading .about-entity .about-contents .quarto-title,
-#hero-heading .about-entity .about-contents h1.title {
-  display: none !important;
-}
-
-/* Custom title styling for about section */
-.custom-name {
-  font-family: 'Crimson Pro', Georgia, serif;
+/* Allow the about template to show its normal title under image */
+.about-entity .about-contents h1 {
+  color: var(--text-primary);
+  margin-bottom: 0.5rem;
   font-size: 2.75rem;
   font-weight: 400;
-  margin-bottom: 1rem;
   text-align: center;
   letter-spacing: -0.02em;
-  color: var(--text-primary);
 }
 
-.custom-subtitle {
+.about-entity .about-contents .subtitle {
   color: var(--text-muted);
   font-size: 1.1rem;
   font-weight: 400;
