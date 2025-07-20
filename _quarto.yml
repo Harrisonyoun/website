@@ -1,31 +1,40 @@
- project:
-   type: website
- 
- website:
-   title: "Harrison Youn"
-   site-url: https://www.harrisonyoun.com
-   description: "Economics PhD Candidate at the Ohio State University"
-   page-navigation: true
-   back-to-top-navigation: true
-   navbar:
-     left:
-       - href: index.qmd
-         text: Home
-       - href: research.qmd
-         text: Research       
-     right:
-       - icon: github
-         href: https://github.com/harrisonyoun
-       - icon: linkedin
-         href: https://www.linkedin.com/in/harrisonyoun/
-   page-footer:
-     left: "© 2025 Harrison Youn · Made with [Quarto](https://quarto.org)"
- 
- format:
-   html:
-     theme: cosmo
-     toc: true
-     code-copy: true
-     css:
-       - styles.css
-       - assets/index.css
+project:
+  type: website
+
+website:
+  title: "Harrison Youn"
+  site-url: https://www.harrisonyoun.com
+  description: "Economics PhD Candidate at the Ohio State University"
+  page-navigation: true
+  back-to-top-navigation: true
+
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - href: research.qmd
+        text: Research
+    right:
+      - icon: github
+        href: https://github.com/harrisonyoun
+      - icon: linkedin
+        href: https://www.linkedin.com/in/harrisonyoun/
+
+  page-footer:
+    left: "© 2025 Harrison Youn"
+
+  about:
+    template: trestles
+    image: assets/avatar.png
+    image-alt: "Portrait of Harrison Youn"
+    image-width: 14em
+    image-shape: squared
+
+format:
+  html:
+    theme: cosmo
+    toc: true
+    code-copy: true
+    css:
+      - styles.css
+      - assets/index.css

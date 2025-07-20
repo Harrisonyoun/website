@@ -1,22 +1,15 @@
  ---
-title: "Harrison Youn"
-pagetitle: "Harrison Youn"
-subtitle: "Economics PhD Candidate"
-image: assets/avatar.png
-image-alt: ""
-about:
-  template: solana
-  template: trestles
-  image-width: 14em
-  image-shape: squared  
-  id: hero-heading
+title: "Harrison Yongjoon Youn"
+pagetitle: "Harrison Yongjoon Youn"
+subtitle: "Economics PhD Candidate at the Ohio State University"
+
   links:
     - icon: github
       aria-label: GitHub
       href: https://github.com/harrisonyoun
     - icon: linkedin
       aria-label: LinkedIn
-      href: https://www.linkedin.com/in/harrisonyoun/
+      href: https://www.linkedin.com/in/harrison-youn/
 page-layout: full
 execute:
   freeze: false
@@ -30,9 +23,7 @@ header-includes: |
 resources:
   - assets/index.css
 ---
- 
-::: {#hero-heading}
- 
+  
 Hello! I'm Harrison Youn, an Economics PhD candidate researching Labor Economics, Health Economics, and Economics of Science and Innovation.
 
 [Explore my research →](/research){.about-links .subtitle}
@@ -41,10 +32,11 @@ Hello! I'm Harrison Youn, an Economics PhD candidate researching Labor Economics
 
 
 ## Education
-
-- **Ph.D. in Economics**, 2028 (expected) — The Ohio State University
-- **M.Sc. in Economics**, 2020 — Barcelona School of Economics
-- **B.Sc. in Economics and Finance**, 2018 — University of Amsterdam
+<div style="line-height: 2.5;">
+ <i class="bi bi-mortarboard-fill"></i>&nbsp;&nbsp; Ph.D. in Economics, 2028 (expected) — The Ohio State University <br>
+ <i class="bi bi-mortarboard-fill"></i>&nbsp;&nbsp; M.Sc. in Economics, 2020 — Barcelona School of Economics (Spain) <br>
+ <i class="bi bi-mortarboard-fill"></i>&nbsp;&nbsp; B.Sc. in Economics and Finance, 2018 — University of Amsterdam (The Netherlands)
+</div>
 
 ## Publications
 
