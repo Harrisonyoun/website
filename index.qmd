@@ -1,16 +1,35 @@
----
+ ---
 title: "Harrison Youn"
-format: html
+pagetitle: "Harrison Youn"
+subtitle: "Economics PhD Candidate at the Ohio State University"
+about:
+  template: solana
+  id: hero-heading
+  links:
+    - icon: github
+      aria-label: GitHub
+      href: https://github.com/harrisonyoun
+    - icon: linkedin
+      aria-label: LinkedIn
+      href: https://www.linkedin.com/in/harrisonyoun/
+page-layout: full
+execute:
+  freeze: false
+  echo: false
+  warning: false
+header-includes: |
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Petrona:wght@400;700&family=Red+Hat+Text:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/index.css">
+resources:
+  - assets/index.css
 ---
+ 
+::: {#hero-heading}
+ 
+Hello! I'm Harrison Youn, an Economics PhD candidate researching Labor Economics, Health Economics, and Economics of Science and Innovation.
 
-# Harrison Youn
+[Learn more about me →](/about){.about-links .subtitle}
 
-Economics PhD · Labor, Technology, and Causal Inference
-
-Welcome! I am a PhD candidate in Economics at [Your Institution].  
-My research explores labor markets, AI, and causal inference.
-
-```{=html}
-<div align="center">
-  <img src="your-photo.jpg" alt="Harrison Youn" style="width:180px;border-radius:90px;">
-</div>
+:::

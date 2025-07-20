@@ -1,5 +1,17 @@
----
-title: "About"
----
-
-About this site
+ ---
+ title: "About"
+ about:
+   template: trestles
+   id: about-heading
+ page-layout: full
+ header-includes: |
+   <link rel="stylesheet" href="../assets/about.css">
+ resources:
+   - ../assets/about.css
+ ---
+ 
+ ::: {#about-heading}
+ 
+ Hello! I'm Harrison Youn, an Economics PhD candidate researching Labor Economics, Health Economics, and Economics of Science and Innovation.
+ 
+ :::

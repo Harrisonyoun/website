@@ -1,14 +1,5 @@
 ---
 title: "Research"
-format: html
 ---
 
-## Selected Research
-
-### AI Exposure and Labor Market Dynamics  
-_Working paper_  
-This project measures occupational exposure to AI using O*NET, CIP-SOC crosswalks, and develops new causal inference strategies.
-
-### Job Lock and Employer-Sponsored Insurance  
-_Work in progress_  
-Analyzing the effect of health insurance on job mobility and wage compensation using HRS, SSA, and LEHD data.
+More information about my research will be added soon.
