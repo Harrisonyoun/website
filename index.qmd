@@ -8,7 +8,7 @@ format:
 ::: {.about-entity}
 
 ::: {.about-image}
-![](assets/profile-photo.jpg){alt="Harrison Yongjoon Youn" fig-alt="Professional headshot of Harrison Yongjoon Youn"}
+![](assets/avatar.png){alt="Harrison Yongjoon Youn" fig-alt=""}
 :::
 
 ::: {.about-contents}
