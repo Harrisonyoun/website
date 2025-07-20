@@ -22,14 +22,7 @@ website:
 
   page-footer:
     left: "© 2025 Harrison Youn"
-
-  about:
-    template: trestles
-    image: assets/avatar.png
-    image-alt: "Portrait of Harrison Youn"
-    image-width: 14em
-    image-shape: squared
-
+    
 format:
   html:
     theme: cosmo
