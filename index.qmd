@@ -1,15 +1,8 @@
 ---
 pagetitle: "Harrison Yongjoon Youn"
-
-about:
-  template: jolla
-  image: assets/avatar.png
-  image-alt: "Portrait of Harrison Youn"
-  image-width: 280px
-  image-shape: round
-  id: hero-heading
 ---
 
+::: {#hero-heading}
 ::: {.about-entity}
 ::: {.about-image}
 ![Portrait of Harrison Youn](assets/avatar.png){width="280px" fig-alt="Portrait of Harrison Youn"}
@@ -25,6 +18,7 @@ Economics PhD Candidate at the Ohio State University
 I'm an Economics PhD candidate researching Labor Economics, Health Economics, and Economics of Science and Innovation. My **research** leverages electronic health record and spatial data to study the intersection of health equity and urban nature. My **journalism** and **community** projects value the partnership between open source tools and data literacy as a way to build power and effect change.
 
 [**Learn more about me →**](/research){.about-links .subtitle}
+:::
 :::
 :::
 
