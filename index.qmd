@@ -7,7 +7,7 @@ about:
   template: jolla
   image: assets/avatar.png
   image-alt: "Portrait of Harrison Youn"
-  image-width: 200px
+  image-width: 280px
   image-shape: round
   id: hero-heading
 
@@ -26,12 +26,12 @@ about:
       aria-label: Email
 ---
 
-I'm an Economics PhD candidate researching Labor Economics, Health Economics, and Economics of Science and Innovation. My work focuses on understanding how economic factors influence labor markets, health outcomes, and innovation processes using rigorous empirical methods.
+I'm an Economics PhD candidate researching Labor Economics, Health Economics, and Economics of Science and Innovation. My work focuses on understanding how economic factors influence labor markets, health outcomes, and innovation processes.
 
 [**Explore my research →**](/research){.about-links .subtitle}
 
 ::: {.research-highlight}
-*Research areas:*
+*Research areas*
 
 ::: {.research-areas}
 ::: {.research-area}
@@ -47,8 +47,6 @@ Economics of Science & Innovation
 :::
 
 ::: {.contact-simple}
-Currently pursuing my PhD at The Ohio State University
-
 **Ph.D. in Economics** (2028 expected) — The Ohio State University  
 **M.Sc. in Economics** (2020) — Barcelona School of Economics  
 **B.Sc. in Economics and Finance** (2018) — University of Amsterdam
