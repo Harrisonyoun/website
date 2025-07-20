@@ -435,22 +435,27 @@ button:focus {
   transition: color 0.15s ease, background-color 0.15s ease, border-color 0.15s ease, transform 0.15s ease;
 }
 
-/* Hide only the top duplicate title, keep the one under the image */
+/* Remove all auto-generated titles */
 .quarto-title-block {
   display: none !important;
 }
 
-/* Allow the about template to show its normal title under image */
-.about-entity .about-contents h1 {
-  color: var(--text-primary);
-  margin-bottom: 0.5rem;
-  font-size: 2.75rem;
-  font-weight: 400;
-  text-align: center;
-  letter-spacing: -0.02em;
+.quarto-title {
+  display: none !important;
 }
 
-.about-entity .about-contents .subtitle {
+/* Custom name and subtitle styling */
+.custom-name {
+  font-family: 'Crimson Pro', Georgia, serif;
+  font-size: 2.75rem;
+  font-weight: 400;
+  margin-bottom: 1rem;
+  text-align: center;
+  letter-spacing: -0.02em;
+  color: var(--text-primary);
+}
+
+.custom-subtitle {
   color: var(--text-muted);
   font-size: 1.1rem;
   font-weight: 400;
@@ -459,4 +464,39 @@ button:focus {
   letter-spacing: 2px;
   font-family: 'Inter', sans-serif;
   text-align: center;
+}
+
+/* Manual about entity styling */
+.about-entity {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.5rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.about-entity .about-image {
+  order: 1;
+  margin-bottom: 1rem;
+}
+
+.about-entity .about-image img {
+  width: 280px;
+  height: 280px;
+  border-radius: 50%;
+  box-shadow: var(--shadow-lg);
+  border: 6px solid var(--card-bg);
+  transition: transform 0.3s ease;
+  object-fit: cover;
+}
+
+.about-entity .about-image img:hover {
+  transform: scale(1.02);
+}
+
+.about-entity .about-contents {
+  order: 2;
+  text-align: center;
+  max-width: 550px;
 }
