@@ -4,7 +4,7 @@
     "href": "research.html",
     "title": "Research",
     "section": "",
-    "text": "More information about my research will be added soon.\n\n\n\n Back to top"
+    "text": "[list]"
   },
   {
     "objectID": "about.html",
@@ -18,7 +18,7 @@
     "href": "index.html",
     "title": "Harrison Yongjoon Youn",
     "section": "",
-    "text": "Hello! I’m Harrison Youn, an Economics PhD candidate researching Labor Economics, Health Economics, and Economics of Science and Innovation.\nMy work focuses on understanding how economic factors influence labor markets, health outcomes, and innovation processes. I’m passionate about using rigorous empirical methods to address important policy questions.\nExplore my research →"
+    "text": "I’m an Economics PhD candidate researching Labor Economics, Health Economics, and Economics of Science and Innovation. My work focuses on understanding how economic factors influence labor markets, health outcomes, and innovation processes using rigorous empirical methods.\nExplore my research →\n\nResearch areas:\n\n\nLabor Economics\n\n\nHealth Economics\n\n\nEconomics of Science & Innovation\n\n\n\n\nCurrently pursuing my PhD at The Ohio State University\nPh.D. in Economics (2028 expected) — The Ohio State University\nM.Sc. in Economics (2020) — Barcelona School of Economics\nB.Sc. in Economics and Finance (2018) — University of Amsterdam\nyoun.25@osu.edu • Columbus, Ohio\n\n\n\n Back to top"
   },
   {
     "objectID": "index.html#education",
@@ -54,5 +54,33 @@
     "title": "Harrison Yongjoon Youn",
     "section": "Contact",
     "text": "Contact\nI’m always interested in discussing research collaborations and opportunities. Feel free to reach out through any of the channels above, or drop me an email at youn.25@osu.edu.\nCurrently based in Columbus, Ohio"
+  },
+  {
+    "objectID": "cv.html",
+    "href": "cv.html",
+    "title": "Curriculum Vitae",
+    "section": "",
+    "text": "View my complete academic and professional background\n Download CV (PDF)"
+  },
+  {
+    "objectID": "cv.html#download-cv",
+    "href": "cv.html#download-cv",
+    "title": "Curriculum Vitae",
+    "section": "",
+    "text": "View my complete academic and professional background\n Download CV (PDF)"
+  },
+  {
+    "objectID": "cv.html#overview",
+    "href": "cv.html#overview",
+    "title": "Curriculum Vitae",
+    "section": "Overview",
+    "text": "Overview\nThis CV includes detailed information about my:\n\nEducation & Training\nPhD studies at The Ohio State University and previous degrees\nResearch Experience\nCurrent and past research projects in Labor Economics, Health Economics, and Economics of Science and Innovation\nPublications & Working Papers\nAcademic publications, working papers, and conference presentations\nTeaching & Service\nTeaching assistantships, course instruction, and professional service\nSkills & Languages\nTechnical skills, software proficiency, and language abilities\n\nFor the most current version of my CV, please use the download link above."
+  },
+  {
+    "objectID": "cv.html#quick-summary",
+    "href": "cv.html#quick-summary",
+    "title": "Curriculum Vitae",
+    "section": "Quick Summary",
+    "text": "Quick Summary\nEducation - Ph.D. in Economics (2028 expected) — The Ohio State University - M.Sc. in Economics (2020) — Barcelona School of Economics - B.Sc. in Economics and Finance (2018) — University of Amsterdam\nResearch Areas - Labor Economics - Health Economics\n- Economics of Science and Innovation\nContact - Email: youn.25@osu.edu - Office: [Your office location] - Phone: [Your phone number if you want to include it]"
   }
 ]

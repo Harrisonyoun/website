@@ -4,14 +4,12 @@ project:
 website:
   title: "Harrison Youn"
   site-url: https://www.harrisonyoun.com
-  description: "Economics PhD Candidate at the Ohio State University specializing in Labor Economics, Health Economics, and Economics of Science and Innovation"
+  description: "Economics PhD Candidate at the Ohio State University"
   page-navigation: true
   back-to-top-navigation: true
-  
-  favicon: assets/favicon.ico
 
   navbar:
-    background: primary
+    background: light
     search: false
     pinned: true
     collapse-below: lg
@@ -35,13 +33,12 @@ website:
 
   page-footer:
     left: "© 2025 Harrison Yongjoon Youn"
-    background: light
+    right: 
+      - text: "Made with [Quarto](https://quarto.org/)"
     
 format:
   html:
-    theme: 
-      - sandstone
-      - styles.css
+    theme: sandstone
     toc: false
     code-copy: true
     code-overflow: wrap

@@ -4,87 +4,54 @@ pagetitle: "Harrison Yongjoon Youn"
 subtitle: "Economics PhD Candidate at the Ohio State University"
 
 about:
-  template: solana
+  template: jolla
   image: assets/avatar.png
   image-alt: "Portrait of Harrison Youn"
-  image-width: 16em
-  image-shape: rectangle
+  image-width: 200px
+  image-shape: round
   id: hero-heading
 
   links:
     - icon: mortarboard-fill
-      text: Google Scholar
       href: https://scholar.google.com/citations?hl=en&user=GyMw0H0AAAAJ
+      aria-label: Google Scholar
     - icon: github
-      aria-label: GitHub
       href: https://github.com/harrisonyoun
+      aria-label: GitHub
     - icon: linkedin
-      aria-label: LinkedIn
       href: https://www.linkedin.com/in/harrison-youn/
+      aria-label: LinkedIn
     - icon: envelope-fill
-      text: Email
       href: mailto:youn.25@osu.edu
+      aria-label: Email
 ---
 
-::: {.about-entity}
-::: {.about-contents}
-Hello! I'm Harrison Youn, an Economics PhD candidate researching **Labor Economics**, **Health Economics**, and **Economics of Science and Innovation**. 
-
-My work focuses on understanding how economic factors influence labor markets, health outcomes, and innovation processes. I'm passionate about using rigorous empirical methods to address important policy questions.
+I'm an Economics PhD candidate researching Labor Economics, Health Economics, and Economics of Science and Innovation. My work focuses on understanding how economic factors influence labor markets, health outcomes, and innovation processes using rigorous empirical methods.
 
 [**Explore my research →**](/research){.about-links .subtitle}
-:::
-:::
 
-::: {.content-section}
-## Education
+::: {.research-highlight}
+*Research areas:*
 
-::: {.education-list}
-::: {.education-item}
-<i class="bi bi-mortarboard-fill"></i> **Ph.D. in Economics**, 2028 (expected)<br>
-<span class="education-institution">The Ohio State University</span>
+::: {.research-areas}
+::: {.research-area}
+Labor Economics
 :::
-
-::: {.education-item}
-<i class="bi bi-mortarboard-fill"></i> **M.Sc. in Economics**, 2020<br>
-<span class="education-institution">Barcelona School of Economics (Spain)</span>
+::: {.research-area}
+Health Economics
 :::
-
-::: {.education-item}
-<i class="bi bi-mortarboard-fill"></i> **B.Sc. in Economics and Finance**, 2018<br>
-<span class="education-institution">University of Amsterdam (The Netherlands)</span>
+::: {.research-area}
+Economics of Science & Innovation
 :::
 :::
 :::
 
-::: {.content-section}
-## Research Interests
+::: {.contact-simple}
+Currently pursuing my PhD at The Ohio State University
 
-My research spans several key areas in economics:
+**Ph.D. in Economics** (2028 expected) — The Ohio State University  
+**M.Sc. in Economics** (2020) — Barcelona School of Economics  
+**B.Sc. in Economics and Finance** (2018) — University of Amsterdam
 
-**Labor Economics**
-: Understanding employment dynamics, wage determination, and labor market policies
-
-**Health Economics** 
-: Examining the intersection of health outcomes and economic factors
-
-**Economics of Science and Innovation**
-: Analyzing how economic incentives shape scientific research and technological advancement
-
-:::
-
-::: {.content-section}
-## Publications
-
-::: {.publications-placeholder}
-Details about publications will be added soon. Check back for updates on my latest research!
-:::
-:::
-
-::: {.content-section}
-## Contact
-
-I'm always interested in discussing research collaborations and opportunities. Feel free to reach out through any of the channels above, or drop me an email at **youn.25@osu.edu**.
-
-*Currently based in Columbus, Ohio*
+[youn.25@osu.edu](mailto:youn.25@osu.edu) • Columbus, Ohio
 :::

@@ -2,6 +2,52 @@
 title: "Curriculum Vitae"
 ---
 
-# Curriculum Vitae
+::: {.cv-download}
+## Download CV
 
-[CV]
+View my complete academic and professional background
+
+[<i class="bi bi-download"></i> Download CV (PDF)](/assets/CV.pdf){.cv-button target="_blank"}
+:::
+
+::: {.content-section}
+## Overview
+
+This CV includes detailed information about my:
+
+- **Education & Training**  
+  PhD studies at The Ohio State University and previous degrees
+
+- **Research Experience**  
+  Current and past research projects in Labor Economics, Health Economics, and Economics of Science and Innovation
+
+- **Publications & Working Papers**  
+  Academic publications, working papers, and conference presentations
+
+- **Teaching & Service**  
+  Teaching assistantships, course instruction, and professional service
+
+- **Skills & Languages**  
+  Technical skills, software proficiency, and language abilities
+
+For the most current version of my CV, please use the download link above.
+:::
+
+::: {.content-section}
+## Quick Summary
+
+**Education**
+- Ph.D. in Economics (2028 expected) — The Ohio State University
+- M.Sc. in Economics (2020) — Barcelona School of Economics
+- B.Sc. in Economics and Finance (2018) — University of Amsterdam
+
+**Research Areas**
+- Labor Economics
+- Health Economics  
+- Economics of Science and Innovation
+
+**Contact**
+- Email: youn.25@osu.edu
+- Office: [Your office location]
+- Phone: [Your phone number if you want to include it]
+:::
