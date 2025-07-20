@@ -2,4 +2,12 @@
 title: "Research"
 ---
 
-More information about my research will be added soon.
+# Research
+
+## Working Papers
+
+[list]
+
+## Work in Progress
+
+## Research Interests

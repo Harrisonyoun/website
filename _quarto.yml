@@ -4,30 +4,57 @@ project:
 website:
   title: "Harrison Youn"
   site-url: https://www.harrisonyoun.com
-  description: "Economics PhD Candidate at the Ohio State University"
+  description: "Economics PhD Candidate at the Ohio State University specializing in Labor Economics, Health Economics, and Economics of Science and Innovation"
   page-navigation: true
   back-to-top-navigation: true
+  
+  favicon: assets/favicon.ico
 
   navbar:
+    background: primary
+    search: false
+    pinned: true
+    collapse-below: lg
     left:
       - href: index.qmd
         text: Home
       - href: research.qmd
         text: Research
+      - href: cv.qmd
+        text: CV
     right:
       - icon: github
         href: https://github.com/harrisonyoun
+        aria-label: GitHub
       - icon: linkedin
         href: https://www.linkedin.com/in/harrison-youn/
+        aria-label: LinkedIn
+      - icon: mortarboard-fill
+        href: https://scholar.google.com/citations?hl=en&user=GyMw0H0AAAAJ
+        aria-label: Google Scholar
 
   page-footer:
-    left: "© 2025 Harrison Youn"
+    left: "© 2025 Harrison Yongjoon Youn"
+    background: light
     
 format:
   html:
-    theme: sandstone
+    theme: 
+      - sandstone
+      - styles.css
     toc: false
     code-copy: true
+    code-overflow: wrap
+    smooth-scroll: true
+    anchor-sections: true
+    link-external-newwindow: true
     css:
       - styles.css
-      - assets/index.css
+    include-in-header:
+      - text: |
+          <link rel="preconnect" href="https://fonts.googleapis.com">
+          <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <meta name="description" content="Harrison Yongjoon Youn - Economics PhD Candidate at The Ohio State University">
+          <meta name="keywords" content="economics, research, labor economics, health economics, innovation">
+          <meta name="author" content="Harrison Yongjoon Youn">
