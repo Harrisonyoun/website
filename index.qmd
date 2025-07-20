@@ -1,34 +1,48 @@
 ---
-pagetitle: "Harrison Yongjoon Youn"
+title: ""
+format:
+  html:
+    page-layout: full
 ---
 
-::: {#hero-heading}
 ::: {.about-entity}
+
 ::: {.about-image}
-![Portrait of Harrison Youn](assets/avatar.png){width="280px" fig-alt="Portrait of Harrison Youn"}
+![](assets/profile-photo.jpg){alt="Harrison Yongjoon Youn" fig-alt="Professional headshot of Harrison Yongjoon Youn"}
 :::
 
 ::: {.about-contents}
+
 # Harrison Yongjoon Youn {.custom-name}
 
 ::: {.custom-subtitle}
-Economics PhD Candidate at the Ohio State University
+Economics PhD Candidate<br>
+The Ohio State University
 :::
 
-I'm an Economics PhD candidate researching Labor Economics, Health Economics, and Economics of Science and Innovation. My **research** leverages electronic health record and spatial data to study the intersection of health equity and urban nature. My **journalism** and **community** projects value the partnership between open source tools and data literacy as a way to build power and effect change.
+I'm an Economics PhD candidate researching Labor Economics, Health Economics, and Economics of Science and Innovation. My research leverages electronic health record and spatial data to study the intersection of health equity and urban nature. My journalism and community projects value the partnership between open science tools and data literacy as a way to build power and effect change.
 
-[**Learn more about me →**](/research){.about-links .subtitle}
 :::
+
+::: {.about-links}
+[{{< fa brands github >}}](https://github.com/harrisonyoun)
+[{{< fa brands twitter >}}](https://twitter.com/harrisonyoun)
+[{{< fa brands linkedin >}}](https://linkedin.com/in/harrisonyoun)
+[{{< fa envelope >}}](mailto:youn.40@osu.edu)
+[Contact Me](contact.qmd){.subtitle}
 :::
+
 :::
 
 ::: {.research-highlight}
+*Research interests that drive my work*
+
 ::: {.research-areas}
 ::: {.research-area}
 Labor Economics
 :::
 ::: {.research-area}
-Health Economics
+Health Economics  
 :::
 ::: {.research-area}
 Economics of Science & Innovation
@@ -37,16 +51,7 @@ Economics of Science & Innovation
 :::
 
 ::: {.contact-simple}
-::: {.about-links}
-<a href="https://scholar.google.com/citations?hl=en&user=GyMw0H0AAAAJ" aria-label="Google Scholar"><i class="bi bi-mortarboard-fill"></i></a>
-<a href="https://github.com/harrisonyoun" aria-label="GitHub"><i class="bi bi-github"></i></a>
-<a href="https://www.linkedin.com/in/harrison-youn/" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
-<a href="mailto:youn.25@osu.edu" aria-label="Email"><i class="bi bi-envelope-fill"></i></a>
-:::
+**Currently seeking** opportunities for collaboration on projects related to health equity, spatial data analysis, and economics research.
 
-**Ph.D. in Economics** (2028 expected) — The Ohio State University  
-**M.Sc. in Economics** (2020) — Barcelona School of Economics  
-**B.Sc. in Economics and Finance** (2018) — University of Amsterdam
-
-[youn.25@osu.edu](mailto:youn.25@osu.edu) • Columbus, Ohio
+Feel free to reach out at [youn.40@osu.edu](mailto:youn.40@osu.edu) or connect with me on [LinkedIn](https://linkedin.com/in/harrisonyoun).
 :::

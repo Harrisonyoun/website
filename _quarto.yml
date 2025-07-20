@@ -4,7 +4,7 @@ project:
 website:
   title: "Harrison Youn"
   site-url: https://www.harrisonyoun.com
-  description: "Economics PhD Candidate at the Ohio State University"
+  description: "Economics PhD Candidate at The Ohio State University"
   page-navigation: true
   back-to-top-navigation: true
   
@@ -15,25 +15,22 @@ website:
     search: false
     pinned: true
     collapse-below: lg
-    left:
-      - href: index.qmd
-        text: "Harrison Youn"
     right:
       - href: research.qmd
         text: Research
       - href: cv.qmd
         text: CV
       - href: note.qmd
-        text: Note
+        text: Notes
 
   page-footer:
     left: "© 2025 Harrison Yongjoon Youn"
     right: 
-      - text: "Made with [Quarto](https://quarto.org/)"
+      - text: "Made with [Quarto](https://quarto.org/) • Inspired by [Hugo Apéro](https://hugo-apero-docs.netlify.app/)"
     
 format:
   html:
-    theme: sandstone
+    theme: flatly  # Changed to flatly for a cleaner, more modern look
     toc: false
     code-copy: true
     code-overflow: wrap
@@ -46,7 +43,15 @@ format:
       - text: |
           <link rel="preconnect" href="https://fonts.googleapis.com">
           <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+          <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500&family=IBM+Plex+Serif:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
           <meta name="viewport" content="width=device-width, initial-scale=1.0">
           <meta name="description" content="Harrison Yongjoon Youn - Economics PhD Candidate at The Ohio State University">
-          <meta name="keywords" content="economics, research, labor economics, health economics, innovation">
+          <meta name="keywords" content="economics, research, labor economics, health economics, innovation, data science">
           <meta name="author" content="Harrison Yongjoon Youn">
+          <meta property="og:title" content="Harrison Yongjoon Youn">
+          <meta property="og:description" content="Economics PhD Candidate at The Ohio State University">
+          <meta property="og:type" content="website">
+          <meta property="og:url" content="https://www.harrisonyoun.com">
+          <meta name="twitter:card" content="summary">
+          <meta name="twitter:title" content="Harrison Yongjoon Youn">
+          <meta name="twitter:description" content="Economics PhD Candidate at The Ohio State University">
