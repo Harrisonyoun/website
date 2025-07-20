@@ -1,9 +1,14 @@
  ---
 title: "Harrison Youn"
 pagetitle: "Harrison Youn"
-subtitle: "Economics PhD Candidate at the Ohio State University"
+subtitle: "Economics PhD Candidate"
+image: assets/avatar.png
+image-alt: ""
 about:
   template: solana
+  template: trestles
+  image-width: 14em
+  image-shape: squared  
   id: hero-heading
   links:
     - icon: github
