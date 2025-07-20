@@ -445,3 +445,40 @@ button:focus {
   margin: 0;
   padding: 0;
 }
+
+/* Remove duplicate title from about section */
+.quarto-title-block {
+  display: none !important;
+}
+
+.quarto-title {
+  display: none !important;
+}
+
+/* Hide the auto-generated title in about section */
+#hero-heading .about-entity .about-contents .quarto-title,
+#hero-heading .about-entity .about-contents h1.title {
+  display: none !important;
+}
+
+/* Custom title styling for about section */
+.custom-name {
+  font-family: 'Crimson Pro', Georgia, serif;
+  font-size: 2.75rem;
+  font-weight: 400;
+  margin-bottom: 1rem;
+  text-align: center;
+  letter-spacing: -0.02em;
+  color: var(--text-primary);
+}
+
+.custom-subtitle {
+  color: var(--text-muted);
+  font-size: 1.1rem;
+  font-weight: 400;
+  margin-bottom: 2.5rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-family: 'Inter', sans-serif;
+  text-align: center;
+}
