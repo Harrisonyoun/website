@@ -12,6 +12,6 @@ resources:
 
 ::: {#about-heading}
 
-Hello! I'm Harrison Youn, a researcher focused on data science and machine learning applications in health care. Here you'll find my projects and publications.
+Hello! I'm Harrison Youn, an Economics PhD researching health economics and policy. Here you'll find my projects and publications.
 
 :::

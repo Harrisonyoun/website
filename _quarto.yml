@@ -4,7 +4,7 @@ project:
 website:
   title: "Harrison Youn"
   site-url: https://www.harrisonyoun.com
-  description: "Data science researcher"
+  description: "Economics PhD and researcher"
   page-navigation: true
   back-to-top-navigation: true
   navbar:

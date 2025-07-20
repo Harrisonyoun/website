@@ -1,7 +1,7 @@
 ---
 title: "Harrison Youn"
 pagetitle: "Harrison Youn"
-subtitle: "Data science researcher"
+subtitle: "Economics PhD"
 about:
   template: solana
   id: hero-heading
@@ -28,7 +28,7 @@ resources:
 
 ::: {#hero-heading}
 
-I am a researcher and data scientist. This site showcases my work and projects.
+I am an Economics PhD and researcher. This site showcases my work and publications.
 
 [Learn more about me →](/about){.about-links .subtitle}
 
