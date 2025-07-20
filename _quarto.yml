@@ -3,27 +3,34 @@ project:
 
 website:
   title: "Harrison Youn"
+  site-url: https://www.harrisonyoun.com
+  description: "Data science researcher"
+  page-navigation: true
+  back-to-top-navigation: true
   navbar:
     left:
       - href: index.qmd
         text: Home
       - href: about.qmd
         text: About
-      - href: posts/index.qmd
-        text: Blog
       - href: research.qmd
         text: Research
-      - href: contact.qmd
-        text: Contact
     right:
-      - href: cv.pdf
-        text: CV
+      - icon: github
+        href: https://github.com/harrisonyoun
+      - icon: linkedin
+        href: https://www.linkedin.com/in/harrisonyoun/
   page-footer:
-    center: "© 2025 Harrison Youn"
+    left: "© 2025 Harrison Youn · Made with [Quarto](https://quarto.org)"
+    right:
+      - text: Contact
+        href: contact.qmd
 
 format:
   html:
     theme: cosmo
     toc: true
     code-copy: true
-    css: styles.css
+    css:
+      - styles.css
+      - assets/index.css

@@ -1,7 +1,35 @@
 ---
-title: "website"
+title: "Harrison Youn"
+pagetitle: "Harrison Youn"
+subtitle: "Data science researcher"
+about:
+  template: solana
+  id: hero-heading
+  links:
+    - icon: github
+      aria-label: GitHub
+      href: https://github.com/harrisonyoun
+    - icon: linkedin
+      aria-label: LinkedIn
+      href: https://www.linkedin.com/in/harrisonyoun/
+page-layout: full
+execute:
+  freeze: false
+  echo: false
+  warning: false
+header-includes: |
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Petrona:wght@400;700&family=Red+Hat+Text:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/index.css">
+resources:
+  - assets/index.css
 ---
 
-This is a Quarto website.
+::: {#hero-heading}
 
-To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
+I am a researcher and data scientist. This site showcases my work and projects.
+
+[Learn more about me →](/about){.about-links .subtitle}
+
+:::
