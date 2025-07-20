@@ -38,3 +38,14 @@ Hello! I'm Harrison Youn, an Economics PhD candidate researching Labor Economics
 [Explore my research →](/research){.about-links .subtitle}
 
 :::
+
+
+## Education
+
+- **Ph.D. in Economics**, 2028 (expected) — The Ohio State University
+- **M.Sc. in Economics**, 2020 — Barcelona School of Economics
+- **B.Sc. in Economics and Finance**, 2018 — University of Amsterdam
+
+## Publications
+
+Details about publications will be added soon.
