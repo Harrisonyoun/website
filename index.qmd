@@ -30,6 +30,6 @@ resources:
  
 Hello! I'm Harrison Youn, an Economics PhD candidate researching Labor Economics, Health Economics, and Economics of Science and Innovation.
 
-[Learn more about me →](/about){.about-links .subtitle}
+[Explore my research →](/research){.about-links .subtitle}
 
 :::

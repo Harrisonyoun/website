@@ -1,0 +1,23 @@
+[
+  {
+    "objectID": "research.html",
+    "href": "research.html",
+    "title": "Research",
+    "section": "",
+    "text": "More information about my research will be added soon.\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "Harrison Youn",
+    "section": "",
+    "text": "title: “About”\n\n\nabout:\n\n\ntemplate: trestles\n\n\nid: about-heading\n\n\npage-layout: full\n\n\nheader-includes: |\n\n\n\n\n\nresources:\n\n\n- ../assets/about.css\n\n\n\n::: {#about-heading}\nHello! I’m Harrison Youn, an Economics PhD candidate researching Labor Economics, Health Economics, and Economics of Science and Innovation.\n:::\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Harrison Youn",
+    "section": "",
+    "text": "Hello! I’m Harrison Youn, an Economics PhD candidate researching Labor Economics, Health Economics, and Economics of Science and Innovation.\nExplore my research →\n\n\n\n\n Back to top"
+  }
+]

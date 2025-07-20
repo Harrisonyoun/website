@@ -11,8 +11,6 @@
      left:
        - href: index.qmd
          text: Home
-       - href: about.qmd
-         text: About
        - href: research.qmd
          text: Research       
      right:
@@ -22,9 +20,6 @@
          href: https://www.linkedin.com/in/harrisonyoun/
    page-footer:
      left: "© 2025 Harrison Youn · Made with [Quarto](https://quarto.org)"
-     right:
-       - text: Contact
-         href: contact.qmd
  
  format:
    html:
