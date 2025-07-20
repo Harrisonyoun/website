@@ -8,10 +8,13 @@ about:
   image: assets/avatar.png
   image-alt: "Portrait of Harrison Youn"
   image-width: 14em
-  image-shape: squared
+  image-shape: rectangle
   id: hero-heading
 
   links:
+    - icon: mortarboard-fill
+      text: Google Scholar
+      href: https://scholar.google.com/citations?hl=en&user=GyMw0H0AAAAJ
     - icon: github
       aria-label: GitHub
       href: https://github.com/harrisonyoun
@@ -19,18 +22,7 @@ about:
       aria-label: LinkedIn
       href: https://www.linkedin.com/in/harrison-youn/
 
-page-layout: full
-execute:
-  freeze: false
-  echo: false
-  warning: false
-header-includes: |
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Petrona:wght@400;700&family=Red+Hat+Text:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/index.css">
-resources:
-  - assets/index.css
+
 ---
   
 Hello! I'm Harrison Youn, an Economics PhD candidate researching Labor Economics, Health Economics, and Economics of Science and Innovation.

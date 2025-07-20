@@ -18,15 +18,15 @@ website:
       - icon: github
         href: https://github.com/harrisonyoun
       - icon: linkedin
-        href: https://www.linkedin.com/in/harrisonyoun/
+        href: https://www.linkedin.com/in/harrison-youn/
 
   page-footer:
     left: "© 2025 Harrison Youn"
     
 format:
   html:
-    theme: cosmo
-    toc: true
+    theme: sandstone
+    toc: false
     code-copy: true
     css:
       - styles.css
