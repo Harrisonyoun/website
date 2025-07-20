@@ -3,27 +3,31 @@ project:
 
 website:
   title: "Harrison Youn"
+  favicon: favicon.ico
   navbar:
     left:
       - href: index.qmd
         text: Home
       - href: about.qmd
         text: About
-      - href: posts/index.qmd
-        text: Blog
       - href: research.qmd
         text: Research
+      - href: blog/index.qmd
+        text: Blog
       - href: contact.qmd
         text: Contact
     right:
       - href: cv.pdf
         text: CV
   page-footer:
-    center: "© 2025 Harrison Youn"
+    left: |
+      [Google Scholar](https://scholar.google.com/citations?user=YOURID) • [ORCID](https://orcid.org/YOURID) • [GitHub](https://github.com/YOURID)
+    right: |
+      © 2025 Harrison Youn
 
 format:
   html:
-    theme: cosmo
+    theme: [cosmo, styles.css]
     toc: true
     code-copy: true
-    css: styles.css
+    smooth-scroll: true

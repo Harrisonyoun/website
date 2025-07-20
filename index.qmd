@@ -1,7 +1,16 @@
 ---
-title: "website"
+title: "Harrison Youn"
+format: html
 ---
 
-This is a Quarto website.
+# Harrison Youn
 
-To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
+Economics PhD · Labor, Technology, and Causal Inference
+
+Welcome! I am a PhD candidate in Economics at [Your Institution].  
+My research explores labor markets, AI, and causal inference.
+
+```{=html}
+<div align="center">
+  <img src="your-photo.jpg" alt="Harrison Youn" style="width:180px;border-radius:90px;">
+</div>
