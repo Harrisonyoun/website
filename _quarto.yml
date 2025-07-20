@@ -7,6 +7,8 @@ website:
   description: "Economics PhD Candidate at the Ohio State University"
   page-navigation: true
   back-to-top-navigation: true
+  
+  favicon: assets/favicon.ico
 
   navbar:
     background: light
@@ -15,21 +17,14 @@ website:
     collapse-below: lg
     left:
       - href: index.qmd
-        text: Home
+        text: "Harrison Youn"
+    right:
       - href: research.qmd
         text: Research
       - href: cv.qmd
         text: CV
-    right:
-      - icon: github
-        href: https://github.com/harrisonyoun
-        aria-label: GitHub
-      - icon: linkedin
-        href: https://www.linkedin.com/in/harrison-youn/
-        aria-label: LinkedIn
-      - icon: mortarboard-fill
-        href: https://scholar.google.com/citations?hl=en&user=GyMw0H0AAAAJ
-        aria-label: Google Scholar
+      - href: note.qmd
+        text: Note
 
   page-footer:
     left: "© 2025 Harrison Yongjoon Youn"

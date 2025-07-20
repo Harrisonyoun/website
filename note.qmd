@@ -1,0 +1,37 @@
+---
+title: "Note"
+---
+
+::: {.research-highlight}
+# Note
+
+Thoughts, reflections, and updates on research and academic life.
+:::
+
+## Recent Notes
+
+::: {.contact-simple}
+**Coming Soon**
+
+This space will feature brief notes on ongoing research, interesting findings, conference experiences, and thoughts on economics and academia.
+:::
+
+## Research Updates
+
+::: {.contact-simple}
+**January 2025**
+
+Currently working on several projects in labor economics and health economics. Updates on progress and findings will be shared here regularly.
+:::
+
+## Academic Life
+
+::: {.contact-simple}
+**PhD Journey**
+
+Documenting the experience of pursuing a PhD in Economics at The Ohio State University, including coursework insights, research challenges, and academic milestones.
+:::
+
+::: {.contact-simple}
+For questions or discussions about any of these topics, feel free to reach out at [youn.25@osu.edu](mailto:youn.25@osu.edu).
+:::

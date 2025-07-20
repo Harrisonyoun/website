@@ -10,29 +10,13 @@ about:
   image-width: 280px
   image-shape: round
   id: hero-heading
-
-  links:
-    - icon: mortarboard-fill
-      href: https://scholar.google.com/citations?hl=en&user=GyMw0H0AAAAJ
-      aria-label: Google Scholar
-    - icon: github
-      href: https://github.com/harrisonyoun
-      aria-label: GitHub
-    - icon: linkedin
-      href: https://www.linkedin.com/in/harrison-youn/
-      aria-label: LinkedIn
-    - icon: envelope-fill
-      href: mailto:youn.25@osu.edu
-      aria-label: Email
 ---
 
-I'm an Economics PhD candidate researching Labor Economics, Health Economics, and Economics of Science and Innovation. My work focuses on understanding how economic factors influence labor markets, health outcomes, and innovation processes.
+I'm an Economics PhD candidate researching Labor Economics, Health Economics, and Economics of Science and Innovation. My **research** leverages electronic health record and spatial data to study the intersection of health equity and urban nature. My **journalism** and **community** projects value the partnership between open source tools and data literacy as a way to build power and effect change.
 
-[**Explore my research →**](/research){.about-links .subtitle}
+[**Learn more about me →**](/research){.about-links .subtitle}
 
 ::: {.research-highlight}
-*Research areas*
-
 ::: {.research-areas}
 ::: {.research-area}
 Labor Economics
@@ -47,6 +31,13 @@ Economics of Science & Innovation
 :::
 
 ::: {.contact-simple}
+::: {.about-links}
+<a href="https://scholar.google.com/citations?hl=en&user=GyMw0H0AAAAJ" aria-label="Google Scholar"><i class="bi bi-mortarboard-fill"></i></a>
+<a href="https://github.com/harrisonyoun" aria-label="GitHub"><i class="bi bi-github"></i></a>
+<a href="https://www.linkedin.com/in/harrison-youn/" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+<a href="mailto:youn.25@osu.edu" aria-label="Email"><i class="bi bi-envelope-fill"></i></a>
+:::
+
 **Ph.D. in Economics** (2028 expected) — The Ohio State University  
 **M.Sc. in Economics** (2020) — Barcelona School of Economics  
 **B.Sc. in Economics and Finance** (2018) — University of Amsterdam
