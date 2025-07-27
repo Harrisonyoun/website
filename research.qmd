@@ -7,45 +7,45 @@ title: "Research"
 ## Publications
 
 **Fong, J., and H. Youn** (2023). [Assessing patterns and stability of ADL hierarchical scales for functional disability assessment.](https://academic.oup.com/gerontologist/article/63/4/773/6571520) In *The Gerontologist (Oxford University Press)*.
-  <br>
-  <button class="abstract-button">abstract</button>
-  <div class="abstract-content">
-    <h4>Background and Objectives</h4>
-    [cite_start]<p>This study examined the stability over time of activities of daily living (ADL) items in 3 comparable longitudinal data sets and evaluated ADL loss sequences for older adults in the United States, South Korea, and Japan. [cite: 3]</p>
-    
-    <h4>Research Design and Methods</h4>
-    <p>Data from the U.S. Health and Retirement Study, and its 2 international sister surveys, were analyzed. Participants were community-dwelling adults aged 60 and older. [cite_start]For each data set, Rasch analysis was implemented to determine if the ordering of items remained stable across multiple waves (2006–2014), such that a single ADL hierarchy may be derived from multiwave data. [cite: 3]</p>
-    
-    <h4>Results</h4>
-    <p>Data fitted the Rasch model well. Item calibrations were sufficiently stable across measurement periods in each data set, reflecting a stable frame of reference. Results were also robust to sample variations. [cite_start]The derived ADL hierarchies based on scaled logit scores revealed that “dressing” and “bathing” were relatively more difficult items for older adults in all study populations. [cite: 3]</p>
-    
-    <h4>Discussion and Implications</h4>
-    <p>Scale stability is essential when exploiting longitudinal data to analyze patterns in ADL disabilities. The consistency in ADL scales across measurement periods supports their use as screening tools and identifying those at risk for transitions in care. [cite_start]Interventions to reduce dependency in bathing and dressing can help improve independent functioning for community-dwelling older adults. [cite: 3]</p>
-  </div>
- 
+<br>
+<button class="abstract-button">abstract</button>
+<div class="abstract-content">
+  <h4>Background and Objectives</h4>
+  [cite_start]<p>This study examined the stability over time of activities of daily living (ADL) items in 3 comparable longitudinal data sets and evaluated ADL loss sequences for older adults in the United States, South Korea, and Japan. [cite: 3]</p>
+  
+  <h4>Research Design and Methods</h4>
+  <p>Data from the U.S. Health and Retirement Study, and its 2 international sister surveys, were analyzed. Participants were community-dwelling adults aged 60 and older. [cite_start]For each data set, Rasch analysis was implemented to determine if the ordering of items remained stable across multiple waves (2006–2014), such that a single ADL hierarchy may be derived from multiwave data. [cite: 3]</p>
+  
+  <h4>Results</h4>
+  <p>Data fitted the Rasch model well. Item calibrations were sufficiently stable across measurement periods in each data set, reflecting a stable frame of reference. Results were also robust to sample variations. [cite_start]The derived ADL hierarchies based on scaled logit scores revealed that “dressing” and “bathing” were relatively more difficult items for older adults in all study populations. [cite: 3]</p>
+  
+  <h4>Discussion and Implications</h4>
+  <p>Scale stability is essential when exploiting longitudinal data to analyze patterns in ADL disabilities. The consistency in ADL scales across measurement periods supports their use as screening tools and identifying those at risk for transitions in care. [cite_start]Interventions to reduce dependency in bathing and dressing can help improve independent functioning for community-dwelling older adults. [cite: 3]</p>
+</div>
+
 
 ## Working Papers
 
 “Labor Market Responses to Health Insurance Decoupling"
-  <br>
-  <button class="abstract-button">abstract</button>
-  <div class="abstract-content">
-    <p>In this paper, I examine the labor market responses when employer sponsored health insurance, the single largest U.S. health insurance covering 165 million Americans, is decoupled from the U.S. labor market. This systematic decoupling creates spillovers and labor market distortions through feedback loop and reallocate the incentive structures of broader U.S. workforce. I both theoretically and empirically examine the mechanisms. I find employment elasticity responses aligned with the incentive bindings at the margins. My results carry direct implications for U.S. health insurance policy, which currently spend 24% of the federal budget.</p>
-  </div>
+<br>
+<button class="abstract-button">abstract</button>
+<div class="abstract-content">
+  <p>In this paper, I examine the labor market responses when employer sponsored health insurance, the single largest U.S. health insurance covering 165 million Americans, is decoupled from the U.S. labor market. This systematic decoupling creates spillovers and labor market distortions through feedback loop and reallocate the incentive structures of broader U.S. workforce. I both theoretically and empirically examine the mechanisms. I find employment elasticity responses aligned with the incentive bindings at the margins. My results carry direct implications for U.S. health insurance policy, which currently spend 24% of the federal budget.</p>
+</div>
 
 “Intergenerational Dilemma: Balancing Windfalls and Burdens of Public Transfers"
-  <br>
-  <button class="abstract-button">abstract</button>
-  <div class="abstract-content">
-    <p>Over the past few decades, the global demographic landscape has rapidly transformed with the onset of an unprecedented era of population aging. Among others, South Korea has emerged as the world’s fastest-aging country, exhibiting the lowest total fertility rates and the most rapid growth in the elderly population (Bloom et al., 2023). Despite this demographic shift, the nationwide development of old-age income security measures was introduced relatively late, in the early 2000s, in response to an elderly poverty rate exceeding 40% (Chung, 2024). To provide financial security to the ever-increasing elderly population, the Korean government introduced the Basic Pension (BP) system in 2008. This non-contributory pension unconditionally transfers cash to 70% of the population aged 65 or older, providing windfalls for the elderly, while funding is sourced from shrinking younger generations.</p>
-    <p>The adult children of financially insecure elderly parents may face particularly constrained economic decisions across various life-cycle stages, as they may have to bear the dual responsibility of increasing BP funding burdens and providing financial support to their financially insecure parents. If BP benefits completely crowd out financial support from adult children, the burden on the children will be eased, but the elderly parents will have no windfall gains (Becker, 1974). However, if the benefits only partially crowd out financial support from adult children, the parents will experience windfall gains while the adult children remain burdened with continuing to provide both public and familial financial support for their parents (Cox et al., 2004).</p>
-    <p>How should we achieve an intergenerational balance between the windfalls that benefit the elderly and the burdens that affect their children? While existing studies mainly focus on potential crowding-out effects for policy evaluations (Nikolov and Bonci, 2020), the literature is silent on “how recipients utilize the benefits they receive.” For example, if windfall gains of elderly parents are shared with their children, both parents’ and children’s net gains may vary. In this paper, I present new evidence on the importance of the impact of recipients’ shared benefits, which I term the spillover effect, alongside the crowding-out effect to understand net gains from public and family transfers in Korea, crucial for balancing windfalls and burdens in intergenerational public and household finances.</p>
-    <p>I find evidence that BP benefits displaced the transfer burdens of adult children for elderly single households and resulted in net gains for both family members and recipients in elderly couple households living without children. However, elderly couples living with their children experienced net gains, with the wealth of their children being redistributed from non-coresident to coresident children. The findings suggest that considering how recipients utilized their benefits can alter policy evaluations, contrasting with current literature.</p>
-  </div>
+<br>
+<button class="abstract-button">abstract</button>
+<div class="abstract-content">
+  <p>Over the past few decades, the global demographic landscape has rapidly transformed with the onset of an unprecedented era of population aging. Among others, South Korea has emerged as the world’s fastest-aging country, exhibiting the lowest total fertility rates and the most rapid growth in the elderly population (Bloom et al., 2023). Despite this demographic shift, the nationwide development of old-age income security measures was introduced relatively late, in the early 2000s, in response to an elderly poverty rate exceeding 40% (Chung, 2024). To provide financial security to the ever-increasing elderly population, the Korean government introduced the Basic Pension (BP) system in 2008. This non-contributory pension unconditionally transfers cash to 70% of the population aged 65 or older, providing windfalls for the elderly, while funding is sourced from shrinking younger generations.</p>
+  <p>The adult children of financially insecure elderly parents may face particularly constrained economic decisions across various life-cycle stages, as they may have to bear the dual responsibility of increasing BP funding burdens and providing financial support to their financially insecure parents. If BP benefits completely crowd out financial support from adult children, the burden on the children will be eased, but the elderly parents will have no windfall gains (Becker, 1974). However, if the benefits only partially crowd out financial support from adult children, the parents will experience windfall gains while the adult children remain burdened with continuing to provide both public and familial financial support for their parents (Cox et al., 2004).</p>
+  <p>How should we achieve an intergenerational balance between the windfalls that benefit the elderly and the burdens that affect their children? While existing studies mainly focus on potential crowding-out effects for policy evaluations (Nikolov and Bonci, 2020), the literature is silent on “how recipients utilize the benefits they receive.” For example, if windfall gains of elderly parents are shared with their children, both parents’ and children’s net gains may vary. In this paper, I present new evidence on the importance of the impact of recipients’ shared benefits, which I term the spillover effect, alongside the crowding-out effect to understand net gains from public and family transfers in Korea, crucial for balancing windfalls and burdens in intergenerational public and household finances.</p>
+  <p>I find evidence that BP benefits displaced the transfer burdens of adult children for elderly single households and resulted in net gains for both family members and recipients in elderly couple households living without children. However, elderly couples living with their children experienced net gains, with the wealth of their children being redistributed from non-coresident to coresident children. The findings suggest that considering how recipients utilized their benefits can alter policy evaluations, contrasting with current literature.</p>
+</div>
 
 ## Work in Progress
 
-“Killing Me Softly With Dinner: The Costs of Circadian Misalignment” 
+“Killing Me Softly With Dinner: The Costs of Circadian Misalignment”
 
 
 <script>
@@ -53,13 +53,8 @@ document.addEventListener('DOMContentLoaded', function() {
   var collapsibles = document.querySelectorAll('.abstract-button');
   collapsibles.forEach(function(button) {
     button.addEventListener('click', function() {
-      // Toggle 'active' class on the button
       this.classList.toggle('active');
-      
-      // Get the content panel
       var content = this.nextElementSibling;
-      
-      // Toggle display
       if (content.style.maxHeight) {
         content.style.maxHeight = null;
       } else {
