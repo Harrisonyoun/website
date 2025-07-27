@@ -6,7 +6,7 @@ title: "Research"
 
 ## Publications
 
-**Fong, J., and H. Youn** (2023). [Assessing patterns and stability of ADL hierarchical scales for functional disability assessment.](https://academic.oup.com/gerontologist/article/63/4/773/6571520) In *The Gerontologist (Oxford University Press)*.
+Fong and **Youn** (2023). [Assessing patterns and stability of ADL hierarchical scales for functional disability assessment.](https://academic.oup.com/gerontologist/article/63/4/773/6571520) In *The Gerontologist (Oxford University Press)*.
 <br>
 <button class="abstract-button">abstract</button>
 <div class="abstract-content">
