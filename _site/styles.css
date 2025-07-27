@@ -307,23 +307,49 @@ main {
   all: unset;
 }
 
-/* Abstract 버튼 스타일 */
+
+/* Hide unnecessary elements */
+#hero-heading, .education-section {
+  all: unset;
+}
+
+/* Abstract */
 .abstract-button {
   display: inline-block;
   font-family: var(--font-body);
-  font-size: 0.75rem;
-  font-weight: 400;
-  color: #212529;
-  background-color: #f8f9fa;
-  border: 1px solid #dee2e6;
-  padding: 0.2rem 0.6rem;
-  border-radius: 4px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--c-accent-orange);
+  background-color: transparent;
+  border: 1px solid var(--c-accent-orange);
+  padding: 0.25rem 0.8rem;
+  border-radius: 15px;
   margin-top: 0.5rem;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.abstract-button:hover, .abstract-button.active {
+  background-color: var(--c-accent-orange);
+  color: #ffffff;
   text-decoration: none;
 }
 
-.abstract-button:hover {
-  background-color: #e2e6ea;
-  border-color: #dae0e5;
-  text-decoration: none;
+.abstract-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease-out;
+  background-color: #f8f9fa;
+  margin-top: 0.75rem;
+  padding: 0 1.5rem; 
+  border-radius: 4px;
+  border-left: 3px solid var(--c-accent-orange); 
+}
+
+.abstract-content p {
+  padding: 1rem 0; 
+  margin: 0;
+  font-size: 0.9rem;
+  text-align: justify;
 }
