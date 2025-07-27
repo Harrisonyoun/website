@@ -10,6 +10,6 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@quarto/netlify-plugin-quarto": "^1.5.0"
+    "@quarto/netlify-plugin-quarto": "^2.0.0"
   }
 }
