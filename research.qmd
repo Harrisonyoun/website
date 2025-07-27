@@ -4,10 +4,19 @@ title: "Research"
 
 # Research
 
+## Publications
+
+- **Fong, J.** (2023). [Assessing patterns and stability of ADL hierarchical scales for functional disability assessment.](#) In *The Gerontologist (Oxford University Press)*.
+  <br>
+  [Cite](#){.publication-button} [DOI](#){.publication-button}
+
+
+
 ## Working Papers
 
-[list]
+- “Who Benefits from Workplace Accommodations? The Case of the Americans with Disabilities Act Amendments Act (ADAAA).” *(Job Market Paper)*
 
 ## Work in Progress
 
-## Research Interests
+- “The Role of Employer-Sponsored Health Insurance in the Labor Market.” (with H. Lee)
+- “Innovation and the Health Care Workforce.” (with B. Jones)

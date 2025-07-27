@@ -12,7 +12,7 @@
   /* Colors */
   --c-bg: #fcfcfc;
   --c-text-primary: #1a1a1a;
-  --c-navbar-brand: #34495e;
+  --c-navbar-brand: #1a1a1a; /* [!!수정!!] Dark blue changed to black */
   --c-accent-orange: #B75D49;
   --c-accent-light: #f7edea;
   --c-border: #e8e8e8;
@@ -73,6 +73,7 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 0.9rem;
   font-weight: 400;
   margin-bottom: 0.75rem;
+  text-align: justify;
 }
 
 p:last-child {
@@ -114,7 +115,7 @@ a:hover {
   text-transform: uppercase;
   font-size: 0.9rem;
   opacity: 0.9;
-  margin: 0 0.85rem;
+  margin: 0 0.75rem;
 }
 
 .navbar-nav .nav-link.active, .navbar-nav .nav-link:hover {
@@ -153,7 +154,7 @@ main {
   flex-shrink: 0;
   width: 350px;
   height: 350px;
-  padding-top: 3rem; /* 사진을 아래로 내리기 위한 값 */
+  transform: translateY(4rem);
 }
 
 .about-entity .about-image img {
@@ -246,7 +247,7 @@ main {
   .about-entity .about-image {
     width: 300px;
     height: 300px;
-    padding-top: 1rem;
+    transform: translateY(2rem);
   }
   .custom-name {
     font-size: 2.2rem;
@@ -286,7 +287,7 @@ main {
   .about-entity .about-image {
     width: 280px;
     height: 280px;
-    padding-top: 0;
+    transform: translateY(0);
   }
 }
 
@@ -300,7 +301,30 @@ main {
   }
 }
 
+
 /* Hide unnecessary elements */
 #hero-heading, .education-section {
   all: unset;
 }
+
+.publication-button {
+  display: inline-block;
+  font-family: var(--font-body);
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--c-accent-orange);
+  border: 1px solid var(--c-border);
+  padding: 0.2rem 0.6rem;
+  border-radius: 4px;
+  margin-top: 0.5rem;
+  margin-right: 0.5rem;
+  text-transform: uppercase;
+}
+
+.publication-button:hover {
+  background-color: var(--c-accent-light);
+  border-color: var(--c-accent-orange);
+  color: var(--c-accent-orange);
+  text-decoration: none;
+}
+ 
