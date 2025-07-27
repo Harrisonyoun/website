@@ -5,18 +5,28 @@ pagetitle: "Harrison Yongjoon Youn"
 ::: {#hero-heading}
 ::: {.about-entity}
 ::: {.about-image}
-![](assets/avatar.png){width="420px" fig-alt="Portrait of Harrison Youn"}
+![](assets/avatar.png){width="500px" fig-alt="Portrait of Harrison Youn"}
 :::
 
 ::: {.about-contents}
 # Harrison Yongjoon Youn {.custom-name}
 
 ::: {.custom-subtitle}
-Economics PhD Candidate<br> The Ohio State University <br>
+Economics PhD Candidate<br>
+The Ohio State University
 :::
- 
-::: {.contact-simple}
-I am an Economics PhD candidate researching Labor Economics, Health Economics, and Economics of Science and Innovation. <br>  <br>Previously, I served as a research associate at the <br> National University of Singapore (NUS) for two years.
+
+<div class="contact-simple">
+I am researching **Labor Economic**, **Health Economics**, and **Economics of Science and Innovation**. 
+
+In my research, I combine **data** and **causal inference** to answer my questions. I am particularly interested in **how the labor market and healthcare system interact** through various feedback channels, how changing incentives affect the behavior of employers and employees, and how market frictions, benefits, and costs are distributed across different actors. 
+
+I also study how **human capital** and labor market outcomes are shaped by **scientific knowledge spillovers** and **innovation**.
+
+Previously, I served as a research associate at the <br>**National University of Singapore (NUS)** for two years.
+</div>
+
+<a href="assets/CV.pdf" class="cv-button" target="_blank"> CV</a> 
 
 ::: {.about-links}
 <a href="https://scholar.google.com/citations?hl=en&user=GyMw0H0AAAAJ" aria-label="Google Scholar"><i class="bi bi-mortarboard-fill"></i></a>
@@ -25,11 +35,6 @@ I am an Economics PhD candidate researching Labor Economics, Health Economics, a
 <a href="mailto:youn.25@osu.edu" aria-label="Email"><i class="bi bi-envelope-fill"></i></a>
 :::
 
-::: {.education-section}
-## Education
-Ph.D. in Economics (2028 expected) -- *The Ohio State University*
-M.Sc. in Economics (2020) -- *Barcelona School of Economics*  
-B.Sc. in Economics and Finance (2018) -- *University of Amsterdam*
 :::
- 
- 
+:::
+</div>
