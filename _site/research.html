@@ -147,13 +147,23 @@ ul.task-list li input[type="checkbox"] {
 <section id="publications" class="level2">
 <h2 class="anchored" data-anchor-id="publications">Publications</h2>
 <ul>
-<li>Fong and <strong>Youn</strong> (2023). <a href="https://academic.oup.com/gerontologist/article/63/4/773/6571520">Assessing patterns and stability of ADL hierarchical scales for functional disability assessment.</a> In <em>The Gerontologist (Oxford University Press)</em>. <br> <button class="abstract-button" onclick="openModal('fong-youn-2023-abstract')">abstract</button></li>
+<li><strong>Fong, J., and H. Youn</strong> (2023). <a href="https://academic.oup.com/gerontologist/article/63/4/773/6571520">Assessing patterns and stability of ADL hierarchical scales for functional disability assessment.</a> In <em>The Gerontologist (Oxford University Press)</em>. <br> <button class="abstract-button">abstract</button>
+<div class="abstract-content">
+<p>
+여기에 초록 내용을 입력하세요. This study examined the stability over time of activities of daily living (ADL) items in 3 comparable longitudinal data sets and evaluated ADL loss sequences for older adults in the United States, South Korea, and Japan…
+</p>
+</div></li>
 </ul>
 </section>
 <section id="working-papers" class="level2">
 <h2 class="anchored" data-anchor-id="working-papers">Working Papers</h2>
 <ul>
-<li>“Who Benefits from Workplace Accommodations? The Case of the Americans with Disabilities Act Amendments Act (ADAAA).” <em>(Job Market Paper)</em> <br> <button class="abstract-button" onclick="openModal('jmp-abstract')">abstract</button></li>
+<li>“Who Benefits from Workplace Accommodations? The Case of the Americans with Disabilities Act Amendments Act (ADAAA).” <em>(Job Market Paper)</em> <br> <button class="abstract-button">abstract</button>
+<div class="abstract-content">
+<p>
+여기에 Job Market Paper의 초록 내용을 입력하세요.
+</p>
+</div></li>
 </ul>
 </section>
 <section id="work-in-progress" class="level2">
@@ -162,40 +172,26 @@ ul.task-list li input[type="checkbox"] {
 <li>“The Role of Employer-Sponsored Health Insurance in the Labor Market.” (with H. Lee)</li>
 <li>“Innovation and the Health Care Workforce.” (with B. Jones)</li>
 </ul>
-<div id="fong-youn-2023-abstract" class="modal">
-<div class="modal-content">
-<pre><code>&lt;span class="close" onclick="closeModal('fong-youn-2023-abstract')"&gt;&amp;times;&lt;/span&gt;
-&lt;h3&gt;Assessing patterns and stability of ADL hierarchical scales for functional disability assessment&lt;/h3&gt;
-&lt;p&gt;Background and Objectives</code></pre>
-<p>This study examined the stability over time of activities of daily living (ADL) items in 3 comparable longitudinal data sets and evaluated ADL loss sequences for older adults in the United States, South Korea, and Japan.</p>
-<p>Research Design and Methods Data from the U.S. Health and Retirement Study, and its 2 international sister surveys, were analyzed. Participants were community-dwelling adults aged 60 and older. For each data set, Rasch analysis was implemented to determine if the ordering of items remained stable across multiple waves (2006–2014), such that a single ADL hierarchy may be derived from multiwave data.</p>
-<p>Results Data fitted the Rasch model well. Item calibrations were sufficiently stable across measurement periods in each data set, reflecting a stable frame of reference. Results were also robust to sample variations. The derived ADL hierarchies based on scaled logit scores revealed that “dressing” and “bathing” were relatively more difficult items for older adults in all study populations.</p>
-Discussion and Implications Scale stability is essential when exploiting longitudinal data to analyze patterns in ADL disabilities. The consistency in ADL scales across measurement periods supports their use as screening tools and identifying those at risk for transitions in care. Interventions to reduce dependency in bathing and dressing can help improve independent functioning for community-dwelling older adults.
-<p></p>
-</div>
-</div>
-<div id="jmp-abstract" class="modal">
-<div class="modal-content">
-<pre><code>&lt;span class="close" onclick="closeModal('jmp-abstract')"&gt;&amp;times;&lt;/span&gt;
-&lt;h3&gt;Who Benefits from Workplace Accommodations? The Case of the Americans with Disabilities Act Amendments Act (ADAAA)&lt;/h3&gt;
-&lt;p&gt;여기에 초록 내용을 입력하세요.&lt;/p&gt;</code></pre>
-</div>
-</div>
 <script>
-function openModal(modalId) {
-  document.getElementById(modalId).style.display = "block";
-}
-
-function closeModal(modalId) {
-  document.getElementById(modalId).style.display = "none";
-}
-
-// 팝업 바깥 영역 클릭 시 닫기
-window.onclick = function(event) {
-  if (event.target.classList.contains('modal')) {
-    event.target.style.display = "none";
-  }
-}
+document.addEventListener('DOMContentLoaded', function() {
+  var collapsibles = document.querySelectorAll('.abstract-button');
+  collapsibles.forEach(function(button) {
+    button.addEventListener('click', function() {
+      // Toggle 'active' class on the button
+      this.classList.toggle('active');
+      
+      // Get the content panel
+      var content = this.nextElementSibling;
+      
+      // Toggle display
+      if (content.style.maxHeight) {
+        content.style.maxHeight = null;
+      } else {
+        content.style.maxHeight = content.scrollHeight + "px";
+      }
+    });
+  });
+});
 </script>
 
 
