@@ -300,13 +300,7 @@ main {
     font-size: 1.8rem;
   }
 }
-
-
-/* Hide unnecessary elements */
-#hero-heading, .education-section {
-  all: unset;
-}
-
+ 
 
 /* Hide unnecessary elements */
 #hero-heading, .education-section {
