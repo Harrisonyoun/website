@@ -1,2 +1,17 @@
+# Quarto-specific ignores
+/_site/
 /.quarto/
-_site/
+/_freeze/
+
+# R-specific
+.Rproj.user
+.Rhistory
+.RData
+
+# Python-specific
+__pycache__/
+*.pyc
+.ipynb_checkpoints
+
+# General
+.DS_Store
