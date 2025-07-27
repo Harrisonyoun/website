@@ -12,7 +12,7 @@
   /* Colors */
   --c-bg: #fcfcfc;
   --c-text-primary: #1a1a1a;
-  --c-navbar-brand: #1a1a1a; /* [!!수정!!] Dark blue changed to black */
+  --c-navbar-brand: #1a1a1a;
   --c-accent-orange: #B75D49;
   --c-accent-light: #f7edea;
   --c-border: #e8e8e8;
@@ -307,24 +307,23 @@ main {
   all: unset;
 }
 
-.publication-button {
+/* Abstract 버튼 스타일 */
+.abstract-button {
   display: inline-block;
   font-family: var(--font-body);
   font-size: 0.75rem;
-  font-weight: 600;
-  color: var(--c-accent-orange);
-  border: 1px solid var(--c-border);
+  font-weight: 400;
+  color: #212529;
+  background-color: #f8f9fa;
+  border: 1px solid #dee2e6;
   padding: 0.2rem 0.6rem;
   border-radius: 4px;
   margin-top: 0.5rem;
-  margin-right: 0.5rem;
-  text-transform: uppercase;
-}
-
-.publication-button:hover {
-  background-color: var(--c-accent-light);
-  border-color: var(--c-accent-orange);
-  color: var(--c-accent-orange);
   text-decoration: none;
 }
- 
+
+.abstract-button:hover {
+  background-color: #e2e6ea;
+  border-color: #dae0e5;
+  text-decoration: none;
+}

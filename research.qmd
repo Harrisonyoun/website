@@ -6,17 +6,63 @@ title: "Research"
 
 ## Publications
 
-- **Fong, J.** (2023). [Assessing patterns and stability of ADL hierarchical scales for functional disability assessment.](#) In *The Gerontologist (Oxford University Press)*.
+- Fong and **Youn** (2023). [Assessing patterns and stability of ADL hierarchical scales for functional disability assessment.](https://academic.oup.com/gerontologist/article/63/4/773/6571520) In *The Gerontologist (Oxford University Press)*.
   <br>
-  [Cite](#){.publication-button} [DOI](#){.publication-button}
-
-
-
+  <button class="abstract-button" onclick="openModal('fong-youn-2023-abstract')">abstract</button>
+ 
 ## Working Papers
 
 - “Who Benefits from Workplace Accommodations? The Case of the Americans with Disabilities Act Amendments Act (ADAAA).” *(Job Market Paper)*
+  <br>
+  <button class="abstract-button" onclick="openModal('jmp-abstract')">abstract</button>
 
 ## Work in Progress
 
 - “The Role of Employer-Sponsored Health Insurance in the Labor Market.” (with H. Lee)
 - “Innovation and the Health Care Workforce.” (with B. Jones)
+
+
+<div id="fong-youn-2023-abstract" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('fong-youn-2023-abstract')">&times;</span>
+    <h3>Assessing patterns and stability of ADL hierarchical scales for functional disability assessment</h3>
+    <p>Background and Objectives
+This study examined the stability over time of activities of daily living (ADL) items in 3 comparable longitudinal data sets and evaluated ADL loss sequences for older adults in the United States, South Korea, and Japan.
+
+Research Design and Methods
+Data from the U.S. Health and Retirement Study, and its 2 international sister surveys, were analyzed. Participants were community-dwelling adults aged 60 and older. For each data set, Rasch analysis was implemented to determine if the ordering of items remained stable across multiple waves (2006–2014), such that a single ADL hierarchy may be derived from multiwave data.
+
+Results
+Data fitted the Rasch model well. Item calibrations were sufficiently stable across measurement periods in each data set, reflecting a stable frame of reference. Results were also robust to sample variations. The derived ADL hierarchies based on scaled logit scores revealed that “dressing” and “bathing” were relatively more difficult items for older adults in all study populations.
+
+Discussion and Implications
+Scale stability is essential when exploiting longitudinal data to analyze patterns in ADL disabilities. The consistency in ADL scales across measurement periods supports their use as screening tools and identifying those at risk for transitions in care. Interventions to reduce dependency in bathing and dressing can help improve independent functioning for community-dwelling older adults.</p>
+  </div>
+</div>
+ 
+
+<div id="jmp-abstract" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('jmp-abstract')">&times;</span>
+    <h3>Who Benefits from Workplace Accommodations? The Case of the Americans with Disabilities Act Amendments Act (ADAAA)</h3>
+    <p>여기에 초록 내용을 입력하세요.</p>
+  </div>
+</div>
+
+
+<script>
+function openModal(modalId) {
+  document.getElementById(modalId).style.display = "block";
+}
+
+function closeModal(modalId) {
+  document.getElementById(modalId).style.display = "none";
+}
+
+// 팝업 바깥 영역 클릭 시 닫기
+window.onclick = function(event) {
+  if (event.target.classList.contains('modal')) {
+    event.target.style.display = "none";
+  }
+}
+</script>
