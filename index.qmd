@@ -5,36 +5,19 @@ pagetitle: "Harrison Yongjoon Youn"
 ::: {#hero-heading}
 ::: {.about-entity}
 ::: {.about-image}
-![](assets/avatar.png){width="280px" fig-alt="Portrait of Harrison Youn"}
+![](assets/avatar.png){width="420px" fig-alt="Portrait of Harrison Youn"}
 :::
 
 ::: {.about-contents}
 # Harrison Yongjoon Youn {.custom-name}
 
 ::: {.custom-subtitle}
-Economics PhD Candidate at the Ohio State University
+Economics PhD Candidate<br> The Ohio State University <br>
 :::
-
-I'm an Economics PhD candidate researching Labor Economics, Health Economics, and Economics of Science and Innovation. 
-
-::: 
-:::
-
-::: {.research-highlight}
-::: {.research-areas}
-::: {.research-area}
-Labor Economics
-:::
-::: {.research-area}
-Health Economics
-:::
-::: {.research-area}
-Economics of Science & Innovation
-:::
-:::
-:::
-
+ 
 ::: {.contact-simple}
+I am an Economics PhD candidate researching Labor Economics, Health Economics, and Economics of Science and Innovation. <br>  <br>Previously, I served as a research associate at the <br> National University of Singapore (NUS) for two years.
+
 ::: {.about-links}
 <a href="https://scholar.google.com/citations?hl=en&user=GyMw0H0AAAAJ" aria-label="Google Scholar"><i class="bi bi-mortarboard-fill"></i></a>
 <a href="https://github.com/harrisonyoun" aria-label="GitHub"><i class="bi bi-github"></i></a>
@@ -42,9 +25,11 @@ Economics of Science & Innovation
 <a href="mailto:youn.25@osu.edu" aria-label="Email"><i class="bi bi-envelope-fill"></i></a>
 :::
 
-**Ph.D. in Economics** (2028 expected) — The Ohio State University  
-**M.Sc. in Economics** (2020) — Barcelona School of Economics  
-**B.Sc. in Economics and Finance** (2018) — University of Amsterdam
-
-[youn.25@osu.edu](mailto:youn.25@osu.edu) • Columbus, Ohio
+::: {.education-section}
+## Education
+Ph.D. in Economics (2028 expected) -- *The Ohio State University*
+M.Sc. in Economics (2020) -- *Barcelona School of Economics*  
+B.Sc. in Economics and Finance (2018) -- *University of Amsterdam*
 :::
+ 
+ 

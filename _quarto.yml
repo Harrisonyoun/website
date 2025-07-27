@@ -26,7 +26,7 @@ website:
   page-footer:
     left: "© 2025 Harrison Yongjoon Youn"
     right: 
-      - text: "Made with [Quarto](https://quarto.org/)"
+      - text: "" 
     
 format:
   html:
