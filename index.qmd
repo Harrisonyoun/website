@@ -17,7 +17,7 @@ The Ohio State University
 :::
 
 <div class="contact-simple">
-I research **Labor Economic**, **Health Economics**, and **Economics of Science and Innovation**. 
+I research **Labor Economics**, **Health Economics**, and **Economics of Science and Innovation**. 
 
 In my research, I combine **data** and **causal inference** to answer my questions. I am particularly interested in **how the labor market and healthcare system interact** through various feedback channels, how changing incentives affect the behavior of employers and employees, and how market frictions, benefits, and costs are distributed across different actors. 
 
