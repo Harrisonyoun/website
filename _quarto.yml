@@ -20,8 +20,8 @@ website:
         text: CV
       - href: research.qmd
         text: Research
-      - href: note.qmd
-        text: Note
+      - href: notes.qmd
+        text: Notes
 
   page-footer:
     left: "© 2025 Harrison Yongjoon Youn"
