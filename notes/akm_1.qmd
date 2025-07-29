@@ -3,7 +3,7 @@ title: "Why Do Two People with the Same Job Earn Different Wages?"
 author: "Harrison Youn"
 date: "2025-07-28"
 description: "Have you ever wondered what truly determines your salary? Is it your unique talent and drive, or is it the company you work for?"
-categories: [Labor Economics, Econometrics, Wage Inequality]
+categories: [Labor Economics, Econometrics, Wage Inequality, AKM Model]
 format:
   html:
     toc: true
