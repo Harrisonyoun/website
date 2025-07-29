@@ -99,9 +99,9 @@ $$
 
 By observing millions of such moves across different firms, we obtain a vast set of relative firm effect differences, like $(\psi_j - \psi_k)$.
 
-#### The Connected Graph
+#### The Connected Sets
 
-By piecing together these relative differences like a puzzle, we can eventually align the wage premiums ($\psi_j$) of all firms on a common scale. However, this is only possible if worker moves form **one large, connected mobility graph**.
+By piecing together these relative differences like a puzzle, we can eventually align the wage premiums ($\psi_j$) of all firms on a common scale. However, this is only possible if worker moves form **one large, connected mobility set**.
 
 For instance, if Alice moves from Firm A to B, and Charles moves from Firm B to C, we can now link all three firms and compare the relative pay premiums of A, B, and C. As long as these chains of moves are sufficiently widespread throughout the economy, the effects for most firms and workers can be identified. In the French dataset analyzed by AKM, over 88.5% of the labor force was part of this single connected network (p.268).
 
