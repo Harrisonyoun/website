@@ -104,36 +104,28 @@ By piecing together these relative differences like a puzzle, we can eventually 
 
 ```{mermaid}
 %%| fig-cap: "A Connected Graph Formed by Worker Mobility"
-%%| fig-alt: "A cleaner diagram showing a main network where worker moves link Firms A, B, C, and D, and a separate, isolated network of Firms X and Y."
-graph LR
-    style graph fill:#fff,stroke:#333,stroke-width:1px
+%%| fig-alt: "A diagram showing two distinct networks of worker mobility. The top, isolated set shows movement between Firm X and Y. The bottom, main connected set, shows a chain of moves linking Firm A, B, C, and D."
+graph TD
+    subgraph Isolated Set
+        direction LR
+        X["Firm X"] -->|Eve moves| Y["Firm Y"]
+    end
 
     subgraph Main Connected Set
         direction LR
-        A(Firm A) -->|Alice moves| B(Firm B)
-        B -->|Bob moves| C(Firm C)
-        C -->|Charles moves| D(Firm D)
+        A["Firm A"] -->|Alice moves| B["Firm B"]
+        B -->|Bob moves| C{"Firm C"}
+        C -->|Charles moves| D(("Firm D"))
     end
 
-    subgraph Isolated Set
-        direction LR
-        X(Firm X) -->|Eve moves| Y(Firm Y)
-    end
+    %% Styling
+    style A fill:#e3f2fd,stroke:#2980b9,stroke-width:2px
+    style B fill:#e3f2fd,stroke:#2980b9,stroke-width:2px
+    style C fill:#e3f2fd,stroke:#2980b9,stroke-width:2px
+    style D fill:#e3f2fd,stroke:#2980b9,stroke-width:2px
 
-    style A fill:#bdd7e7,stroke:#2980b9,stroke-width:1.5px
-    style B fill:#bdd7e7,stroke:#2980b9,stroke-width:1.5px
-    style C fill:#bdd7e7,stroke:#2980b9,stroke-width:1.5px
-    style D fill:#bdd7e7,stroke:#2980b9,stroke-width:1.5px
-
-    style X fill:#fde0dd,stroke:#c92a2a,stroke-width:1.5px
-    style Y fill:#fde0dd,stroke:#c92a2a,stroke-width:1.5px
-
-    style A color:#333
-    style B color:#333
-    style C color:#333
-    style D color:#333
-    style X color:#333
-    style Y color:#333
+    style X fill:#fde0dd,stroke:#c62828,stroke-width:2px
+    style Y fill:#fde0dd,stroke:#c62828,stroke-width:2px
 ```
 
 For instance, if Alice moves from Firm A to B, and Charles moves from Firm B to C, we can now link all three firms and compare the relative pay premiums of A, B, and C. As long as these chains of moves are sufficiently widespread throughout the economy, the effects for most firms and workers can be identified. In the French dataset analyzed by AKM, over 88% of the labor force was part of this single connected network.
