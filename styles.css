@@ -359,3 +359,23 @@ main {
   font-size: 0.9rem;
   text-align: justify;
 }
+
+/* -----------------------------------------------------
+   9. TABLE OF CONTENTS (SIDEBAR) CUSTOM STYLES
+   ----------------------------------------------------- */
+#quarto-toc .nav-link {
+  color: var(--c-text-primary);  
+  opacity: 0.7;
+}
+
+#quarto-toc .nav-link:hover {
+  color: var(--c-accent-orange);  
+  opacity: 1.0;
+  background-color: var(--c-accent-light);  
+}
+
+#quarto-toc .nav-link.active {
+  color: var(--c-accent-orange) !important;  
+  border-left-color: var(--c-accent-orange);  
+  font-weight: 700;
+}
