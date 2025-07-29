@@ -102,11 +102,11 @@ By observing millions of such moves across different firms, we obtain a vast set
 
 By piecing together these relative differences like a puzzle, we can eventually align the wage premiums ($\psi_j$) of all firms on a common scale. However, this is only possible if worker moves form **one large, connected mobility graph**.
 
-For instance, if Alice moves from Firm A to B, and Charles moves from Firm B to C, we can now link all three firms and compare the relative pay premiums of A, B, and C. As long as these chains of moves are sufficiently widespread throughout the economy, the effects for most firms and workers can be identified. In the French dataset analyzed by AKM, over 88% of the labor force was part of this single connected network.
+For instance, if Alice moves from Firm A to B, and Charles moves from Firm B to C, we can now link all three firms and compare the relative pay premiums of A, B, and C. As long as these chains of moves are sufficiently widespread throughout the economy, the effects for most firms and workers can be identified. In the French dataset analyzed by AKM, over 88.5% of the labor force was part of this single connected network (p.268).
 
 ---
 
-## Estimation Strategy: Solving a Massive Computational Problem
+## Estimation Strategy: Solving a Massive Problem
 
 #### The Computational Challenge
 
@@ -131,7 +131,7 @@ AKM noted that because person effects explain substantially more of the variance
 
 ---
 
-### 4. Key Findings from AKM (1999) and Their Implications
+### Key Findings from AKM (1999) and Their Implications
 
 #### 1. Person Effects Dominate Wage Variation
 
@@ -183,4 +183,4 @@ The AKM model provided a powerful microscope to answer fundamental economic ques
 
 ## Reference
 
-Abowd, J. M., Kramarz, F., & Margolis, D. N. (1999). High Wage Workers and High Wage Firms. *Econometrica*, 67(2), 251–333. [https://doi.org/10.2307/2999566](https://doi.org/10.2307/2999566)
+Abowd, J. M., Kramarz, F., & Margolis, D. N. (1999). High Wage Workers and High Wage Firms. *Econometrica*, 67(2), 251–333.
