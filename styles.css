@@ -359,18 +359,3 @@ main {
   font-size: 0.9rem;
   text-align: justify;
 }
-
-/* -----------------------------------------------------
-   9. TABLE OF CONTENTS (SIDEBAR)  
-   ----------------------------------------------------- */
-#quarto-sidebar-toc .nav-link {
-  color: var(--c-accent-orange) !important; 
-  opacity: 0.8; 
-}
-
-#quarto-sidebar-toc .nav-link.active,
-#quarto-sidebar-toc .nav-link:hover {
-  opacity: 1;  
-  border-left-color: var(--c-accent-orange) !important; 
-  background-color: var(--c-accent-light) !important; 
-}
