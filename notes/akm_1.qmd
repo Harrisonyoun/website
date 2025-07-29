@@ -99,7 +99,7 @@ $$
 
 By observing millions of such moves across different firms, we obtain a vast set of relative firm effect differences, like $(\psi_j - \psi_k)$.
 
-#### The Connected Sets
+#### The Connected Set
 
 By piecing together these relative differences like a puzzle, we can eventually align the wage premiums ($\psi_j$) of all firms on a common scale. However, this is only possible if worker moves form **one large, connected mobility set**.
 
