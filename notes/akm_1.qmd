@@ -51,9 +51,7 @@ With traditional data, such as a cross-sectional survey of workers and firms at 
 Their innovation relied on **matched employer-employee longitudinal data**, allowing them to track millions of workers as they moved across firms over time.
 
 
-### The Econometric Model
-
-### 1. The AKM Econometric Model: Decomposing the Wage Equation
+### The AKM Econometric Model: Decomposing the Wage Equation
 
 The AKM model decomposes a worker's wage into individual characteristics, a person fixed effect, a firm fixed effect, and an error term.
 
@@ -75,7 +73,7 @@ Because this model simultaneously controls for fixed effects at two distinct lev
 
 ---
 
-### 2. The Identification Problem: Is It Skill or a Great Place to Work?
+### Identification Problem: Is It Skill or a Great Place to Work?
 
 We have the model, but how can we possibly distinguish $\theta_i$ from $\psi_j$? This is the **core identification problem**.
 
