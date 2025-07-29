@@ -38,7 +38,7 @@ In their 1999 paper, *High Wage Workers and High Wage Firms*, John Abowd, Franci
 
 Before the AKM framework, separating how much of a person's wage was due to their individual skill versus the firm they worked for was a fundamental and notoriously difficult problem. 
 
-The primary obstacle is positive assortative matching, or the strong tendency for high-skilled workers to be employed at high-paying, highly productive firms. This matching is not random; it is the result of a two-sided search.
+The primary obstacle is positive assortative matching, or the strong tendency for high-skilled workers to be employed at high-paying, highly productive firms. This matching is not random; it is the result of a **two-sided search**.
 
 **Workers seek out the best firms**: Ambitious and talented individuals actively look for companies that offer higher wages, better benefits, and greater opportunities for growth.
 
