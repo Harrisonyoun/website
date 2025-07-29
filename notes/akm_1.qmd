@@ -51,7 +51,7 @@ With traditional data, such as a cross-sectional survey of workers and firms at 
 Their innovation relied on **matched employer-employee longitudinal data**, allowing them to track millions of workers as they moved across firms over time.
 
 
-### The AKM Econometric Model: Decomposing the Wage Equation
+## The AKM Model: Decomposing the Wage Equation
 
 The AKM model decomposes a worker's wage into individual characteristics, a person fixed effect, a firm fixed effect, and an error term.
 
@@ -126,12 +126,13 @@ graph LR
 
     style X fill:#ffebee,stroke:#c62828,stroke-width:2px
     style Y fill:#ffebee,stroke:#c62828,stroke-width:2px
+``` 
 
 For instance, if Alice moves from Firm A to B, and Charles moves from Firm B to C, we can now link all three firms and compare the relative pay premiums of A, B, and C. As long as these chains of moves are sufficiently widespread throughout the economy, the effects for most firms and workers can be identified. In the French dataset analyzed by AKM, over 88% of the labor force was part of this single connected network.
 
 ---
 
-### Estimation Strategy: Solving a Massive Computational Problem
+## Estimation Strategy: Solving a Massive Computational Problem
 
 #### The Computational Challenge
 
