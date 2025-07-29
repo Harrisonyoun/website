@@ -102,32 +102,6 @@ By observing millions of such moves across different firms, we obtain a vast set
 
 By piecing together these relative differences like a puzzle, we can eventually align the wage premiums ($\psi_j$) of all firms on a common scale. However, this is only possible if worker moves form **one large, connected mobility graph**.
 
-```{mermaid}
-%%| fig-cap: "A Connected Graph Formed by Worker Mobility"
-%%| fig-alt: "A diagram showing two distinct networks of worker mobility. The top, isolated set shows movement between Firm X and Y. The bottom, main connected set, shows a chain of moves linking Firm A, B, C, and D."
-graph TD
-    subgraph Isolated Set
-        direction LR
-        X["Firm X"] -->|Eve moves| Y["Firm Y"]
-    end
-
-    subgraph Main Connected Set
-        direction LR
-        A["Firm A"] -->|Alice moves| B["Firm B"]
-        B -->|Bob moves| C{"Firm C"}
-        C -->|Charles moves| D(("Firm D"))
-    end
-
-    %% Styling
-    style A fill:#e3f2fd,stroke:#2980b9,stroke-width:2px
-    style B fill:#e3f2fd,stroke:#2980b9,stroke-width:2px
-    style C fill:#e3f2fd,stroke:#2980b9,stroke-width:2px
-    style D fill:#e3f2fd,stroke:#2980b9,stroke-width:2px
-
-    style X fill:#fde0dd,stroke:#c62828,stroke-width:2px
-    style Y fill:#fde0dd,stroke:#c62828,stroke-width:2px
-```
-
 For instance, if Alice moves from Firm A to B, and Charles moves from Firm B to C, we can now link all three firms and compare the relative pay premiums of A, B, and C. As long as these chains of moves are sufficiently widespread throughout the economy, the effects for most firms and workers can be identified. In the French dataset analyzed by AKM, over 88% of the labor force was part of this single connected network.
 
 ---
