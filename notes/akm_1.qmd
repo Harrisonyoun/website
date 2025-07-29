@@ -2,7 +2,7 @@
 title: "Why Do Two People with the Same Job Earn Different Wages?"
 author: "Harrison Youn"
 date: "2025-07-28"
-description: "Have you ever wondered what truly determines your salary? Is it your unique talent and drive, or is it the company you work for?"
+description: "AKM 1: Have you ever wondered what truly determines your salary? Is it your unique talent and drive, or is it the company you work for?"
 categories: [Labor Economics, Econometrics, Wage Inequality, AKM Model]
 format:
   html:
@@ -10,7 +10,7 @@ format:
     code-fold: true
 ---
 
-## Why the Law of One Price Fails in Labor Markets
+## Why the Law of One Price Fails in Labor Markets?
 
 The **Law of One Price** suggests that in competitive markets, identical goods should command identical prices. By analogy, one might expect that **identical workers with same skills, education, and experience should earn identical wages**, regardless of where they work.
 
