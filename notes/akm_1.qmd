@@ -10,37 +10,48 @@ format:
     code-fold: true
 ---
 
-## Introduction: Why the Law of One Price Fails in Labor Markets
+## Why the Law of One Price Fails in Labor Markets
 
-A canonical principle in economics—the **Law of One Price**—suggests that in competitive markets, identical goods should command identical prices. Applied to labor, this implies that **identical workers should earn identical wages**, regardless of where they work.
+The **Law of One Price** suggests that in competitive markets, identical goods should command identical prices. By analogy, one might expect that **identical workers with same skills, education, and experience should earn identical wages**, regardless of where they work.
 
 But the empirical reality is starkly different. Two equally experienced workers with the same education and job title may earn vastly different wages depending on where they work. Why does the law fail in labor markets?
 
-The failure of wage equalization reveals deeper market frictions:
+The failure of wage equalization reveals market frictions:
 
-- **Incomplete information**: Workers may not know which firms pay more.
-- **Imperfect mobility**: Geographic, social, or institutional constraints limit job switching.
-- **Heterogeneous firms**: Wage-setting varies with productivity, rent-sharing, or HR strategy.
-- **Search and matching frictions**: Not all workers have access to the same jobs.
+- **Incomplete information**: Workers do not observe all job offers or wage distributions.
+- **Limited mobility**: Geography, family ties, or institutional constraints can limit movement.
+- **Firm heterogeneity**: Employers differ in productivity, market power, and rent-sharing norms.
+- **Search and matching frictions**: Job-finding is not instantaneous, and not all workers see the same set of firms.
 
-Thus, we arrive at a core question in labor economics:
+Thus, we arrive at an important question in labor economics:
 
 > **Are wage differences mainly about “who” the worker is, or “where” they work?**
 
-This is not merely an academic distinction. It affects how we understand inequality, returns to education, firm competition, and the design of labor policy.
-
 ---
 
-## The AKM Framework: A Rigorous Answer
+## The AKM Framework
 
-In their 1999 Econometrica paper, *High Wage Workers and High Wage Firms*, John Abowd, Francis Kramarz, and David Margolis (AKM) formalized a method to decompose wages into:
+In their 1999 paper, *High Wage Workers and High Wage Firms*, John Abowd, Francis Kramarz, and David Margolis (hereafter AKM) formalized a method to decompose wages into:
 
 - a **person effect**: what a worker earns across jobs due to their intrinsic attributes
 - a **firm effect**: what a firm pays, regardless of who works there
 
+Before the AKM framework, separating how much of a person's wage was due to their individual skill versus the firm they worked for was a fundamental and notoriously difficult problem. 
+
+The primary obstacle is positive assortative matching, or the strong tendency for high-skilled workers to be employed at high-paying, highly productive firms. This matching is not random; it is the result of a two-sided search.
+
+Workers seek out the best firms: Ambitious and talented individuals actively look for companies that offer higher wages, better benefits, and greater opportunities for growth.
+
+Firms seek out the best workers: The most successful and profitable firms compete to recruit and retain the most skilled and productive talent to maintain their competitive edge.
+
+This non-random sorting creates a major statistical hurdle. If you simply observe that "Firm A" pays higher average wages than "Firm B," you cannot know the true cause. Is Firm A genuinely more generous or productive (a high firm effect), or has it simply managed to hire a more skilled workforce (a concentration of high person effects)?
+
+With traditional data, such as a cross-sectional survey of workers and firms at a single point in time, these two forces are statistically entangled. Any attempt to measure the firm's true pay premium would be contaminated by the unobserved skills of the workers it hired. This is a classic case of omitted variable bias, where "innate worker ability" is the omitted variable that biases the estimate of the firm's effect on wages. Without the ability to track the same worker as they move between different firms, we were largely unable to resolve this puzzle.
+
 Their innovation relied on **matched employer-employee longitudinal data**, allowing them to track millions of workers as they moved across firms over time.
 
-### The Statistical Model
+
+### The Econometric Model
 
 Let:
 
