@@ -2,145 +2,156 @@
 title: "Why Do Two People with the Same Job Earn Different Wages?"
 author: "Harrison Youn"
 date: "2025-07-28"
-description: "Abowd, Kramarz, and Margolis (1999) model decomposes wage structures and why it is fundamental to understanding labor market inequality."
+description: "Have you ever wondered what truly determines your salary? Is it your unique talent and drive, or is it the company you work for?"
 categories: [Labor Economics, Econometrics, Wage Inequality]
+format:
+  html:
+    toc: true
+    code-fold: true
 ---
 
-## Introduction: The People or the Place?
+## Introduction: Why the Law of One Price Fails in Labor Markets
 
-In labor economics, a fundamental question has always been: why do wages differ so much between workers? While observable factors like education and experience explain a part of this variation, a large portion remains a puzzle. For decades, economists debated the source of this remaining inequality. Is it that some people are simply more productive and talented, earning a high wage wherever they go? Or is it that some firms are more generous, productive, or willing to share profits, offering high wages to whomever they employ?
+A canonical principle in economics—the **Law of One Price**—suggests that in competitive markets, identical goods should command identical prices. Applied to labor, this implies that **identical workers should earn identical wages**, regardless of where they work.
 
-This is not just an academic question. The answer shapes our understanding of inequality, labor mobility, and the very nature of compensation. If wages are mostly about "people," then individual skills and human capital are paramount. If they are about the "place," then firm-level policies, industry dynamics, and bargaining power take center stage.
+But the empirical reality is starkly different. Two equally experienced workers with the same education and job title may earn vastly different wages depending on where they work. Why does the law fail in labor markets?
 
-In 1999, John M. Abowd, Francis Kramarz, and David N. Margolis (AKM) published a groundbreaking paper in *Econometrica* titled "High Wage Workers and High Wage Firms" that provided a revolutionary way to answer this question. [cite: 3] Using a massive longitudinal dataset from France that linked over a million workers to their employers over time, they developed a statistical framework to decompose wages into a component attributable to the individual (a "person effect") and a component attributable to the employer (a "firm effect"). [cite: 5, 6]
+The failure of wage equalization reveals deeper market frictions:
 
-This post will serve as a detailed guide to the AKM paper, walking through their statistical model, the challenges of estimating it, and their landmark findings that have shaped the field of labor economics for decades.
+- **Incomplete information**: Workers may not know which firms pay more.
+- **Imperfect mobility**: Geographic, social, or institutional constraints limit job switching.
+- **Heterogeneous firms**: Wage-setting varies with productivity, rent-sharing, or HR strategy.
+- **Search and matching frictions**: Not all workers have access to the same jobs.
 
-## The AKM Model: A Two-Way Street
+Thus, we arrive at a core question in labor economics:
 
-The core of the AKM methodology is a linear statistical model that decomposes the logarithm of a worker's wage into several parts. The central insight is to treat the unobserved, persistent abilities of individuals and the unobserved, persistent pay policies of firms as fixed effects.
+> **Are wage differences mainly about “who” the worker is, or “where” they work?**
 
-### The Governing Equation
+This is not merely an academic distinction. It affects how we understand inequality, returns to education, firm competition, and the design of labor policy.
 
-Let $y_{it}$ be the logarithm of total annual compensation for person $i$ at firm $J(i,t)$ in year $t$. The model proposed by AKM can be expressed as:
+---
 
-$$
-y_{it} = \mathbf{x}_{it}\beta + \theta_i + \psi_{J(i,t)} + \epsilon_{it}
-$$
+## The AKM Framework: A Rigorous Answer
 
-Let's break down each component intuitively:
+In their 1999 Econometrica paper, *High Wage Workers and High Wage Firms*, John Abowd, Francis Kramarz, and David Margolis (AKM) formalized a method to decompose wages into:
 
-* $\mathbf{x}_{it}\beta$: This is the predictable part of wages based on **observable, time-varying characteristics** of the worker. [cite: 89] In the AKM paper, this primarily includes a flexible polynomial in labor force experience and year dummies to capture macroeconomic trends. [cite: 955, 965] The vector $\beta$ contains the returns to these characteristics.
+- a **person effect**: what a worker earns across jobs due to their intrinsic attributes
+- a **firm effect**: what a firm pays, regardless of who works there
 
-* $\theta_i$: This is the **pure person effect**. It represents all of the stable, time-invariant characteristics of worker $i$ that affect their wages, both observable (like education) and unobservable (like innate ability, motivation, or valuable skills). [cite: 90] You can think of $\theta_i$ as the portion of a worker's earning power that they carry with them from job to job. A worker with a high $\theta_i$ is a "high-wage worker." [cite: 37]
+Their innovation relied on **matched employer-employee longitudinal data**, allowing them to track millions of workers as they moved across firms over time.
 
-* $\psi_{J(i,t)}$: This is the **pure firm effect**. It represents the wage premium (or penalty) associated with working at firm $j$ (where $j = J(i,t)$), holding constant all worker characteristics (both $\mathbf{x}_{it}$ and $\theta_i$). [cite: 90] A firm with a high $\psi_j$ is a "high-wage firm"—it pays more than other firms for the *exact same worker*. [cite: 38] This effect could arise from efficiency wages, rent-sharing, better technology, or any other firm-level policy.
+### The Statistical Model
 
-* $\epsilon_{it}$: This is the statistical residual, capturing any remaining wage variation not explained by the model, such as measurement error or transitory wage shocks. [cite: 90]
+Let:
 
-In the paper, the authors further decompose the person effect $\theta_i$ into a part explained by time-invariant observables like education ($u_i\eta$) and a residual unobserved component ($\alpha_i$). [cite: 348, 351] They also allow the firm effect $\psi_j$ to be more complex, including a firm-specific intercept ($\phi_j$) and a firm-specific return to seniority ($\gamma_j$). [cite: 354, 356]
+- \( y_{it} \): log wage of worker \( i \) at time \( t \)
+- \( J(i,t) \): firm employing worker \( i \) at time \( t \)
 
-The full model can be expressed in matrix form as:
+The AKM model:
 
-$$
-\mathbf{y} = \mathbf{X}\beta + \mathbf{D}\theta + \mathbf{F}\psi + \epsilon
-$$
+\[
+y_{it} = \mathbf{x}_{it}\beta + \theta_i + \psi_{J(i,t)} + \varepsilon_{it}
+\]
 
-where $\mathbf{D}$ is a matrix of dummy variables for each person and $\mathbf{F}$ is a matrix of dummy variables for each firm. [cite: 115]
+where:
 
-### The Identification Challenge: Why Worker Mobility is Key
+- \( \mathbf{x}_{it} \): observed, time-varying worker characteristics (e.g., experience)
+- \( \theta_i \): **person fixed effect** (portable across firms)
+- \( \psi_j \): **firm fixed effect** (applies to all workers at firm \( j \))
+- \( \varepsilon_{it} \): residual (transitory shocks, measurement error)
 
-At first glance, this looks like a standard linear regression. However, estimating it presents two major challenges.
+This is a **two-way fixed effects model**, statistically analogous to difference-in-differences, but applied to panel data with crossing entities (people × firms).
 
-1.  **Computational Burden:** The French dataset contained roughly 1 million workers and 500,000 firms. [cite: 5] This means the design matrix includes about 1.5 million columns for the fixed effects alone. Inverting a matrix of this size to solve the least squares problem was computationally infeasible at the time. [cite: 41, 385, 386]
+---
 
-2.  **Statistical Identification:** More fundamentally, how can we possibly separate the person effect from the firm effect? If a worker stays at the same firm for their entire career, it's impossible to know if their high wage is due to their own talent ($\theta_i$) or the firm's generosity ($\psi_j$).
+## Why Identification Is Difficult: Person vs Place
 
-The genius of the AKM approach lies in using **worker mobility** to solve the identification problem. The person and firm effects can be separately identified for the group of workers who move between firms. When a worker $i$ moves from firm $j$ to firm $k$, their person effect $\theta_i$ moves with them. The change in their wage, after accounting for changes in experience, can be attributed to the difference in the firm effects ($\psi_k - \psi_j$).
+Imagine you observe that a worker at Firm A earns more than a worker at Firm B. How do you know if it's because:
 
-By observing millions of such moves, the model can trace out the entire network of firm premiums. The dataset forms a "connected set" where there is a path of mobile workers linking all the firms, allowing for the identification of both person and firm effects for all individuals and firms within that set. [cite: 388, 389] In their sample, 88.5% of individuals contributed to the estimation of firm effects through this network of mobility. [cite: 414, 415]
+- Worker A is more skilled (high \( \theta_i \))
+- Firm A pays more (high \( \psi_j \))
 
-## Estimation Strategies
+If no one ever switches jobs, this distinction is **not identified**. This is the **core identification problem** in wage decomposition.
 
-Given the computational infeasibility of a direct least squares estimation, AKM employed several clever strategies to approximate the solution.
+### The Solution: Worker Mobility
 
-#### 1. Consistent Estimation
-The authors first show that some parameters, like the returns to experience ($\beta$) and the firm-specific slope of seniority ($\gamma_j$), can be estimated consistently by taking first-differences for workers *within the same firm*. [cite: 422, 423] This "within-firm, within-person" difference eliminates both the person effect $\theta_i$ and the firm-specific intercept $\phi_j$, isolating the time-varying components. [cite: 424-427] While this method is robust, it cannot identify the firm intercept or the person effect, which are the main objects of interest. [cite: 458]
+AKM's breakthrough was to exploit **worker mobility**:
 
-#### 2. Conditional Methods
-To estimate all parameters, AKM developed "conditional" methods that approximate the full least squares solution. The main idea is to impose certain orthogonality conditions to make the problem computationally tractable. [cite: 462, 463] They discuss two main variants:
+- When a worker switches from Firm A to Firm B, we observe how their wage changes.
+- Since \( \theta_i \) is fixed, the change is attributable to \( \psi_B - \psi_A \).
 
-* **Order-Dependent ("Persons First"):** This became their preferred method for its strong empirical performance. [cite: 1197] It works in two steps:
-    1.  **Step 1:** First, account for all person-level effects. Regress wages on the full set of person dummies ($\mathbf{D}$) and time-varying controls ($\mathbf{X}$). The estimated person effects ($\hat{\theta}_i$) capture a worker's average wage across all their jobs, purged of experience effects. [cite: 572]
-    2.  **Step 2:** Take the residuals from the first step. These residuals represent the component of wages that varies *within* a person's career as they move between firms. Then, regress these residuals on the set of firm dummies ($\mathbf{F}$) to estimate the firm effects ($\hat{\psi}_j$). [cite: 574, 584]
+By tracking millions of such moves, AKM recover relative firm effects—**so long as the data form a connected mobility graph**.
 
-* **Order-Independent:** This method estimates the person effects and firm effects in separate, parallel steps, imposing statistical assumptions that render the order irrelevant. [cite: 500, 501] While theoretically appealing, AKM's diagnostic tests showed that the firm effects from this method were less reliable than the "persons first" approach. [cite: 1088]
+In their French dataset, over 88% of the labor force participated in this mobility network, making identification of both \( \theta_i \) and \( \psi_j \) possible for most of the economy.
 
-AKM's key finding from comparing methods was that any approach estimating **person effects first** performed better than methods that estimated firm effects first. [cite: 60] This is because person effects explain a much larger share of the wage variance, so accounting for them first provides a more accurate foundation for estimating the smaller firm effects.
+---
 
-## The Landmark Findings
+## Estimation Strategy: Scaling Two-Way Fixed Effects
 
-The results from the AKM decomposition were transformative. They provided clear, quantitative answers to long-standing questions in labor economics.
+### Computational Challenge
 
-#### Finding 1: People Matter More Than the Place
-The most striking result is the overwhelming importance of person effects. AKM found that individual heterogeneity ($\theta_i$) is the dominant source of wage variation in France. [cite: 8, 1196]
+The AKM model requires estimating fixed effects for ~1 million individuals and ~500,000 firms. Ordinary least squares is computationally infeasible.
 
-* The standard deviation of person effects was substantially larger than the standard deviation of firm effects. [cite: 9, 1106]
-* Person effects, particularly the unobservable component ($\alpha_i$), are the single component most highly correlated with an individual's total compensation. [cite: 1186]
-* Crucially, the correlation between the person effect and the firm effect was positive but small (between 0.08 and 0.15 depending on the method). [cite: 1187, 1188] This indicates that there is only weak sorting of high-wage workers into high-wage firms.
+### Estimation by Residualization (Person-First Method)
 
-#### Finding 2: The Inter-Industry Wage Differential is a "People" Story
-Economists had long observed that some industries (e.g., manufacturing, mining) consistently pay higher wages than others (e.g., retail, services), even after controlling for observable worker characteristics. The AKM framework allowed them to decompose this industry premium.
+Their preferred strategy proceeds in two steps:
 
-Their finding was unambiguous: **about 90% of inter-industry wage differentials are explained by person effects.** [cite: 13, 63] It's not that the oil industry is inherently generous; it's that the oil industry hires workers who would have earned high wages no matter where they worked. The "firm effect" component of industry wages was negligible. [cite: 64, 1218] This result largely settled the debate in favor of the view that industry premiums reflect the sorting of workers with different skills across sectors.
+1. **Regress wages on \( \mathbf{x}_{it} \) and person dummies** to estimate \( \hat{\theta}_i \).
+2. **Regress the residuals** on firm dummies to estimate \( \hat{\psi}_j \).
 
-```{r, echo=FALSE, fig.cap="AKM Figure 1 & 2: The industry-average person effect (left) almost perfectly predicts the raw industry wage effect, while the industry-average firm effect (right) shows almost no relationship. [cite: 1220-1223, 1245, 1264]"}
-# This is a placeholder for the image. In a real blog, you would save the images
-# from the PDF and link to them here.
-knitr::include_graphics(c("path/to/figure1.png", "path/to/figure2.png"))
-(Note: To display the figures, you would need to save them from the PDF and replace the placeholder path.)
+This method works well because **person effects explain more variance than firm effects**, so controlling for them first improves precision.
 
-Finding 3: The Firm-Size Premium is Also Mostly About People
-A similar puzzle was the "firm-size wage effect": larger firms pay higher wages. Again, AKM found that this is primarily a story of worker sorting.
+---
 
+## Key Findings from AKM (1999)
 
-Roughly 75% of the firm-size wage effect is due to the fact that large firms hire high-wage workers (workers with high 
-theta_i).  The actual firm-level premium paid by large firms, holding worker quality constant, is much smaller. As shown in their iconic Figure 3, the average person effect tracks the raw size effect almost perfectly, while the average firm effect follows a much flatter, non-monotonic pattern. 
+### 1. Person Effects Dominate Wage Variation
 
+- The standard deviation of person effects is **substantially larger** than that of firm effects.
+- **Most of the wage inequality** comes from differences in \( \theta_i \), not \( \psi_j \).
 
+> Implication: Inequality in wages primarily reflects differences in worker productivity, skill, or other portable traits.
 
+### 2. Industry Wage Differentials Are Not About Firms
 
-Finding 4: Firm Pay Policies, Productivity, and Profits
-Finally, AKM linked their estimated effects to firm-level performance measures like productivity and profitability. Their results provided nuanced support for modern compensation theories.
+AKM show that **inter-industry wage gaps** mostly reflect **sorting**:
 
+- Workers in high-paying industries would earn high wages anywhere.
+- Only ~10% of the gap is due to firm-level pay premiums.
 
-Hiring High-Wage Workers (High 
-theta_i): Firms that hire workers with high person effects are more productive (higher value-added per worker), but they are not more profitable.  This makes perfect economic sense: these firms are getting high-quality labor, but the competitive market forces them to pay for that talent, so it doesn't translate into higher profits.
+> The oil industry doesn’t pay more because it’s generous, but because it hires high-ability workers.
 
+### 3. The Firm-Size Wage Premium is Mostly Sorting
 
+Larger firms pay more—but mostly because they **hire better workers**:
 
+- ~75% of the firm-size wage gap is explained by person effects.
+- The actual firm premium (net of sorting) is small and non-monotonic.
 
+> This challenges simple monopsony or institutional explanations of the size-wage premium.
 
+### 4. High-Wage Firms Are More Productive and Profitable
 
-Being a High-Wage Firm (High 
-psi_j): Firms that pay wages above and beyond their workers' portable earning power are both more productive and more profitable.  This is a key piece of evidence. It suggests that paying a premium (a high 
+- Firms with high \( \psi_j \) (pay more than worker’s market value) are **more productive and profitable**.
+- This supports **rent-sharing** and **efficiency wage** theories.
 
+> Paying above-market wages is not just charity—it is a strategy that correlates with firm performance.
 
+---
 
+## Legacy and Extensions
 
+The AKM decomposition has become foundational in:
 
-psi_j) is a deliberate, profitable strategy, consistent with theories of efficiency wages (where high pay boosts morale and effort) or rent-sharing (where firms with market power share their excess profits with workers).
+- Gender wage gap research
+- Studies of rent-sharing and labor market power
+- Analysis of trade shocks and firm-worker sorting
+- Inequality dynamics and occupational mobility
 
-Conclusion and Legacy
-The Abowd, Kramarz, and Margolis (1999) paper is a landmark in economics because it provided a credible and powerful methodology for disentangling the effects of workers and firms on wages. Its conclusions have reshaped our understanding of wage determination:
+By clearly separating the **“who you are”** from **“where you work”**, AKM transformed the empirical study of wage determination.
 
-Individual heterogeneity is the primary driver of wage inequality. Who you are matters more than where you work.
+---
 
-Sorting is key. Long-observed premiums for working in certain industries or large firms are largely due to the systematic sorting of more skilled workers into those jobs.
+## Reference
 
-Firm pay policies are real and have consequences. While smaller in magnitude, firm effects exist and are systematically related to firm performance, providing strong evidence for efficiency wage and rent-sharing models.
-
-The "AKM decomposition" has become a standard tool in the economist's toolkit, used to study everything from the gender pay gap to the impact of international trade. By providing a way to separate the people from the place, AKM gave us a much clearer lens through which to view the complex world of the labor market.
-
-References
-Abowd, J. M., Kramarz, F., & Margolis, D. N. (1999). High Wage Workers and High Wage Firms. Econometrica, 67(2), 251–333. 
+Abowd, J. M., Kramarz, F., & Margolis, D. N. (1999). High Wage Workers and High Wage Firms. *Econometrica*, 67(2), 251–333. [https://doi.org/10.2307/2999566](https://doi.org/10.2307/2999566)

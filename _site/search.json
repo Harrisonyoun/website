@@ -130,14 +130,14 @@
     "href": "notes.html",
     "title": "Notes",
     "section": "",
-    "text": "Why Do Two People with the Same Job Earn Different Wages?\n\n\nAbowd, Kramarz, and Margolis (1999) model decomposes wage structures and why it is fundamental to understanding labor market inequality.\n\n\n\n\n\nJul 28, 2025\n\n\nHarrison Youn\n\n\n\n\n\nNo matching items\n Back to top"
+    "text": "Why Do Two People with the Same Job Earn Different Wages?\n\n\nHave you ever wondered what truly determines your salary? Is it your unique talent and drive, or is it the company you work for?\n\n\n\n\n\nJul 28, 2025\n\n\nHarrison Youn\n\n\n\n\n\nNo matching items\n Back to top"
   },
   {
     "objectID": "notes/akm_1.html",
     "href": "notes/akm_1.html",
-    "title": "Understanding the Abowd, Kramarz, and Margolis (AKM) Model",
+    "title": "Why Do Two People with the Same Job Earn Different Wages?",
     "section": "",
-    "text": "The Abowd, Kramarz, and Margolis (1999) model is a cornerstone of modern labor economics. It decomposes wage variation into components attributable to worker heterogeneity and firm heterogeneity. This note provides a brief theoretical overview and a guide to its implementation."
+    "text": "A canonical principle in economics—the Law of One Price—suggests that in competitive markets, identical goods should command identical prices. Applied to labor, this implies that identical workers should earn identical wages, regardless of where they work.\nBut the empirical reality is starkly different. Two equally experienced workers with the same education and job title may earn vastly different wages depending on where they work. Why does the law fail in labor markets?\nThe failure of wage equalization reveals deeper market frictions:\n\nIncomplete information: Workers may not know which firms pay more.\nImperfect mobility: Geographic, social, or institutional constraints limit job switching.\nHeterogeneous firms: Wage-setting varies with productivity, rent-sharing, or HR strategy.\nSearch and matching frictions: Not all workers have access to the same jobs.\n\nThus, we arrive at a core question in labor economics:\n\nAre wage differences mainly about “who” the worker is, or “where” they work?\n\nThis is not merely an academic distinction. It affects how we understand inequality, returns to education, firm competition, and the design of labor policy."
   },
   {
     "objectID": "notes/akm_1.html#introduction",
@@ -222,5 +222,54 @@
     "title": "Why Do Two People with the Same Job Earn Different Wages?",
     "section": "The Landmark Findings",
     "text": "The Landmark Findings\nThe results from the AKM decomposition were transformative. They provided clear, quantitative answers to long-standing questions in labor economics.\n\nFinding 1: People Matter More Than the Place\nThe most striking result is the overwhelming importance of person effects. AKM found that individual heterogeneity (\\(\\theta_i\\)) is the dominant source of wage variation in France. [cite: 8, 1196]\n\nThe standard deviation of person effects was substantially larger than the standard deviation of firm effects. [cite: 9, 1106]\nPerson effects, particularly the unobservable component (\\(\\alpha_i\\)), are the single component most highly correlated with an individual’s total compensation. [cite: 1186]\nCrucially, the correlation between the person effect and the firm effect was positive but small (between 0.08 and 0.15 depending on the method). [cite: 1187, 1188] This indicates that there is only weak sorting of high-wage workers into high-wage firms.\n\n\n\nFinding 2: The Inter-Industry Wage Differential is a “People” Story\nEconomists had long observed that some industries (e.g., manufacturing, mining) consistently pay higher wages than others (e.g., retail, services), even after controlling for observable worker characteristics. The AKM framework allowed them to decompose this industry premium.\nTheir finding was unambiguous: about 90% of inter-industry wage differentials are explained by person effects. [cite: 13, 63] It’s not that the oil industry is inherently generous; it’s that the oil industry hires workers who would have earned high wages no matter where they worked. The “firm effect” component of industry wages was negligible. [cite: 64, 1218] This result largely settled the debate in favor of the view that industry premiums reflect the sorting of workers with different skills across sectors."
+  },
+  {
+    "objectID": "notes/akm_1.html#introduction-why-the-law-of-one-price-fails-in-labor-markets",
+    "href": "notes/akm_1.html#introduction-why-the-law-of-one-price-fails-in-labor-markets",
+    "title": "Why Do Two People with the Same Job Earn Different Wages?",
+    "section": "",
+    "text": "A canonical principle in economics—the Law of One Price—suggests that in competitive markets, identical goods should command identical prices. Applied to labor, this implies that identical workers should earn identical wages, regardless of where they work.\nBut the empirical reality is starkly different. Two equally experienced workers with the same education and job title may earn vastly different wages depending on where they work. Why does the law fail in labor markets?\nThe failure of wage equalization reveals deeper market frictions:\n\nIncomplete information: Workers may not know which firms pay more.\nImperfect mobility: Geographic, social, or institutional constraints limit job switching.\nHeterogeneous firms: Wage-setting varies with productivity, rent-sharing, or HR strategy.\nSearch and matching frictions: Not all workers have access to the same jobs.\n\nThus, we arrive at a core question in labor economics:\n\nAre wage differences mainly about “who” the worker is, or “where” they work?\n\nThis is not merely an academic distinction. It affects how we understand inequality, returns to education, firm competition, and the design of labor policy."
+  },
+  {
+    "objectID": "notes/akm_1.html#the-akm-framework-a-rigorous-answer",
+    "href": "notes/akm_1.html#the-akm-framework-a-rigorous-answer",
+    "title": "Why Do Two People with the Same Job Earn Different Wages?",
+    "section": "The AKM Framework: A Rigorous Answer",
+    "text": "The AKM Framework: A Rigorous Answer\nIn their 1999 Econometrica paper, High Wage Workers and High Wage Firms, John Abowd, Francis Kramarz, and David Margolis (AKM) formalized a method to decompose wages into:\n\na person effect: what a worker earns across jobs due to their intrinsic attributes\na firm effect: what a firm pays, regardless of who works there\n\nTheir innovation relied on matched employer-employee longitudinal data, allowing them to track millions of workers as they moved across firms over time.\n\nThe Statistical Model\nLet:\n\n( y_{it} ): log wage of worker ( i ) at time ( t )\n( J(i,t) ): firm employing worker ( i ) at time ( t )\n\nThe AKM model:\n[ y_{it} = {it}+ i + {J(i,t)} + {it} ]\nwhere:\n\n( _{it} ): observed, time-varying worker characteristics (e.g., experience)\n( _i ): person fixed effect (portable across firms)\n( _j ): firm fixed effect (applies to all workers at firm ( j ))\n( _{it} ): residual (transitory shocks, measurement error)\n\nThis is a two-way fixed effects model, statistically analogous to difference-in-differences, but applied to panel data with crossing entities (people × firms)."
+  },
+  {
+    "objectID": "notes/akm_1.html#why-identification-is-difficult-person-vs-place",
+    "href": "notes/akm_1.html#why-identification-is-difficult-person-vs-place",
+    "title": "Why Do Two People with the Same Job Earn Different Wages?",
+    "section": "Why Identification Is Difficult: Person vs Place",
+    "text": "Why Identification Is Difficult: Person vs Place\nImagine you observe that a worker at Firm A earns more than a worker at Firm B. How do you know if it’s because:\n\nWorker A is more skilled (high ( _i ))\nFirm A pays more (high ( _j ))\n\nIf no one ever switches jobs, this distinction is not identified. This is the core identification problem in wage decomposition.\n\nThe Solution: Worker Mobility\nAKM’s breakthrough was to exploit worker mobility:\n\nWhen a worker switches from Firm A to Firm B, we observe how their wage changes.\nSince ( _i ) is fixed, the change is attributable to ( _B - _A ).\n\nBy tracking millions of such moves, AKM recover relative firm effects—so long as the data form a connected mobility graph.\nIn their French dataset, over 88% of the labor force participated in this mobility network, making identification of both ( _i ) and ( _j ) possible for most of the economy."
+  },
+  {
+    "objectID": "notes/akm_1.html#estimation-strategy-scaling-two-way-fixed-effects",
+    "href": "notes/akm_1.html#estimation-strategy-scaling-two-way-fixed-effects",
+    "title": "Why Do Two People with the Same Job Earn Different Wages?",
+    "section": "Estimation Strategy: Scaling Two-Way Fixed Effects",
+    "text": "Estimation Strategy: Scaling Two-Way Fixed Effects\n\nComputational Challenge\nThe AKM model requires estimating fixed effects for ~1 million individuals and ~500,000 firms. Ordinary least squares is computationally infeasible.\n\n\nEstimation by Residualization (Person-First Method)\nTheir preferred strategy proceeds in two steps:\n\n**Regress wages on ( _{it} ) and person dummies** to estimate ( _i ).\nRegress the residuals on firm dummies to estimate ( _j ).\n\nThis method works well because person effects explain more variance than firm effects, so controlling for them first improves precision."
+  },
+  {
+    "objectID": "notes/akm_1.html#key-findings-from-akm-1999",
+    "href": "notes/akm_1.html#key-findings-from-akm-1999",
+    "title": "Why Do Two People with the Same Job Earn Different Wages?",
+    "section": "Key Findings from AKM (1999)",
+    "text": "Key Findings from AKM (1999)\n\n1. Person Effects Dominate Wage Variation\n\nThe standard deviation of person effects is substantially larger than that of firm effects.\nMost of the wage inequality comes from differences in ( _i ), not ( _j ).\n\n\nImplication: Inequality in wages primarily reflects differences in worker productivity, skill, or other portable traits.\n\n\n\n2. Industry Wage Differentials Are Not About Firms\nAKM show that inter-industry wage gaps mostly reflect sorting:\n\nWorkers in high-paying industries would earn high wages anywhere.\nOnly ~10% of the gap is due to firm-level pay premiums.\n\n\nThe oil industry doesn’t pay more because it’s generous, but because it hires high-ability workers.\n\n\n\n3. The Firm-Size Wage Premium is Mostly Sorting\nLarger firms pay more—but mostly because they hire better workers:\n\n~75% of the firm-size wage gap is explained by person effects.\nThe actual firm premium (net of sorting) is small and non-monotonic.\n\n\nThis challenges simple monopsony or institutional explanations of the size-wage premium.\n\n\n\n4. High-Wage Firms Are More Productive and Profitable\n\nFirms with high ( _j ) (pay more than worker’s market value) are more productive and profitable.\nThis supports rent-sharing and efficiency wage theories.\n\n\nPaying above-market wages is not just charity—it is a strategy that correlates with firm performance."
+  },
+  {
+    "objectID": "notes/akm_1.html#legacy-and-extensions",
+    "href": "notes/akm_1.html#legacy-and-extensions",
+    "title": "Why Do Two People with the Same Job Earn Different Wages?",
+    "section": "Legacy and Extensions",
+    "text": "Legacy and Extensions\nThe AKM decomposition has become foundational in:\n\nGender wage gap research\nStudies of rent-sharing and labor market power\nAnalysis of trade shocks and firm-worker sorting\nInequality dynamics and occupational mobility\n\nBy clearly separating the “who you are” from “where you work”, AKM transformed the empirical study of wage determination."
+  },
+  {
+    "objectID": "notes/akm_1.html#reference",
+    "href": "notes/akm_1.html#reference",
+    "title": "Why Do Two People with the Same Job Earn Different Wages?",
+    "section": "Reference",
+    "text": "Reference\nAbowd, J. M., Kramarz, F., & Margolis, D. N. (1999). High Wage Workers and High Wage Firms. Econometrica, 67(2), 251–333. https://doi.org/10.2307/2999566"
   }
 ]
