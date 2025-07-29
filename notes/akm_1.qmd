@@ -170,7 +170,9 @@ Firms with high firm effects ($\psi_j$), those that pay workers more than their 
 
 ## Conclusion: The Legacy of the AKM Model
 
-By cleanly separating **"who you are"** from **"where you work,"** the AKM model revolutionized the empirical study of wage determination. The framework has become a foundational tool in countless subsequent studies.
+Unfortunately, some of AKM’s early empirical findings were later shown to be influenced by approximation errors in solving the high-dimensional least squares problem, as highlighted in follow-up studies (Abowd, Creecy, and Kramarz 2002; Abowd, Lengermann, and McKinney 2003). 
+
+Nevertheless, by cleanly separating **"who you are"** from **"where you work,"** the AKM model revolutionized the empirical study of wage determination. The framework has become a foundational tool in countless subsequent studies.
 
 - **Gender Wage Gap Research**: Used to decompose the gap into differences in sorting (men and women working in different types of firms) versus differences in pay within the same firm.
 - **Labor Market Power**: Used to measure the extent of rent-sharing and analyze how the bargaining power between firms and workers has evolved.
@@ -180,8 +182,6 @@ By cleanly separating **"who you are"** from **"where you work,"** the AKM model
 The AKM model provided a powerful microscope to answer fundamental economic questions with complex labor market data, and it remains one of the most important tools in labor economics today.
 
 More broadly, AKM marked a turning point in labor economics by treating worker and firm fixed effects not as nuisance parameters but as core parameters of interest. This shift led to the widespread adoption of high-dimensional fixed effects regressions in matched employer-employee data. Rather than relying solely on firm observables like size or sector, economists began using large-scale administrative data to identify which firms systematically pay more or less, and then relate these patterns to observables in a second step.
-
-Some of AKM’s early empirical findings were later shown to be influenced by approximation errors in solving the high-dimensional least squares problem, as highlighted in follow-up studies (Abowd, Creecy, and Kramarz 2002; Abowd, Lengermann, and McKinney 2003).
 
 
 ---
