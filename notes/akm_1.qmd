@@ -160,7 +160,7 @@ It is well-known that large firms tend to pay more than small firms. AKM reveale
 
 #### 4. High-Paying Firms Are Genuinely More Productive
 
-Firms with high firm effects ($\psi_j$)—those that pay workers more than their estimated market value—also tend to be **more productive and more profitable**.
+Firms with high firm effects ($\psi_j$), those that pay workers more than their estimated market value, also tend to be **more productive and more profitable**.
 
 -   This finding provides strong support for **efficiency wage** theories (where firms pay above-market wages to motivate workers and reduce turnover) and **rent-sharing** theories (where firms share their excess profits, or "rents," with their employees).
 
@@ -179,7 +179,7 @@ By cleanly separating **"who you are"** from **"where you work,"** the AKM model
 
 The AKM model provided a powerful microscope to answer fundamental economic questions with complex labor market data, and it remains one of the most important tools in labor economics today.
 
-More broadly, AKM marked a turning point in labor economics by treating worker and firm fixed effects not as nuisances but as core quantities of interest. This shift led to the widespread adoption of high-dimensional fixed effects regressions in matched employer-employee data. Rather than relying solely on firm observables like size or sector, economists began using large-scale administrative data to identify which firms systematically pay more or less, and then relate these patterns to observables in a second step.
+More broadly, AKM marked a turning point in labor economics by treating worker and firm fixed effects not as nuisance parameters but as core parameters of interest. This shift led to the widespread adoption of high-dimensional fixed effects regressions in matched employer-employee data. Rather than relying solely on firm observables like size or sector, economists began using large-scale administrative data to identify which firms systematically pay more or less, and then relate these patterns to observables in a second step.
 
 Some of AKM’s early empirical findings were later shown to be influenced by approximation errors in solving the high-dimensional least squares problem, as highlighted in follow-up studies (Abowd, Creecy, and Kramarz 2002; Abowd, Lengermann, and McKinney 2003).
 
