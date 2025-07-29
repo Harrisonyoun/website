@@ -1,0 +1,34 @@
+---
+title: "Understanding the Abowd, Kramarz, and Margolis (AKM) Model"
+author: "Harrison Youn"
+date: "2025-07-28"
+description: "A theoretical overview and practical implementation of the AKM two-way fixed effects model for labor economics."
+categories: [Labor Economics, Econometrics]
+image: "assets/akm_image.png" 
+---
+
+## Introduction
+
+The Abowd, Kramarz, and Margolis (1999) model is a cornerstone of modern labor economics. It decomposes wage variation into components attributable to worker heterogeneity and firm heterogeneity. This note provides a brief theoretical overview and a guide to its implementation.
+
+## Theoretical Framework
+
+The canonical AKM model can be expressed as:
+
+$$
+y_{it} = \alpha_i + \psi_{j(i,t)} + X'_{it}\beta + \epsilon_{it}
+$$
+
+Where:
+- $y_{it}$ is the log wage for worker $i$ at time $t$.
+- $\alpha_i$ is a person-specific effect (worker fixed effect).
+- $\psi_{j(i,t)}$ is a firm-specific effect for firm $j$ where worker $i$ is employed at time $t$.
+- $X'_{it}$ is a vector of time-varying covariates.
+- $\epsilon_{it}$ is the error term.
+
+The key insight is that by observing workers moving between firms, we can separately identify the wage premium associated with individual skills ($\alpha_i$) and firm-specific pay policies ($\psi_j$).
+
+## Practical Implementation
+
+Here is a simple example of how to estimate the model in R. First, you'll need a panel dataset with worker and firm identifiers.
+ 
