@@ -1,5 +1,6 @@
 ---
-title: "Research"
+# title: "Research"  
+class: research-page
 ---
 
 
