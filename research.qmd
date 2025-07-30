@@ -2,11 +2,10 @@
 title: "Research"
 ---
 
-# Research
 
 ## Publications
 
-Fong and **Youn** (2023). [Assessing patterns and stability of ADL hierarchical scales for functional disability assessment.](https://academic.oup.com/gerontologist/article/63/4/773/6571520) In *The Gerontologist (Oxford University Press)*.
+- Fong and **Youn** (2023). [Assessing patterns and stability of ADL hierarchical scales for functional disability assessment.](https://academic.oup.com/gerontologist/article/63/4/773/6571520) In *The Gerontologist (Oxford University Press)*.
 <br>
 <button class="abstract-button">abstract</button>
 <div class="abstract-content">
@@ -26,14 +25,14 @@ Fong and **Youn** (2023). [Assessing patterns and stability of ADL hierarchical 
 
 ## Working Papers
 
-“Labor Market Responses to Health Insurance Decoupling"
+- “Labor Market Responses to Health Insurance Decoupling"
 <br>
 <button class="abstract-button">abstract</button>
 <div class="abstract-content">
   <p>In this paper, I examine the labor market responses when employer sponsored health insurance, the single largest U.S. health insurance covering 165 million Americans, is decoupled from the U.S. labor market. This systematic decoupling creates spillovers and labor market distortions through feedback loop and reallocate the incentive structures of broader U.S. workforce. I both theoretically and empirically examine the mechanisms. I find employment elasticity responses aligned with the incentive bindings at the margins. My results carry direct implications for U.S. health insurance policy, which currently spend 24% of the federal budget.</p>
 </div>
 
-“Intergenerational Dilemma: Balancing Windfalls and Burdens of Public Transfers"
+- “Intergenerational Dilemma: Balancing Windfalls and Burdens of Public Transfers"
 <br>
 <button class="abstract-button">abstract</button>
 <div class="abstract-content">
@@ -45,7 +44,7 @@ Fong and **Youn** (2023). [Assessing patterns and stability of ADL hierarchical 
 
 ## Work in Progress
 
-“Killing Me Softly With Dinner: The Costs of Circadian Misalignment”
+- “Killing Me Softly With Dinner: The Costs of Circadian Misalignment”
 
 
 <script>
