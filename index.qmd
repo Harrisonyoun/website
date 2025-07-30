@@ -17,11 +17,11 @@ The Ohio State University
 :::
 
 <div class="contact-simple">
-I research **Labor Economics**, **Health Economics**, and **Economics of Science and Innovation**. 
+My research focuses on **Labor Economics**, **Health Economics**, and **Economics of AI, Science, and Innovation**.
 
-In my work, I combine **data** and **causal inference** to answer my questions. I am particularly interested in **how the labor market and healthcare system interact**, how these interactions reshape **incentives**, drive employer and employee **behavior**, and **redistribute** market frictions, benefits, and costs.
+In my work, I combine **data** and **causal inference** to answer my questions. I am interested in **how the labor market and healthcare system interact**, how these interactions reshape **incentives**, drive employer and employee **behavior**, and **redistribute** market frictions, benefits, and costs.
 
-I also study how **scientific knowledge spillover** and **innovation** shape **human capital formation** and **labor market outcomes**.
+I am also interested in how **artificial intelligence (AI) and scientific knowledge spillover** shape **human capital formation** and **labor market outcomes**.
 
 Previously, I served as a research associate at the <br>**National University of Singapore (NUS)** for two years.
 </div>
