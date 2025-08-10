@@ -38,7 +38,7 @@ format:
       - styles.css
 
     canonical: true
-    pagetitle: "{{< meta title >}} | Harrison's Website"
+    pagetitle: "{{< meta title >}} | Harrison Youn's Website"
 
     include-in-header:
       - text: |
