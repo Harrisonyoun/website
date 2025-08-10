@@ -1,5 +1,5 @@
 ---
-title: "Harrison Youn's Website"
+title: "Harrison Yongjoon Youn"
 ---
 
 ::: {#hero-heading}
