@@ -43,7 +43,7 @@ An even more fundamental problem arises if sorting is perfect.
 
 **Connected Sets:** For AKM to statistically separate $\alpha_i$ from $\psi_j$, it needs to observe the same worker $i$ at different firms, say $j$ and $k$. The wage change upon moving, $w_{ik} - w_{ij}$, allows the model to estimate the firm premium difference, $\psi_k - \psi_j$, since the worker's own effect $\alpha_i$ is held constant. The network of firms linked by these 'mover' workers is called a **connected set**.
 
-> **Analogy: The Mystery of the Isolated Islands** 🏝️
+> **Analogy: The Mystery of the Isolated Islands** 
 >
 > Imagine the labor market consists of two isolated islands: 'High-Tech Island' and 'Factory Island.' High-tech workers only work on their island, and manufacturing workers only work on theirs. **No ferry runs between them.** We observe that wages are much higher on High-Tech Island. But we have no way of knowing if this is because the **people ($\alpha_i$)** on High-Tech Island are brilliant or because the **environment ($\psi_j$)** of the island itself is productive. The two effects are perfectly confounded. If just one person were to take a ferry and work on the other island, they would provide a crucial reference point, a 'control' subject to solve the mystery.
 >
