@@ -2,7 +2,7 @@ project:
   type: website
 
 website:
-  title: "Personal Website"
+  title: "Harrison Youn"
   site-url: https://www.harrisonyoun.com
   description: "Economics PhD Candidate at the Ohio State University"
   page-navigation: true
@@ -30,7 +30,7 @@ website:
 format:
   html:
     canonical: true
-    pagetitle: "{{< meta title >}} | Harrison Yongjoon Youn"
+    pagetitle: "{{< meta title >}} | Personal Website"
     theme: sandstone
     toc: false
     code-copy: true

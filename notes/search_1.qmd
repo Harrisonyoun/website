@@ -1,16 +1,16 @@
 ---
 title: "Who Works Where?"
-author: 'Harrison Youn<br><span style="font-size: 0.8em; color: #6c757d;">Search Theory 1</span>'
+author: 'Harrison Youn<br><span style="font-size: 0.8em; color: #6c757d;">Search and Matching 1</span>'
 date: "2025-08-04"
 description: "Why do the best workers end up at the best firms?"
-categories: [Labor Economics, Matching Theory, Wage Inequality, AKM Model, Search Theory]
+categories: [Labor Economics, Search and Matching Theory, Wage Inequality, AKM Model]
 format:
   html:
     toc: true
     code-fold: true
 ---
 
-Assortative matching refers to how workers and firms pair based on their characteristics, such as skill and productivity. This note builds on the AKM model of wages by examining matching models where worker–firm pairings and wage outcomes are endogenously determined. We cover frictionless matching with transferable utility (the classic Becker assignment model) and then introduce search frictions via the Shimer–Smith (2000) model. Throughout, we formalize conditions for positive assortative matching (PAM) vs. negative assortative matching (NAM), derive key results, and connect the theory to empirical strategies for measuring sorting and complementarities. All mathematics are given in LaTeX form, and references use citation keys for further reading by professional economists.
+Assortative matching refers to how workers and firms pair based on their characteristics, such as skill and productivity. 
 
 ## Frictionless Matching with Transferable Utility
 
