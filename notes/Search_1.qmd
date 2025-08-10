@@ -1,9 +1,10 @@
 ---
 title: "Why Do Two People with the Same Job Earn Different Wages?"
-author: 'Harrison Youn<br><span style="font-size: 0.8em; color: #6c757d;">AKM 1</span>'
-date: "2025-07-28"
+author: 'Harrison Youn<br><span style="font-size: 0.8em; color: #6c757d;">AKM 2</span>'
+date: "2025-08-10"
 description: "Have you ever wondered what truly determines your salary? Is it your unique talent and drive, or is it the company you work for?"
 categories: [Labor Economics, Econometrics, Wage Inequality, AKM Model]
+bibliography: references.bib 
 format:
   html:
     toc: true
@@ -96,7 +97,7 @@ With supermodularity, a higher type partner is especially valuable to a high-typ
 #### Equilibrium Wages under Assortative Matching
 In a frictionless competitive matching, wages are determined by productivity and the no-blocking condition. Although the output splits $(U(x),V(y))$ are not uniquely pinned down without additional assumptions (any split that leaves no pair with positive surplus will do), equilibrium wages typically reflect an ordering consistent with assortative matching:
 
-- **Under PAM**, higher worker types earn weakly higher wages and higher firm types pay higher wages (to comparable workers). Intuitively, when high-$x$ meets high-$y$, their joint surplus is large, and competition ensures each gets a high payoff. In fact, in the sorted equilibrium, both $U(x)$ and $V(y)$ will be increasing in $x$ and $y$ respectively. A higher firm type $y$ must pay more to attract a given worker $x$ away from a lower-type firm, and a higher-$x$ worker commands a higher wage at any firm. Monotonicity: If $x_2>x_1$, then $U(x_2)\ge U(x_1)$; if $y_2>y_1$, then the wage paid to any given worker (or type quantile) is higher at $y_2$ than $y_1$.
+- **Under PAM**, higher worker types earn weakly higher wages and higher firm types pay higher wages (to comparable workers). Intuitively, when high-$x$ meets high-$y$, their joint surplus is large, and competition ensures each gets a high payoff. In fact, in the sorted equilibrium, both $U(x)$ and $V(y)$ will be increasing in $x$ and $y$ respectively. A higher firm type $y$ must pay more to attract a given worker $x$ away from a lower-type firm, and a higher-$x$ worker commands a higher wage at any firm. Monotonicity: If $x_2>x_1$, then $U(x_2)\ge U(x_1)$; if $y_2>y_1$, then the wage paid to any given worker (or type quantile) is higher at $y_2$ than at $y_1$.
 - **Under NAM**, the sorting reverses: high-type workers go to low-type firms. In that case, a higher worker might actually earn less if their partner firm is worse. But high-$x$ with low-$y$ could still get a high share of a smaller pie. Generally, with NAM, $U(x)$ might still increase in $x$ (a better worker always can guarantee at least the value with a certain partner), but now higher-type firms pay lower wages on average (since they attract lower-$x$ workers).
 
 To characterize wages formally, one can derive first-order conditions from the assignment problem using calculus of variations (in continuous models) or consider the dual equalities $U(x)+V(y)=f(x,y)$. Heuristically, differentiating $U(x)+V(\mu(x))=f(x,\mu(x))$ with respect to $x$ in a PAM assignment yields:
@@ -114,7 +115,7 @@ In practice, PAM implies we should observe a positive correlation between worker
 
 ## Search Frictions and the Shimer–Smith Model
 
-The frictionless model is elegant, but the real world is messy. People have to search for jobs, send out resumes, and go to interviews. The **Shimer and Smith (2000)** model brings these crucial **search frictions** into the picture.
+The frictionless model is elegant, but the real world is messy. People have to search for jobs, send out resumes, and go to interviews. The **Shimer and Smith (2000)** model brings these crucial **search frictions** into the picture [@ShimerSmith2000].
 
 #### Environment
 Time is continuous. A measure of unemployed workers (by type $x$) search for jobs, and a measure of vacant firms (by type $y$) search for workers. Encounters are random: a worker meets a vacancy at Poisson rate $\lambda$ (and a vacancy meets a worker at rate $\mu$). When a worker $x$ meets a firm $y$, they observe the potential match output $f(x,y)$. They then decide whether to form a match or not. If they match, the job produces flow output $f(x,y)$ per unit time and the parties split the surplus via an agreed wage $w(x,y)$. If they do not match, the worker remains unemployed (with some continuation value) and the firm keeps the vacancy open.
@@ -195,7 +196,7 @@ The AKM model (Abowd–Kramarz–Margolis, 1999) is an additive two-way fixed ef
 #### Non-Additive Nature of Wages under Sorting
 In a matching model with complementarities (like the search model above or even the frictionless case with competitive splitting), the wage is generally not separable into a worker-specific and firm-specific component. We saw an example:
 $$
-w(x,y) = W_0(x) + \alpha [\,f(x,y) - W_0(x) - \Pi_0(y)\,] = (1-\alpha)W_0(x) + \alpha\,f(x,y) - \alpha\,\Pi_0(y).
+w(x,y) = (1-\alpha)W_0(x) + \alpha\,f(x,y) - \alpha\,\Pi_0(y).
 $$
 Unless $f(x,y)$ can be written as $g(x)+h(y)$, this expression cannot be reduced to a form $\phi(x) + \psi(y)$. The term $\alpha f(x,y)$ couples $x$ and $y$. In frictionless competitive matching, one can similarly show that if the output has complementarity, the implied wage function that comes out of the dual will include interaction terms. For example, in the efficient assignment, $U(x)$ and $V(y)$ satisfy $U(x)+V(y)=f(x,y)$ for matched pairs. If we tried to interpret $U(x)$ as a worker fixed effect and $V(y)$ as a firm fixed effect, that works only if $U$ and $V$ exist as functions of single arguments. But $U$ and $V$ themselves are determined in relation to $f$. If $f$ were additive, one solution is $U(x)=g(x)$ and $V(y)=h(y)$ exactly. But if $f$ is supermodular, the solution will involve each agent’s payoff depending on the partner’s type as well. In fact, the presence of a match-specific surplus in wages is precisely what AKM rules out.
 
@@ -237,7 +238,7 @@ Hagedorn, Law, and Manovskii (2017) propose an approach to identify a sorting eq
 
 1.  **Rank Workers by Unobserved Ability:** Under positive sorting with complementarity, wages are increasing in worker ability within any given firm. That is, if you take one firm $j$ and look at two workers $i$ and $i'$ who are employed there, the one with higher ability will earn a higher wage: $x_i > x_{i'} \implies w_{ij} > w_{i'j}$ (assuming no other confounders and some bargaining power for workers). This follows from $\partial w/\partial x > 0$ if $f_{xy}>0$ and wage shares $\alpha>0$. So within each firm, we can rank workers by their wages, and this ranking should reflect their relative ability types. Essentially, the highest paid worker in firm $j$ is inferred to have the highest $x$ among that firm’s workforce, etc.
 2.  **Link Worker Ranks Across Firms (via Movers):** A limitation of step 1 is that it gives only firm-specific rankings. To get a global rank of worker ability, we use movers (workers who switch firms). Suppose worker A and worker B both worked at firm 1, and A earned more than B (thus $x_A > x_B$). Now B moves to firm 2. At firm 2, B earns a certain wage that can be compared to wages of others at firm 2. If B’s wage at firm 2 is higher than some worker C’s wage at firm 2, we infer $x_B > x_C$. By transitivity ($x_A > x_B > x_C$) we get a ranking relation across people who never worked together. By accumulating many such overlaps – a network of movers – one can construct an aggregate ranking of all workers’ abilities. HLM formalize this by an iterative algorithm, effectively aggregating pairwise comparisons of workers based on wages when in the same firm. This is akin to finding a consistent ordering that best explains the wage hierarchy observed across firms.
-3.  **Rank Firms by Productivity:** Once workers are ranked by ability, we can turn to firms. The idea is that higher productivity firms tend to pay higher wages for the same worker type. So one strategy is: take a reference set of worker types (say deciles of the worker ability distribution) and compare the wages those workers get at different firms. For example, if a 50th-percentile worker consistently earns more at firm A than at firm B, that suggests firm A has higher productivity (because with equal bargaining, a better firm yields a higher surplus and thus higher wage for a given worker). HLM derive a measure $\Omega(y)$ – effectively an index of firm $y$’s quality – defined as the expected wage premium of new hires at that firm over their outside option. They prove $\Omega(y)$ is increasing in firm type $y$. Intuitively, $\Omega(y)$ can be computed from data: it’s related to how much more a worker gets paid at $y$ compared to their minimum acceptable wage (reservation wage) given their ability. Empirically, one can approximate $\Omega(y)$ by looking at all hires at firm $y$ and averaging something like their wage minus the wage they’d get at a baseline firm (or their last wage, etc.). This monotonically orders firms. A simpler (though less precise) way: You could use the wage bill approach – compare the actual wage sum a firm pays to what we would predict if there were no match effects. If a firm’s actual wage bill is higher than the sum of benchmark worker abilities (plus an average firm premium), it suggests this firm offers extra returns to ability, implying higher productivity [@Lengrann2020 perhaps]. HLM’s $\Omega(y)$ is a rigorous version of such a concept.
+3.  **Rank Firms by Productivity:** Once workers are ranked by ability, we can turn to firms. The idea is that higher productivity firms tend to pay higher wages for the same worker type. So one strategy is: take a reference set of worker types (say deciles of the worker ability distribution) and compare the wages those workers get at different firms. For example, if a 50th-percentile worker consistently earns more at firm A than at firm B, that suggests firm A has higher productivity (because with equal bargaining, a better firm yields a higher surplus and thus higher wage for a given worker). HLM derive a measure $\Omega(y)$ – effectively an index of firm $y$’s quality – defined as the expected wage premium of new hires at that firm over their outside option. They prove $\Omega(y)$ is increasing in firm type $y$. Intuitively, $\Omega(y)$ can be computed from data: it’s related to how much more a worker gets paid at $y$ compared to their minimum acceptable wage (reservation wage) given their ability. Empirically, one can approximate $\Omega(y)$ by looking at all hires at firm $y$ and averaging something like their wage minus the wage they’d get at a baseline firm (or their last wage, etc.). This monotonically orders firms.
 4.  **Recover Production Function and Complementarity:** Once we have an ordering (or even cardinal types) for workers and firms, we effectively have matched pairs $(x_i, y_j)$ for each observed employment with associated output (wage plus maybe imputed profit). HLM show that one can recover the joint production function $f(x,y)$ up to normalization by using the fact that wages and surplus splitting inform the partial derivatives. For example, knowing that $w(x,y) = W_0(x) + \alpha S(x,y)$ and having estimates of $W_0(x)$ and $S$ from the matching patterns, one can back out parameters like $\alpha$ and the shape of $f$. In their approach, they can nonparametrically identify the extent of complementarity – essentially test if $f_{xy}>0$ and measure how large it is – by examining how the firm ranking changes across worker quantiles.
 
 *Assumptions and Limitations of HLM:*
@@ -247,7 +248,7 @@ Hagedorn, Law, and Manovskii (2017) propose an approach to identify a sorting eq
 -   **Data requirements:** One needs rich linked employer-employee data with many movers to implement this. HLM apply it to large datasets (e.g. German administrative data) where they have thousands of firms and workers. The algorithm for constructing ranks is computationally involved but feasible with modern data.
 -   **Equilibrium assumptions:** The method assumes the observed wages and mobility are outcomes of an equilibrium sorting model (with maybe a steady state). If the labor market is in flux or institutional factors distort wages (unions, minimum wages), the monotonicity might break. For example, internal wage policies could pay less-skilled workers more than their marginal product would suggest, confounding the ranking.
 
-Despite these caveats, the HLM approach is a breakthrough in constructively identifying sorting. It doesn’t rely on just correlations of fixed effects; it uses the structure of the sorting model. Implementations of it (or similar ideas) have indeed found evidence of positive sorting, although often the degree of complementarity estimated is modest. For instance, applying HLM’s method to German data suggested only a mild positive assortative matching once measurement issues are accounted for [@Schaal2019 hypothetical reference].
+Despite these caveats, the HLM approach is a breakthrough in constructively identifying sorting. It doesn’t rely on just correlations of fixed effects; it uses the structure of the sorting model.
 
 #### Poaching Flows and Revealed Preference Rankings
 Another empirical strategy uses employer-to-employer transitions (poaching flows) as a signal of firm attractiveness or productivity. The intuition, as articulated by e.g. Sorkin (2018), is that if workers “vote with their feet” by moving from firm A to firm B, we can infer that B is a more desirable or higher-type firm for those workers [@Sorkin2018]. In a sorting equilibrium, higher-type workers should, on average, transition to higher-type firms, not the other way around.
@@ -261,9 +262,7 @@ If the labor market sorting is purely one-dimensional (absolute advantage sortin
 -   Under PAM, we expect a hierarchical pattern: workers tend to move upward to better firms until they find their level (and high firms don’t accept or lose workers to lower firms except perhaps those on their way out). So the directed graph of moves has a partial order character.
 -   Under NAM, the direction of desirable moves might be reversed for one side: e.g. high-type workers might actually prefer slightly lower-type firms (if that’s where they have comparative advantage). However, if wages also reflect some absolute component, it might be tricky to see in data. We might see more churn with no clear up-or-down trend, or multiple hierarchies (like high-skill workers bouncing between a set of high-paying firms and low-skill workers between a set of low-paying firms, which could mimic PAM patterns separately within groups).
 
-Empirical studies of worker flows (e.g. using administrative data in the US or Europe) do tend to find an upward mobility pattern: workers moving jobs typically experience earnings gains, and higher-wage firms poach workers from lower-wage firms more than vice versa. This is consistent with a form of positive sorting on whatever heterogeneity drives wages. It doesn’t prove strict complementarity (it could also reflect that some firms just pay more for equivalent workers – but then why wouldn’t a high firm poach all good workers from a slightly lower firm? The equilibrium requires some productivity difference). Nonetheless, net poaching rates can be used to rank firms and even test models. For instance, if the ranking implied by flows correlates with productivity measures or AKM firm effects, it reinforces the sorting interpretation.
-
-One limitation of flow-based ranking is that it reflects a mixture of preferences and opportunity. A firm might lose workers not because it’s low productivity, but perhaps because it’s in a declining location or has other issues. So caution is needed in interpretation. But as a whole, the flow approach has become a popular tool to infer sorting. It’s also relatively light on model structure: it doesn’t require specifying the production function, only assumes that workers prefer higher surplus matches.
+Empirical studies of worker flows (e.g. using administrative data in the US or Europe) do tend to find an upward mobility pattern: workers moving jobs typically experience earnings gains, and higher-wage firms poach workers from lower-wage firms more than vice versa. This is consistent with a form of positive sorting on whatever heterogeneity drives wages.
 
 #### Boundary Monotonicity Tests
 We mentioned earlier the idea of boundary monotonicity as a testable implication of assortative matching. What does this mean in practice? If sorting is positive and one-dimensional, one expects that the “lowest” type of worker at a high-type firm is still higher than the “lowest” type at a low-type firm. In other words, there is an ability threshold that increases with firm rank. One way to test this is:
@@ -272,33 +271,12 @@ We mentioned earlier the idea of boundary monotonicity as a testable implication
 2.  Group firms by some quality measure (e.g. their average worker ability or a wage-based rank).
 3.  Look at the distribution of worker ability within each firm or firm group.
 
-Under strict PAM, if firm A is ranked above firm B, then all workers at A should have ability >= all workers at B (no overlap in support). That is a very strong condition and unlikely to hold perfectly in noisy data. A milder implication: the quantile (say the bottom 10th percentile ability) at A is higher than the 10th percentile at B, and similarly for median, etc. Essentially, the cumulative distribution of abilities at A is shifted to the right of that at B (first-order stochastic dominance). This is sometimes called the stochastic monotonicity test for sorting. One can use Kolmogorov–Smirnov tests or the Hall and Heckman (2000) test for monotonicity of relationships [@HallHeckman2000] to see if higher firm wage classes have stochastically higher worker ability distributions.
-
-Another boundary condition: if matching is positive, then if we pair-order the workers and firms, worker $i$ in firm A should not be less able than worker $j$ in firm B if firm A is “better” and worker $i$ is at a quantile above $j$’s quantile in their respective firms. This is a bit complicated to implement, but conceptually tests for no crossing of quantile-quantile plots.
-
-Some researchers have also used extreme movers as a test: take workers who move from a very low-paying firm to a very high-paying firm. Under PAM, it is likely that such moves are either extremely rare (because a low-ability worker wouldn’t jump to a top firm) or if they happen, the worker must have been mis-classified and is actually high ability. So if we see many low-wage workers suddenly appearing in top firms and staying, that might violate strict sorting. Similarly, if high-wage workers frequently end up in very low-wage firms (without the firm changing), that suggests maybe negative sorting or something else (or it could be adjustment issues). These are more informal checks.
-
-#### Related Empirical Strategies:
-
--   **AKM-based indices:** Some papers use the estimated worker and firm fixed effects from an AKM regression to look for sorting. For example, one can rank workers by $\hat{\alpha}_i$ and firms by $\hat{\psi}_j$ and then examine the correlation or distribution. Although AKM underestimates sorting if complementarities exist, a significantly positive correlation or monotonic pattern in the data can still be suggestive. Abowd, Kramarz, et al. (2009) developed a formal test of assortative matching by checking whether the assignment of estimated effects could be due to chance, and found evidence of a mild positive sorting in some contexts [@Abowd2009].
--   **Wage gains from mobility:** If complementarity is present (PAM), a high-ability worker should experience a larger wage gain from moving to a higher-productivity firm than a low-ability worker would. This is because the high-ability worker’s marginal product difference is bigger. Some studies interact worker quality (e.g. education or fixed effect) with firm quality when predicting wage changes on moves. A positive interaction (i.e. the returns to moving to a better firm are higher for higher-quality workers) is evidence consistent with complementarity. If instead low-skill workers gain more by moving to high firms (or high-skill gain less), that would be puzzling for PAM and might indicate something like NAM or other mechanisms.
--   **Production or output data:** In some cases, if actual productivity data is available (not just wages), one can test directly if output is higher for high-high matches. For example, in team production or some firm output measure, do we see supermodular patterns? This is rare in typical datasets but can be done in certain studies (e.g. pairing of CEOs and firms or teacher–student matches, etc.).
--   **On-the-Job Search Effects:** A limitation common to many empirical approaches is handling on-the-job search. If workers can climb the ladder through job hopping, one might observe even a low initial match for a high-skilled worker (they take a temporary lower firm and then move). This doesn’t violate long-run sorting, but it means cross-sectional data might show some high-ability in low firms at a given time (they are en route). Some approaches use longitudinal data to account for this, distinguishing between short stints and longer-term matches.
--   **Hagedorn–Manovskii vs. Poaching approaches:** The HLM method is more structural and assumes an equilibrium sorting model to invert the problem; the poaching flow method is more reduced-form but robust to some model misspecification. Both have been applied. Notably, a study by Bagger and Lentz (2019) structurally estimates a model with on-the-job search and finds evidence of sorting, but relatively weak complementarity in production [@Bagger2019]. They use a combination of wage distribution and mobility patterns to fit the model.
-
-In practice, researchers often use multiple pieces of evidence to argue for sorting:
-
-1.  Significant positive correlation between some worker trait and firm trait.
-2.  Monotonicity in wages or transitions.
-3.  Direct estimation of a sorting model shows better fit than a no-sorting alternative (e.g. log-likelihood comparisons).
-4.  Policy changes or natural experiments: e.g. if a region suddenly improves in firm productivity, do the high-skill workers flock there? That could show sorting response.
+Under strict PAM, if firm A is ranked above firm B, then all workers at A should have ability >= all workers at B (no overlap in support). That is a very strong condition and unlikely to hold perfectly in noisy data. A milder implication: the quantile (say the bottom 10th percentile ability) at A is higher than the 10th percentile at B, and similarly for median, etc. Essentially, the cumulative distribution of abilities at A is shifted to the right of that at B (first-order stochastic dominance). This is sometimes called the stochastic monotonicity test for sorting. One can use Kolmogorov–Smirnov tests or the Hall and Heckman (2000) test for monotonicity of relationships to see if higher firm wage classes have stochastically higher worker ability distributions [@HallHeckman2000].
 
 ---
 ## Simulating Sorting Patterns
 
 To concretely illustrate PAM vs NAM vs a frictional case, consider a simple simulation of matches between workers and firms of different types. Figure 1 plots worker type against firm type for matched pairs under three scenarios: (i) PAM (high with high), (ii) NAM (high with low), and (iii) a frictional sorting scenario (mostly high with high, but some mismatches due to frictions). We see that PAM produces an upward-sloping 45° relationship, NAM a downward-sloping pattern, and a frictional case lies somewhere in between (some positive relationship, but with noise and gaps).
-
-
 
 ***Figure 1:*** *Simulated matching patterns under Positive Assortative Matching (PAM), Negative Assortative Matching (NAM), and a frictional sorting scenario. Dots represent matched worker–firm pairs by their type ranks. PAM shows a tight increasing relationship; NAM shows a decreasing relationship; with frictions, sorting is weaker (some high–low mismatches occur).*
 
@@ -309,172 +287,12 @@ In the frictional plot, one can notice a generally upward trend, but a few mediu
 
 Assortative matching has important implications for wage inequality, mobility, and how we interpret decompositions like AKM:
 
--   **Inequality and Welfare:** Positive sorting tends to magnify wage inequality. When high-skill workers all match with high-productivity firms, the wage outcomes at the top end are very high (productive match and each side has bargaining power to claim surplus), whereas low-skill workers stuck with low-productivity firms get very low wages. This divergence can increase overall wage variance relative to a random matching. Some policy implications: if the goal is to reduce inequality, interventions could aim to reduce frictions that prevent some high-skill workers from reaching better firms (thus spreading them out more) or to improve the productivity of firms that hire low-skill labor (so that even low–low matches produce decent output). On the other hand, positive sorting is efficient in terms of total output (given the complementarities), so there’s a classic equity-efficiency tradeoff: enforcing more mixing would lower output. Policies like education, training, or relocation assistance can help workers reach higher productivity firms, which both improves efficiency and potentially equity if more can share in the high output.
--   **Productivity and Misallocation:** If search frictions prevent PAM despite supermodularity, there is a misallocation of talent. For example, if some high-skilled workers are stuck in low-productivity firms due to search frictions or information problems, output is lost (Becker’s arrangement was not achieved). Policies that reduce search frictions – improved job matching services, better information about vacancies, or reducing mobility costs – could move the equilibrium closer to PAM (if indeed $f_{xy}>0$) and improve aggregate productivity. Shimer and Smith noted that equilibrium with search is not generally efficient; there’s room for policy to facilitate better matching.
--   **Firm Wage Policies:** If we consider why AKM-type decompositions find small sorting, one view is that firms might compress wages internally (e.g. pay policies that don’t fully reward ability) which could reduce measured sorting in wages even if productivity sorting is present. If sorting-based theories are correct, one might argue for more performance-based pay at productive firms to attract the best workers (which would then show up as higher sorting in wages as well). Alternatively, if one worries about too much sorting (skimming the best workers into a few firms, leaving others without talent), policies like knowledge transfer or encouraging high-skill worker entry into different sectors could be considered.
--   **Reconciling with AKM Results:** AKM typically finds that firm fixed effects explain a moderate portion of wage variance and that the covariance between worker and firm effects is small (often close to zero in some studies). Sorting-based theories offer a few reconciliations:
-    - **Omitted Match Effects:** If wages have match components, AKM’s two-way FE model omits them, potentially biasing the estimated covariance. Some of what is true sorting might sit in the residual. When researchers have extended AKM to allow a match effect (tripartite models), they often find that a sizable portion of unexplained variance could be due to match quality.
-    - **Limited Variation in Complementarity:** It’s possible that while sorting exists, the production function’s complementarity is modest. Bagger and Lentz (2019) for example found that moving from random matching to sorted matching would only raise output by ~7.7% in their estimates [@Bagger2019], implying $f_{xy}$, though positive, is not huge. In such a case, even if high go with high, the incremental wage differences might not be dramatic, making the correlation of fixed effects small.
-    - **Sampling and Measurement Error:** AKM’s estimates of firm effects might be noisy (shrunk etc.), and any slight true sorting could be masked. HLM’s method, which accounts for measurement error, suggests around 20% of residual wage variance is noise [@Hagedorn2017], so controlling for that might reveal more sorting.
-    - **Selection vs Causation:** A low AKM sorting correlation doesn’t mean workers aren’t sorting; it could mean that after controlling for worker quality, the remaining firm premium differences aren’t correlated with worker quality. In a sorting model, a high-$x$ worker at a high-$y$ firm gets a high wage mainly because of $x$ and the match term, whereas AKM might attribute most of it to $\alpha_i$ and find $\psi_j$ not especially high because part of firm’s contribution was via match. Thus, sorting theories say don’t rely solely on fixed-effect correlations to judge sorting; instead, look at more direct measures like those we discussed (mobility patterns, etc.).
--   **Connected Sets and Estimation:** As noted, if the labor market were extremely segmented by type, the standard AKM estimation might not even be feasible across segments. In practice, researchers sometimes drop small isolated groups and focus on the main connected set. One policy implication might be: encourage bridges between sectors (e.g. training programs that allow workers from one industry to move to another) so that the labor market isn’t partitioned. From an analysis perspective, it also implies that we should be careful interpreting firm effects across disconnected groups – they are identified only relative to a reference in each group.
--   **Dynamic Considerations:** Sorting-based theories often emphasize career dynamics (workers climbing a job ladder). AKM is static in each spell’s fixed effect. If high ability workers start in lower firms and move up, a static two-way FE might misclassify some early observations. One could reconcile by extending AKM to allow time-varying worker heterogeneity or by modeling the dynamic matching process explicitly (as in the search models). The consensus is leaning toward using richer models to interpret AKM findings.
-
-In conclusion, assortative matching enriches our understanding of firm and worker heterogeneity beyond what AKM’s additive model captures. The theories indicate that who matches with whom matters for wages and output – a pure two-factor decomposition is incomplete. Modern research aims to integrate sorting into decompositions: for example, by estimating models with match effects or by using external information to account for complementarities. The ultimate goal is a more accurate depiction of how worker talent and firm productivity jointly drive wage inequality.
-
-## References
-
-Becker, Gary S. (1973). "A Theory of Marriage: Part I." *Journal of Political Economy*, 81(4), 813–846.
-
-Shapley, Lloyd & Shubik, Martin (1972). "The Assignment Game I: The Core." *International Journal of Game Theory*, 1(1), 111–130.
-
-Abowd, John M., Kramarz, Francis, & Margolis, David N. (1999). "High Wage Workers and High Wage Firms." *Econometrica*, 67(2), 251–333.
-
-Shimer, Robert & Smith, Lones (2000). "Assortative Matching and Search." *Econometrica*, 68(2), 343–369.
-
-Abowd, John M., Kramarz, Francis, Pérez-Duarte, Sebastián, & Schmutte, Ian (2009). "A Formal Test of Assortative Matching in the Labor Market." NBER Working Paper No. 15546.
-
-Hagedorn, Marcus, Law, Tzuo Hann, & Manovskii, Iourii (2017). "Identifying Equilibrium Models of Labor Market Sorting." *Econometrica*, 85(1), 29–65.
-
-Bagger, Jesper & Lentz, Rasmus (2019). "An Empirical Model of Wage Dispersion with Sorting." *Review of Economic Studies*, 86(1), 153–190.
-
-Sorkin, Isaac (2018). "Ranking Firms Using Revealed Preference." *Quarterly Journal of Economics*, 133(3), 1331–1393.
-
-Hall, Robert E. & Heckman, James J. (2000). "Tracking the Factors Behind Wage Growth in the Late 1990s." *American Economic Review*, 90(2).
-
-
----
-title: "Who Works Where? The Economics of Labor Market Sorting"
-author: 'Harrison Youn<br><span style="font-size: 0.8em; color: #6c757d;">AKM 2</span>'
-date: "2025-08-11"
-description: "The best workers often land at the best firms. But why? We explore the economic forces of sorting, from perfect matches in ideal markets to the messy reality of job searching."
-categories: [Labor Economics, Matching Theory, Wage Inequality, AKM Model, Search Theory]
-format:
-  html:
-    toc: true
-    code-fold: true
----
-
-## The Big Question: Who Ends Up Working Where?
-
-The AKM model gives us a brilliant tool to separate a worker's value (*who* they are) from a firm's pay premium (*where* they work). But it opens up an even deeper question: **What determines how workers and firms match up in the first place?**
-
-It's clearly not random. We often see the most talented people working at the most successful companies. This tendency for "likes to attract" is called **positive assortative matching (PAM)**. But is this always the case? Could it ever be more efficient for opposites to attract?
-
-This note dives into the economics of sorting. We’ll explore the beautiful logic of a perfect, frictionless job market and then see how that logic changes when we add the frictions of real-world job searching.
-
----
-
-## Imagine a Perfect Job Market: The Becker Model
-
-Let's start with a thought experiment, based on Nobel laureate Gary Becker's work. Imagine a job market with no search costs or uncertainty.
-
-#### The Setup
-There's a spectrum of workers, from low-skill to high-skill (let's call their type '$x$'), and a spectrum of firms, from low-productivity to high-productivity (type '$y$'). When a worker $x$ and a firm $y$ team up, they produce a certain amount of value, or output, which we can write as a function $f(x,y)$.
-
-The key assumption is **transferable utility**: the output they create can be split between them in any way. The firm's share is its profit, and the worker's share is their wage.
-
-#### What is a "Stable" Match?
-In this perfect market, a set of matches is considered **stable** if no one has an incentive to break things up. This means two simple things:
-1.  Everyone is better off in their match than they would be alone.
-2.  More importantly, there's no rogue worker and firm who could ditch their current partners, form a new match, and *both* be better off from the deal. They can't form a "blocking pair."
-
-This leads to a powerful conclusion: any stable matching *must* be the one that creates the most possible output for the entire economy. Why? Because if there were a different set of matches that produced more total output, some pairs could swap partners to realize that gain, making the original setup unstable. So, stability implies maximum efficiency.
-
----
-
-## Likes Attract vs. Opposites Attract: The Power of Complementarity
-
-So, what determines whether the best match with the best, or if opposites attract? It all comes down to one crucial concept: **complementarity**.
-
-#### Supermodularity: When 1 + 1 > 2
-Think of a brilliant software engineer and a company with massive computing power. The great engineer makes the company's technology shine, and the advanced tech lets the engineer build things they couldn't otherwise. They are **complements**. The boost each gives the other is more than the sum of their parts.
-
-In economics, this is called **supermodularity**. Mathematically, it means the cross-partial derivative of the production function is positive ($f_{xy} > 0$). It captures the idea that a worker's skills are more valuable when paired with a better firm.
-
-#### Submodularity: When It's Better to Diversify
-Now, imagine a creative agency that needs both a charismatic salesperson and a meticulous project manager. Pairing two star salespeople might lead to chaos, while pairing two project managers might lead to inaction. The most productive team pairs the salesperson with the manager. Their skills are, in a sense, **substitutes**.
-
-This is called **submodularity** ($f_{xy} < 0$). Here, the value of a high-skill worker is actually greater when paired with a firm that has a different, "lower" type of strength.
-
-#### Becker's Famous Result
-This simple distinction leads to a foundational theorem in matching theory:
-> - If worker skill and firm productivity are **complements** ($f_{xy} > 0$), the only stable outcome is **Positive Assortative Matching (PAM)**. The best workers go to the best firms, all the way down the line.
-> - If they are **substitutes** ($f_{xy} < 0$), the stable outcome is **Negative Assortative Matching (NAM)**. The best workers match with the "worst" firms, and vice versa, to balance out skills.
-
-Under PAM, wage inequality naturally gets stretched. The top workers get a "double whammy": their own high skill *plus* the amplified productivity from their top-tier firm, leading to extremely high wages.
-
----
-
-## Entering the Real World: Job Searching and Frictions
-
-Of course, the real job market isn't a perfect, one-shot matching game. People have to search, interviews happen, and not every worker meets every firm. This is where **search frictions** come in, as modeled by Robert Shimer and Lones Smith.
-
-#### The Problem of "Holding Out"
-Search frictions introduce a new dilemma: the **option value of waiting**.
-
-Imagine a pretty good worker meets a pretty good firm. In Becker's world, they'd match. But in the real world, the worker might think, "This is fine, but if I just wait a bit longer, maybe I'll get an offer from a superstar firm." The firm might think the same thing. If both decide to hold out for a better option, a perfectly good match might never happen.
-
-This means that simple complementarity ($f_{xy} > 0$) is **no longer enough** to guarantee that the best will match with the best. The temptation to wait for a perfect partner can cause the sorting pattern to break down, especially for those in the middle of the skill distribution.
-
-#### The Stronger Condition: Log-Supermodularity
-Shimer and Smith showed that for PAM to survive in a world with search frictions, you need a much stronger condition called **log-supermodularity**.
-
-The intuition is that the *percentage gain* a worker gets from moving to a better firm has to be greater if they are a high-skill worker. This ensures that the pull of a better match is so powerful that it overwhelms the temptation to wait, keeping the "likes attract" sorting pattern intact.
-
-> In a frictional world, sorting is harder. It requires not just that good workers and good firms are complements, but that they are *so strongly* complementary that they'd rather take a good-enough match now than hold out for a perfect one that may never come.
-
----
-
-## How Sorting Theory Challenges the AKM Model
-
-This entire theory of matching creates some serious headaches for the simple, additive AKM model. There are two big problems.
-
-#### 1. Wages Aren't Just `Worker + Firm`
-In a sorting world, a wage isn't just the sum of a worker effect and a firm effect. It's the result of a bargain over the **match surplus**. This means the wage inherently includes a **match-specific interaction term**. The AKM model has no place for this; it forces the match-specific part into the error term, which can bias the results and make it seem like sorting is weaker than it really is.
-
-#### 2. The "Disconnected Market" Problem
-The AKM model can only separate worker and firm effects because it sees workers move between different companies. But what if sorting were perfect?
-
-Imagine the labor market split into a "Premier League" and a "Second Division," with no worker ever moving between them. If you only have data from this market, you could never know if the Premier League's high wages are because its workers are amazing or because its firms are generous. You could add $100,000 to every firm premium in the Premier League and subtract it from every worker effect, and the wages would look exactly the same.
-
-The only reason AKM works at all is because the real world is messy. Sorting isn't perfect, and some workers *do* move between different "leagues," creating a **connected set** that allows us to statistically tell the effects apart.
-
----
-
-## Finding the Evidence: How Economists Measure Sorting
-
-Given these challenges, economists have devised clever ways to find evidence of sorting.
-
--   **The HLM Rank Method**: Named after Hagedorn, Law, and Manovskii, this is like solving a giant puzzle. You first rank workers within each firm by their wage. Then, you use workers who move between firms as "bridges" to link these individual firm rankings into one economy-wide skill ladder. You can do the same for firms, ultimately allowing you to see the sorting pattern and even estimate the degree of complementarity.
--   **Poaching Flows**: Another method, championed by Isaac Sorkin, is to let workers "vote with their feet." If we consistently see workers leaving Firm A to go to Firm B, we can infer that B is a higher-ranked firm. By mapping out all these "poaching flows," we can create a firm hierarchy based on revealed preference.
-
-These methods generally confirm that PAM is a real feature of our labor market, though the strength of complementarity is still a subject of intense debate.
-
----
-
-## Conclusion: Why Sorting Matters
-
-The theory of assortative matching profoundly enriches our understanding of the labor market. It tells us that the simple story of worker effects and firm effects is incomplete.
-
-1.  **It Drives Inequality**: Positive sorting naturally pulls wages apart. It creates a "superstar" economy where the best-matched pairs generate huge value and earn huge rewards, widening the gap between the top and the bottom.
-2.  **It Affects Productivity**: Frictions that prevent efficient sorting are not just unfair; they are inefficient. A high-skilled worker stuck at a low-productivity firm represents a loss of potential output for the whole economy.
-3.  **It Re-frames AKM**: It teaches us to be cautious about interpreting AKM results. A small correlation between worker and firm effects doesn't necessarily mean sorting is weak. It might just mean the simple additive model is failing to capture the crucial role of the **match itself**.
-
-Ultimately, understanding who works where—and why—is fundamental to understanding some of the biggest economic questions of our time, from wage inequality to national productivity.
-
----
-
-## Reference
-
-Abowd, J. M., Kramarz, F., & Margolis, D. N. (1999). High Wage Workers and High Wage Firms. *Econometrica*, 67(2), 251–333.
-
-Becker, G. S. (1973). A Theory of Marriage: Part I. *Journal of Political Economy*, 81(4), 813–846.
-
-Bagger, J. & Lentz, R. (2019). An Empirical Model of Wage Dispersion with Sorting. *Review of Economic Studies*, 86(1), 153–190.
-
-Hagedorn, M., Law, T. H., & Manovskii, I. (2017). Identifying Equilibrium Models of Labor Market Sorting. *Econometrica*, 85(1), 29–65.
-
-Shimer, R. & Smith, L. (2000). Assortative Matching and Search. *Econometrica*, 68(2), 343–369.
-
-Sorkin, I. (2018). Ranking Firms Using Revealed Preference. *Quarterly Journal of Economics*, 133(3), 1331–1393.
+-   **Inequality and Welfare:** Positive sorting tends to magnify wage inequality. When high-skill workers all match with high-productivity firms, the wage outcomes at the top end are very high (productive match and each side has bargaining power to claim surplus), whereas low-skill workers stuck with low-productivity firms get very low wages. This divergence can increase overall wage variance relative to a random matching.
+-   **Productivity and Misallocation:** If search frictions prevent PAM despite supermodularity, there is a misallocation of talent. For example, if some high-skilled workers are stuck in low-productivity firms due to search frictions or information problems, output is lost. Policies that reduce search frictions could move the equilibrium closer to PAM and improve aggregate productivity.
+-   **Reconciling with AKM Results:** AKM typically finds that the covariance between worker and firm effects is small. Sorting-based theories offer a few reconciliations:
+    - **Omitted Match Effects:** If wages have match components, AKM’s two-way FE model omits them, potentially biasing the estimated covariance.
+    - **Limited Variation in Complementarity:** It’s possible that while sorting exists, the production function’s complementarity is modest. @Bagger2019 for example found that moving from random matching to sorted matching would only raise output by ~7.7% in their estimates.
+    - **Sampling and Measurement Error:** AKM’s estimates of firm effects might be noisy. @Hagedorn2017's method, which accounts for measurement error, suggests around 20% of residual wage variance is noise.
+-   **Dynamic Considerations:** Sorting-based theories often emphasize career dynamics (workers climbing a job ladder). AKM is static in each spell’s fixed effect. If high ability workers start in lower firms and move up, a static two-way FE might misclassify some early observations.
+
+In conclusion, assortative matching enriches our understanding of firm and worker heterogeneity beyond what AKM’s additive model captures. The theories indicate that who matches with whom matters for wages and output – a pure two-factor decomposition is incomplete. Modern research aims to integrate sorting into decompositions, for example, by estimating models with match effects or by using external information to account for complementarities.
