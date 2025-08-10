@@ -26,7 +26,7 @@ Let $X$ be the set of worker types (e.g. skill level) and $Y$ the set of firm ty
 
 Each match $(x,y)$ produces output $f(x,y)$. We assume common ranking: $f_x(x,y)>0$ and $f_y(x,y)>0$, so higher-type workers and firms are more productive partners (this ensures it’s efficient to match higher types rather than leave them idle). Crucially, utility is transferable: if worker $x$ matched with firm $y$ produces $f(x,y)$, any split of this output can be arranged via the wage $w(x,y)$ paid to the worker (the firm earns $f(x,y)-w(x,y)$). Unmatched agents get 0.
 
-#### Stable Matching (TU)
+#### Stable Matching (Transferable Utility)
 A matching $\mu$ with an associated wage schedule $w(x,\mu(x))$ is stable if: (i) Individual Rationality: every matched worker and firm gets at least 0 (their outside option); (ii) No Blocking Pair: there is no unmatched pair $(x,y)$ such that $f(x,y)$ exceeds the sum of their current payoffs. Under TU, stability has a powerful implication: the matching must maximize total output. Formally, one can show:
 
 > **In plain English, a matching is stable if nobody can make a better deal elsewhere.** No worker and firm could sneak off, form a new pair, and *both* be better off. This simple "no side deals" rule is incredibly powerful.
@@ -37,4 +37,4 @@ $$
 $$
 subject to $\mu$ being a bijection between $X$ and $Y$.
 
-*Proof Sketch:* If a matching did not maximize total output, there exist two pairs $(x,y)$ and $(x',y')$ matched such that swapping partners increases output: $f(x,y')+f(x',y) > f(x,y)+f(x',y')$. Then $(x,y')$ would form a blocking pair (since they could transfer the gain so both are better off), contradicting stability. Thus, stability implies no such improving swap exists, which is the condition for optimal assignment. (We formally prove this swap argument in the next section.) Conversely, the output-maximizing assignment can always sustain a stable set of wages via transfers (pay each agent their marginal contribution or use the linear programming dual prices). This result was first shown by Becker [@Becker1973] and is analogous to the Koopmans–Beckmann assignment problem and the core of a cooperative game [@ShapleyShubik1972].
+*Proof Sketch:* If a matching did not maximize total output, there exist two pairs $(x,y)$ and $(x',y')$ matched such that swapping partners increases output: $f(x,y')+f(x',y) > f(x,y)+f(x',y')$. Then $(x,y')$ would form a blocking pair (since they could transfer the gain so both are better off), contradicting stability. Thus, stability implies no such improving swap exists, which is the condition for optimal assignment. Conversely, the output-maximizing assignment can always sustain a stable set of wages via transfers (pay each agent their marginal contribution or use the linear programming dual prices). This result was first shown by Becker and is analogous to the Koopmans–Beckmann assignment problem and the core of a Shapley-Shubik cooperative game.
