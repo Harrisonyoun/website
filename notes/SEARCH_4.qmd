@@ -67,7 +67,7 @@ Firms choose their posted wage $w$ to maximize the present value of profits, kno
 3.  **Connection to AKM's Residuals $\varepsilon_{it}$:** While the Bertrand model helps explain the firm effect $\psi_j$, the wage-posting model is brilliant at explaining the **residual wage variance**. Why do identical people at identical firms earn different amounts? The B-M model answers: it's due to their position in the equilibrium wage distribution, determined by their random search luck.
 
 ***
-## Comparing the Engines and Re-evaluating AKM
+## Comparing the Engines and AKM
 
 The two OJS models offer complementary explanations for the patterns AKM documents.
 
