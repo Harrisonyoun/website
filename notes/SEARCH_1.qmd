@@ -45,3 +45,6 @@ $$
 U(x) + V(y) = f(x,y),
 $$
 and for unmatched pairs $U(x)+V(y) \ge f(x,y)$. Here $U(x)$ can be interpreted as the equilibrium payoff (wage) to worker $x$ and $V(y)$ as the payoff to firm $y$ (profit). These $(U, V)$ are Lagrange multipliers (shadow prices) for the assignment constraints. This system of inequalities is analogous to Walrasian equilibrium: $U(x)$ is the highest wage worker $x$ could get across all firms, and $V(y)$ the highest profit for firm $y$ across all workers, such that no pair can deviate and generate surplus above these payoffs. In equilibrium, each worker–firm pair matched yields zero surplus beyond what each side could get elsewhere, i.e. $f(x,y) - U(x) - V(y) = 0$ if matched (and < 0 if not matched). This is the dual characterization of the optimal assignment. The wages can be obtained from these as $w(x,y)=U(x)$ for the matched pair, so that $w(x,y)+V(y)=f(x,y)$.
+
+#### Existence and Uniqueness
+Under mild continuity and distribution conditions, a stable (output-maximizing) matching exists. In one-dimensional settings with strict supermodularity (defined below), the stable matching is essentially unique and assortative (we’ll show it’s sorted by type). With transferable utility, no strategic issues arise, and one can solve the planner’s problem directly.
