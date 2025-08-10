@@ -123,9 +123,9 @@ a:hover {
 }
 
 .navbar-nav .nav-link.active, .navbar-nav .nav-link:hover {
-  color: #4CAF50 !important;
+  color: var(--c-accent-orange) !important;
   opacity: 1;
-  background-color: transparent;
+  background-color: var(--c-accent-light);
 }
 
 .navbar-toggler-icon {
@@ -364,3 +364,15 @@ main {
   text-align: justify;
 }
   
+/* 9. TABLE OF CONTENTS (On this Page) STYLES
+----------------------------------------------------- */
+
+/* 'On this Page'*/
+#TOC .nav-link {
+  color: #1a1a1a; 
+}
+
+/* 'On this Page' links */
+#TOC .nav-link:hover, #TOC .nav-link.active {
+  color: #4CAF50; 
+}
