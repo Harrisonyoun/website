@@ -375,5 +375,5 @@ main {
 /* 'On this Page' links */
 #quarto-sidebar-toc nav a:hover,
 #quarto-sidebar-toc nav a.active {
-  color: #4CAF50 !important; 
+  color: var(--c-accent-orange) !important; 
 }
