@@ -1,20 +1,28 @@
 ---
 title: "Who Works Where?"
-author: 'Harrison Youn<br><span style="font-size: 0.8em; color: #6c757d;">Search and Matching 1</span>'
-date: "2025-08-04"
-description: "Why do the best workers end up at the best firms?"
-categories: [Labor Economics, Search and Matching Theory, Wage Inequality, AKM Model]
+author: 'Harrison Youn<br><span style="font-size: 0.8em; color: #6c757d;">AKM 2</span>'
+date: "2025-08-18"
+description: "The best workers often land at the best firms. But why?"
+categories: [Labor Economics, Search and Matching, Wage Inequality, AKM Model]
 format:
   html:
     toc: true
     code-fold: true
 ---
 
-Assortative matching refers to how workers and firms pair based on their characteristics, such as skill and productivity. 
+## Introduction: From 'Who' and 'Where' to 'Why'
 
-## Frictionless Matching with Transferable Utility
+Our last discussion on the AKM model gave us a powerful lens to separate a worker's portable skill (*who* they are) from a firm's pay policy (*where* they work). But this opens a new, fascinating puzzle: **Why do certain workers end up at certain firms in the first place?**
 
-In a frictionless matching model, workers and firms are paired in a single-stage assignment without search frictions. Transferable utility (TU) means the output of a match can be costlessly transferred between the two parties (e.g. via a wage). The canonical model is the Becker (1973) assignment model of marriage or jobs [@Becker1973]. We formalize the setting, define stable matchings and competitive equilibrium, and derive when assortative matching occurs.
+It's clearly not a random lottery. The most sought-after employees often work at the most prestigious companies. This note provides a guided tour through the economic theories that explain this sorting process. We'll start with a "perfect world" model to build our intuition, then add the complications of real-world job searching.
+
+Throughout, we will present the formal economic models and mathematics exactly as they appear in the academic literature—no simplification of the core concepts. The goal is to build a bridge between the intuitive questions and the formal answers.
+
+---
+
+## Frictionless Matching: A 'Perfect World' Starting Point
+
+To understand a complex process, economists love to start with a simplified model where things work perfectly. In labor markets, this is the **frictionless matching model**, most famously associated with Nobel laureate Gary Becker. Let's lay out the formal assumptions.
 
 #### Environment
 Let $X$ be the set of worker types (e.g. skill level) and $Y$ the set of firm types (e.g. productivity or firm "quality"). For simplicity, assume $X$ and $Y$ are intervals in $\mathbb{R}$ (e.g. $[0,1]$) with continuous distributions of agents on each side. A matching $\mu$ is a pairing such that each worker $x$ is matched to at most one firm $y=\mu(x)$, and vice versa. We focus on one-to-one matching and assume equal mass of workers and jobs for full matching (extensions to unequal numbers allow unmatched agents getting zero output).
@@ -23,6 +31,8 @@ Each match $(x,y)$ produces output $f(x,y)$. We assume common ranking: $f_x(x,y)
 
 #### Stable Matching (TU)
 A matching $\mu$ with an associated wage schedule $w(x,\mu(x))$ is stable if: (i) Individual Rationality: every matched worker and firm gets at least 0 (their outside option); (ii) No Blocking Pair: there is no unmatched pair $(x,y)$ such that $f(x,y)$ exceeds the sum of their current payoffs. Under TU, stability has a powerful implication: the matching must maximize total output. Formally, one can show:
+
+> **In plain English, a matching is stable if nobody can make a better deal elsewhere.** No worker and firm could sneak off, form a new pair, and *both* be better off. This simple "no side deals" rule is incredibly powerful.
 
 **Lemma (Optimality of Stable Match with TU):** If a matching $\mu$ with wages $w(x,\mu(x))$ is stable, then $\mu$ maximizes aggregate output $\sum_{(x,y)\in \mu} f(x,y)$ (integral form for continuum). Equivalently, $\mu$ solves the assignment problem
 $$
@@ -42,16 +52,22 @@ and for unmatched pairs $U(x)+V(y) \ge f(x,y)$. Here $U(x)$ can be interpreted a
 #### Existence and Uniqueness
 Under mild continuity and distribution conditions, a stable (output-maximizing) matching exists. In one-dimensional settings with strict supermodularity (defined below), the stable matching is essentially unique and assortative (we’ll show it’s sorted by type). With transferable utility, no strategic issues arise, and one can solve the planner’s problem directly.
 
+---
+
 ## Positive vs. Negative Assortative Matching (PAM vs. NAM)
 
-When does the optimal stable matching sort workers and firms by similar rank (PAM) or by opposite rank (NAM)? The key condition involves the supermodularity of the production function $f(x,y)$. We formalize supermodularity and derive its implications for matching patterns and wages. We also provide intuitive interpretations and a proof of Becker’s classic result on assortative matching.
+So, when does the market match the best with the best, or do opposites sometimes attract? The answer depends entirely on the mathematical properties of the production function, $f(x,y)$.
 
 #### Increasing Differences and Supermodularity
 We say $f(x,y)$ has increasing differences in $(x,y)$ if for any $x' > x$ and $y' > y$, the difference satisfies:
 $$
 f(x',y') - f(x,y') > f(x',y) - f(x,y).
 $$
-Equivalently, the cross-partial derivative is non-negative: $f_{xy}(x,y) \ge 0$ for all $x,y$, with $>0$ indicating strict complementarity. This condition is known as supermodularity (or log-superadditivity in discrete terms) and implies that high-type workers and high-type firms together generate disproportionately high output. Intuitively, a better partner raises your marginal productivity more if you yourself are of higher type. Conversely, if $f_{xy} < 0$ (decreasing differences, or submodularity), then high and low types are substitutes and mismatched pairing can yield higher output (an indication for NAM).
+Equivalently, the cross-partial derivative is non-negative: $f_{xy}(x,y) \ge 0$ for all $x,y$, with $>0$ indicating strict complementarity. This condition is known as supermodularity (or log-superadditivity in discrete terms) and implies that high-type workers and high-type firms together generate disproportionately high output.
+
+> **What does this mean?** Think of a top surgeon (a high-skill worker, $x$) and a hospital with state-of-the-art robotic equipment (a high-productivity firm, $y$). The surgeon's skill is amplified by the advanced technology, and the technology is most valuable in the hands of a top surgeon. They are **complements**. The performance boost from upgrading the surgeon's skill is much larger at the high-tech hospital than at a basic clinic. This is supermodularity.
+
+Conversely, if $f_{xy} < 0$ (decreasing differences, or submodularity), then high and low types are substitutes and mismatched pairing can yield higher output (an indication for NAM).
 
 **Positive Assortative Matching (PAM):** A matching is positively assortative if higher-type workers match with higher-type firms in rank order. In a continuum, PAM means the matching function $\mu(x)$ is nondecreasing in $x$ (monotonic); in discrete terms, one can say the correlation between worker skill and firm productivity in matches is positive, or that the type quantiles are aligned. 
 
@@ -74,8 +90,6 @@ f(x_2,y_2) - f(x_1,y_2) > f(x_2,y_1) - f(x_1,y_1).
 $$
 Thus $\Delta > 0$. The assortative (sorted) matching yields higher total output than the cross-matched pairing. This means the mismatched assignment was not output-maximizing. By the optimality of stable matchings, the mismatched pairing cannot be stable either: the two high types $(x_2,y_2)$ would form a blocking pair by coming together and splitting the surplus gain $\Delta$. This contradiction proves that under $f_{xy}>0$, the stable matching must be the sorted one (PAM). ∎
 
-The reverse argument under $f_{xy}<0$ shows that swapping decreases total output, so the highest output is achieved by the cross matches (high with low), i.e. NAM is optimal in that case. These results formalize the intuitive notion that complementarity in production leads to “likes attract” (PAM), while comparative advantage or substitutability leads to “opposites attract” (NAM) in matches.
-
 #### Intuition
 With supermodularity, a higher type partner is especially valuable to a high-type agent. For example, if skilled workers and high-tech firms each boost the other’s productivity, it is efficient to put the best with the best. Any deviation (a talented worker at a mediocre firm or vice versa) wastes some of the potential high output that two top types could generate together. In contrast, if $f_{xy}<0$, there is diminishing returns to pairing similar types. A classic intuition is that if workers and firms have comparative advantages in different tasks, it can be optimal to pair dissimilar types to balance skills (NAM). But if both excel in the same dimension that strongly amplifies output (complements), match like-with-like.
 
@@ -94,11 +108,13 @@ In a positively sorted match, $\mu'(x)>0$. Because firms are scarce, a small inc
 #### Supermodularity and Observables
 In practice, PAM implies we should observe a positive correlation between worker ability and firm quality. For instance, if we had data on worker test scores and firm productivity, PAM would mean high-scoring workers are concentrated in high-productivity firms. NAM would imply a negative correlation. Another implication under PAM is that the distribution of worker skills at higher-type firms stochastically dominates that at lower-type firms. In fact, a strict form of PAM means there is a threshold mapping: no high-type firm will employ a worker below some ability cutoff that a lower firm employs. This boundary monotonicity is a testable restriction – the minimum (or lower quantiles) of worker ability should be higher in higher-ranked firms if sorting is positive. Empirically, one often proxies "ability" and "firm type" by estimated fixed effects or wage ranks; a monotonic relationship at the boundaries supports PAM, while overlap or crossings might indicate no sorting or NAM.
 
-To summarize, in the frictionless model complementarity (supermodular $f$) leads to positive sorting, which in turn yields systematic patterns in wages (high-high matches earn higher wages) and in match composition. We next examine how these conclusions are altered when we introduce search frictions.
+**To summarize, in the frictionless model complementarity (supermodular $f$) leads to positive sorting, which in turn yields systematic patterns in wages (high-high matches earn higher wages) and in match composition. We next examine how these conclusions are altered when we introduce search frictions.**
+
+---
 
 ## Search Frictions and the Shimer–Smith Model
 
-Real-world labor markets are not frictionless; workers and firms must search for partners over time. The Shimer and Smith (2000) model incorporates two-sided heterogeneity into a random search framework [@ShimerSmith2000]. We outline the key ingredients of this model: match surplus, acceptance strategies, Nash bargaining over wages, and the conditions under which assortative matching still occurs (or fails) in equilibrium. We will see that PAM can persist with frictions, but it requires stronger conditions (e.g. log-supermodularity) than in the frictionless case, because search frictions allow agents to be choosier and can induce non-monotonic matching behaviors.
+The frictionless model is elegant, but the real world is messy. People have to search for jobs, send out resumes, and go to interviews. The **Shimer and Smith (2000)** model brings these crucial **search frictions** into the picture.
 
 #### Environment
 Time is continuous. A measure of unemployed workers (by type $x$) search for jobs, and a measure of vacant firms (by type $y$) search for workers. Encounters are random: a worker meets a vacancy at Poisson rate $\lambda$ (and a vacancy meets a worker at rate $\mu$). When a worker $x$ meets a firm $y$, they observe the potential match output $f(x,y)$. They then decide whether to form a match or not. If they match, the job produces flow output $f(x,y)$ per unit time and the parties split the surplus via an agreed wage $w(x,y)$. If they do not match, the worker remains unemployed (with some continuation value) and the firm keeps the vacancy open.
@@ -144,12 +160,16 @@ Expanding, this becomes
 $$
 w(x,y) = (1-\alpha)\,W_0(x) + \alpha\,f(x,y) - \alpha\,\Pi_0(y).
 $$
+> **This is a crucial result.** Notice the $\alpha f(x,y)$ term. The wage isn't just a sum of a worker part and a firm part. It explicitly depends on the *interaction* between the two. This is the "smoking gun" that shows how sorting models fundamentally conflict with the simple additive structure of the AKM model.
+
 Unless $f(x,y)$ is additively separable in $x$ and $y$, this wage is not expressible as $\phi(x) + \psi(y)$ alone. There is an interaction term $\alpha [f(x,y) - g(x) - h(y)]$ embedded in it. This highlights that in a sorting model with bargaining, wages will generally violate the AKM form (additive worker and firm fixed effects). We will elaborate on this conflict with AKM in the next section, but intuitively, the $\alpha f(x,y)$ component is a match effect that cannot be absorbed into fixed effects without error.
 
 #### When Does PAM Survive with Search?
-The introduction of frictions complicates assortative matching. Even if $f(x,y)$ is supermodular, agents might reject equal-type matches in pursuit of higher surplus pairings, leading to partial sorting or even segmentation. Shimer and Smith demonstrate that stronger conditions than $f_{xy}>0$ are needed to guarantee PAM in equilibrium with search. The crucial concept is single-peaked preferences over partner type, which in turn requires a condition called log-supermodularity of $f$.
+The introduction of frictions complicates assortative matching. Even if $f(x,y)$ is supermodular, agents might reject equal-type matches in pursuit of higher surplus pairings, leading to partial sorting or even segmentation. Shimer and Smith demonstrate that stronger conditions than $f_{xy}>0$ are needed to guarantee PAM in equilibrium with search. The crucial concept is single-peaked preferences over partner type, which in turn requires a condition called **log-supermodularity** of $f$.
 
-In essence, log-supermodularity means that the percentage gain from increasing your partner’s type is higher for higher-type individuals. Formally, $f$ is log-supermodular if $\frac{\partial^2 \ln f(x,y)}{\partial x \partial y} > 0$. Equivalently, the ratio $\frac{f(x,y)f(x',y')}{f(x,y')f(x',y)} > 1$ for $x'>x, y'>y$. This condition, along with some regularity on $f_x$ and $f_y$, ensures that even the lower-type agents’ utility is single-peaked in the partner’s type [@ShimerSmith2000]. In plain terms, a low-type worker might prefer a middle-type firm to a very high-type firm if $f$ is only weakly supermodular (because the very high-type firm might rather hold out for a higher worker, so the low worker anticipates a low surplus or offer). Log-supermodularity prevents such non-monotonic preferences by making every type sufficiently eager for higher-type partners.
+In essence, log-supermodularity means that the percentage gain from increasing your partner’s type is higher for higher-type individuals. Formally, $f$ is log-supermodular if $\frac{\partial^2 \ln f(x,y)}{\partial x \partial y} > 0$. Equivalently, the ratio $\frac{f(x,y)f(x',y')}{f(x,y')f(x',y)} > 1$ for $x'>x, y'>y$. This condition, along with some regularity on $f_x$ and $f_y$, ensures that even the lower-type agents’ utility is single-peaked in the partner’s type [@ShimerSmith2000]. 
+
+> In plain terms, for sorting to hold up, the "kick" from getting a better partner has to be so strong (in percentage terms) that it outweighs the temptation to wait for a hypothetical "perfect" match that may never arrive. A low-type worker might prefer a middle-type firm to a very high-type firm if $f$ is only weakly supermodular (because the very high-type firm might rather hold out for a higher worker, so the low worker anticipates a low surplus or offer). Log-supermodularity prevents such non-monotonic preferences by making every type sufficiently eager for higher-type partners.
 
 **Shimer–Smith Result:** If $f(x,y)$ is log-supermodular (and $f_{xy}>0$), then in any steady-state search equilibrium (for any meeting rates, etc.), the matching is positively assortative. In fact, they prove that the matching set is convex and boundaries monotonic: higher-$x$ workers have higher cutoff $y_{\min}(x)$. Thus PAM holds robustly despite frictions. By contrast, if $f_{xy}>0$ but $f$ is not log-supermodular, assortative matching can fail. They provide counterexamples where the middle-range types do not match with each other (each preferring to hold out for higher types), resulting in a non-monotonic acceptance set. Essentially, with search frictions, agents consider the option value of continuing search. If medium types anticipate possibly meeting high types, they might reject each other, causing a breakdown in strict sorting. Shimer and Smith show that convexity of matching sets is necessary for PAM, and log-supermodularity (plus some orientation conditions) guarantees that convexity.
 
@@ -167,6 +187,7 @@ To summarize, in the Shimer–Smith search model:
 3. PAM requires stronger complementarity: $f_{xy}>0$ is not enough; something like log-supermodularity ensures that the equilibrium acceptance sets are monotonic (convex), yielding positive sorting.
 4. If complementarity is weaker, we may observe partial sorting or even mixing of types in equilibrium. Search frictions thus tighten the requirements for assortative matching: intuitively, a mild complementarity might be overwhelmed by strategic waiting, whereas very strong complementarity guarantees that even lower types prefer incrementally higher partners rather than skipping grades.
 
+---
 ## Wages, Fixed Effects, and the AKM Assumption
 
 The AKM model (Abowd–Kramarz–Margolis, 1999) is an additive two-way fixed effects model of wages: $w_{it} = \alpha_i + \psi_{j(i,t)} + \varepsilon_{it}$, where $\alpha_i$ is a worker effect and $\psi_j$ a firm effect [@Abowd1999]. This framework assumes that any worker–firm match effect is ignorable or absorbed in the error term. We now discuss why assortative matching models violate the AKM assumptions, and how pure sorting creates challenges for identifying fixed effects. We also explain the importance of worker mobility and connected sets for estimating firm effects in the presence of sorting.
@@ -205,9 +226,11 @@ Another implication is that AKM-style firm effects might be biased if sorting is
 
 In summary, assortative matching poses a double challenge: it complicates wage determination (adding interaction terms) and can impede identification of linear models due to lack of support. The solution in empirical work is to leverage mobility (job switchers) and to be cautious in interpreting results. We next turn to specific empirical strategies developed to estimate sorting strength and complementarity in data, acknowledging these challenges.
 
+---
+
 ## Measuring Sorting and Complementarity: Empirical Strategies
 
-How can we empirically detect and quantify assortative matching and production complementarities in the labor market? Researchers have developed various approaches. We discuss a prominent constructive method by Hagedorn, Law, and Manovskii (HLM) – often called a rank-based identification strategy – and then cover alternative methods that use poaching flows, monotonicity tests, and other testable implications of PAM/NAM. We will also note the assumptions and limitations (such as the role of on-the-job search) for each strategy.
+This is great in theory, but how can we find evidence of these sorting patterns in messy, real-world data? Economists have developed some clever strategies to detect and measure sorting.
 
 #### Hagedorn–Law–Manovskii Rank Method
 Hagedorn, Law, and Manovskii (2017) propose an approach to identify a sorting equilibrium nonparametrically by leveraging the theoretical monotonic relationships in wages [@Hagedorn2017]. The method can be summarized in a few steps:
@@ -270,9 +293,10 @@ In practice, researchers often use multiple pieces of evidence to argue for sort
 3.  Direct estimation of a sorting model shows better fit than a no-sorting alternative (e.g. log-likelihood comparisons).
 4.  Policy changes or natural experiments: e.g. if a region suddenly improves in firm productivity, do the high-skill workers flock there? That could show sorting response.
 
+---
 ## Simulating Sorting Patterns
 
-To concretely illustrate PAM vs NAM vs a frictional case, consider a simple simulation of matches between workers and firms of different types. Figure 1 plots worker type against firm type for matched pairs under three scenarios: (i) PAM (high with high), (ii) NAM (high with low), and (iii) a frictional sorting scenario (mostly high with high, but some mismatches due to frictions). We see that PAM produces an upward-sloping 45° relationship, NAM a downward-sloping pattern, and the frictional case lies somewhere in between (some positive relationship, but with noise and gaps).
+To concretely illustrate PAM vs NAM vs a frictional case, consider a simple simulation of matches between workers and firms of different types. Figure 1 plots worker type against firm type for matched pairs under three scenarios: (i) PAM (high with high), (ii) NAM (high with low), and (iii) a frictional sorting scenario (mostly high with high, but some mismatches due to frictions). We see that PAM produces an upward-sloping 45° relationship, NAM a downward-sloping pattern, and a frictional case lies somewhere in between (some positive relationship, but with noise and gaps).
 
 
 
@@ -280,6 +304,7 @@ To concretely illustrate PAM vs NAM vs a frictional case, consider a simple simu
 
 In the frictional plot, one can notice a generally upward trend, but a few medium-type workers are matched with slightly lower-type firms than one would expect under perfect sorting (those points off the main diagonal). These could correspond to the kind of non-convexities Shimer and Smith discussed – e.g. mid-level types accepting somewhat mismatched partners due to search frictions. If we increase the complementarity or lower frictions in the simulation, those off-diagonal points would move closer to the sorted line.
 
+---
 ## Policy Implications and Connections to AKM
 
 Assortative matching has important implications for wage inequality, mobility, and how we interpret decompositions like AKM:

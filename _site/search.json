@@ -32,7 +32,7 @@
     "href": "notes/search_1.html",
     "title": "Who Works Where?",
     "section": "",
-    "text": "Assortative matching refers to how workers and firms pair based on their characteristics, such as skill and productivity. This note builds on the AKM model of wages by examining matching models where worker–firm pairings and wage outcomes are endogenously determined. We cover frictionless matching with transferable utility (the classic Becker assignment model) and then introduce search frictions via the Shimer–Smith (2000) model. Throughout, we formalize conditions for positive assortative matching (PAM) vs. negative assortative matching (NAM), derive key results, and connect the theory to empirical strategies for measuring sorting and complementarities. All mathematics are given in LaTeX form, and references use citation keys for further reading by professional economists."
+    "text": "Assortative matching refers to how workers and firms pair based on their characteristics, such as skill and productivity."
   },
   {
     "objectID": "notes/search_1.html#introduction-beyond-worker-and-firm-effects",
