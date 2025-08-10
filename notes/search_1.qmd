@@ -1,0 +1,227 @@
+---
+title: "Assortative Matching in Labor Markets: Who Works Where?"
+author: 'Harrison Youn<br><span style="font-size: 0.8em; color: #6c757d;">AKM 2</span>'
+date: "2025-08-04"
+description: "Why do the best workers end up at the best firms? This note explores the theory of assortative matching, from frictionless models to markets with search frictions, and how it challenges standard views of wages."
+categories: [Labor Economics, Matching Theory, Wage Inequality, AKM Model, Search Theory]
+format:
+  html:
+    toc: true
+    code-fold: true
+---
+
+## Introduction: Beyond Worker and Firm Effects
+
+The AKM model gives us a powerful way to separate *who* a worker is (the person effect) from *where* they work (the firm effect). But this raises a deeper question: what process governs the matching of workers to firms in the first place? It's clearly not random. High-skill workers tend to work at high-productivity firms, a phenomenon known as **positive assortative matching (PAM)**.
+
+> What economic forces drive the best workers to the best firms, and when might the opposite be true?
+
+This note dives into the economic theory behind this sorting. We explore the conditions that lead high-skill workers to pair with high-productivity firms (PAM) versus when "opposites attract" (**negative assortative matching**, or NAM). We'll start with a perfect, frictionless market and then introduce the complexities of real-world search, showing how these theoretical models inform empirical work and challenge the assumptions of the simple AKM framework.
+
+---
+
+## Frictionless Matching: The Beckerian Ideal
+
+In a frictionless matching model, workers and firms pair in a single-stage assignment without any search costs. When the output of a match can be freely divided between the two parties (via a wage), we have **transferable utility (TU)**. The canonical model for this setup is Gary Becker's 1973 assignment model [@Becker1973].
+
+#### Environment
+
+Let $X$ be the set of worker types (e.g., skill) and $Y$ be the set of firm types (e.g., productivity). We can think of these as continuous intervals like $[0,1]$. A match $(x,y)$ between a worker of type $x$ and a firm of type $y$ produces output $f(x,y)$. We assume higher-type workers and firms are always more productive ($f_x > 0$ and $f_y > 0$). Utility is transferable, meaning the output $f(x,y)$ can be split in any way through a wage $w$, with the firm earning the residual profit $f(x,y) - w$.
+
+#### Stability and Optimality
+
+A matching is **stable** if no one wants to break their match. This requires two conditions:
+1.  **Individual Rationality**: Every matched worker and firm gets a payoff of at least zero (their outside option).
+2.  **No Blocking Pair**: There is no unmatched pair $(x,y)$ who could form a new match and generate enough surplus to make both of them better off than they are currently.
+
+With transferable utility, a stable matching has a powerful implication: it must **maximize total output**.
+
+> **Lemma (Optimality of Stable Match)**: A matching is stable if and only if it solves the planner's problem of maximizing aggregate output:
+> $$
+> \max_{\mu}\; \int_{X} f(x,\mu(x))\,dx
+> $$
+> where $\mu(x)$ is the firm matched to worker $x$.
+
+The logic is simple: if a matching didn't maximize output, there would be a pair of workers and firms who could swap partners and increase their combined output. This gain could be split, making them a "blocking pair" that destabilizes the original matching.
+
+#### Competitive Equilibrium
+
+A stable outcome is also a **competitive equilibrium**. There exist equilibrium payoffs for workers, $U(x)$, and firms, $V(y)$, such that for every matched pair $(x,y)$:
+$$
+U(x) + V(y) = f(x,y)
+$$
+And for any potential pair that did not match, the potential surplus is less than or equal to their equilibrium payoffs: $U(x) + V(y) \ge f(x,y)$.
+
+Here, $U(x)$ can be interpreted as the market wage for worker $x$, and $V(y)$ as the firm's profit. In equilibrium, each matched pair fully exhausts their joint surplus, leaving no room for profitable deviations.
+
+---
+
+## The Key Ingredient: Supermodularity
+
+When does the optimal matching pair the best with the best (PAM) or the best with the worst (NAM)? The answer hinges on the **complementarity** in the production function, $f(x,y)$.
+
+#### Defining PAM vs. NAM
+
+The production function $f(x,y)$ has **increasing differences** (or is **supermodular**) if the marginal return to a worker's skill is higher at a more productive firm. Formally, for any $x' > x$ and $y' > y$:
+$$
+f(x',y') - f(x,y') > f(x',y) - f(x,y)
+$$
+If the function is smooth, this is equivalent to the cross-partial derivative being positive: $f_{xy}(x,y) > 0$. This implies worker skill and firm productivity are **complements**.
+
+Conversely, if $f_{xy} < 0$, the function is **submodular**, and inputs are **substitutes**.
+
+-   **Positive Assortative Matching (PAM)**: Higher-type workers match with higher-type firms. The matching function $\mu(x)$ is increasing.
+-   **Negative Assortative Matching (NAM)**: Higher-type workers match with lower-type firms. The matching function $\mu(x)$ is decreasing.
+
+#### Becker’s Theorem: When Likes Attract
+
+**Becker’s Theorem (1973)**: In the frictionless TU model:
+-   If $f(x,y)$ is **supermodular** ($f_{xy} > 0$), the unique stable matching is **PAM**.
+-   If $f(x,y)$ is **submodular** ($f_{xy} < 0$), the unique stable matching is **NAM**.
+-   If $f_{xy} = 0$, any matching yields the same total output.
+
+**Proof Sketch (PAM case)**: Suppose the matching is not assortative. Then there must exist two pairs $(x_1, y_2)$ and $(x_2, y_1)$ where $x_1 < x_2$ and $y_1 < y_2$. Let's compare the output of this "crossed" match to the "sorted" match $(x_1, y_1)$ and $(x_2, y_2)$. The change in total output from switching to the sorted match is:
+$$
+\Delta = [f(x_1,y_1) + f(x_2,y_2)] - [f(x_1,y_2) + f(x_2,y_1)]
+$$
+Rearranging terms gives:
+$$
+\Delta = [f(x_2,y_2) - f(x_1,y_2)] - [f(x_2,y_1) - f(x_1,y_1)]
+$$
+Because $f$ is supermodular ($f_{xy} > 0$), the gain in output from upgrading the worker from $x_1$ to $x_2$ is greater at the better firm $y_2$. Therefore, $[f(x_2,y_2) - f(x_1,y_2)] > [f(x_2,y_1) - f(x_1,y_1)]$, which means $\Delta > 0$. The sorted (PAM) matching produces more output and is the only stable outcome.
+
+#### Equilibrium Wages under Sorting
+
+Under PAM, wages are determined by both productivity and competition. Differentiating the equilibrium condition $U(x) + V(\mu(x)) = f(x, \mu(x))$ with respect to worker type $x$ gives:
+$$
+U'(x) + V'(\mu(x))\,\mu'(x) = f_x(x,\mu(x)) + f_y(x,\mu(x))\,\mu'(x)
+$$
+In a competitive market, it can be shown that a worker's wage gradient equals their marginal product, $U'(x) = f_x(x, \mu(x))$. This implies that under PAM, the returns to skill are amplified. High-skill workers not only have high skill ($x$) but are also matched with high-productivity firms ($y = \mu(x)$), and the wage reflects both.
+
+---
+
+## Adding Reality: Search Frictions and the Shimer-Smith Model
+
+Real-world labor markets are not frictionless. The **Shimer and Smith (2000)** model introduces two-sided heterogeneity into a random search framework [@ShimerSmith2000].
+
+#### Match Surplus and Acceptance
+
+Workers and firms meet randomly at some rate. When a worker $x$ meets a firm $y$, they decide whether to match based on the **total match surplus**, $S(x,y)$, defined as the value of being matched versus the value of continuing to search.
+$$
+S(x,y) \equiv [W_1(x,y) + \Pi_1(x,y)] - [W_0(x) + \Pi_0(y)]
+$$
+-   $W_1, \Pi_1$: Value of being employed/having a filled vacancy.
+-   $W_0, \Pi_0$: Value of being unemployed/having an open vacancy (the outside options).
+
+A match forms if and only if the surplus is non-negative, $S(x,y) \ge 0$. This defines an **acceptance set** $\mathcal{M}$ in the space of worker and firm types.
+
+#### Wage Bargaining
+
+If a match forms, the surplus is split via Nash Bargaining. The worker receives their outside option value plus a share $\alpha$ (their bargaining power) of the surplus.
+$$
+\text{Worker's Value:} \quad W_1(x,y) = W_0(x) + \alpha S(x,y)
+$$
+This implies the wage is not additively separable. It depends on the worker's type, the firm's type, and their interaction through the production function $f(x,y)$:
+$$
+w(x,y) = (1-\alpha)rW_0(x) + \alpha f(x,y) - \alpha r\Pi_0(y)
+$$
+The term $\alpha f(x,y)$ is a **match-specific component** that cannot be decomposed into separate worker and firm effects, directly challenging the AKM specification.
+
+#### When Does PAM Survive with Search?
+
+Search frictions complicate sorting. Supermodularity ($f_{xy} > 0$) is **no longer sufficient** to guarantee PAM. Why? An agent might reject a "good" partner in hopes of finding an "even better" one later. This option value of waiting can lead to non-monotonic matching patterns.
+
+Shimer and Smith show that a stronger condition is needed: **log-supermodularity**.
+$$
+\frac{\partial^2 \ln f(x,y)}{\partial x \partial y} > 0
+$$
+This condition ensures that the *percentage* gain from a better partner is always increasing in one's own type. This is strong enough to overcome the option value effect and guarantee that preferences over partners are "single-peaked," ensuring that all agents prefer higher-type partners.
+
+> **Shimer-Smith Result**: If $f(x,y)$ is log-supermodular, the search equilibrium is **positively assortative**. If it is merely supermodular, sorting can fail, with middle-types potentially refusing to match with each other.
+
+---
+
+## How Sorting Challenges the AKM Model
+
+The theory of assortative matching raises two fundamental challenges for the empirical AKM framework.
+
+#### 1. The Non-Additive Nature of Wages
+
+As shown in the search model, wages in a sorting equilibrium with complementarities naturally contain a non-additive match-specific component, $\alpha f(x,y)$. The AKM model, by construction, assumes wages are additively separable:
+$$
+w_{it} = \theta_i + \psi_{j(i,t)} + \varepsilon_{it}
+$$
+When an AKM model is estimated on data generated by a sorting process, the true match effect is forced into the residual term $\varepsilon_{it}$. This misspecification can bias the estimated worker ($\theta_i$) and firm ($\psi_j$) effects and lead to an underestimation of the true correlation between them.
+
+#### 2. Identification Failure under Pure Sorting
+
+The AKM model's identification of firm and person effects relies on **worker mobility**. We can only separate $\psi_j$ from $\theta_i$ by observing the same worker $i$ moving between different firms.
+
+Now consider a world with perfect, frictionless PAM. High-skill workers *only* work at high-productivity firms, and low-skill workers *only* work at low-productivity firms. The labor market would break into disconnected segments.
+-   Top-tier workers would never move to mid-tier or low-tier firms.
+-   No "bridge" of mobile workers would exist to link the different segments.
+
+In this scenario, the data would not form a single **connected set**. It would be impossible to tell if the high wages in the top segment are due to high worker effects ($\theta_i$) or high firm effects ($\psi_j$). You could add a constant to all the top-tier firm effects and subtract it from their workers' effects, and it would fit the data just as well. Identification would fail.
+
+In practice, sorting is not perfect, and mobility does create a large connected set. However, the stronger the sorting, the weaker the statistical links between very different types of firms, making the estimates of firm effects less precise.
+
+---
+
+## Measuring the Unseen: Empirical Strategies for Sorting
+
+Given these challenges, how can economists measure sorting and complementarities?
+
+#### The Hagedorn-Law-Manovskii (HLM) Rank Method
+
+Hagedorn, Law, and Manovskii (2017) developed a non-parametric method to identify a sorting equilibrium [@Hagedorn2017]. The logic is:
+1.  **Rank Workers by Ability**: Within a given firm, higher wages imply higher ability.
+2.  **Link Ranks Across Firms**: Use workers who move between firms to stitch together these local rankings into a single global ranking of worker ability.
+3.  **Rank Firms by Productivity**: A higher-quality firm pays more for any given worker type. By comparing what different firms pay for workers of the same ability rank, firms can also be ranked.
+4.  **Recover Production Function**: With workers and firms ranked, one can back out the production function $f(x,y)$ and directly test for complementarity ($f_{xy}>0$).
+
+#### Poaching Flows and Revealed Preference
+
+Sorkin (2018) proposes ranking firms based on "revealed preference" from worker flows [@Sorkin2018]. The idea is that workers "vote with their feet."
+-   If workers consistently move from Firm A to Firm B more often than from B to A, we can infer that B is a "better" or higher-ranked firm.
+-   By analyzing the entire network of employer-to-employer transitions, one can construct a firm quality hierarchy. A clear upward trend in mobility is strong evidence for PAM.
+
+#### Boundary Monotonicity Tests
+
+A key prediction of PAM is that the distribution of worker abilities at high-type firms should **stochastically dominate** that at low-type firms.
+-   This means the lowest-skilled worker at a top firm should still be more skilled than the lowest-skilled worker at a bottom firm.
+-   Empirically, one can test if the 10th percentile, median, and 90th percentile of the worker ability distribution are all increasing with firm rank.
+
+---
+
+## Conclusion: Why Sorting Matters for Policy and Research
+
+The theory of assortative matching provides a rich framework for understanding labor markets that goes beyond the additive world of the basic AKM model. It has several key implications.
+
+-   **Inequality**: PAM naturally amplifies wage inequality. High-skill workers get a "double bonus": their own high skill plus the high productivity of their firm partner. This creates a wide gap between the highest and lowest earners.
+-   **Productivity**: If frictions prevent efficient sorting, there is a misallocation of talent, and aggregate output is lower than its potential. Policies that reduce search frictions (e.g., better job-matching platforms) can enhance overall productivity.
+-   **Interpreting AKM**: Sorting theory suggests that the low correlation between worker and firm effects often found in AKM studies may not mean sorting is weak. Instead, it could reflect model misspecification (omitted match effects) or that mobility across very different firm types is rare.
+-   **Future Research**: The frontier of research integrates sorting theory directly into empirical models. This involves estimating models with match effects, modeling on-the-job search explicitly, and using methods like HLM or flow analysis to get a more accurate picture of the powerful forces that determine who works where.
+
+Ultimately, assortative matching reminds us that wages are not just a function of who you are and where you work, but of the **synergy created by the match itself**.
+
+---
+
+## References
+
+Abowd, J. M., Kramarz, F., & Margolis, D. N. (1999). High Wage Workers and High Wage Firms. *Econometrica*, 67(2), 251–333.
+
+Abowd, J. M., Kramarz, F., Pérez-Duarte, S., & Schmutte, I. (2009). "A Formal Test of Assortative Matching in the Labor Market." NBER Working Paper No. 15546.
+
+Bagger, J. & Lentz, R. (2019). An Empirical Model of Wage Dispersion with Sorting. *Review of Economic Studies*, 86(1), 153–190.
+
+Becker, G. S. (1973). A Theory of Marriage: Part I. *Journal of Political Economy*, 81(4), 813–846.
+
+Hagedorn, M., Law, T. H., & Manovskii, I. (2017). Identifying Equilibrium Models of Labor Market Sorting. *Econometrica*, 85(1), 29–65.
+
+Hall, R. E. & Heckman, J. J. (2000). "Micro data and macro understanding." In *Card, David; Krueger, Alan B. (eds.). A Treatise on Labor Science*.
+
+Shapley, L. & Shubik, M. (1972). The Assignment Game I: The Core. *International Journal of Game Theory*, 1(1), 111–130.
+
+Shimer, R. & Smith, L. (2000). Assortative Matching and Search. *Econometrica*, 68(2), 343–369.
+
+Sorkin, I. (2018). Ranking Firms Using Revealed Preference. *Quarterly Journal of Economics*, 133(3), 1331–1393.
