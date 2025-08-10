@@ -2,8 +2,6 @@ project:
   type: website
 
 website:
-  title: "Personal Website"
-  title-separator: " | "
   site-url: https://www.harrisonyoun.com
   canonical: true
   description: "Economics PhD Candidate at the Ohio State University"
@@ -31,6 +29,7 @@ website:
     
 format:
   html:
+    pagetitle: "{{< meta title >}} | Personal Website"
     theme: sandstone
     toc: false
     code-copy: true
