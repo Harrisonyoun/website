@@ -367,13 +367,26 @@ main {
 /* 9. TABLE OF CONTENTS (On this Page) STYLES
 ----------------------------------------------------- */
 
-/* 'On this Page'*/
-#quarto-sidebar-toc nav a {
+/* 'On this Page'  */
+#quarto-sidebar-toc nav a,
+.sidebar-toc a,
+.quarto-toc a,
+.toc-content a,
+#TOC a {
   color: #1a1a1a !important; 
 }
 
-/* 'On this Page' links */
+/* 'On this Page' links hover/active */
 #quarto-sidebar-toc nav a:hover,
-#quarto-sidebar-toc nav a.active {
-  color: var(--c-accent-orange) !important; 
+#quarto-sidebar-toc nav a.active,
+.sidebar-toc a:hover,
+.sidebar-toc a.active,
+.quarto-toc a:hover,
+.quarto-toc a.active,
+.toc-content a:hover,
+.toc-content a.active,
+#TOC a:hover,
+#TOC a.active {
+  color: var(--c-accent-orange) !important;  
+  background-color: var(--c-accent-light) !important;  
 }
