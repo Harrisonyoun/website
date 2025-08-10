@@ -1,11 +1,20 @@
 ---
-title: "Why Do Two People with the Same Job Earn Different Wages?"
-author: 'Harrison Youn<br><span style="font-size: 0.8em; color: #6c757d;">AKM 1</span>'
-date: "2025-07-28"
-description: "Have you ever wondered what truly determines your salary? Is it your unique talent and drive, or is it the company you work for?"
-categories: [Labor Economics, Econometrics, Wage Inequality, AKM Model]
+title: "Assortative Matching: Who Works Where?"
+author: 'Harrison Youn<br><span style="font-size: 0.8em; color: #6c757d;">Search and Matching 1</span>'
+date: "2025-08-09"
+description: "The best workers often land at the best firms. But why?"
+categories: [Labor Economics, Search and Matching, Wage Inequality, AKM Model]
 format:
   html:
     toc: true
     code-fold: true
 ---
+
+## Introduction: From 'Who' and 'Where' to 'Why'
+
+The AKM model gave us a powerful lens to separate a worker's portable skill (*who* they are) from a firm's pay policy (*where* they work). But this opens a new puzzle: **Why do certain workers end up at certain firms in the first place?**
+
+It's clearly not a random lottery. The most sought-after employees often work at the most prestigious companies. Economic theories explain this sorting process. It starts with a "perfect world" model.
+
+---
+
