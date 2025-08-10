@@ -363,9 +363,4 @@ main {
   font-size: 0.9rem;
   text-align: justify;
 }
- 
-.quarto-secondary-nav .nav-link.active, .quarto-secondary-nav .nav-link:hover {
-  background-color: var(--c-accent-light);
-  border-left-color: var(--c-accent-orange);
-  color: var(--c-accent-orange);
-}
+  

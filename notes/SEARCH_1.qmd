@@ -4,6 +4,10 @@ author: 'Harrison Youn<br><span style="font-size: 0.8em; color: #6c757d;">Search
 date: "2025-08-09"
 description: "The best workers often land at the best firms. But why?"
 categories: [Labor Economics, Search and Matching, Wage Inequality, AKM Model]
+format:
+  html:
+    toc: true
+    code-fold: true
 ---
 
 ## Introduction: From 'Who' and 'Where' to 'Why'
