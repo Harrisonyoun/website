@@ -1,5 +1,5 @@
 ---
-title: "Assortative Matching in Labor Markets: Who Works Where?"
+title: "Who Works Where?"
 author: 'Harrison Youn<br><span style="font-size: 0.8em; color: #6c757d;">AKM 2</span>'
 date: "2025-08-04"
 description: "Why do the best workers end up at the best firms? This note explores the theory of assortative matching, from frictionless models to markets with search frictions, and how it challenges standard views of wages."
