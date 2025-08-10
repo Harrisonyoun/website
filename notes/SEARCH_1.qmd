@@ -4,12 +4,6 @@ author: 'Harrison Youn<br><span style="font-size: 0.8em; color: #6c757d;">Search
 date: "2025-08-09"
 description: "The best workers often land at the best firms. But why?"
 categories: [Labor Economics, Search and Matching, Wage Inequality, AKM Model]
-format:
-  html:
-    toc: true
-    code-fold: true
----
-
 ---
 
 ## Introduction: From 'Who' and 'Where' to 'Why'
@@ -50,3 +44,7 @@ and for unmatched pairs $U(x)+V(y) \ge f(x,y)$. Here $U(x)$ can be interpreted a
 
 #### Existence and Uniqueness
 Under mild continuity and distribution conditions, a stable (output-maximizing) matching exists. In one-dimensional settings with strict supermodularity (defined below), the stable matching is essentially unique and assortative (sorted by type). With transferable utility, no strategic issues arise, and one can solve the planner’s problem directly.
+
+---
+
+ 
