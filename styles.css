@@ -363,3 +363,8 @@ main {
   font-size: 0.9rem;
   text-align: justify;
 }
+
+.tippy-box {
+  background-color: var(--c-accent-light);
+  color: var(--c-text-primary);
+}
