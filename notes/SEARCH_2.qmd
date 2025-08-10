@@ -1,0 +1,113 @@
+---
+title: "The Price of the Search"
+author: 'Harrison Youn<br><span style="font-size: 0.8em; color: #6c757d;">Search and Matching 2</span>'
+date: "2025-08-10"
+description: "What happens when finding the perfect match isn't free?"
+categories: [Labor Economics, Search and Matching, Shimer-Smith Model, Search Frictions, AKM Model]
+format:
+  html:
+    toc: true
+    code-fold: true
+---
+
+## From Part 1: Farewell to a Perfect World
+
+In `Search and Matching 1`, we explored the frictionless world. There, every worker and firm knew everything about each other instantly, and finding the perfect partner cost nothing. As long as the production function was supermodular ($f_{xy} > 0$), the market magically achieved **Positive Assortative Matching (PAM)**, pairing the best workers with the best firms.
+
+But the real world is messy. We send out resumes, wait anxiously for calls, and go through multiple rounds of interviews. The process of finding the perfect match comes with a cost: **search frictions**. The moment we introduce this "price of the search" into the model, Becker's elegant conclusions face a serious challenge.
+
+We use the seminal model of **Shimer and Smith (2000)** to see what happens when **'frictions' are thrown like sand into the gears** of the labor market machine.
+
+***
+## The Shimer–Smith Model (2000): Rules for a Frictional World
+
+The Shimer-Smith model depicts a world closer to reality, where workers and firms meet each other randomly.
+
+#### Environment: The Random Meeting Place
+Time is continuous. A measure of unemployed workers of type $x$ and a measure of firms with vacancies of type $y$ are both searching for partners. The meetings are random.
+
+* **The Meeting Process**: An unemployed worker meets a vacancy at a Poisson rate $\lambda$. It's like going to a party and randomly meeting people, not knowing who you'll encounter next.
+* **Information and Decision**: Once a worker $x$ and a firm $y$ meet, they instantly observe the potential output they could create together, $f(x,y)$. Then they must decide: **"Do we commit to this match, or do we go our separate ways?"**
+* **The Value of Outcomes**: If a match is formed, they work together, producing a flow output of $f(x,y)$ per unit of time, which they split via a wage $w(x,y)$. If they decline, the worker remains unemployed and the firm continues to search to fill its vacancy.
+
+All agents are forward-looking and discount the future with a rate $r$. Furthermore, even successful matches can dissolve for exogenous reasons at a rate $\delta$. The value function for each agent is defined as follows:
+
+* $W_0(x)$: The value for an unemployed worker of type $x$ (the present value of searching).
+* $W_1(x,y)$: The value for a worker $x$ matched with a firm $y$ (the present value of being employed).
+* $\Pi_0(y)$: The value for a firm $y$ with a vacancy (the present value of searching).
+* $\Pi_1(x,y)$: The value for a firm $y$ that has hired a worker $x$ (the present value of being a filled job).
+
+#### Match Surplus: "Is This Meeting Worth It?"
+When a worker $x$ and a firm $y$ meet, how much more value do they create by matching compared to the sum of their 'single' states, that is, continuing to search alone? This difference is the **Match Surplus**.
+
+$$
+S(x,y) \equiv [W_1(x,y) + \Pi_1(x,y)] - [W_0(x) + \Pi_0(y)]
+$$
+
+The surplus $S(x,y)$ is the key metric that answers the question: "How much better is it to say 'Yes' right now than to say 'No' and return to the searching pool?" In a steady-state equilibrium, this surplus satisfies the following Bellman equation:
+
+$$
+(r + \delta)S(x,y) = f(x,y) - rW_0(x) - r\Pi_0(y)
+$$
+
+**Left-hand side $(r + \delta)S(x,y)$**: 'The required annual return of the relationship.' This is the flow value required to sustain the match, combining the interest on the surplus value ($rS$) and the expected loss from a potential breakup ($\delta S$).
+**Right-hand side $f(x,y) - rW_0(x) - r\Pi_0(y)$**: 'The net cash flow of the relationship.' This is the direct output from the match ($f(x,y)$) minus the **opportunity costs** for the worker and the firm ($rW_0(x)$ and $r\Pi_0(y)$) from giving up their search activities.
+
+#### The Acceptance Decision: A Tightrope Walk on the Boundary
+Whether a meeting results in a match depends solely on the sign of the surplus.
+
+$$
+\text{A match is formed} \iff S(x,y) \ge 0
+$$
+
+If $S(x,y) < 0$, the match is worse than staying single, so they reject each other and walk away. The equilibrium is therefore characterized by an **Acceptance Set**, $\mathcal{M} = \{(x,y): S(x,y) \ge 0\}$.
+
+The locus of points where $S(x,y)=0$ forms the boundary of this acceptance set. A partner on this boundary is one you are perfectly indifferent about: "Meeting them is fine, but so is not meeting them."
+
+Here, a critical problem arises. Higher-type workers (higher $x$) and firms (higher $y$) have better prospects if they continue searching, meaning they have higher outside option values, $W_0(x)$ and $\Pi_0(y)$. Because of this, the surplus $S(x,y)$ may not increase monotonically with $x$ or $y$.
+
+> **Example: Why Might Medium Types Reject Each Other?**
+>
+> Imagine a talented MBA student ($x=0.8$) gets an offer from a solid, but not top-tier, consulting firm ($y=0.8$). In Becker's world, this could be a fine match. But in the world of Shimer-Smith, the student hesitates. 'If I take this, am I giving up my shot at McKinsey or Goldman Sachs ($y=0.95$)?' The opportunity cost of settling for a "good-not-great" partner is too high. The student might reject this perfectly good offer in the 'hope' of finding a better partner. The firm thinks the same way. When this happens across the market, it can create a **"hole"** in the acceptance set, where medium-type workers and firms avoid each other.
+
+#### Wage Determination: Splitting the Pie
+If a match is formed, how is the "pie": The surplus $S(x,y)$ divided? Shimer and Smith assume **Nash Bargaining**. If the worker's bargaining power is $\alpha \in [0,1]$, the wage $w(x,y)$ is set to give each party a share of the surplus proportional to their bargaining power.
+
+This means the worker's net gain ($W_1 - W_0$) is equal to $\alpha$ times the total surplus $S(x,y)$.
+$$
+W_1(x,y) - W_0(x) = \alpha S(x,y)
+$$
+Solving this for the wage $w(x,y)$ yields a crucial result:
+$$
+w(x,y) = rW_0(x) + \alpha \left[ f(x,y) - rW_0(x) - r\Pi_0(y) \right]
+$$
+Rearranging gives:
+$$
+w(x,y) = (1-\alpha)rW_0(x) + \alpha f(x,y) - \alpha r\Pi_0(y)
+$$
+This equation is in fundamental conflict with the simple additive structure of the AKM model ($w = \alpha_i + \psi_j$). The wage is not a sum of a worker part and a firm part. It contains a term, $\alpha f(x,y)$, that explicitly depends on the **interaction of the match**. This is the "smoking gun" showing that the interaction effect is baked into the wage itself.
+
+***
+## PAM Under Frictions: The Need for a Stronger Condition
+
+In Becker's world, supermodularity ($f_{xy} > 0$) was enough to guarantee PAM. But in a frictional world, the "hope for a better partner" can overwhelm this. For PAM to survive, the complementarity must be much stronger. Shimer and Smith show that this requires **log-supermodularity**.
+
+* **Supermodularity ($f_{xy}>0$):** The **level** of output gain from a better partner is greater for a higher-type agent.
+* **Log-supermodularity ($\frac{\partial^2 \ln f(x,y)}{\partial x \partial y} > 0$):** The **percentage** of output gain from a better partner is greater for a higher-type agent.
+
+> **Analogy: Why Percentage Gain Matters**
+>
+> Log-supermodularity is a condition strong enough to overcome the temptation to "skip grades" and wait for a jackpot partner. Imagine you are a chess novice ($x=0.1$). Beating an intermediate player ($y=0.5$) versus an advanced player ($y=0.6$) gives you more points (+10 vs +12), that's supermodularity. But if you are already a grandmaster ($x=0.9$), beating another grandmaster massively increases your "prestige" in percentage terms. Log-supermodularity means that this **relative "jackpot" feeling** from pairing with a better partner is much stronger for higher types. This feeling is so compelling that it makes agents of all types prefer the *next step up* rather than holding out indefinitely for the absolute best, thus inducing orderly, assortative matching.
+
+**The Core Result of Shimer-Smith:** If the production function $f(x,y)$ is log-supermodular, then the equilibrium matching will **always be Positively Assortative (PAM)**, regardless of the search frictions. If it is merely supermodular but not log-supermodular, PAM can fail, and we can get phenomena like medium types avoiding each other.
+
+In summary, in the frictional model of Shimer-Smith, we have learned:
+1.  **Matching is driven by surplus ($S(x,y) \ge 0$).** This is a rational choice that accounts for opportunity costs.
+2.  **Wages inherently contain a match-interaction effect.** This conflicts with the additive AKM framework.
+3.  **PAM requires a condition stronger than supermodularity: log-supermodularity.** Frictions make the conditions for orderly sorting much stricter.
+
+Now that we have seen the theoretical complexity, in the next chapter, we will ask: "Given this messy world, how can we possibly analyze sorting with real data?"
+
+## References
+
+Shimer, R., & Smith, L. (2000). Assortative Matching and Search. *Econometrica, 68*(2), 343–369.

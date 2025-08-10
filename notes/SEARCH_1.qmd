@@ -129,3 +129,8 @@ The baseline model describqes a static, one-time matching game. In reality, care
 
 ***
 **To summarize, in the frictionless model, complementarity (a supermodular production function $f$) leads to positive sorting, which in turn yields systematic patterns in who works where and for how much. However, when we confront this theory with data, we must be mindful of the roles played by search frictions, measurement error, and the endogenous nature of matching, which complicate the clean theoretical predictions.**
+
+***
+## References
+
+Becker, G. S. (1973). A Theory of Marriage: Part I. *Journal of Political Economy, 81*(4), 813–846.
