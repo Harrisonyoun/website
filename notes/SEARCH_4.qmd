@@ -1,0 +1,96 @@
+---
+title: "Climb the Job Ladder"
+author: 'Harrison Youn<br><span style="font-size: 0.8em; color: #6c757d;">Search and Matching 4</span>'
+date: "2025-08-10T20:00:00Z"
+description: "Why do wages grow, and how do workers climb the job ladder?"
+categories: [Labor Economics, Search and Matching, On-the-Job Search, AKM Model, Endogenous Mobility, Wage Posting]
+format:
+  html:
+    toc: true
+    code-fold: true
+---
+
+## Introduction: The Missing Piece of the Puzzle
+
+In our journey so far, we have assembled a detailed picture of the labor market. In **Part 1**, we saw how a frictionless world produces perfect, static sorting. In **Part 2**, we introduced frictions, complicating the matching process. In **Part 3**, we played detective, exploring how to find evidence of sorting in messy data.
+
+Yet, a crucial piece is still missing. Our models have largely treated mobility as an exogenous shock. But careers are defined by a sequence of moves, often initiated while employed. We have not yet fully explained the **endogenous mobility** of workers, their active choice to search and move.
+
+***
+## Engine 1: The Bertrand Competition Model
+#### The Bidding Game
+When an employed worker (type $x$, at firm $y_1$) receives an outside offer from a poaching firm ($y_2$), a fierce Bertrand competition ensues.
+
+**If the poacher is more productive ($f(x, y_2) > f(x, y_1)$):** The poacher wins by offering a wage $w = f(x, y_1)$, which is the maximum the incumbent firm is willing to pay. The worker moves and gets a large wage jump.
+**If the incumbent is more productive ($f(x, y_1) > f(x, y_2)$):** The incumbent firm retains the worker by matching the poacher's best possible offer, raising the wage to $w = f(x, y_2)$. The worker stays but gets a raise.
+
+Let $W(w)$ be the present value of a worker who currently earns a wage $w$. In continuous time with discount rate $r$, the value function evolves according to offers that arrive at rate $\lambda_1$. If an offer comes from a firm with productivity $y'$, the new wage becomes $w' = f(x, y')$. The worker's value function incorporates the expected gain from such events:
+$$
+rW(w) = w + \lambda_1 \int \max(W(f(x, y')) - W(w), 0) \, dF(y')
+$$
+Here, $F(y')$ is the distribution of firm productivities the worker might encounter. The integral represents the expected gain from on-the-job search.
+
+**Key Predictions:**
+1.  **Wage History Dependence:** A worker's wage is not a function of their current firm, but of the productivity of the **second-best firm** they have ever met.
+2.  **Wage Jumps:** Wages are constant between offers and only jump upwards upon receiving a credible outside offer (either by moving or by forcing a counteroffer).
+3.  **Connection to AKM's $\psi_j$:** This model provides a clear microfoundation for the AKM firm effect, $\psi_j$. The premium of a high-productivity firm is not arbitrary generosity; it is the outcome of its ability to win bidding wars for talent.
+
+***
+## Engine 2: The Wage-Posting Model
+
+An alternative and equally influential framework is the **wage-posting** model of Burdett and Mortensen (1998). Here, there are no bidding wars. Instead, firms post a wage, and workers react.
+
+#### The Mechanism: A Simple "Take It or Leave It"
+1.  **Firms Post Wages:** Each firm commits to a single wage offer, $w$. They cannot change it when a specific worker arrives.
+2.  **Workers Search:**
+    An **unemployed** worker (search rate $\lambda_0$) accepts any job offer they receive, as anything is better than zero.
+    An **employed** worker (search rate $\lambda_1$) who is currently earning $w_{current}$ will only accept an outside offer $w_{new}$ if **$w_{new} > w_{current}$**.
+
+This simple rule creates a powerful **"ratchet" effect**: workers can only move up the wage ladder. They never move for a lower wage.
+
+Firms face a critical trade-off:
+**Post a Low Wage:** Earn high profit per worker, but risk losing them quickly to a competitor offering more (high turnover).
+**Post a High Wage:** Earn low profit per worker, but retain them for longer (low turnover).
+
+The key to this model is understanding the steady-state flow of workers. The rate at which a worker at a firm paying wage $w$ separates is not just the exogenous rate $\delta$. It also includes the endogenous separation from being poached. If the cumulative distribution of wage offers in the market is $G(w)$, then the probability of getting an offer better than $w$ is $(1 - G(w))$.
+
+So, the total separation rate for a worker earning $w$ is:
+$$
+s(w) = \delta + \lambda_1 (1 - G(w))
+$$
+
+Firms choose their posted wage $w$ to maximize the present value of profits, knowing that a higher $w$ reduces the separation rate $s(w)$. In equilibrium, it can be shown that firms must be indifferent between posting different wages, which leads to a non-degenerate, continuous distribution of wages $G(w)$ across the market.
+
+**Key Predictions:**
+1.  **Endogenous Wage Dispersion:** This model's most famous result is that it generates wage dispersion **even among identical workers and identical firms**. The distribution of wages arises naturally from the search and poaching frictions.
+2.  **Wage Growth via Mobility:** A worker's wage only increases when they move to a new firm that posts a higher wage. There is no within-job wage growth from counteroffers.
+3.  **Connection to AKM's Residuals $\varepsilon_{it}$:** While the Bertrand model helps explain the firm effect $\psi_j$, the wage-posting model is brilliant at explaining the **residual wage variance**. Why do identical people at identical firms earn different amounts? The B-M model answers: it's due to their position in the equilibrium wage distribution, determined by their random search luck.
+
+***
+## Comparing the Engines and Re-evaluating AKM
+
+The two OJS models offer complementary explanations for the patterns AKM documents.
+
+| Feature | Bertrand Competition (PVR-style) | Wage Posting (B-M style) |
+| :--- | :--- | :--- |
+| **Wage Setting** | Dynamic bidding war | Static "take it or leave it" offer |
+| **Information** | Firms know each other's productivity | Firms know the distribution of offers |
+| **Wage Growth** | Jumps within a job (counteroffers) & when moving (poaching) | Jumps only when moving to a new job |
+| **Main Power** | Explains large wage gains for movers and the role of firm productivity ($f(x,y)$) | Explains wage dispersion among identical agents |
+
+**A View from AKM:**
+$$w_{it} = \alpha_i + \psi_j + \varepsilon_{it}$$
+
+* The **Bertrand Bidding** model provides a powerful story for **$\psi_j$**. The firm premium is a measure of its productivity and position on the job ladder, determining its ability to win bidding wars.
+* The **Wage Posting** model provides a powerful story for the variance of **$\varepsilon_{it}$**. The residual is not just measurement error; it reflects a worker's equilibrium position in a wage distribution generated by search frictions.
+* **Endogenous Mobility** is the core driver in both models, providing the theoretical underpinning for why studying "movers" is so central to identifying the AKM decomposition in the first place.
+
+***
+
+## References
+
+Burdett, K., & Mortensen, D. T. (1998). Wage Differentials, Employer Size, and Unemployment. *International Economic Review, 39*(2), 257–273.
+
+Postel-Vinay, F., & Robin, J. M. (2002). Equilibrium Wage Dispersion with Worker and Employer Heterogeneity. *Econometrica, 70*(6), 2295–2350.
+
+Cahuc, P., Postel-Vinay, F., & Robin, J. M. (2006). Wage Bargaining with On-the-Job Search: Theory and Evidence. *Econometrica, 74*(2), 323-364.
