@@ -44,7 +44,4 @@ and for unmatched pairs $U(x)+V(y) \ge f(x,y)$. Here $U(x)$ can be interpreted a
 
 #### Existence and Uniqueness
 Under mild continuity and distribution conditions, a stable (output-maximizing) matching exists. In one-dimensional settings with strict supermodularity (defined below), the stable matching is essentially unique and assortative (sorted by type). With transferable utility, no strategic issues arise, and one can solve the planner’s problem directly.
-
----
-
  
