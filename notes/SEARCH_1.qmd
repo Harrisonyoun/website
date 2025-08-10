@@ -26,7 +26,7 @@ Let $X$ be the set of worker types (e.g. skill level) and $Y$ the set of firm ty
 
 Each match $(x,y)$ produces output $f(x,y)$. We assume common ranking: $f_x(x,y)>0$ and $f_y(x,y)>0$, so higher-type workers and firms are more productive partners (this ensures it’s efficient to match higher types rather than leave them idle). Crucially, utility is transferable: if worker $x$ matched with firm $y$ produces $f(x,y)$, any split of this output can be arranged via the wage $w(x,y)$ paid to the worker (the firm earns $f(x,y)-w(x,y)$). Unmatched agents get 0.
 
-#### Stable Matching (Transferable Utility)
+#### Stable Matching (TU: Transferable Utility)
 A matching $\mu$ with an associated wage schedule $w(x,\mu(x))$ is stable if: (i) Individual Rationality: every matched worker and firm gets at least 0 (their outside option); (ii) No Blocking Pair: there is no unmatched pair $(x,y)$ such that $f(x,y)$ exceeds the sum of their current payoffs. Under TU, stability has a powerful implication: the matching must maximize total output. One can show:
 
 > **In plain English, a matching is stable if nobody can make a better deal elsewhere.** No worker and firm could sneak off, form a new pair, and *both* be better off. This simple "no side deals" rule is incredibly powerful.
@@ -101,14 +101,14 @@ To characterize wages formally, we use the equilibrium condition $U(x) + V(\mu(x
 $$
 U'(x) = \frac{\partial f(x, \mu(x))}{\partial x} = f_x(x, \mu(x)).
 $$
-This elegant result means the slope of the wage function with respect to worker type is simply the marginal product of worker skill, evaluated at their equilibrium match. Symmetrically, the firm's profit gradient is $\Pi'(y) = f_y(\mu^{-1}(y), y)$. The wage structure is thus tied directly to marginal products along the equilibrium assignment path. The key takeaway is that complementarity ($f_{xy}>0$) ensures the matching function $\mu(x)$ is increasing, which in turn shapes how these marginal products and thus wages evolve across the distribution.
+This result means the slope of the wage function with respect to worker type is simply the marginal product of worker skill, evaluated at their equilibrium match. Symmetrically, the firm's profit gradient is $\Pi'(y) = f_y(\mu^{-1}(y), y)$. The wage structure is thus tied directly to marginal products along the equilibrium assignment path. The key takeaway is that complementarity ($f_{xy}>0$) ensures the matching function $\mu(x)$ is increasing, which in turn shapes how these marginal products and thus wages evolve across the distribution.
 
 #### Supermodularity and Observables
 In practice, PAM implies we should observe a positive correlation between worker ability and firm quality. For instance, if we had data on worker test scores and firm productivity, PAM would mean high-scoring workers are concentrated in high-productivity firms. NAM would imply a negative correlation. Another implication under PAM is that the distribution of worker skills at higher-type firms stochastically dominates that at lower-type firms. In fact, a strict form of PAM means there is a threshold mapping: no high-type firm will employ a worker below some ability cutoff that a lower firm employs. This boundary monotonicity is a testable restriction: the minimum (or lower quantiles) of worker ability should be higher in higher-ranked firms if sorting is positive. Empirically, one often proxies "ability" and "firm type" by estimated fixed effects or wage ranks; a monotonic relationship at the boundaries supports PAM, while overlap or crossings might indicate no sorting or NAM.
 
 ***
 
-### From Theory to Empirics: Challenges and Limitations
+## From Theory to Empirics: Challenges and Limitations
 
 The frictionless Becker model provides a powerful and elegant benchmark. However, when we try to take this theory to real-world data, for example using the AKM framework, we encounter several critical challenges that bridge the gap between theoretical purity and empirical reality.
 
@@ -117,15 +117,15 @@ The Becker model assumes a perfect, centralized market where workers and firms c
 
 #### 2. What Are We Actually Measuring? 
 The theory relies on unobservable concepts: worker type $x$ and firm type $y$. In the AKM model, we use estimated worker fixed effects ($\alpha_i$) and firm fixed effects ($\psi_j$) as their empirical counterparts.
-* **Is $\alpha_i$ just 'skill'?** A worker's fixed effect could capture innate ability, but also non-portable skills, motivation, or negotiation ability.
-* **Is $\psi_j$ just 'productivity'?** A firm's fixed effect reflects its contribution to wages. This could be because the firm is highly productive (complementarity), or it could be because it has market power and shares the resulting profits (**rent-sharing**) with its workers, regardless of the specific worker's skill.
+**Is $\alpha_i$ just 'skill'?** A worker's fixed effect could capture innate ability, but also non-portable skills, motivation, or negotiation ability.
+**Is $\psi_j$ just 'productivity'?** A firm's fixed effect reflects its contribution to wages. This could be because the firm is highly productive (complementarity), or it could be because it has market power and shares the resulting profits (**rent-sharing**) with its workers, regardless of the specific worker's skill.
 A positive correlation between $\alpha_i$ and $\psi_j$ is consistent with PAM, but it could also be explained by high-skill workers being better at getting jobs at firms that share rents. Distinguishing between these two mechanisms (true complementarity vs. rent-sharing) is a major empirical challenge.
 
 #### 3. The Sorting is the Problem 
-The core of the AKM estimation relies on **movers**—workers who switch firms—to disentangle worker and firm effects. However, the very theory of assortative matching tells us that this movement is not random. High-skill workers don't randomly move to low-productivity firms. This **endogenous mobility** can bias the estimates. If movers are systematically different from stayers (e.g., more ambitious or a better fit for their new firm), the underlying assumptions of the AKM model may be violated, making it difficult to cleanly identify the true $\alpha_i$ and $\psi_j$.
+The core of the AKM estimation relies on **movers**, workers who switch firms, to disentangle worker and firm effects. However, the very theory of assortative matching tells us that this movement is not random. High-skill workers don't randomly move to low-productivity firms. This **endogenous mobility** can bias the estimates. If movers are systematically different from stayers (e.g., more ambitious or a better fit for their new firm), the underlying assumptions of the AKM model may be violated, making it difficult to cleanly identify the true $\alpha_i$ and $\psi_j$.
 
 #### 4. A Static Snapshot of a Dynamic World
-The baseline model describes a static, one-time matching game. In reality, careers are dynamic. Workers accumulate skills, and firms' productivities change. A match that is optimal today might not be optimal in five years. While dynamic versions of these models exist, they are far more complex and introduce new challenges, such as how to model skill acquisition and firm evolution over time.
+The baseline model describqes a static, one-time matching game. In reality, careers are dynamic. Workers accumulate skills, and firms' productivities change. A match that is optimal today might not be optimal in five years. While dynamic versions of these models exist, they are far more complex and introduce new challenges, such as how to model skill acquisition and firm evolution over time.
 
 ***
 **To summarize, in the frictionless model, complementarity (a supermodular production function $f$) leads to positive sorting, which in turn yields systematic patterns in who works where and for how much. However, when we confront this theory with data, we must be mindful of the roles played by search frictions, measurement error, and the endogenous nature of matching, which complicate the clean theoretical predictions.**
