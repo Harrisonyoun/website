@@ -1,6 +1,6 @@
 ---
 title: "Assortative Matching: A Guided Tour of Who Works Where"
-author: 'Harrison Youn<br><span style="font-size: 0.8em; color: #6c757d;">AKM 2</span>'
+author: "Harrison Youn<br><span style=\"font-size: 0.8em; color: #6c757d;\">AKM 2</span>"
 date: "2025-08-18"
 description: "A deep dive into the economics of labor market sorting. We keep the core theory and math intact, but add intuitive explanations to clarify why the best workers and best firms find each other."
 categories: [Labor Economics, Matching Theory, Wage Inequality, AKM Model, Search Theory]
