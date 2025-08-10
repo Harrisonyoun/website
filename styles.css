@@ -368,11 +368,12 @@ main {
 ----------------------------------------------------- */
 
 /* 'On this Page'*/
-#TOC .nav-link {
-  color: #1a1a1a; 
+#quarto-sidebar-toc nav a {
+  color: #1a1a1a !important; 
 }
 
 /* 'On this Page' links */
-#TOC .nav-link:hover, #TOC .nav-link.active {
-  color: #4CAF50; 
+#quarto-sidebar-toc nav a:hover,
+#quarto-sidebar-toc nav a.active {
+  color: #4CAF50 !important; 
 }
