@@ -93,7 +93,7 @@ This implies that the *distribution* of worker abilities should be different at 
 
 ***
 
-In conclusion, the journey from the clean theory of Part 1 to the frictional theory of Part 2 left us with a puzzle: our models predict a complex reality, but our main empirical tool, AKM, assumes a simple one. This chapter has shown how economists, acting as detectives, have developed sophisticated tools to resolve this tension.
+In conclusion, the journey from the clean theory of Part 1 to the frictional theory of Part 2 left us with a puzzle: our models predict a complex reality, but our main empirical tool, AKM, assumes a simple one. 
 
 By using the logic of relative rankings (HLM), observing the market's "votes" (Sorkin), and checking the "entry requirements" at top firms (Boundary Monotonicity), they can find the signal of sorting amidst the noise. These methods confirm that the complex interactions predicted by theory are not just mathematical curiosities; they are essential features of the real labor market that shape productivity, mobility, and inequality.
 
