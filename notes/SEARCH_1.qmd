@@ -1,0 +1,65 @@
+---
+title: "Assortative Matching: A Guided Tour of Who Works Where"
+author: "Harrison Youn"               # 먼저 평문으로 통과 확인
+date: "2025-08-18"
+description: >-
+  A deep dive into the economics of labor market sorting. We keep the core theory and math intact,
+  but add intuitive explanations to clarify why the best workers and best firms find each other.
+categories:
+  - Labor Economics
+  - Matching Theory
+  - Wage Inequality
+  - AKM Model
+  - Search Theory
+format:
+  html:
+    toc: true
+    code-fold: true
+---
+## Introduction: From 'Who' and 'Where' to 'Why'
+
+Our last discussion on the AKM model gave us a powerful lens to separate a worker's portable skill (*who* they are) from a firm's pay policy (*where* they work). But this opens a new, fascinating puzzle: **Why do certain workers end up at certain firms in the first place?**
+
+It's clearly not a random lottery. The most sought-after employees often work at the most prestigious companies. This note provides a guided tour through the economic theories that explain this sorting process. We'll start with a "perfect world" model to build our intuition, then add the complications of real-world job searching.
+
+Throughout, we will present the formal economic models and mathematics exactly as they appear in the academic literature—no simplification of the core concepts. The goal is to build a bridge between the intuitive questions and the formal answers.
+
+---
+
+## Frictionless Matching: A 'Perfect World' Starting Point
+
+To understand a complex process, economists love to start with a simplified model where things work perfectly. In labor markets, this is the **frictionless matching model**, most famously associated with Nobel laureate Gary Becker. Let's lay out the formal assumptions.
+
+#### Environment
+Let $X$ be the set of worker types (e.g. skill level) and $Y$ the set of firm types (e.g. productivity or firm "quality"). For simplicity, assume $X$ and $Y$ are intervals in $\mathbb{R}$ (e.g. $[0,1]$) with continuous distributions of agents on each side. A matching $\mu$ is a pairing such that each worker $x$ is matched to at most one firm $y=\mu(x)$, and vice versa. We focus on one-to-one matching and assume equal mass of workers and jobs for full matching (extensions to unequal numbers allow unmatched agents getting zero output).
+
+Each match $(x,y)$ produces output $f(x,y)$. We assume common ranking: $f_x(x,y)>0$ and $f_y(x,y)>0$, so higher-type workers and firms are more productive partners (this ensures it’s efficient to match higher types rather than leave them idle). Crucially, utility is transferable: if worker $x$ matched with firm $y$ produces $f(x,y)$, any split of this output can be arranged via the wage $w(x,y)$ paid to the worker (the firm earns $f(x,y)-w(x,y)$). Unmatched agents get 0.
+
+#### Stable Matching (TU)
+A matching $\mu$ with an associated wage schedule $w(x,\mu(x))$ is stable if: (i) Individual Rationality: every matched worker and firm gets at least 0 (their outside option); (ii) No Blocking Pair: there is no unmatched pair $(x,y)$ such that $f(x,y)$ exceeds the sum of their current payoffs. Under TU, stability has a powerful implication: the matching must maximize total output. Formally, one can show:
+
+> **In plain English, a matching is stable if nobody can make a better deal elsewhere.** No worker and firm could sneak off, form a new pair, and *both* be better off. This simple "no side deals" rule is incredibly powerful.
+
+**Lemma (Optimality of Stable Match with TU):** If a matching $\mu$ with wages $w(x,\mu(x))$ is stable, then $\mu$ maximizes aggregate output $\sum_{(x,y)\in \mu} f(x,y)$ (integral form for continuum). Equivalently, $\mu$ solves the assignment problem
+$$
+\max_{\mu}\; \int_{X} f(x,\mu(x))\,dx,
+$$
+subject to $\mu$ being a bijection between $X$ and $Y$.
+
+*Proof Sketch:* If a matching did not maximize total output, there exist two pairs $(x,y)$ and $(x',y')$ matched such that swapping partners increases output: $f(x,y')+f(x',y) > f(x,y)+f(x',y')$. Then $(x,y')$ would form a blocking pair (since they could transfer the gain so both are better off), contradicting stability. Thus, stability implies no such improving swap exists, which is the condition for optimal assignment. (We formally prove this swap argument in the next section.) Conversely, the output-maximizing assignment can always sustain a stable set of wages via transfers (pay each agent their marginal contribution or use the linear programming dual prices). This result was first shown by Becker [@Becker1973] and is analogous to the Koopmans–Beckmann assignment problem and the core of a cooperative game [@ShapleyShubik1972].
+
+#### Competitive Equilibrium Interpretation
+In a TU matching, stable outcomes coincide with a competitive equilibrium. There exist worker-side utility $U(x)$ and firm-side utility $V(y)$ such that for every matched pair $(x,y)$:
+$$
+U(x) + V(y) = f(x,y),
+$$
+and for unmatched pairs $U(x)+V(y) \ge f(x,y)$. Here $U(x)$ can be interpreted as the equilibrium payoff (wage) to worker $x$ and $V(y)$ as the payoff to firm $y$ (profit). These $(U, V)$ are Lagrange multipliers (shadow prices) for the assignment constraints. This system of inequalities is analogous to Walrasian equilibrium: $U(x)$ is the highest wage worker $x$ could get across all firms, and $V(y)$ the highest profit for firm $y$ across all workers, such that no pair can deviate and generate surplus above these payoffs. In equilibrium, each worker–firm pair matched yields zero surplus beyond what each side could get elsewhere, i.e. $f(x,y) - U(x) - V(y) = 0$ if matched (and < 0 if not matched). This is the dual characterization of the optimal assignment. The wages can be obtained from these as $w(x,y)=U(x)$ for the matched pair, so that indeed $w(x,y)+V(y)=f(x,y)$.
+
+#### Existence and Uniqueness
+Under mild continuity and distribution conditions, a stable (output-maximizing) matching exists. In one-dimensional settings with strict supermodularity (defined below), the stable matching is essentially unique and assortative (we’ll show it’s sorted by type). With transferable utility, no strategic issues arise, and one can solve the planner’s problem directly.
+
+---
+
+## Positive vs. Negative Assortative Matching (PAM vs. NAM)
+
+So, when does the market match the best with the best, or do opposites sometimes attract? The answer depends entirely on the mathematical properties of the production function, $f(x,y)$.
