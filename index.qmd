@@ -1,5 +1,5 @@
 ---
-pagetitle: "Harrison Yongjoon Youn"
+title: "Harrison Yongjoon Youn"
 ---
 
 ::: {#hero-heading}
