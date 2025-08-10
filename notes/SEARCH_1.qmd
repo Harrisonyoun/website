@@ -16,7 +16,7 @@ format:
 ---
 ## Introduction: From 'Who' and 'Where' to 'Why'
 
-The AKM model gave us a powerful lens to separate a worker's portable skill (*who* they are) from a firm's pay policy (*where* they work). But this opens a new, puzzle: **Why do certain workers end up at certain firms in the first place?**
+The AKM model gave us a powerful lens to separate a worker's portable skill (*who* they are) from a firm's pay policy (*where* they work). But this opens a new puzzle: **Why do certain workers end up at certain firms in the first place?**
 
 It's clearly not a random lottery. The most sought-after employees often work at the most prestigious companies. There are economic theories that explain this sorting process, starting with a "perfect world."
 
