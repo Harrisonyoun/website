@@ -1,16 +1,14 @@
 ---
-title: "Assortative Matching: A Guided Tour of Who Works Where"
-author: "Harrison Youn"               # 먼저 평문으로 통과 확인
-date: "2025-08-18"
+title: "Assortative Matching: Who Works Where?"
+author: 'Harrison Youn<br><span style="font-size: 0.8em; color: #6c757d;">Search and Matching 1</span>'
+date: "2025-08-09"
 description: >-
-  A deep dive into the economics of labor market sorting. We keep the core theory and math intact,
-  but add intuitive explanations to clarify why the best workers and best firms find each other.
+  The best workers often land at the best firms. But why?
 categories:
   - Labor Economics
-  - Matching Theory
+  - Search and Matching
   - Wage Inequality
   - AKM Model
-  - Search Theory
 format:
   html:
     toc: true
