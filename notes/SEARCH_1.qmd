@@ -10,6 +10,8 @@ format:
     code-fold: true
 ---
 
+---
+
 ## Introduction: From 'Who' and 'Where' to 'Why'
 
 The AKM model gave us a powerful lens to separate a worker's portable skill (*who* they are) from a firm's pay policy (*where* they work). But this opens a new puzzle: **Why do certain workers end up at certain firms in the first place?**
@@ -48,64 +50,3 @@ and for unmatched pairs $U(x)+V(y) \ge f(x,y)$. Here $U(x)$ can be interpreted a
 
 #### Existence and Uniqueness
 Under mild continuity and distribution conditions, a stable (output-maximizing) matching exists. In one-dimensional settings with strict supermodularity (defined below), the stable matching is essentially unique and assortative (sorted by type). With transferable utility, no strategic issues arise, and one can solve the planner’s problem directly.
-
-----
-
-## Positive vs. Negative Assortative Matching (PAM vs. NAM)
-
-So, when does the market match the best with the best, or do opposites sometimes attract? The answer depends entirely on the mathematical properties of the production function, $f(x,y)$.
-
-#### Increasing Differences and Supermodularity
-We say $f(x,y)$ has increasing differences in $(x,y)$ if for any $x' > x$ and $y' > y$, the difference satisfies:
-$$
-f(x',y') - f(x,y') > f(x',y) - f(x,y).
-$$
-Equivalently, the cross-partial derivative is non-negative: $f_{xy}(x,y) \ge 0$ for all $x,y$, with $>0$ indicating strict complementarity. This condition is known as supermodularity (or log-superadditivity in discrete terms) and implies that high-type workers and high-type firms together generate disproportionately high output.
-
-> **What does this mean?** Think of a top surgeon (a high-skill worker, $x$) and a hospital with state-of-the-art robotic equipment (a high-productivity firm, $y$). The surgeon's skill is amplified by the advanced technology, and the technology is most valuable in the hands of a top surgeon. They are **complements**. The performance boost from upgrading the surgeon's skill is much larger at the high-tech hospital than at a basic clinic. This is supermodularity.
-
-Conversely, if $f_{xy} < 0$ (decreasing differences, or submodularity), then high and low types are substitutes and mismatched pairing can yield higher output (an indication for NAM).
-
-**Positive Assortative Matching (PAM):** A matching is positively assortative if higher-type workers match with higher-type firms in rank order. In a continuum, PAM means the matching function $\mu(x)$ is nondecreasing in $x$ (monotonic); in discrete terms, one can say the correlation between worker skill and firm productivity in matches is positive, or that the type quantiles are aligned. 
-
-**Negative Assortative Matching (NAM):** Negative assortative matching (NAM) means high-type workers pair with low-type firms (and vice versa), i.e. $\mu(x)$ is decreasing or types are negatively correlated in matches.
-
-#### Becker’s Theorem (1973)
-In the frictionless TU model, if $f(x,y)$ is supermodular ($f_{xy} > 0$), the stable (and output-maximizing) matching is PAM. If $f(x,y)$ is submodular ($f_{xy} < 0$), the stable matching is NAM. Furthermore, if $f_{xy}=0$ (no complementarities, just additive or separable output), then any matching yields the same total output, so equilibrium may not be unique or assortative (the extreme case being indifference to partner type).
-
-*Proof (swap argument):* We prove the PAM case; NAM is symmetric by considering $-f(x,y)$ (or reversing the order of one side). Consider two workers $x_1 < x_2$ and two firms $y_1 < y_2$. Suppose, for sake of contradiction, that the putative optimal matching is not assortative: say $x_1$ is matched with the higher firm $y_2$, and $x_2$ with $y_1$ (a mismatched pair). Compare this to the assortative pairing where $x_1$ is with $y_1$ and $x_2$ with $y_2$. The difference in total output between the two matchings is:
-$$
-\Delta = [f(x_1,y_1) + f(x_2,y_2)] - [f(x_1,y_2) + f(x_2,y_1)].
-$$
-By adding and subtracting $f(x_1,y_1)$ and $f(x_2,y_2)$ appropriately, this can be rewritten as:
-$$
-\Delta = [f(x_2,y_2) - f(x_1,y_2)] - [f(x_2,y_1) - f(x_1,y_1)].
-$$
-The terms in brackets are differences in output holding one side’s type fixed. Since $x_2 > x_1$ and $y_2 > y_1$, increasing differences implies
-$$
-f(x_2,y_2) - f(x_1,y_2) > f(x_2,y_1) - f(x_1,y_1).
-$$
-Thus $\Delta > 0$. The assortative (sorted) matching yields higher total output than the cross-matched pairing. This means the mismatched assignment was not output-maximizing. By the optimality of stable matchings, the mismatched pairing cannot be stable either: the two high types $(x_2,y_2)$ would form a blocking pair by coming together and splitting the surplus gain $\Delta$. This contradiction proves that under $f_{xy}>0$, the stable matching must be the sorted one (PAM). ∎
-
-#### Intuition
-With supermodularity, a higher type partner is especially valuable to a high-type agent. For example, if skilled workers and high-tech firms each boost the other’s productivity, it is efficient to put the best with the best. Any deviation (a talented worker at a mediocre firm or vice versa) wastes some of the potential high output that two top types could generate together. In contrast, if $f_{xy}<0$, there is diminishing returns to pairing similar types. A classic intuition is that if workers and firms have comparative advantages in different tasks, it can be optimal to pair dissimilar types to balance skills (NAM). But if both excel in the same dimension that strongly amplifies output (complements), match like-with-like.
-
-#### Equilibrium Wages under Assortative Matching
-In a frictionless competitive matching, wages are determined by productivity and the no-blocking condition. Although the output splits $(U(x),V(y))$ are not uniquely pinned down without additional assumptions (any split that leaves no pair with positive surplus will do), equilibrium wages typically reflect an ordering consistent with assortative matching:
-
-- **Under PAM**, higher worker types earn weakly higher wages and higher firm types pay higher wages (to comparable workers). Intuitively, when high-$x$ meets high-$y$, their joint surplus is large, and competition ensures each gets a high payoff. In fact, in the sorted equilibrium, both $U(x)$ and $V(y)$ will be increasing in $x$ and $y$ respectively. A higher firm type $y$ must pay more to attract a given worker $x$ away from a lower-type firm, and a higher-$x$ worker commands a higher wage at any firm. Monotonicity: If $x_2>x_1$, then $U(x_2)\ge U(x_1)$; if $y_2>y_1$, then the wage paid to any given worker (or type quantile) is higher at $y_2$ than at $y_1$.
-- **Under NAM**, the sorting reverses: high-type workers go to low-type firms. In that case, a higher worker might actually earn less if their partner firm is worse. But high-$x$ with low-$y$ could still get a high share of a smaller pie. Generally, with NAM, $U(x)$ might still increase in $x$ (a better worker always can guarantee at least the value with a certain partner), but now higher-type firms pay lower wages on average (since they attract lower-$x$ workers).
-
-To characterize wages formally, one can derive first-order conditions from the assignment problem using calculus of variations (in continuous models) or consider the dual equalities $U(x)+V(y)=f(x,y)$. Heuristically, differentiating $U(x)+V(\mu(x))=f(x,\mu(x))$ with respect to $x$ in a PAM assignment yields:
-$$
-U'(x) + V'(\mu(x))\,\mu'(x) = f_x(x,\mu(x)) + f_y(x,\mu(x))\,\mu'(x).
-$$
-In a positively sorted match, $\mu'(x)>0$. Because firms are scarce, a small increase in worker type $x$ typically leads to matching with a slightly higher $y$ as well (to remain the optimal partner). At an interior optimum, no small perturbation in the matching can increase output, so the first-order impact of shifting an infinitesimal mass of workers to neighboring firms is zero. This implies the terms must balance out. In special cases (e.g. a continuum of types and smooth $f$), one can show $f_x(x,\mu(x)) = U'(x)$ and $f_y(x,\mu(x)) = -V'(y)$ at optimum. These are akin to envelope conditions: the wage gradient equals the marginal product of worker skill, etc. While we won’t solve these ODEs explicitly here, the key comparative static is that $f_{xy}>0$ ensures $\mu'(x)\ge0$. In other words, the sign of the cross-partial governs the monotonicity of the matching function in equilibrium. If $f_{xy}$ increases (stronger complementarity), the sorting becomes “steeper” – a small increase in worker type requires a higher firm type match to stay optimal.
-
-#### Supermodularity and Observables
-In practice, PAM implies we should observe a positive correlation between worker ability and firm quality. For instance, if we had data on worker test scores and firm productivity, PAM would mean high-scoring workers are concentrated in high-productivity firms. NAM would imply a negative correlation. Another implication under PAM is that the distribution of worker skills at higher-type firms stochastically dominates that at lower-type firms. In fact, a strict form of PAM means there is a threshold mapping: no high-type firm will employ a worker below some ability cutoff that a lower firm employs. This boundary monotonicity is a testable restriction – the minimum (or lower quantiles) of worker ability should be higher in higher-ranked firms if sorting is positive. Empirically, one often proxies "ability" and "firm type" by estimated fixed effects or wage ranks; a monotonic relationship at the boundaries supports PAM, while overlap or crossings might indicate no sorting or NAM.
-
-**To summarize, in the frictionless model complementarity (supermodular $f$) leads to positive sorting, which in turn yields systematic patterns in wages (high-high matches earn higher wages) and in match composition. We next examine how these conclusions are altered when we introduce search frictions.**
-
-
-
