@@ -27,7 +27,6 @@ website:
 
 format:
   html:
-    pagetitle: "{{< meta title >}} | Personal Website"
     theme: sandstone
     toc: false
     code-copy: true
