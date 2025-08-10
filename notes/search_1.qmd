@@ -1,7 +1,7 @@
 ---
 title: "Who Works Where?"
 author: 'Harrison Youn<br><span style="font-size: 0.8em; color: #6c757d;">Search and Matching 1</span>'
-date: "2025-07-28"
+date: "2025-08-10"
 description: "The best workers often land at the best firms. But why?"
 categories: [Labor Economics, Search and Matching, Wage Inequality, AKM Model]
 format:
