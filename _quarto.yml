@@ -3,7 +3,6 @@ project:
 
 website:
   site-url: https://www.harrisonyoun.com
-  canonical: true
   description: "Economics PhD Candidate at the Ohio State University"
   page-navigation: true
   back-to-top-navigation: true
