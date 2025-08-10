@@ -1,0 +1,104 @@
+---
+title: "Finding the Signal in the Noise"
+author: 'Harrison Youn<br><span style="font-size: 0.8em; color: #6c757d;">Search and Matching 3</span>'
+date: "2025-08-10T16:00:00Z"
+description: "How can we measure sorting when theory tells us wages are complex and data is messy?"
+categories: [Labor Economics, Search and Matching, AKM Model, Econometrics]
+format:
+  html:
+    toc: true
+    code-fold: true
+---
+
+## The Theoretical Challenge and Real Data
+
+In our journey so far, we've traveled from two different worlds. In **Part 1**, we explored Becker's frictionless paradise, where the market, like an omniscient matchmaker, paired agents perfectly, and positive sorting was the natural outcome of simple complementarity ($f_{xy}>0$).
+
+In **Part 2**, we plunged into the messy, frictional world of Shimer and Smith. There, the "price of the search" complicated everything. We discovered that wages were no longer a simple sum but a complex bargain reflecting outside options and match-specific output. More importantly, we learned that for orderly sorting (PAM) to survive the temptations of strategic waiting, a much stronger condition, log-supermodularity, was required. Theory, in short, predicts **complexity**.
+
+And yet, the most popular tool in empirical labor economics, the AKM model, assumes elegant **simplicity**: $w_{it} = \alpha_i + \psi_{j(i,t)} + \varepsilon_{it}$. How do we bridge this chasm between a complex theory and a simple empirical framework? 
+
+***
+## The Clash with the AKM Model: When Two Worlds Collide
+
+The search-and-matching theory and the AKM model are built on fundamentally different philosophies. Their collision reveals the core challenges of empirical work in this field.
+
+#### The Problem of Non-Additive Wages
+As we derived in Part 2, a bargained wage in a search model often looks like:
+$$
+w(x,y) = (1-\alpha)rW_0(x) + \alpha f(x,y) - \alpha r\Pi_0(y)
+$$
+The term **$\alpha f(x,y)$** is the smoking gun. It inextricably links the worker's type ($x$) and the firm's type ($y$).
+
+**Implication:** If this theory is correct, then estimating a standard AKM model is an act of **misspecification**. AKM forces reality into an additive box. But what happens to the interaction term? It gets shoved into the residual, $\varepsilon_{it}$. This isn't just a minor issue; it violates the core assumption that the error term is random noise, uncorrelated with the regressors.
+
+> **Example:** Imagine a simple multiplicative production function, $f(x,y) = x \cdot y$, where this complementarity is stark. The wage will contain a term like $\alpha xy$. When you force an additive model ($w \approx \alpha_i + \psi_j$) onto this reality, the model does its best to find average effects. But the errors will be systematic:
+> For a high-skill worker at a high-productivity firm (high $x$, high $y$), the true wage is very high. The additive model will *under-predict* their wage, leaving a **large, positive residual**.
+> For a low-skill worker at a high-productivity firm (low $x$, high $y$), the true wage is modest. The additive model might *over-predict* it, leaving a **negative residual**.
+>
+> Because the error is predictable based on the types of the worker and firm, the estimated effects, $\hat{\alpha}_i$ and $\hat{\psi}_j$, will be biased. The model systematically fails to capture the explosive potential of high-high matches, which is the very essence of positive sorting.
+
+#### The Identification Failure under Pure PAM
+An even more fundamental problem arises if sorting is perfect.
+
+**Connected Sets:** For AKM to statistically separate $\alpha_i$ from $\psi_j$, it needs to observe the same worker $i$ at different firms, say $j$ and $k$. The wage change upon moving, $w_{ik} - w_{ij}$, allows the model to estimate the firm premium difference, $\psi_k - \psi_j$, since the worker's own effect $\alpha_i$ is held constant. The network of firms linked by these 'mover' workers is called a **connected set**.
+
+> **Analogy: The Mystery of the Isolated Islands** 🏝️
+>
+> Imagine the labor market consists of two isolated islands: 'High-Tech Island' and 'Factory Island.' High-tech workers only work on their island, and manufacturing workers only work on theirs. **No ferry runs between them.** We observe that wages are much higher on High-Tech Island. But we have no way of knowing if this is because the **people ($\alpha_i$)** on High-Tech Island are brilliant or because the **environment ($\psi_j$)** of the island itself is productive. The two effects are perfectly confounded. If just one person were to take a ferry and work on the other island, they would provide a crucial reference point, a 'control' subject to solve the mystery.
+>
+> **Perfect PAM is this 'no ferry' state.** The labor market stratifies into disconnected segments. From a statistical standpoint, this means the design matrix of the regression is block-diagonal. You can identify firm effects *within* an island, but you can't compare the general pay level of High-Tech Island to Factory Island. You could add $1,000,000 to every firm effect on High-Tech Island and subtract it from every worker effect there, and the predicted wages would be identical. Identification fails.
+
+Fortunately, in reality, sorting is imperfect. Frictions ensure some workers take the "ferry," creating a large connected set. But if sorting is strong, these ferry routes between very different island types can be rare, making our estimates less precise.
+
+***
+## Empirical Strategies: How to Detect the Signal
+
+Given these challenges, how can we find evidence for sorting? Economists have developed several clever, indirect strategies.
+
+#### 1. The HLM Rank Method: A Logic Puzzle
+Hagedorn, Law, and Manovskii (2017) propose a non-parametric method that treats the problem like a logic puzzle, teasing out the underlying ranks of workers and firms.
+
+1.  **Rank Workers Within Firms:** The starting premise is simple: within a single firm, wages should be monotonic in ability. The highest-paid person is likely the most skilled one there. This gives us a *relative* ranking within each company.
+2.  **Link Ranks Across Firms via Movers:** This is the key step to create a *global* ranking. The logic is transitive:
+    * `IF (Alice's salary > Bob's salary) @ Google,`
+    * `AND Bob moves to Meta, WHERE (Bob's salary > Carol's salary),`
+    * `THEN we infer the global rank: Alice > Bob > Carol.`
+    By chaining together tens of thousands of such moves in large datasets, the HLM algorithm constructs a comprehensive ability ranking for millions of workers.
+3.  **Rank Firms by Productivity:** With a global ranking of workers, we can now rank firms. A better firm should pay more for a worker of a given skill level. HLM effectively asks: "For a worker in the 70th percentile of ability, which firms pay the most?" This provides a productivity ranking of firms.
+4.  **Recover the Production Function:** Once you have ranks for workers ($x$) and firms ($y$), you can visualize the "wage surface" over the $(x,y)$ plane. The *curvature* of this surface reveals complementarity. If it's just two intersecting planes, the world is additive. If it curves upward (like a Pringle's chip), so that the wage increase from moving up the firm ladder is greater for high-ranked workers, that's the signature of $f_{xy}>0$. HLM's contribution is showing how to do this without assuming a specific functional form for $f(x,y)$.
+
+**Limitation:** This method's core assumption, that wages within a firm reflect static ability, is challenged by the On-the-Job Search models, where wages can grow over time due to outside offers.
+
+#### 2. Poaching Flows and Revealed Preference: A Popularity Contest
+Sorkin (2018) and others use a different approach: ignore wages for a moment and focus on **actions**. Where do workers choose to go?
+
+> **Analogy: Voting with Your Feet** 
+>
+> If students from University A are all trying to transfer to University B, but no one from B is trying to transfer to A, we infer that B is the "better" university. The logic of revealed preference is that workers "vote with their feet," and these flows reveal the underlying hierarchy of the market.
+
+This method is powerful because it's less contaminated by firm-specific pay-setting policies or bargaining frictions. It creates a directed graph of the labor market based on net poaching flows. The ranking algorithm, which is conceptually similar to Google's PageRank, then finds the firm ranking that is most consistent with the observed "uphill" flow of workers.
+
+#### 3. Boundary Monotonicity Tests: The Velvet Rope Policy
+A sharp prediction of PAM is that there should be an "ability floor" for top firms.
+
+> **Analogy: The Implicit Entry Requirement** 
+>
+> A five-star restaurant has a dress code; a top-tier firm has an implicit 'ability code'. You don't expect to find a worker from the bottom 10% of the national skill distribution working as a quantum physicist at Google. The firm's "velvet rope" policy simply wouldn't allow them in.
+
+This implies that the *distribution* of worker abilities should be different at different firm tiers. Empirically, we can test this:
+1.  Rank firms into tiers (e.g., by average wage paid).
+2.  For each tier, plot the cumulative distribution function (CDF) of their workers' abilities (proxied by $\hat{\alpha}_i$).
+3.  Under PAM, the CDF for a high-tier firm group must lie entirely to the right of the CDF for a low-tier group. This property is called **first-order stochastic dominance**. It's a strong, testable prediction that the entire quality distribution shifts upward at better firms. 
+
+***
+
+In conclusion, the journey from the clean theory of Part 1 to the frictional theory of Part 2 left us with a puzzle: our models predict a complex reality, but our main empirical tool, AKM, assumes a simple one. This chapter has shown how economists, acting as detectives, have developed sophisticated tools to resolve this tension.
+
+By using the logic of relative rankings (HLM), observing the market's "votes" (Sorkin), and checking the "entry requirements" at top firms (Boundary Monotonicity), they can find the signal of sorting amidst the noise. These methods confirm that the complex interactions predicted by theory are not just mathematical curiosities; they are essential features of the real labor market that shape productivity, mobility, and inequality.
+
+***
+## References
+Hagedorn, M., Law, K., & Manovskii, I. (2017). Identifying equilibrium models of sorting. *Econometrica, 85*(1), 29-65.
+
+Sorkin, I. (2018). Ranking firms using revealed preference. *The Quarterly Journal of Economics, 133*(1), 353-401.

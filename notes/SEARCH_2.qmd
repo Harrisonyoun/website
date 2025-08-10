@@ -1,7 +1,7 @@
 ---
 title: "The Price of the Search"
 author: 'Harrison Youn<br><span style="font-size: 0.8em; color: #6c757d;">Search and Matching 2</span>'
-date: "2025-08-10"
+date: "2025-08-10T09:00:00Z"
 description: "What happens when finding the perfect match isn't free?"
 categories: [Labor Economics, Search and Matching, Shimer-Smith Model, Search Frictions, AKM Model]
 format:
