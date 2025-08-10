@@ -3,6 +3,7 @@ project:
 
 website:
   site-url: https://www.harrisonyoun.com
+  title: "Harrison Youn | Website" 
   description: "Economics PhD Candidate at the Ohio State University"
   page-navigation: true
   back-to-top-navigation: true

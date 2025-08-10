@@ -388,5 +388,5 @@ main {
 #TOC a:hover,
 #TOC a.active {
   color: var(--c-accent-orange) !important;  
-  background-color: var(--c-accent-light) !important;  
+  background-color: transparent !important;  
 }
