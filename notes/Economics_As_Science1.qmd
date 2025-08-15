@@ -59,9 +59,9 @@ As the exemplar of scientific explanation, the positivists lionized Carl Hempel�
 -   **Initial Conditions ($c_1, ..., c_n$)**: Specific, factual circumstances pertinent to the case.
 
 *A simple, intuitive example*: Why did a puddle freeze overnight?
-* **Law**: Water freezes at 0° Celsius.
-* **Initial Conditions**: The puddle was composed of water, and the temperature dropped to -5° Celsius.
-* **Explanandum**: Therefore, the puddle froze.
+**Law**: Water freezes at 0° Celsius.
+**Initial Conditions**: The puddle was composed of water, and the temperature dropped to -5° Celsius.
+**Explanandum**: Therefore, the puddle froze.
 
 A key entailment of this model is the **symmetry thesis**: explanation and prediction are structurally identical. They represent two applications of the same logical schema, differing only in their temporal orientation; explanation occurs after the event, prediction before it.
 
