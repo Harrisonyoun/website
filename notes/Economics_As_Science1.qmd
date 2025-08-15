@@ -98,7 +98,9 @@ The intellectual diaspora resulting from the rise of Nazism in Europe brought ma
 
 3.  **Formalism and its Critics**: This formalist approach produced powerful results like the **First Fundamental Theorem of Welfare Economics** (so named by Kenneth Arrow), which proves that a perfectly competitive economy achieves a Pareto-optimal allocation of resources. However, critics argued this created "blackboard economics," propositions that are logically valid but unimplementable in the real world because their assumptions (like perfect competition) are profoundly unrealistic. To be swayed by the theorem's elegance while ignoring its empirical disconnect is, in this view, to succumb to formalism.
 
-4.  **The Friedmanian Alternative**: This brings us to Milton Friedman's influential methodology. **In what ways did his approach both embrace and deviate from the core principles of the original Vienna Circle?**
+4.  **The Friedmanian Alternative**: This brings us to Milton Friedman's influential methodology. 
+
+**In what ways did his approach both embrace and deviate from the core principles of the original Vienna Circle?**
 
 Friedman’s 1953 essay presented a pragmatic, instrumentalist alternative that had a complex relationship with positivism. He **embraced** the core positivist goal of creating an objective, predictive science, free from normative judgments. His famous distinction between "positive economics" (what *is*) and "normative economics" (what *ought to be*) is a direct echo of the positivist desire to purge science of untestable value claims. Furthermore, his ultimate criterion for a good theory, its predictive power, aligns perfectly with the instrumentalist branch of positivism that emerged in response to the problem of induction.
 
