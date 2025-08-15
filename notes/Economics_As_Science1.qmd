@@ -3,6 +3,7 @@ title: "The Logical Positivist Blueprint: Science Without Metaphysics"
 author: 'Harrison Youn<br><span style="font-size: 0.8em; color: #6c757d;">Economics as Science 1</span>'
 date: "2025-08-14"
 description: "What counts as `scientific knowledge`?"
+image: "/assets/images/Economics_As_Science1.png" 
 categories: [Economic Methodology, Philosophy of Science, Logical Positivism, Scientific Knowledge, History of Economic Thought]
 format:
   html:
@@ -17,6 +18,8 @@ format:
 In the intellectual crucible of interwar Vienna, an influential conclave of philosophers, scientists, and mathematicians, later designated the **Vienna Circle**, endeavored to reconstruct the very foundations of knowledge. Their project did not arise in a vacuum. It was forged in the chaotic aftermath of the collapsed Austro-Hungarian Empire, a city described by the satirist Karl Kraus as a "laboratory of world destruction." Amid hyperinflation, political strife between the Social Democrats of "Red Vienna" and rising fascist forces, and a pervasive sense of cultural decay, the Circle saw their task as a vital defense of reason itself.
 
 Convening around Moritz Schlick, who in 1922 assumed the university chair previously held by the eminent physicist-philosophers Ernst Mach and Ludwig Boltzmann, they inherited a legacy of radical empiricism. Mach, in particular, had waged a relentless war against metaphysics in physics, famously rejecting the existence of unobservable entities like atoms as speculative fictions. The Vienna Circle sought to extend this anti-metaphysical crusade to all fields of knowledge. Their 1929 manifesto, *A Scientific Worldview: The Vienna Circle*, was not merely an academic treatise; it was a political and cultural mission to champion a scientific worldview (*wissenschaftliche Weltauffassung*) as an antidote to the obscurantism of 19th-century German Idealism and the irrationalist ideologies then engulfing Europe.
+
+![](/assets/images/Economics_As_Science1.png)
 
 Their vision, known as **logical positivism** or the "Received View," was predicated upon two foundational tenets, drawing tools and inspiration from thinkers like Hume, Russell, and Wittgenstein, whose *Tractatus Logico-Philosophicus* the Circle studied line by line:
 
