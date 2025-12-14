@@ -16,11 +16,9 @@ The Ohio State University
 :::
 
 <div class="contact-simple">
-I study how the labor market and the healthcare system interact and reshape incentives, frictions, benefits, and costs.
+My research examines how the labor market and the healthcare system interact, and how advances in AI shape human capital and labor market outcomes.
 
-I also study how advances in AI shape human capital and labor market outcomes.
-
-Previously, I was a Research Associate at the National University of Singapore (NUS).
+Previously, I was a Research Associate at the National University of Singapore.
 </div>
 
 <a href="assets/CV.pdf" class="cv-button" target="_blank">CV</a>
