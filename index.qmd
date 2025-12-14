@@ -18,7 +18,7 @@ The Ohio State University
 <div class="contact-simple">
 My research examines how the labor market and the healthcare system interact, and how advances in AI shape human capital and labor market outcomes.
 
-Previously, I worked as a Research Associate at the National University of Singapore for two years.
+Previously, I served for two years as a Research Associate at the National University of Singapore.
 </div>
 
 <a href="assets/CV.pdf" class="cv-button" target="_blank">CV</a>
