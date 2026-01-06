@@ -1,0 +1,211 @@
+---
+title: "The Logic of Risk: Popperian Falsificationism in Economics"
+author: 'Harrison Youn<br><span style="font-size: 0.8em; color: #6c757d;">Economics as Science 3</span>'
+date: "2026-01-13"
+description: "If economics cannot secure certainty, can it earn credibility by putting its claims at risk?"
+image: "/assets/images/Economics_As_Science3.png"
+categories: [Economic Methodology, Karl Popper, Falsificationism, Duhem-Quine Thesis, Philosophy of Science]
+from: markdown+tex_math_dollars+tex_math_single_backslash
+format:
+  html:
+    toc: true
+    toc-depth: 3
+    theme: cosmo
+    code-fold: true
+    html-math-method: mathjax
+---
+
+## From Meaning to Risk: A Different Ideal of Scientific Knowledge
+
+One can demand that science deliver certainty, or one can demand something more austere and, in practice, more productive: that science expose itself to failure. Karl Popper’s central move is to treat scientific knowledge as **fallible** yet **disciplined**, not because it is ever conclusively verified, but because it is continuously forced to survive intelligent attempts at refutation.
+
+Popper begins from a simple asymmetry that is logical, not psychological. Universal statements outrun finite evidence. No matter how many supportive observations accumulate, they do not entail a universal law. Yet a single genuine counterinstance can contradict it. The core methodological implication is not despair. It is a redefinition of scientific seriousness.
+
+A scientific theory is not a theory that can be endlessly reconciled with whatever happens. A scientific theory is one that **forbids** certain outcomes, thereby taking a stand that the world can challenge.
+
+This immediately changes the posture of inquiry. The primary question becomes:
+
+**Does the theory place itself in jeopardy by ruling out plausible states of the world?**
+
+---
+
+## Falsifiability as Prohibitive Content
+
+Popper’s demarcation criterion is usually stated in one line: a theory is scientific only if it is **falsifiable**. The slogan is easy. The substance lies in how falsifiability functions in a model-based discipline like economics.
+
+A theory is falsifiable when it has *prohibitive content*. It is not merely compatible with data. It restricts what data could look like if the theory were true. In modern language, models define admissible families of distributions over observables.
+
+Let a model imply the family:
+
+$$
+\mathcal{M} = \{P_\theta : \theta \in \Theta\}.
+$$
+
+The model has empirical bite to the extent that it excludes distributions outside $\mathcal{M}$. If a model is so flexible that it can be tuned to match virtually any pattern, then it has not risked much. It has not narrowed the world enough to be seriously threatened.
+
+This is a useful lens for economics because the discipline rarely offers law-like generalizations in the physicist’s sense. What it offers are models and identifying assumptions that jointly imply restrictions, some tight and some loose, on what we should observe. A Popperian evaluation therefore asks not only whether a model can be estimated, but whether it meaningfully constrains the data in ways that could have turned out otherwise.
+
+Falsifiability is not a moral stance. It is a structural property of an argument: an empirical claim becomes scientific when it becomes dangerous.
+
+---
+
+## Corroboration, Not Confirmation
+
+Popper rejects the idea that evidence “confirms” a theory in the strong sense. If induction is logically insecure, then confirmation cannot be the foundation of scientific knowledge. Instead Popper offers **corroboration**.
+
+A theory is corroborated when it survives severe attempts to refute it. Corroboration is not truth, and it is not even a probability that the theory is true. It is a record of resilience: the theory has endured confrontation with evidence that could plausibly have destroyed it.
+
+This distinction matters in economics because empirical work can easily drift into a courtroom style of rhetoric, where evidence is presented “for” a preferred conclusion and inconvenient facts are treated as exceptions. Popper recommends a different ethic. The goal is to design inquiry so that failure is a live possibility, and survival is therefore informative.
+
+Corroboration also has a competitive aspect. A theory earns its standing not because it survives in isolation, but because it survives better than rivals under comparable tests. This is not an argument for cynicism. It is an argument for disciplined comparison.
+
+---
+
+## Severe Testing: Making Survival Costly
+
+A theory can be falsifiable and still evade serious confrontation. Popper therefore adds a second idea that is more demanding than falsifiability: **severity**. A test is valuable not merely because it exists, but because passing it would have been difficult if the theory were wrong.
+
+In statistical terms, severity relates naturally to error probabilities, even if Popper did not develop the idea in those terms. Consider a test of a hypothesis $H$ with a rejection rule $\phi(X)\in\{0,1\}$, where $\phi(X)=1$ denotes rejection. Standard notions are:
+
+- **Size**: $\alpha = \sup_{\theta \in H} \Pr_\theta(\phi(X)=1)$
+- **Power** against an alternative $\theta \notin H$: $\Pr_\theta(\phi(X)=1)$
+
+A severe test is one with high power against alternatives that matter substantively. In other words, the test is designed so that, if the theory were wrong in ways that are scientifically relevant, it would likely be exposed.
+
+In applied economics, “severity” is often pursued without using the word:
+
+- a research design that creates quasi-experimental variation increases the chance that a false mechanism will be revealed,
+- falsification exercises are severe when they target plausible confounders rather than cosmetic variations,
+- out-of-sample prediction is severe when it forces the model to generalize rather than merely fit.
+
+The idea is not to treat statistics as a mechanical refutation machine. The idea is to make empirical confrontation costly for the theorist and informative for the reader. A model should not merely be compatible with the data. It should survive a testing environment that was constructed to challenge it.
+
+---
+
+## Why Falsification Is Hard in Economics: The Duhem-Quine Thesis
+
+The cleanest Popperian picture treats theories as though they are tested one at a time. Economics is rarely like that. When economists claim to “test a theory,” they typically test a **bundle**: core mechanism plus auxiliary assumptions plus measurement plus identification plus environmental stability.
+
+A stylized representation is:
+
+$$
+(T \land A \land M \land I \land E) \to P,
+$$
+
+where:
+
+- $T$ is the core theoretical mechanism,
+- $A$ are auxiliary assumptions, including ceteris paribus clauses and institutional background conditions,
+- $M$ is the measurement system, including proxies and data construction,
+- $I$ is the identification strategy, including maintained exogeneity and exclusion claims,
+- $E$ is the environment, including regime stability and invariance conditions,
+- $P$ is the prediction stated in terms of observables.
+
+If $P$ fails, logic does not tell us which conjunct failed. A contradiction with the data can be blamed on the mechanism, the auxiliaries, the measurement, the identification, or the environment. This is not a philosophical curiosity. It is the operational reality of empirical economics.
+
+The Duhem-Quine point does not imply that economics is unscientific. It implies that scientific criticism must be more careful. It must ask: which part of the bundle is most plausibly responsible for the failure, and what empirical strategy can separate competing diagnoses?
+
+---
+
+## Ceteris Paribus as an Auxiliary Shield, and as an Empirical Target
+
+Economists rely heavily on ceteris paribus clauses because the world is not a laboratory. The danger is obvious: ceteris paribus can become a universal escape hatch. The remedy is equally clear: treat auxiliary conditions as testable commitments rather than as rhetorical decorations.
+
+A ceteris paribus clause becomes scientifically meaningful when it generates concrete implications:
+
+- If the relevant “other things” are approximately constant, the model predicts a particular pattern.
+- If those conditions fail, the model predicts a systematic deviation, not merely a vague excuse.
+
+This is why strong empirical papers often do more than report a headline coefficient. They interrogate the auxiliaries. They show diagnostics consistent with the proposed channel, and they probe whether the result behaves as the mechanism requires when the environment changes.
+
+In a Popperian spirit, a good auxiliary assumption is not one that is never questioned. It is one that is questioned in a way that could have made the argument collapse.
+
+---
+
+## Conventionalist Maneuvers and the Illusion of Empirical Success
+
+Popper worried about “conventionalist stratagems,” adjustments that protect a theory at the cost of reducing its empirical content. In economics, the modern analog is not usually explicit philosophical immunization. It is methodological flexibility that allows a result to be preserved regardless of what the data say.
+
+The mechanisms are familiar:
+
+- specification search that is justified only after it succeeds,
+- redefining outcomes until significance appears,
+- shifting samples and controls without a principled reason tied to the model,
+- adding auxiliary narratives that explain away any failure but do not generate new risky implications.
+
+These practices matter not only because they can produce false positives, but because they invert the Popperian ideal. Instead of making survival costly, they make survival cheap. The result can be numerically persuasive yet methodologically hollow.
+
+A Popperian standard, translated into modern practice, does not require heroic purity. It requires disciplined transparency and design choices that reduce the scope for post hoc rescue.
+
+---
+
+## Making Falsification Operational: Design, Diagnostics, and Transparency
+
+Economics has developed practical tools that, while not logically perfect, move empirical work closer to severe testing.
+
+**Design-based vulnerability.** Natural experiments, policy discontinuities, and plausibly exogenous shocks are powerful not because they guarantee truth, but because they increase vulnerability: a false mechanism is more likely to be exposed.
+
+**Targeted falsification checks.** Placebos, negative controls, pre-trend diagnostics, and balance checks are severe when they target plausible confounding pathways. They are weak when they merely decorate a result.
+
+**Replication and reanalysis.** Reproducible code, transparent data construction, and independent replication are institutional forms of Popperian criticism. They lower the cost of refutation and raise the credibility of survival.
+
+**Out-of-sample discipline.** When prediction is the target, holding out data forces a model to generalize. It is a practical way to penalize overfitting and reward stable structure.
+
+These are not substitutes for philosophy. They are the discipline’s answer to a philosophical constraint: empirical success is meaningful only when it could have failed under a well-designed confrontation.
+
+---
+
+## Situational Analysis: Rationality as a Methodological Baseline
+
+Popper’s most distinctive proposal for the social sciences is **situational analysis**. Its guiding idea is often misunderstood. Popper does not ask the social scientist to treat rationality as a psychological law to be verified. He treats rationality as a methodological baseline, a “zero method” that directs criticism toward what the analyst may have misdescribed.
+
+A minimal representation is:
+
+$$
+a \in \arg\max_{a \in \mathcal{A}(S)} u(a,S),
+$$
+
+where $S$ denotes the situation: constraints, information, institutions, and feasible actions. The point is not that people always solve optimization problems. The point is that a structured reconstruction of $S$ generates implications that can be criticized. When the model fails, the failure is informative because it indicates what may have been omitted or mischaracterized in $S$.
+
+Economics naturally resonates with this logic. Much of economic explanation proceeds by showing that an apparently puzzling outcome is a coherent consequence of incentives and constraints once the situation is specified correctly. Game theory extends situational analysis by enriching $S$ with strategic interaction, beliefs, and information. Behavioral models enrich $S$ by adding systematic limits and frictions. In each case, progress comes not from insulating a theory from criticism, but from specifying the situation in a way that makes the theory more vulnerable and therefore more informative.
+
+Situational analysis also reframes a common methodological dispute. When an empirical pattern contradicts a model, the question is not immediately whether “rationality is false.” The question is whether the situation was correctly reconstructed, whether the environment belongs to the model’s intended domain, and whether the measurement aligned with the theoretical objects.
+
+---
+
+## Popper, Lakatos, Kuhn: What Criticism Looks Like Over Time
+
+The Duhem-Quine problem motivates a further question: if theories are tested as bundles, how can criticism be rational rather than opportunistic? Later philosophy offers complementary perspectives that are especially relevant for economics.
+
+**Lakatos and research programs.** Lakatos suggests that scientific development is best understood not as a sequence of isolated refutations, but as trajectories of model-building. A research program has a “hard core” protected by a “protective belt.” The key question is dynamic: is the program progressive, generating novel implications and new empirical successes, or degenerating, surviving mainly through ad hoc repairs that reduce risk?
+
+Economists can recognize this pattern. Many methodological disputes are disputes about whether a line of work is producing new testable implications or simply refining insulation.
+
+**Kuhn and paradigms.** Kuhn emphasizes that inquiry occurs within paradigms that define legitimate questions, acceptable methods, and standards of evidence. Anomalies do not automatically destroy a paradigm. They accumulate, provoke debate, and sometimes motivate conceptual reorganization. This is not an argument against rationality. It is an argument that the logic of criticism is inseparable from the institutions that govern what is rewarded and what is punished.
+
+Read charitably, these perspectives do not refute Popper. They complicate him in a way that is empirically realistic. Economics becomes more scientific not by finding a perfect logical criterion, but by building norms and institutions that make criticism effective, visible, and hard to evade.
+
+---
+
+## What “Scientific” Can Mean for Economics
+
+A Popperian view of economics does not ask for final verification. It asks for a disciplined culture of conjecture and criticism:
+
+- models that state sharp implications and accept vulnerability,
+- empirical designs that make failure a genuine possibility,
+- diagnostics that target plausible threats rather than merely decorate results,
+- transparency that lowers the cost of reanalysis and refutation,
+- institutional norms that reward the discovery of fragility rather than the performance of certainty.
+
+Scientific standing, on this view, is earned by the willingness to put claims at risk and by the ability to learn from the ways those claims fail. What makes a discipline credible is not that it never errs, but that it has developed procedures, incentives, and standards that force error into the open and make it costly to ignore.
+
+---
+
+## References
+
+- Popper, K. (1959). *The Logic of Scientific Discovery*.
+- Duhem, P. (1906/1954). *The Aim and Structure of Physical Theory*.
+- Quine, W. V. O. (1951). “Two Dogmas of Empiricism.”
+- Lakatos, I. (1970). “Falsification and the Methodology of Scientific Research Programmes.”
+- Kuhn, T. S. (1962). *The Structure of Scientific Revolutions*.
+- Blaug, M. (1992). *The Methodology of Economics: Or How Economists Explain* (2nd ed.).
