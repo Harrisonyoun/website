@@ -75,7 +75,7 @@ Haavelmo’s deeper message is that “more data” cannot rescue a model that i
 
 >Let the population distribution of observables be $P$, and let the model imply the set $\{P_\theta : \theta\in\Theta\}$.
 
-The parameter $\theta$ is (point) **identified** if
+>The parameter $\theta$ is (point) **identified** if
 
 >$$
 >P_\theta = P_{\theta'} \ \Rightarrow\ \theta = \theta'.
