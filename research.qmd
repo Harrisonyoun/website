@@ -35,7 +35,7 @@ class: research-page
 </div>
 
 
-- “Labor Market Responses to Health Insurance Decoupling"
+- “Unlocked or Locked? Labor Market Responses to Health Insurance Decoupling"
 <br>
 <button class="abstract-button">abstract</button>
 <div class="abstract-content">
