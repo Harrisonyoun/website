@@ -54,8 +54,8 @@ class: research-page
 
 ## Work in Progress
 
-- “Killing Me Softly With Dinner: The Costs of Circadian Misalignment”
-<br>
+- “Killing Me Softly With Dinner: The Costs of Circadian Misalignment” <br><br>
+
 - “Provider Networks and Healthcare Innovation”
 
 <script>
