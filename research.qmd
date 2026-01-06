@@ -25,12 +25,15 @@ class: research-page
 
 
 ## Working Papers
-- “From Continuity to Fragmentation: Evidence from Physicians’ Premature Deaths (with Guanting Yi)"
+- “From Continuity to Fragmentation: Evidence from Physicians’ Premature Deaths”
+<br>
+<span class="coauthor">(with Guanting Yi)</span>
 <br>
 <button class="abstract-button">abstract</button>
 <div class="abstract-content">
-  <p>To be updated </p>
+  <p>To be updated</p>
 </div>
+
 
 - “Labor Market Responses to Health Insurance Decoupling"
 <br>
@@ -52,7 +55,7 @@ class: research-page
 ## Work in Progress
 
 - “Killing Me Softly With Dinner: The Costs of Circadian Misalignment”
-
+<br>
 - “Provider Networks and Healthcare Innovation”
 
 <script>
