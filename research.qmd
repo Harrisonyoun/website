@@ -25,12 +25,18 @@ class: research-page
 
 
 ## Working Papers
+- “From Continuity to Fragmentation: Evidence from Physicians’ Premature Deaths (with Guanting Yi)"
+<br>
+<button class="abstract-button">abstract</button>
+<div class="abstract-content">
+  <p>To be updated </p>
+</div>
 
 - “Labor Market Responses to Health Insurance Decoupling"
 <br>
 <button class="abstract-button">abstract</button>
 <div class="abstract-content">
-  <p>In this paper, I examine the labor market responses when employer sponsored health insurance, the single largest U.S. health insurance covering 165 million Americans, is decoupled from the U.S. labor market. This systematic decoupling creates spillovers and labor market distortions through feedback loop and reallocate the incentive structures of broader U.S. workforce. I both theoretically and empirically examine the mechanisms. I find employment elasticity responses aligned with the incentive bindings at the margins. My results carry direct implications for U.S. health insurance policy, which currently spend 24% of the federal budget.</p>
+  <p>Employer-sponsored insurance (ESI) tightly couples the U.S. health insurance system to the labor market, covering about 60 percent of Americans under age 65. Leaving a job exposes workers who lack alternative coverage to substantial health and financial risks, leading many to remain employed to retain ESI, a phenomenon known as job lock. The Affordable Care Act (ACA) expanded affordable coverage outside employment on an unprecedented national scale, raising the ex ante expectation of higher labor mobility through reduced job lock. This paper examines the job lock hypothesis in the post-ACA period. Using panels from the Current Population Survey Annual Social and Economic Supplement (CPS ASEC) from 2000 to 2018 and an event-study design, I first find little evidence of increased job mobility for high-wedge workers relative to lower-wedge workers. Second, heterogeneity analyses show that mobility losses or stagnation are concentrated among workers with low education, single-earner households, and employees in small firms, while workers with high health needs exhibit modest mobility gains consistent with a relaxation of risk-based job lock. Third, I find high persistence in workers’ positions in the wage distribution and moves into high-benefit firms are associated with large wage gains of about 0.40 to 0.43 log points, with no evidence that workers who rely only on ESI pay a compensating wage penalty when they enter high-benefit jobs. These findings suggest limited evidence of a broad-based unlocking of ESI-induced job lock and are instead consistent with the possibility that equilibrium sorting across heterogeneous firms plays an important role in shaping frictional labor market mobility.</p>
 </div>
 
 - “Intergenerational Dilemma: Balancing Windfalls and Burdens of Public Transfers"
@@ -47,6 +53,7 @@ class: research-page
 
 - “Killing Me Softly With Dinner: The Costs of Circadian Misalignment”
 
+- “Provider Networks and Healthcare Innovation”
 
 <script>
 document.addEventListener('DOMContentLoaded', function() {
