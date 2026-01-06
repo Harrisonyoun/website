@@ -1,7 +1,7 @@
 ---
 title: "The Empirical Pivot: From Laws to Stochastic Models"
 author: 'Harrison Youn<br><span style="font-size: 0.8em; color: #6c757d;">Economics as Science 2</span>'
-date: "2026-01-06"
+date: "2026-01-05"
 description: "How did economists transform the positivist ideal into a disciplined empirical craft?"
 image: "/assets/images/Economics_As_Science2.png"
 categories: [Economic Methodology, Econometrics, Positive Economics, Haavelmo, Friedman]
