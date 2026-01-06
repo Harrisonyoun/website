@@ -4,162 +4,206 @@ author: 'Harrison Youn<br><span style="font-size: 0.8em; color: #6c757d;">Econom
 date: "2026-01-06"
 description: "How did economists transform the positivist ideal into a disciplined empirical craft?"
 image: "/assets/images/Economics_As_Science2.png"
-categories: [Economic Methodology, Econometrics, History of Economic Thought]
+categories: [Economic Methodology, Econometrics, Positive Economics, Haavelmo, Friedman]
+from: markdown+tex_math_dollars+tex_math_single_backslash
 format:
   html:
     toc: true
     toc-depth: 3
     theme: cosmo
     code-fold: true
+    html-math-method: mathjax
 ---
 
 ## Beyond Logic: The Birth of Econometric Ambition
 
-If logical positivism offered a formal grammar of science, mid-twentieth century economists tried to write its prose through a disciplined marriage of theory and data. Once the verifiability principle cracked, a practical question remained. If universal laws cannot be verified, what does it mean to justify economic theory empirically?
+Logical positivism promised a clean criterion of scientific meaning. Its failure did not leave economists empty-handed. It left them with a sharper practical question.
 
-The answer was not a single philosophical criterion. It was a craft: **econometrics**, a research program aimed at turning economics into a theoretical-quantitative science.
+If universal laws cannot be verified, what does it mean to justify an economic mechanism empirically?
 
-The earliest public stress test of this ambition was the **Keynes–Tinbergen debate**. Keynes pressed the central vulnerability of non-experimental inference. If the economy is not a laboratory, then empirical “tests” depend on whether we can defend everything that stands between a theoretical mechanism and the data used to evaluate it.
+The twentieth-century answer was not a single philosophical principle. It was an institutionalized craft, **econometrics**, a discipline that attempted to weld three demands into a coherent workflow:
 
-This is the problem that haunts every applied paper written with observational data:
+1. theoretical structure that supports counterfactual reasoning,
+2. measurement conventions that connect theory to observables,
+3. statistical inference that disciplines belief under uncertainty.
 
-**Can a social science discover stable structure in a world where controlled experiments are absent and “other things equal” is rarely true?**
+This craft did not emerge as a mere set of techniques. It emerged as an ambition to make economics a science that can be criticized with rigor even when it cannot be experimented on.
 
 ![](/assets/images/Economics_As_Science2.png)
 
 ---
 
-## Haavelmo’s Probability Turn: The Modern Foundation
+## The Keynes–Tinbergen Controversy: When the Economy Refuses to Be a Laboratory
 
-Trygve Haavelmo’s *probability approach* (1944) changed what it meant for an economic model to be empirically meaningful. The shift was not “more mathematics.” It was a redefinition of the object of inquiry.
+The earliest public stress test for econometric ambition was the Keynes–Tinbergen controversy. Tinbergen’s project was audacious: estimate quantitative relations among macro variables and use them to evaluate competing theories and policy proposals. Keynes’s critique is often remembered for its sharp rhetoric, but the durable point is methodological.
 
-A model is not a deterministic law written onto the world. A model is a **stochastic data-generating system** that implies a distribution over observables.
+In the natural sciences, a controlled experiment isolates causal pathways by design. In macroeconomics, where “other things equal” is rarely secured by nature, the test of a theory must travel through a chain of auxiliary commitments:
+
+- which variables are included,
+- how they are measured,
+- whether omitted forces are negligible,
+- whether institutional conditions are stable,
+- whether the estimated relation survives policy feedback.
+
+Keynes was pressing the fragile link between statistical fit and scientific warrant. If one cannot defend the chain, one cannot claim a law.
+
+The question the debate bequeathed to modern applied work is still the right one:
+
+**When evidence contradicts an economic model, what exactly has failed, the mechanism, the measurement, the environment, or the inference?**
+
+---
+
+## Haavelmo’s Probability Turn: What Makes a Model Empirically Meaningful
+
+Trygve Haavelmo’s *probability approach* is often described as the importation of “modern statistics” into economics. That is far too small.
+
+Haavelmo redefined what an economic model is, and therefore what it means to test one. A model is not a deterministic sentence written onto the world. A model is a **stochastic data-generating system** that implies a probability law over observables.
 
 A compact template is:
 
-\[
-Y = g(X,\theta,U), \qquad U \sim F_U,\qquad \Rightarrow \qquad P_\theta(Y,X).
-\]
+$$
+Y = g(X,\theta,U), \qquad U \sim F_U, \qquad \Rightarrow \quad (Y,X)\sim P_\theta.
+$$
 
-The scientific content of the model is the family of distributions \(\{P_\theta\}_{\theta\in\Theta}\) it allows. Estimation and testing become logically coherent only when the mapping \(\theta \mapsto P_\theta\) is informative.
+The scientific content of the model is the family of probability laws $\{P_\theta\}_{\theta\in\Theta}$ it permits. Estimation and testing become logically coherent only when the mapping $\theta \mapsto P_\theta$ is informative.
 
 ### Identification as the logical hinge
 
-Haavelmo’s deeper message is that “more data” cannot rescue a model that is not **identified**. Identification is not a statistical nicety. It is a logical precondition for learning.
+Haavelmo’s deeper message is that “more data” cannot rescue a model that is not **identified**. Identification is not a statistical nicety. It is a logical precondition for learning from evidence.
 
-::: {.callout-note title="Identification as Non-Observational-Equivalence"}
-Let the observable population distribution be \(P\), and let the model imply \(\{P_\theta : \theta \in \Theta\}\).
-The parameter \(\theta\) is (point) **identified** if
-\[
-P_\theta = P_{\theta'} \Rightarrow \theta = \theta'.
-\]
+::: {.callout-note title="Identification as Non-Observational Equivalence"}
+Let the population distribution of observables be $P$, and let the model imply the set $\{P_\theta : \theta\in\Theta\}$.
+
+The parameter $\theta$ is (point) **identified** if
+
+$$
+P_\theta = P_{\theta'} \ \Rightarrow\ \theta = \theta'.
+$$
+
 If distinct parameters generate the same observable distribution, they are **observationally equivalent**, and no amount of data can logically distinguish them.
 :::
 
-This is exactly why econometrics becomes a theory of **restrictions**. Without restrictions, models can be empirically underdetermined even when they are internally elegant.
+This is why econometrics is unavoidably a theory of restrictions. Restrictions are not decorative. They are the bridge from mechanism to evidence.
 
 ---
 
-## A Minimal Identification Parable: Supply, Demand, and What Data Cannot Tell You
+## A Minimal Identification Parable: Why Equilibrium Data Do Not Reveal a Demand Curve
 
 Consider the textbook market system:
 
-\[
-Q^d = \alpha - \beta P + u_d,\qquad \beta > 0,
-\]
-\[
-Q^s = \gamma + \delta P + u_s,\qquad \delta > 0,
-\]
-\[
+$$
+Q^d = \alpha - \beta P + u_d, \qquad \beta>0,
+$$
+
+$$
+Q^s = \gamma + \delta P + u_s, \qquad \delta>0,
+$$
+
+$$
 Q^d = Q^s = Q.
-\]
+$$
 
-Solving yields equilibrium price
+Solving for equilibrium price yields:
 
-\[
-P = \frac{\alpha-\gamma + (u_d - u_s)}{\beta + \delta}.
-\]
+$$
+P = \frac{\alpha-\gamma + (u_d-u_s)}{\beta+\delta}.
+$$
 
-If you only observe \((P,Q)\) generated by equilibrium, variation in \(P\) reflects a mixture of demand and supply shocks. A regression of \(Q\) on \(P\) does not isolate \(-\beta\). It loads on an endogenous equilibrium object.
+If you only observe equilibrium $(P,Q)$, variation in $P$ reflects a mixture of demand and supply shocks. The naive regression of $Q$ on $P$ does not identify $-\beta$. It loads on an endogenous equilibrium object.
 
-Identification requires a **source of variation** that shifts one equation while leaving the other unchanged. Suppose you have a cost shifter \(Z\) that enters only supply:
+Identification arrives only when you can defend a source of variation that shifts one equation while leaving the other unchanged. Suppose you have a cost shifter $Z$ that enters supply but not demand:
 
-\[
-Q^s = \gamma + \delta P + \pi Z + u_s,\qquad \pi \neq 0.
-\]
+$$
+Q^s = \gamma + \delta P + \pi Z + u_s, \qquad \pi\neq 0.
+$$
 
-Then \(Z\) moves \(P\) through the supply side while holding demand fixed, and an instrumental variables logic becomes available. In the simplest linear-IV form, the demand slope can be pinned down by covariation induced by \(Z\), not by the raw equilibrium correlation between \(Q\) and \(P\).
+Then $Z$ moves $P$ through supply while holding demand fixed, and the demand slope becomes an identifiable object under appropriate exclusion and exogeneity claims.
 
 The methodological point is not the market example. It is the structure:
 
-> empirical content requires a defended mapping from theory to an identifiable implication in the distribution of observables.
+> a model becomes empirically meaningful only when it implies an identifiable mapping from theoretical parameters to observable distributions.
 
 ---
 
-## Measurement Without Theory vs Theory Without Measurement
+## Structural Versus Reduced Form: What Econometrics Is Really Choosing Between
 
-Econometrics also inherited an internal tension about what counts as good science.
+Haavelmo’s framework also clarifies a distinction that later dominates econometric practice.
 
-- The NBER tradition emphasized careful measurement and descriptive regularities.
-- The Cowles tradition emphasized structural modeling guided by theory and estimated with statistical methods.
+- A **structural** model targets parameters with mechanistic interpretation, suitable for counterfactual policy analysis.
+- A **reduced-form** relation captures stable predictive regularities, often with fewer assumptions about the underlying mechanism.
 
-Koopmans’s critique, often summarized as “measurement without theory,” is best read as a warning about scientific structure. Description without a disciplined theoretical map risks becoming a catalogue of correlations that does not cumulate. Yet the counter-warning is equally sharp. Structure without credible measurement risks becoming a symbol-manipulation exercise, insulated from what data can actually support.
+Both can be scientifically valuable. The difference is not moral. The difference is the pattern of assumptions you must defend.
 
-Modern empirical economics lives inside this negotiation. It oscillates between two virtues:
+Structural claims demand defended invariance under interventions. Reduced-form claims demand defended stability over the environments where you plan to use them.
 
-- **discipline of measurement**, and
-- **discipline of mechanism**.
+Either way, the scientific burden is not eliminated. It is relocated.
 
 ---
 
-## Friedman’s “As-If” Defense: Not Anti-Realism, but Re-Ranking of Virtues
+## Measurement Without Theory, and Theory Without Measurement
 
-Milton Friedman’s 1953 essay redirected methodology toward **predictive appraisal**. It is often paraphrased as “assumptions can be false.” That paraphrase is too crude.
+The next methodological conflict was internal to empirical work itself.
 
-A more precise reading is:
+On one side was the NBER tradition: careful measurement, business-cycle dating, and the accumulation of descriptive regularities. On the other side was the Cowles tradition: structural modeling, simultaneous equations, and statistical inference guided by explicit theory.
 
-- models are not assessed as literal descriptions,
-- models are assessed by the performance of their **testable implications**,
-- and methodological evaluation should focus on whether those implications survive discriminating empirical challenges.
+Koopmans’s charge, often paraphrased as “measurement without theory,” is best read as a claim about scientific cumulation. Without theoretical scaffolding, measurement risks becoming an archive of correlations that does not converge on explanation. But the counter-charge is equally serious. Theory without credible measurement risks becoming a closed symbolic exercise, insulated from what data can actually sustain.
 
-This framing also clarifies what “as-if” does and does not claim. It is not a metaphysical claim about how agents truly think. It is a methodological claim about what is worth demanding from a scientific model, given the goal of disciplined prediction.
+Modern empirical economics still lives in this tension. The discipline oscillates between two virtues:
+
+- **disciplined description**, and
+- **disciplined mechanism**.
+
+The best work usually treats the tension as productive rather than embarrassing.
+
+---
+
+## Friedman’s “As If” Defence: A Re-Ranking of Scientific Virtues
+
+Milton Friedman’s methodological essay shifted attention from the realism of assumptions to the performance of a model’s **testable implications**. It is often caricatured as “assumptions can be false.” The stronger reading is methodological:
+
+- models are not evaluated as literal descriptions of the world,
+- models are evaluated by whether their implications survive discriminating tests,
+- predictive success is a form of methodological selection under criticism.
+
+This framing also clarifies what “as if” does and does not claim. It is not a metaphysical thesis about cognition. It is a claim about what should count as scientific appraisal when the goal is disciplined prediction.
 
 ### Untwisting the F-twist
 
-A serious criticism, developed in later philosophy of economics, is that “unrealistic assumptions” are not all the same. Some are:
-- **negligibility** assumptions (setting small forces to zero),
-- **domain** assumptions (restricting the scope where a model is intended to apply),
-- **heuristic** assumptions (temporary scaffolding used to explore).
+A serious improvement, developed in later philosophy of economics, is to recognize that “unrealistic assumptions” are not all of one kind. Some assumptions are:
 
-Confusing these categories makes methodological debates look shallow. Distinguishing them makes the debate scientifically productive.
+- **negligibility** assumptions, setting small forces to zero,
+- **domain** assumptions, restricting the scope where a model is intended to apply,
+- **heuristic** assumptions, temporary scaffolding that supports exploration.
+
+Conflating these makes debates look superficial. Distinguishing them makes methodological criticism sharp, and it helps explain why economists can rationally keep some “unrealistic” assumptions while rejecting others.
 
 ---
 
-## Internal Validity, External Validity, and the Threat of Curve-Fitting
+## The Boundary Problem Returns: What Prevents Curve Fitting?
 
-Econometrics did not abandon the positivist demand for empirical discipline. It changed the form of that discipline.
+If a model is a stochastic generator, and if assumptions are not literal descriptions, a skeptical reader will ask: why is econometrics not merely curve fitting?
 
-- **Internal validity** is enforced by identification arguments and research design.
-- **External validity** is pressured by predictive performance, stability, and transportability.
+The best answer is not a slogan. It is a practice: increase the difficulty of survival.
 
-The hard boundary question then becomes:
+- defend identification, not just statistical significance,
+- separate exploration from evaluation when possible,
+- use out-of-sample validation when prediction is the goal,
+- run placebo tests and falsification checks when causal interpretation is the goal,
+- demand robustness that targets plausible failure modes rather than cosmetic variations.
 
-**If every model is false as a description, what prevents empirical economics from collapsing into mere curve-fitting?**
+This is a methodological pivot away from verification as certainty and toward criticism as discipline.
 
-One answer is institutional and procedural: we make tests harder. We separate discovery from evaluation, use out-of-sample prediction, demand robustness, and increasingly lean on designs that approximate experiments.
+To make that pivot explicit, we need the next philosophical move. We need a logic of risk.
 
-That answer points directly to the next philosophical move. Not the logic of estimation, but the logic of criticism.
-
-Part 3 turns to Popper.
+That is where Popper enters.
 
 ---
 
 ## References
 
-- Boumans, Marcel, and John B. Davis. *Economic Methodology: Understanding Economics as a Science* (2nd ed.). Bloomsbury, 2016
-- Haavelmo, Trygve. *The Probability Approach in Econometrics* (1944)
-- Keynes, John Maynard. “Professor Tinbergen’s Method” (1939)
-- Koopmans, Tjalling C. “Measurement Without Theory” (1947)
-- Friedman, Milton. “The Methodology of Positive Economics” (1953)
-- Musgrave, Alan. “‘Unreal Assumptions’ in Economic Theory: The F-Twist Untwisted” (1981)
+- Trygve Haavelmo (1944), *The Probability Approach in Econometrics* (Cowles Foundation Paper No. 4).
+- J. M. Keynes (1939), “Professor Tinbergen’s Method,” *The Economic Journal*. 
+- Tjalling C. Koopmans (1947), “Measurement Without Theory,” *The Review of Economics and Statistics*. 
+- Milton Friedman (1953), “The Methodology of Positive Economics,” in *Essays in Positive Economics*. 
+- Alan Musgrave (1981), “‘Unreal Assumptions’ in Economic Theory: The F-Twist Untwisted,” *Kyklos*. 
 ---
