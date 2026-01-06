@@ -150,8 +150,7 @@ Koopmans’s charge, often paraphrased as “measurement without theory,” is b
 
 Modern empirical economics still lives in this tension. The discipline oscillates between two virtues:
 
-- **disciplined description**, and
-- **disciplined mechanism**.
+**disciplined description** and **disciplined mechanism**
 
 The best work usually treats the tension as productive rather than embarrassing.
 
