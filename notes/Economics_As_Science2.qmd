@@ -17,7 +17,7 @@ format:
 
 ## Beyond Logic: The Birth of Econometric Ambition
 
-Logical positivism promised an austere purity. Scientific statements would be either analytic truths, secured by logic alone, or empirical claims, answerable to observation. When that programme fractured under its own internal difficulties, economics did not simply abandon the aspiration to be scientific. It redirected the aspiration toward a different conception of what scientific warrant could look like in a non-experimental domain.
+Logical positivism promised an austere purity. Scientific statements would be either analytic truths, secured by logic alone, or empirical claims, answerable to observation. When that program fractured under its own internal difficulties, economics did not simply abandon the aspiration to be scientific. It redirected the aspiration toward a different conception of what scientific warrant could look like in a non-experimental domain.
 
 The question that remained was sharper than the verifiability slogan, and more practical than any philosophical manifesto:
 
@@ -37,7 +37,7 @@ Econometrics, on this view, is not “applied statistics.” It is a normative p
 
 ## The Keynes–Tinbergen Controversy: When the Economy Refuses to Be a Laboratory
 
-The earliest public stress test of this ambition was the Keynes–Tinbergen controversy. Tinbergen’s project was bold: quantify macroeconomic relationships and treat estimation as a way to adjudicate among rival theories and policy proposals. Keynes’s reply has often been reduced to a posture of skepticism, but the enduring content is methodological, and it remains contemporary.
+The first public stress test of this ambition was the Keynes–Tinbergen controversy. Tinbergen’s project was bold: quantify macroeconomic relationships and treat estimation as a way to adjudicate among rival theories and policy proposals. Keynes’s reply has often been reduced to a posture of skepticism, but the enduring content is methodological, and it remains contemporary.
 
 In an experimental science, a causal claim is often protected by design. The experiment separates mechanisms by controlling the environment. In macroeconomics, where “other things equal” is almost never guaranteed, a theory does not meet the data directly. It reaches the data through a chain of auxiliary commitments:
 
@@ -50,7 +50,7 @@ In an experimental science, a causal claim is often protected by design. The exp
 
 Keynes was pressing the epistemic vulnerability that haunts non-experimental inference: **statistical fit cannot by itself certify causal structure**. A regression may be numerically elegant and scientifically empty if its interpretive bridge cannot be defended.
 
-The debate’s core legacy is a question that modern empirical work has never escaped:
+The debate left modern applied work with a question that remains unavoidable:
 
 **When evidence contradicts an economic model, what exactly has failed: the mechanism, the measurement, the environment, or the inference?**
 
@@ -178,7 +178,7 @@ This difference becomes decisive in policy evaluation, especially when the polic
 
 The next methodological conflict was internal to empirical work itself.
 
-On one side stood the NBER tradition: careful measurement, patient documentation of regularities, and a certain empiricist humility. On the other side stood the Cowles tradition: structural modeling, simultaneous equations, and theory-driven inference.
+On one side stood the NBER tradition: careful measurement, patient documentation of regularities, and a certain empiricist humility. On the other side stood the Cowles tradition: structural modeling, simultaneous equations, and inference guided by explicit theory.
 
 Koopmans’s complaint, often summarized as “measurement without theory,” was fundamentally about scientific cumulation. Without theoretical scaffolding, measurement risks becoming archival. It can describe with exquisite care and still fail to explain.
 
@@ -188,7 +188,7 @@ Modern economics still lives inside this tension. The best work treats it not as
 
 ---
 
-## Friedman’s “As If” Defence: A Re-Ranking of Scientific Virtues
+## Friedman’s “As If” Defense: A Re-Ranking of Scientific Virtues
 
 Milton Friedman’s methodological essay redirected the discipline’s attention from the realism of assumptions to the performance of a model’s **testable implications**. It is often caricatured as “assumptions can be false.” A more disciplined reading is that Friedman proposed a re-ranking of scientific virtues.
 
@@ -222,7 +222,7 @@ The most serious answer is procedural. It is a practice: increase the difficulty
 - run placebo tests and falsification checks when causal interpretation is the goal,
 - demand robustness that targets plausible failure modes rather than cosmetic variations.
 
-This is a methodological pivot away from verification as certainty and toward criticism as discipline. If Part 1 ended with the collapse of verifiability, Part 2 ends with the emergence of a different ideal: scientific knowledge as what endures serious, intelligently designed attempts at refutation.
+This is a methodological pivot away from treating empirical work as a search for definitive verification and toward treating it as a disciplined practice of criticism. The aspiration is not certainty. It is resilience: claims that survive serious, intelligently designed attempts to break them.
 
 To make that ideal explicit, we need the next philosophical move. We need a logic of risk.
 
@@ -239,4 +239,3 @@ That is where Popper enters.
 - Rothenberg, T. J. (1971). “Identification in Parametric Models.”
 - Mäki, U. (2000). “Kinds of Assumptions and Their Truth: Shaking an Untwisted F-Twist.”
 - Lucas, R. E. Jr. (1976). “Econometric Policy Evaluation: A Critique.”
----
