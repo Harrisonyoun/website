@@ -2,7 +2,7 @@
 title: "The Logical Positivist Blueprint: Science Without Metaphysics"
 author: 'Harrison Youn<br><span style="font-size: 0.8em; color: #6c757d;">Economics as Science 1</span>'
 date: "2025-08-14"
-description: "What counts as `scientific knowledge`?"
+description: "What counts as scientific knowledge?"
 image: "/assets/images/Economics_As_Science1.png" 
 categories: [Economic Methodology, Philosophy of Science, Logical Positivism, Scientific Knowledge, History of Economic Thought]
 format:
