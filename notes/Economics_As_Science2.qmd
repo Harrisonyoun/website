@@ -4,7 +4,7 @@ author: 'Harrison Youn<br><span style="font-size: 0.8em; color: #6c757d;">Econom
 date: "2026-01-05"
 description: "How did economists transform the positivist ideal into a disciplined empirical craft?"
 image: "/assets/images/Economics_As_Science2.png"
-categories: [Economic Methodology, Econometrics, Positive Economics, Haavelmo, Friedman]
+categories: [Economic Methodology, Philosophy of Science, Scientific Knowledge, History of Economic Thought, Econometrics]
 from: markdown+tex_math_dollars+tex_math_single_backslash
 format:
   html:

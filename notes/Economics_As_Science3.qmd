@@ -1,10 +1,10 @@
 ---
 title: "The Logic of Risk: Popperian Falsificationism in Economics"
 author: 'Harrison Youn<br><span style="font-size: 0.8em; color: #6c757d;">Economics as Science 3</span>'
-date: "2026-01-06"
+date: "2026-01-05"
 description: "If economics cannot secure certainty, can it earn credibility by putting its claims at risk?"
 image: "/assets/images/Economics_As_Science3.png"
-categories: [Economic Methodology, Karl Popper, Falsificationism, Duhem-Quine Thesis, Philosophy of Science]
+categories: [Economic Methodology, Philosophy of Science, Scientific Knowledge, History of Economic Thought]
 from: markdown+tex_math_dollars+tex_math_single_backslash
 format:
   html:
