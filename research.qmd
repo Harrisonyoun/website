@@ -31,7 +31,29 @@ class: research-page
 <br>
 <button class="abstract-button">abstract</button>
 <div class="abstract-content">
-  <p>To be updated</p>
+  <p>This paper leverages the sudden and premature deaths of U.S. primary care physicians
+to study the value of care continuity and the relationship with the doctor for patients.
+The sudden and premature death of a PCP mitigates concerns regarding anticipation
+by patients in variations used in the literature, such as retirement and reallocation.
+Utilizing administrative Medicare claims from mid-2000 to 2019, linked to over 3000
+PCPs who passed away prematurely, this paper identifies patients who lost their PCPs
+due to the sudden and premature deaths and tracks their health care utilization and
+health outcomes thereafter. Preliminary results using an event study framework with
+a matched sample reveal several patterns: (1) healthcare utilization of patients of
+the deceased physicians increased relatively for several quarters after the physician’s
+death: They had more primary care visits, more referral from primary care physicians,
+more specialist visits, and more lab tests and images, which collectively results in a
+relatively 10% increase in the patients’ total healthcare spending. (2) the patients’
+healthcare became relatively more fragmented: they are more likely to simultaneously
+utilize several primary care physicians (measured by either the number of PCP seen per
+quarter, or the HHI index of primary care), and received more duplicated lab tests and
+images as a result. (3) While receiving relatively more healthcare resources, patients’
+health outcomes became worse. They are about 0.05 pp more likely to die, which is
+about a 9% increase in annual mortality rate (Medicare population annual mortality
+rate is about 5%). They are also more likely to visit the ER and be hospitalized through
+the ER. This paper plans to dig into the mechanism of these patterns, which may have
+implications for the literature on continuity of care, fragmentation of care, and quality
+of care.</p>
 </div>
 
 
@@ -39,7 +61,7 @@ class: research-page
 <br>
 <button class="abstract-button">abstract</button>
 <div class="abstract-content">
-  <p>Employer-sponsored insurance (ESI) tightly couples the U.S. health insurance system to the labor market, covering about 60 percent of Americans under age 65. Leaving a job exposes workers who lack alternative coverage to substantial health and financial risks, leading many to remain employed to retain ESI, a phenomenon known as job lock. The Affordable Care Act (ACA) expanded affordable coverage outside employment on an unprecedented national scale, raising the ex ante expectation of higher labor mobility through reduced job lock. This paper examines the job lock hypothesis in the post-ACA period. Using panels from the Current Population Survey Annual Social and Economic Supplement (CPS ASEC) from 2000 to 2018 and an event-study design, I first find little evidence of increased job mobility for high-wedge workers relative to lower-wedge workers. Second, heterogeneity analyses show that mobility losses or stagnation are concentrated among workers with low education, single-earner households, and employees in small firms, while workers with high health needs exhibit modest mobility gains consistent with a relaxation of risk-based job lock. Third, I find high persistence in workers’ positions in the wage distribution and moves into high-benefit firms are associated with large wage gains of about 0.40 to 0.43 log points, with no evidence that workers who rely only on ESI pay a compensating wage penalty when they enter high-benefit jobs. These findings suggest limited evidence of a broad-based unlocking of ESI-induced job lock and are instead consistent with the possibility that equilibrium sorting across heterogeneous firms plays an important role in shaping frictional labor market mobility.</p>
+  <p>For most U.S. workers, employment and health coverage are not separate decisions. This paper studies the impact of health insurance decoupling on the labor and insurance markets, using the Affordable Care Act's nationwide expansion of non-employer coverage in 2014 as a natural experiment. I find that coverage redistributed, with workers most dependent on employer coverage shifting to non-employer alternatives and a measurable share remaining uninsured. Worker mobility rose on measures the standard job-to-job mobility measure misses, producing upward sorting toward larger firms among workers who changed employers. Wages and employer health benefits move together across firms, contradicting the tradeoff that compensating-differentials theory predicts. This correlation does not grow when the price of leaving falls. Most of it reflects how firms set pay rather than worker sorting through job changes. These findings share one mechanism. Non-employer coverage is cheaper than before but otherwise falls short of employer coverage. Price reform redistributes coverage and unlocks worker mobility. The worker-firm matching equilibrium responds only on firm size, and the induced mobility does not amplify the cross-firm wage-benefit correlation through worker sorting.</p>
 </div>
 
 - “Intergenerational Dilemma: Balancing Windfalls and Burdens of Public Transfers"
