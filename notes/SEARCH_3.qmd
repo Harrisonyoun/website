@@ -3,6 +3,7 @@ title: "Finding the Signal in the Noise"
 author: 'Harrison Youn<br><span style="font-size: 0.8em; color: #6c757d;">Search and Matching 3</span>'
 date: "2025-08-10T16:00:00Z"
 description: "How can we measure sorting when theory tells us wages are complex and data is messy?"
+image: "/assets/images/SEARCH_3.png"
 categories: [Labor Economics, Search and Matching, AKM Model, Econometrics]
 format:
   html:

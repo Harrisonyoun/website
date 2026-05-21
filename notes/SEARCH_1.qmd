@@ -3,6 +3,7 @@ title: "Assortative Matching: Who Works Where?"
 author: 'Harrison Youn<br><span style="font-size: 0.8em; color: #6c757d;">Search and Matching 1</span>'
 date: "2025-08-09"
 description: "The best workers often land at the best firms. But why?"
+image: "/assets/images/SEARCH_1.png"
 categories: [Labor Economics, Search and Matching, Wage Inequality, AKM Model]
 format:
   html:

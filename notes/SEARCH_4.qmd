@@ -3,6 +3,7 @@ title: "Climb the Job Ladder"
 author: 'Harrison Youn<br><span style="font-size: 0.8em; color: #6c757d;">Search and Matching 4</span>'
 date: "2025-08-10T20:00:00Z"
 description: "Why do wages grow, and how do workers climb the job ladder?"
+image: "/assets/images/SEARCH_4.png"
 categories: [Labor Economics, Search and Matching, On-the-Job Search, AKM Model, Endogenous Mobility, Wage Posting]
 format:
   html:
