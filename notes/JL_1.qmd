@@ -11,7 +11,7 @@ format:
     code-fold: true
 ---
 
-## Introduction: From Coverage to the Search Model
+## From Coverage to the Search Model
 
 In `Health Insurance 5` we identified the institutional fact that powers this bridge series: in the United States, ESI is bundled with employment, and leaving employment severs the worker from the risk-pooling institution they had been participating in. We sketched the consequence in compact form. The outside option for a worker of health risk $h$ becomes
 $$
