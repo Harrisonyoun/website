@@ -11,13 +11,13 @@ format:
     code-fold: true
 ---
 
-## Introduction: A Puzzle Hidden in Plain Sight
+## A Puzzle Hidden in Plain Sight
 
 Consider a healthy thirty-five-year-old with a stable job and a family of four. In a typical year, this family spends perhaps \$2,000 on doctor visits, prescriptions, and routine care. In the rare year they have a bad accident, a cancer diagnosis, or a complicated birth, that number can climb past \$60,000 or \$100,000.
 
 Their employer-sponsored family health plan costs about \$24,000 a year, of which the family directly pays around \$6,000. That is more than the family is expected to spend on medical care in a typical year. On the surface this looks like a losing bet. Why does it not feel like one?
 
-The answer is the entire subject of this series. A risk-neutral person should never pay more than the expected loss for insurance, because doing so guarantees a negative expected return. And yet most people do exactly that. They pay a positive *risk premium* for the privilege of facing a smaller wealth distribution. The puzzle has a clean answer when you draw the right picture, and the picture starts with what the loss distribution actually looks like.
+A risk-neutral person should never pay more than the expected loss for insurance, because doing so guarantees a negative expected return. And yet most people do exactly that. They pay a positive *risk premium* for the privilege of facing a smaller wealth distribution. The puzzle has a clean answer when you draw the right picture, and the picture starts with what the loss distribution actually looks like.
 
 ***
 
@@ -30,8 +30,6 @@ The first thing to recognize is that "expected medical spending" hides what insu
 The figure shows a stylized distribution of annual medical spending. Most households cluster near the bottom: the median spending is around \$1,500. But the mean is more than three times the median, because a small number of households have catastrophic years that pull the average up. The 95th percentile is around \$21,000, and the 99th is around \$60,000.
 
 When we say "expected loss," we are referring to the mean of this distribution. Risk-neutral pricing would set the premium equal to that mean. But what people actually care about, when they buy insurance, is not the *mean*. It is the *spread* between the typical year and the catastrophic one. The reason a \$24,000 family premium feels reasonable is that it converts a lottery in which most outcomes are mild but a few are devastating into a flat payment.
-
-This intuition has a clean mathematical form, and the rest of the note develops it.
 
 ***
 
