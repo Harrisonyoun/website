@@ -1,7 +1,7 @@
 ---
 title: "Why a Higher-Paying Job Isn't Always Better"
 author: 'Harrison Youn<br><span style="font-size: 0.8em; color: #6c757d;">Search and Matching 5</span>'
-date: "2026-05-22T09:00:00Z"
+date: "2026-05-21T09:00:00Z"
 description: "Three things shape what a firm actually pays you, and only one of them shows up as cash."
 image: "/assets/images/SEARCH_5_offset_wedge.png"
 categories: [Labor Economics, Search and Matching, AKM Model, Compensating Differentials, Hedonic Wages, Revealed Preference, Amenities]
@@ -11,7 +11,7 @@ format:
     code-fold: true
 ---
 
-## Introduction: What's Hidden Inside a Firm's Wage Premium
+## What's Hidden Inside a Firm's Wage Premium
 
 Imagine two job offers landing on your kitchen table on the same morning. The first is from a fast-growing tech firm in Seattle that pays a base salary of \$110,000 and gives you a barebones health plan, no on-site amenities, no flexibility in your hours, and a manager who has already been clear that the role is intense. The second is from a research university in Columbus that pays \$90,000, gives you a generous health plan that covers your spouse, a thirty-five-hour workweek, summer flexibility, and a colleague culture you can already tell you would like.
 
@@ -27,8 +27,6 @@ These two readings already pull in different directions. But there is a third re
 > **A low $\psi_j$ might mean a *better* employer, not a worse one.**
 
 That is the claim of the theory of **compensating wage differentials** (Rosen, 1986). If firms differ in non-wage attributes that workers value (health insurance, schedule flexibility, safety, job security, prestige), competitive labor markets should compensate workers for *bad* amenities by paying higher cash wages and reward workers at *good*-amenity firms with lower cash wages. Under that view, $\psi_j$ is not the value of working at firm $j$ at all. It is the *cash residual* left over after the firm has paid the worker in kind.
-
-This note pulls that third reading apart, shows when it survives, and asks what $\psi_j$ is actually picking up in real data. It also lays the foundation for the next series, because the most policy-relevant amenity in the United States, and the hardest one to identify cleanly, is employer-sponsored health insurance.
 
 ***
 
@@ -66,15 +64,13 @@ Going back to the kitchen-table example, in a perfectly frictionless world the S
 
 If Rosen is right, then a regression of wages on observable amenities should produce a robustly negative coefficient. It usually does not. Across decades of empirical work, the typical finding is that wages and amenities are *positively* correlated, or at best uncorrelated. Good firms pay more *and* offer better benefits.
 
-In plain English, this is the everyday observation that the firms paying the highest salaries are also the firms with the nicest offices, the best health plans, and the most flexible hours. Google does not have to choose between paying its engineers a premium and giving them free meals. It does both. In the Rosen world, this should not happen.
+This is the everyday observation that the firms paying the highest salaries are also the firms with the nicest offices, the best health plans, and the most flexible hours. Google does not have to choose between paying its engineers a premium and giving them free meals. It does both. In the Rosen world, this should not happen.
 
 This is the **compensating differentials puzzle**. Two non-exclusive explanations dominate the literature.
 
-The first is **unobserved ability sorting**. High-ability workers $\theta_i$ get both higher wages and access to better-amenity firms. A naive cross-sectional regression of $w$ on $a$ then picks up this sorting rather than the structural offset. Concretely, the kind of person who can negotiate their way into a job at Google was probably already going to earn a higher wage anywhere they worked. Comparing them to a worker at a coffee shop conflates the worker's own earning power with anything special about the firm. Crucially, AKM's two-way fixed-effect machinery is designed precisely to net out this kind of confound, *if* the identifying assumptions of additivity and exogenous mobility hold. So the puzzle should partially attenuate when we look at $\psi_j$ rather than raw wages.
+The first is **unobserved ability sorting**. High-ability workers $\theta_i$ get both higher wages and access to better-amenity firms. A naive cross-sectional regression of $w$ on $a$ then picks up this sorting rather than the structural offset. Concretely, the kind of person who can negotiate their way into a job at Google was probably already going to earn a higher wage anywhere they worked. Comparing them to a worker at a coffee shop conflates the worker's own earning power with anything special about the firm. Crucially, AKM's two-way fixed-effect machinery is designed precisely to net out this kind of confound, *if*  the identifying assumptions of additivity and exogenous mobility hold. So the puzzle should partially attenuate when we look at $\psi_j$ rather than raw wages.
 
 The second is **incomplete offset under frictions**. This is the contribution of Hwang, Mortensen, and Reed (1998). Once we leave Rosen's frictionless world, the slope of the wage and amenity locus is no longer pinned down at $-1$. It depends on the joint distribution of firm productivity and amenities, and on how much monopsony power firms have.
-
-This second channel is where the labor series we have built so far becomes essential. We have the friction model. We just have to add amenities to it.
 
 ***
 
@@ -176,7 +172,7 @@ The compensating-differentials literature traditionally focuses on amenities tha
 
 It is also the amenity for which all three of Rosen's frictionless conditions fail simultaneously. The tax exclusion of employer premiums creates a fiscal wedge that distorts the relative price of cash and in-kind compensation. The employer pool generates an information rent that the individual insurance market cannot offer. And the non-portability of coverage across employers creates a search friction with no analogue in the standard amenity literature. A worker who leaves a firm loses not just the wage but the pool.
 
-In the next series we develop the demand and supply sides of insurance markets in their own terms. Then we return here, in the bridge series on **job lock**, with the formal apparatus to ask the question this note has built toward: how does the most important amenity in the U.S. labor market distort the wage premium $\psi_j$, the sorting $\mathrm{Cov}(\theta_i, \psi_j)$, and the welfare cost of mismatch, all at once?
+How does the most important amenity in the U.S. labor market distort the wage premium $\psi_j$, the sorting $\mathrm{Cov}(\theta_i, \psi_j)$, and the welfare cost of mismatch, all at once? I will discuss these in the next series.
 
 ***
 
