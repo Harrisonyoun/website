@@ -39,8 +39,15 @@ class: research-page
 <br>
 <button class="abstract-button">abstract</button>
 <div class="abstract-content">
-  <p>Employer-sponsored insurance (ESI) tightly couples the U.S. health insurance system to the labor market, covering about 60 percent of Americans under age 65. Leaving a job exposes workers who lack alternative coverage to substantial health and financial risks, leading many to remain employed to retain ESI, a phenomenon known as job lock. The Affordable Care Act (ACA) expanded affordable coverage outside employment on an unprecedented national scale, raising the ex ante expectation of higher labor mobility through reduced job lock. This paper examines the job lock hypothesis in the post-ACA period. Using panels from the Current Population Survey Annual Social and Economic Supplement (CPS ASEC) from 2000 to 2018 and an event-study design, I first find little evidence of increased job mobility for high-wedge workers relative to lower-wedge workers. Second, heterogeneity analyses show that mobility losses or stagnation are concentrated among workers with low education, single-earner households, and employees in small firms, while workers with high health needs exhibit modest mobility gains consistent with a relaxation of risk-based job lock. Third, I find high persistence in workers’ positions in the wage distribution and moves into high-benefit firms are associated with large wage gains of about 0.40 to 0.43 log points, with no evidence that workers who rely only on ESI pay a compensating wage penalty when they enter high-benefit jobs. These findings suggest limited evidence of a broad-based unlocking of ESI-induced job lock and are instead consistent with the possibility that equilibrium sorting across heterogeneous firms plays an important role in shaping frictional labor market mobility.</p>
+  <p>For most U.S. workers, employment and health coverage are not separate decisions. This paper studies the impact of health insurance decoupling on the labor and insurance markets, using the Affordable Care Act's nationwide expansion of non-employer coverage in 2014 as a natural experiment. I find that coverage redistributed, with workers most dependent on employer coverage shifting to non-employer alternatives and a measurable share remaining uninsured. Worker mobility rose on measures the standard job-to-job mobility measure misses, producing upward sorting toward larger firms among workers who changed employers. Wages and employer health benefits move together across firms, contradicting the tradeoff that compensating-differentials theory predicts. This correlation does not grow when the price of leaving falls. Most of it reflects how firms set pay rather than worker sorting through job changes. These findings share one mechanism. Non-employer coverage is cheaper than before but otherwise falls short of employer coverage. Price reform redistributes coverage and unlocks worker mobility. The worker-firm matching equilibrium responds only on firm size, and the induced mobility does not amplify the cross-firm wage-benefit correlation through worker sorting.</p>
 </div>
+
+
+## Work in Progress
+
+- “Killing Me Softly With Dinner: The Costs of Circadian Misalignment” <br><br>
+
+- “Provider Networks and Healthcare Innovation”
 
 - “Intergenerational Dilemma: Balancing Windfalls and Burdens of Public Transfers"
 <br>
@@ -51,12 +58,6 @@ class: research-page
   <p>How should we achieve an intergenerational balance between the windfalls that benefit the elderly and the burdens that affect their children? While existing studies mainly focus on potential crowding-out effects for policy evaluations (Nikolov and Bonci, 2020), the literature is silent on “how recipients utilize the benefits they receive.” For example, if windfall gains of elderly parents are shared with their children, both parents’ and children’s net gains may vary. In this paper, I present new evidence on the importance of the impact of recipients’ shared benefits, which I term the spillover effect, alongside the crowding-out effect to understand net gains from public and family transfers in Korea, crucial for balancing windfalls and burdens in intergenerational public and household finances.</p>
   <p>I find evidence that BP benefits displaced the transfer burdens of adult children for elderly single households and resulted in net gains for both family members and recipients in elderly couple households living without children. However, elderly couples living with their children experienced net gains, with the wealth of their children being redistributed from non-coresident to coresident children. The findings suggest that considering how recipients utilized their benefits can alter policy evaluations, contrasting with current literature.</p>
 </div>
-
-## Work in Progress
-
-- “Killing Me Softly With Dinner: The Costs of Circadian Misalignment” <br><br>
-
-- “Provider Networks and Healthcare Innovation”
 
 <script>
 document.addEventListener('DOMContentLoaded', function() {
