@@ -84,18 +84,23 @@ of care.</p>
 <script>
 (function () {
   function findAbstract(btn) {
-    // Walk forward through siblings until we find .abstract-content.
-    // Robust against whitespace text nodes, <br>, and other elements
-    // that Pandoc may emit between the button and the abstract div.
+    // 1. Direct sibling traversal (tight-list case: button and div are siblings)
     var node = btn.nextElementSibling;
     while (node && !(node.classList && node.classList.contains('abstract-content'))) {
       node = node.nextElementSibling;
     }
-    // Fallback: search within the same parent (li or p)
-    if (!node && btn.parentElement) {
-      node = btn.parentElement.querySelector('.abstract-content');
+    if (node) return node;
+
+    // 2. Loose-list case: Pandoc wraps the list-item content in <p>, so the
+    //    button sits inside a <p> and the <div class="abstract-content"> is a
+    //    SIBLING of that <p>, both inside the same <li>. Walk up to the
+    //    nearest <li> (or other container) and look for .abstract-content there.
+    var container = btn.closest('li') || btn.closest('section') || btn.parentElement;
+    if (container) {
+      var found = container.querySelector('.abstract-content');
+      if (found) return found;
     }
-    return node;
+    return null;
   }
 
   function bind() {
