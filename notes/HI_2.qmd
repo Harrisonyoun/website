@@ -1,0 +1,157 @@
+---
+title: "When the Patient Knows More Than the Insurance Company"
+author: 'Harrison Youn<br><span style="font-size: 0.8em; color: #6c757d;">Health Insurance 2</span>'
+date: "2025-08-17T09:00:00Z"
+description: "When you know your own health better than the insurer does, the market can fall apart."
+image: "/assets/images/HI_2.png"
+categories: [Health Economics, Health Insurance, Adverse Selection, Asymmetric Information, Rothschild-Stiglitz]
+format:
+  html:
+    toc: true
+    code-fold: true
+---
+
+## Introduction: The Asymmetric Information Turn
+
+In `Health Insurance 1` we built a world in which the worker and the insurer share the same beliefs about the loss distribution $F(\tilde{L})$. Under fair pricing, Arrow's theorem delivered full insurance. Under loaded pricing, the optimal contract had a deductible. In both cases, the *price* of insurance was a clean reflection of the *physical* risk.
+
+That world has a single hidden assumption: the insurer can write a contract whose price is the average loss in the pool. The moment workers know things about their own risk that the insurer does not, the average loss in the pool stops being an exogenous parameter. It becomes an *equilibrium object*, determined by which workers self-select into the contract at the offered price.
+
+Picture two thirty-five-year-olds shopping for the same individual health plan. One runs marathons and has no family history of disease. The other has Type 1 diabetes and a parent who developed cancer at fifty. They look identical to the insurer (same age, same job, same form), but they themselves know perfectly well which one is which. Whatever premium the insurer quotes, only one of them is getting a bargain. If the insurer prices the policy at the average of the two, the marathoner thinks she is overpaying and walks away. The insurer is left selling at the average price to a population that is now entirely the diabetic. The premium has to rise. Repeat.
+
+This note shows that once that selection channel is open, the elegant separating logic of Arrow's contract breaks down in two different ways. First, no pooling contract can survive in equilibrium. Second, even the separating contracts that *do* survive can fail to exist altogether under standard parameter values. The Rothschild-Stiglitz (1976) model is the canonical statement of both results.
+
+***
+
+## Akerlof's Lemons Applied to Insurance
+
+Akerlof (1970) showed that asymmetric information about *quality* can unravel a market entirely. The classic version is the used-car market: buyers cannot tell good cars from bad cars before purchase, so they will only pay the average price; sellers of good cars find that price too low and leave the market; the average quality on offer falls; the price falls; the next-best sellers leave; and so on. The same logic applies to asymmetric information about *risk*, with one minor inversion: a "lemon" in the used-car market is a low-quality car, but a "lemon" in insurance is a high-risk buyer, exactly the type the insurer would prefer not to write.
+
+Consider two types of workers, indistinguishable to the insurer but distinguishable to themselves. Let
+$$
+p_H \;>\; p_L
+$$
+be the loss probabilities of the high-risk and low-risk types respectively. Both types have the same initial wealth $w_0$, face the same potential loss $L$ in the bad state, and share the same concave utility $u(\cdot)$.
+
+Suppose the insurer pools all workers and charges a single premium equal to the population's average expected loss,
+$$
+P_{\text{pool}} \;=\; \big[\,q\, p_H + (1-q)\, p_L\,\big]\,L,
+$$
+where $q$ is the share of high-risk workers in the population. Under that premium, low-risk workers are overcharged relative to their own expected loss, and high-risk workers are undercharged. The Pratt-Arrow argument from the previous note tells us how each type responds.
+
+* The high-risk type's willingness to pay for full coverage strictly exceeds their fair premium $p_H L$. They are happy to buy at any $P \le p_H L + \pi_H$, and the pooled $P_{\text{pool}}$ comfortably satisfies that bound.
+* The low-risk type's willingness to pay exceeds their *own* fair premium $p_L L$ by at most $\pi_L$. If $P_{\text{pool}} > p_L L + \pi_L$ they prefer to remain uninsured.
+
+When the low-risk type drops out, the pool composition shifts: $q$ rises, $P_{\text{pool}}$ rises, and more low-risk types are priced out. In the worst case this iterative re-pricing leads to a complete collapse of the market, the canonical *unraveling* result.
+
+![](/assets/images/HI_2_unraveling.png)
+
+The figure shows the iteration in stylized form. In each round, the insurer breaks even by charging the average cost of the buyers still in the pool. The healthiest of those buyers find the new premium too high and drop out. Their departure raises the average cost of the remaining pool, which raises the premium, which drives more out. Within a handful of rounds, the pool has shrunk to a small core of the sickest buyers, paying a premium that has multiplied many times over. Pooling contracts that try to charge the population's average cost cannot survive.
+
+This is exactly Akerlof's argument, transposed into the insurance setting. The takeaway is not that pooling is inefficient (it can be Pareto-improving), but that it is *not robust to entry*. A new entrant can always offer a contract aimed specifically at the low-risk type and skim it out of the pool, leaving the incumbent with the high-risk residual. Rothschild and Stiglitz formalized exactly this competitive logic.
+
+***
+
+## The Geometry of Insurance Contracts
+
+The cleanest way to see how the equilibrium looks is to draw everything in **state-contingent wealth space**. Let $w_1$ denote wealth in the loss state and $w_2$ wealth in the no-loss state. An insurance contract is just a pair $(w_1, w_2)$ relative to the no-insurance endowment
+$$
+E \;=\; (\,w_0 - L,\;\; w_0\,).
+$$
+Coverage moves the worker northwest from $E$: $w_1$ rises (the loss state is partially indemnified) and $w_2$ falls (a premium is paid).
+
+Think of this picture as drawing every possible insurance contract as a single point on a plane. The horizontal axis is "how much wealth you keep if nothing bad happens." The vertical axis is "how much wealth you have if the bad thing happens." Without insurance, you sit at the endowment point $E$: high wealth in the no-loss state, low wealth in the loss state. Buying insurance trades some of the first for more of the second. Full insurance puts you on the 45-degree line where wealth is the same in both states.
+
+**Zero-profit (fair) lines.** For a type with loss probability $p$, the insurer's expected profit on a contract $(w_1, w_2)$ is
+$$
+\Pi(w_1, w_2; p) \;=\; (1-p)\,(w_0 - w_2) \,-\, p\,(w_1 - (w_0 - L)).
+$$
+Setting this to zero yields the fair line through $E$ with slope
+$$
+\left.\frac{dw_1}{dw_2}\right|_{\Pi=0} \;=\; -\,\frac{1-p}{p}.
+$$
+The high-risk line $AH$ is **flatter** (less negative slope) than the low-risk line $AL$ because $p_H > p_L$.
+
+**Indifference curves.** A type-$p$ worker's expected utility is
+$$
+EU(w_1, w_2; p) \;=\; p\,u(w_1) + (1-p)\,u(w_2),
+$$
+with slope along an indifference curve
+$$
+\left.\frac{dw_1}{dw_2}\right|_{EU} \;=\; -\,\frac{(1-p)\,u'(w_2)}{p\,u'(w_1)}.
+$$
+On the 45-degree line where $w_1 = w_2$, the slope reduces to $-(1-p)/p$, so the indifference curve is tangent to the fair line at full coverage. High-risk indifference curves are flatter at any given point than low-risk ones (the **single-crossing property**), which is the geometric engine of the model.
+
+> The single-crossing property is doing all the work. It says that at any contract, the high-risk type is willing to trade more $w_2$ for an extra dollar of $w_1$ than the low-risk type is, because they expect to be in the loss state more often. In everyday terms, the diabetic patient cares more about the loss state because she is more likely to be in it, so a dollar of extra coverage there is worth more to her than to the marathoner. This asymmetry is what lets the insurer design contracts that *the two types choose differently*.
+
+***
+
+## Why Pooling Cannot Survive
+
+Suppose, for contradiction, that a pooling contract $C_{\text{pool}}$ at a single premium $P_{\text{pool}}$ is a competitive equilibrium. $C_{\text{pool}}$ sits on the *population* zero-profit line, which lies between $AH$ and $AL$ in the diagram.
+
+A competitor can offer a new contract $C^\prime$ in the neighborhood of $C_{\text{pool}}$ that
+
+1. lies strictly *above* the low-risk indifference curve through $C_{\text{pool}}$ (so the low-risk type strictly prefers $C^\prime$),
+2. lies strictly *below* the high-risk indifference curve through $C_{\text{pool}}$ (so the high-risk type strictly prefers $C_{\text{pool}}$), and
+3. lies strictly *below* the low-risk zero-profit line $AL$ (so the deviating insurer earns strictly positive profit on the low-risk type they cream-skim).
+
+The single-crossing property guarantees that such a $C^\prime$ exists in any neighborhood of $C_{\text{pool}}$. The original pooling contract therefore cannot be an equilibrium. It is undermined by entry.
+
+In everyday terms, the cream-skimming logic is exactly the marketing strategy used by every insurance startup that thinks it can pick off the healthy buyers. Offer a slightly less generous plan at a slightly lower price. The healthy will switch, because they were overpaying in the pool. The sick will not, because the new plan is too lean for them. The startup is profitable. The incumbent loses its healthy buyers and now has only the sick. **In a Rothschild-Stiglitz competitive equilibrium, every contract that is sold must break even *on the type that buys it*.**
+
+This rules out pooling. If both types are insured, they must be insured under *different* contracts, each priced at its own type's fair line.
+
+***
+
+## The Separating Equilibrium
+
+Imposing competitive zero-profit on each type-specific contract, plus *incentive compatibility* (no type strictly prefers the contract designed for the other type), the candidate equilibrium is constructed as follows.
+
+* **High-risk contract $F_H$.** Lies on the high-risk zero-profit line $AH$, at full coverage (on the 45-degree line). The high-risk type's indifference curve through $F_H$ is tangent to $AH$, so this is their unconstrained optimum.
+* **Low-risk contract $F_L$.** Lies on the low-risk zero-profit line $AL$, but *not* at full coverage. It is the point on $AL$ where the high-risk type's indifference curve through $F_H$ crosses $AL$.
+
+The second condition is the binding **incentive constraint**: the low-risk contract cannot be so generous that the high-risk type would prefer to mimic the low-risk type. Geometrically, $F_L$ is the point on $AL$ that puts the high-risk type exactly indifferent between staying at $F_H$ and switching to $F_L$.
+
+![](/assets/images/HI_2_RS_separating.png)
+
+The figure shows the equilibrium for $p_H = 0.6$, $p_L = 0.3$, and $u(w) = \sqrt{w}$. The high-risk type sits at full coverage on $AH$ (the orange line) at $F_H$. The low-risk type sits on $AL$ (the blue line) at $F_L$, strictly below the 45-degree line, *under-insured* in the sense of bearing residual loss-state risk.
+
+The economic content of the figure is sharp.
+
+* High types get the same allocation they would under full information: their type is implicitly revealed by their choice of $F_H$, and Arrow's theorem applies at the high-risk fair price.
+* Low types pay the price of being indistinguishable from high types ex ante. They must accept a contract that the high type would *not* want to mimic, which mechanically forces them off the 45-degree line. The amount of under-insurance is whatever it takes to make the high-risk indifference constraint bind.
+
+> The single most important consequence of asymmetric information about risk is *not* that anyone is overcharged. It is that the low-risk type is *rationed*. They cannot buy as much coverage as they would willingly pay for at their own fair price. Markets do not unravel here; they just deliver an inefficiently small risk pool. The diabetic patient gets full coverage at her own fair price. The marathoner gets a partial-coverage policy that is priced fairly for her, but that leaves her exposed to some residual risk she would happily insure if the insurer would let her. The insurer cannot let her, because the moment the policy gets too generous, the diabetic patient will switch into it.
+
+***
+
+## Existence Failure
+
+Even the separating equilibrium can fail to exist. Rothschild and Stiglitz showed that when the share of high-risk types $q$ is small, the *pooling* line lies sufficiently close to the low-risk fair line $AL$ that the low-risk indifference curve through $F_L$ may pass below the pooling line. In that case, a pooling contract priced just below the pooling line is preferred by *both* types to the separating pair $(F_H, F_L)$. But we already saw that no pooling contract can be an equilibrium under entry.
+
+The result is striking. For some parameter values there is no competitive equilibrium at all: any separating candidate is dominated by a pooling deviation, and any pooling candidate is dominated by a cream-skimming deviation. The equilibrium concept itself breaks down.
+
+Subsequent literatures responded to this by enriching the equilibrium notion. Wilson (1977) studied "anticipating" equilibria in which deviators expect rivals to withdraw unprofitable contracts. Riley (1979) imposed a reactive refinement. Hellwig (1987) and others examined dynamic and signaling variants. The fact that a competitive insurance market under asymmetric information *generically* requires a non-standard equilibrium concept is itself an important pedagogical point about why these markets need institutional scaffolding.
+
+***
+
+## What's Next
+
+Rothschild and Stiglitz tell us *what* asymmetric information does to insurance markets: it rations the low-risk side, eliminates pooling, and can knock out equilibrium altogether. They do *not* tell us how to measure the welfare cost in a real market, or how to compare the unraveling-by-selection story to other reasons quantities and prices co-move.
+
+That measurement framework is the contribution of Einav, Finkelstein, and Cullen (2010), and it is the subject of the next note. Their key move is to translate the Rothschild-Stiglitz primitives (types, indifference curves, fair lines) into something that looks like a textbook supply-and-demand diagram, but with the unusual property that the supply curve is downward sloping. Once we draw that diagram, we can read welfare loss off it the way we would in any other market.
+
+***
+
+## References
+
+Akerlof, G. A. (1970). The Market for "Lemons": Quality Uncertainty and the Market Mechanism. *Quarterly Journal of Economics, 84*(3), 488–500.
+
+Hellwig, M. (1987). Some Recent Developments in the Theory of Competition in Markets with Adverse Selection. *European Economic Review, 31*(1–2), 319–325.
+
+Riley, J. G. (1979). Informational Equilibrium. *Econometrica, 47*(2), 331–359.
+
+Rothschild, M., & Stiglitz, J. (1976). Equilibrium in Competitive Insurance Markets: An Essay on the Economics of Imperfect Information. *Quarterly Journal of Economics, 90*(4), 629–649.
+
+Wilson, C. (1977). A Model of Insurance Markets with Incomplete Information. *Journal of Economic Theory, 16*(2), 167–207.
