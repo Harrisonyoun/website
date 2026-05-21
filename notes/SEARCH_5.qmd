@@ -1,8 +1,8 @@
 ---
-title: "What Your Firm Effect Isn't Telling You"
+title: "Why a Higher-Paying Job Isn't Always Better"
 author: 'Harrison Youn<br><span style="font-size: 0.8em; color: #6c757d;">Search and Matching 5</span>'
 date: "2025-08-12T09:00:00Z"
-description: "Productivity, rent, or amenity? The three forces hidden inside ψⱼ, and why a low firm effect might mean a good employer."
+description: "Three things shape what a firm actually pays you, and only one of them shows up as cash."
 image: "/assets/images/SEARCH_5_offset_wedge.png"
 categories: [Labor Economics, Search and Matching, AKM Model, Compensating Differentials, Hedonic Wages, Revealed Preference, Amenities]
 format:
@@ -11,7 +11,7 @@ format:
     code-fold: true
 ---
 
-## Introduction: Three Readings of $\psi_j$
+## Introduction: What's Hidden Inside a Firm's Wage Premium
 
 Imagine two job offers landing on your kitchen table on the same morning. The first is from a fast-growing tech firm in Seattle that pays a base salary of \$110,000 and gives you a barebones health plan, no on-site amenities, no flexibility in your hours, and a manager who has already been clear that the role is intense. The second is from a research university in Columbus that pays \$90,000, gives you a generous health plan that covers your spouse, a thirty-five-hour workweek, summer flexibility, and a colleague culture you can already tell you would like.
 
@@ -129,7 +129,7 @@ Second, **the magnitude of $\psi_j$ is no longer a clean measure of firm "qualit
 
 ***
 
-## Sorkin's Identification: Separating $\psi$ from $\phi$
+## Sorkin's Trick: Watch Where People Move, Not What They Get Paid
 
 If wages can be misleading about how good a job is, what can we use instead? In `Search and Matching 3` we introduced Sorkin's (2018) revealed-preference approach as a method for *ranking* firms. Here, that ranking has a deeper structural meaning.
 
@@ -153,7 +153,7 @@ Lamadon, Mogstad, and Setzler (2022) embed this insight in a structural model of
 
 ***
 
-## What $\psi_j$ Really Measures: A Reconciliation
+## What the Firm Premium Really Measures
 
 We can now stitch the three readings together into a single decomposition. Up to a worker-specific scale, the AKM firm effect is, in any structural model with productivity, rent, and amenities, of the form
 $$
