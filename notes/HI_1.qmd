@@ -1,8 +1,8 @@
 ---
 title: "Why We Pay More Than We're Likely to Lose"
 author: 'Harrison Youn<br><span style="font-size: 0.8em; color: #6c757d;">Health Insurance 1</span>'
-date: "2026-05-22T09:00:01Z"
-description: "Most people pay more for insurance than they expect to lose. Here is why that is perfectly rational."
+date: "2026-05-22T09:00:02Z"
+description: "Most people pay more for insurance than they expect to lose. Why that is perfectly rational?"
 image: "/assets/images/HI_1.png"
 categories: [Health Economics, Health Insurance, Risk and Insurance, Expected Utility, Arrow Model]
 format:
@@ -11,7 +11,7 @@ format:
     code-fold: true
 ---
 
-## A Puzzle Hidden in Plain Sight
+## Introduction: A Puzzle Hidden in Plain Sight
 
 Consider a healthy thirty-five-year-old with a stable job and a family of four. In a typical year, this family spends perhaps \$2,000 on doctor visits, prescriptions, and routine care. In the rare year they have a bad accident, a cancer diagnosis, or a complicated birth, that number can climb past \$60,000 or \$100,000.
 
