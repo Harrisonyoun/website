@@ -1,0 +1,138 @@
+---
+title: "Why People Stay in Jobs They Would Rather Leave"
+author: 'Harrison Youn<br><span style="font-size: 0.8em; color: #6c757d;">Job Lock 1</span>'
+date: "2026-05-22T09:00:07Z"
+description: "If quitting means losing your health plan, leaving the job gets very expensive."
+image: "/assets/images/JL_1.png"
+categories: [Labor Economics, Health Economics, Job Lock, ESI, Search and Matching, Reservation Wage]
+format:
+  html:
+    toc: true
+    code-fold: true
+---
+
+## Introduction: From Coverage to the Search Model
+
+In `Health Insurance 5` we identified the institutional fact that powers this bridge series: in the United States, ESI is bundled with employment, and leaving employment severs the worker from the risk-pooling institution they had been participating in. We sketched the consequence in compact form. The outside option for a worker of health risk $h$ becomes
+$$
+W_0(x, h) \;=\; W_0(x) \;-\; w_{\text{lock}}(h),
+$$
+where $w_{\text{lock}}(h)$ is the **lock wedge**, increasing in $h$.
+
+Before going further, it helps to fix a single working example we can return to. Maria is a fifty-year-old with Type 1 diabetes. She works as a project manager at a mid-sized firm that offers generous coverage. A startup with a better cultural fit and a \$10,000 higher base salary offers her a job. The startup does not offer health insurance. If Maria were healthy and uninsured-elsewhere, she might take the offer immediately. Instead, she has to compute what losing her firm's pool would actually cost her. An insulin pump alone runs into the thousands per year, plus regular endocrinology visits, plus the catastrophic protection she would lose. The wedge between "the value of staying" and "the value of leaving" is, for her, a five-figure number that the startup's higher wage does not close. She stays.
+
+The model in this note formalizes Maria's calculus. We re-derive the Shimer-Smith surplus condition with the wedge embedded, show how the acceptance set deforms as a result, and read off three comparative-static predictions that organize the empirical literature. The treatment stays at the level of the canonical model from `Search and Matching 2`. The reader should view this note as adding one parameter, the wedge, to the apparatus we already built, not as introducing a new framework.
+
+***
+
+## A Search Model with an Insurance Wedge
+
+Fix a continuous-time Shimer-Smith environment. A worker is described by a skill type $x$, a health type $h$, and an employment state. Workers and firms meet at Poisson rate $\lambda$. Meetings between an unemployed worker $(x, h)$ and a vacancy at firm $y$ produce flow output $f(x, y)$ if accepted. The discount rate is $r$ and the exogenous separation rate is $\delta$. All of this is unchanged from `Search and Matching 2`.
+
+The change is in the *value of unemployment* for a worker who would otherwise have been covered. Let $b$ denote the flow value of leisure plus unemployment insurance, $\bar{p}(h)$ the expected per-period premium the worker would face in the individual market for their health type (with the load and rating restrictions that apply), and $v(h)$ the dollar-equivalent value the worker places on the consumption-smoothing benefit of being insured. The unemployed worker can either buy individual coverage at price $\bar{p}(h)$ or remain uninsured and bear the residual risk premium $\pi(h)$. Write the lock wedge as
+$$
+w_{\text{lock}}(h) \;=\; \min\Big\{\,\bar{p}(h) - v(h),\;\; \pi(h)\,\Big\} \;\ge\; 0.
+$$
+This is the per-period cost the worker incurs by losing the firm pool. The two arguments of the $\min$ correspond to the two options the unemployed worker has: pay the individual-market premium net of consumption-smoothing value, or absorb the residual risk premium themselves. Either way, leaving the firm pool is costly, and the cost scales with $h$ because both $\bar{p}(h)$ and $\pi(h)$ rise with health risk.
+
+Going back to Maria's case, the wedge is roughly equal to the additional cost she would pay to assemble a comparable level of coverage outside the firm. If individual-market plans for diabetics under the ACA cost her \$10,000 a year more (net of the consumption-smoothing value), that is the wedge. If instead she would forgo coverage altogether and absorb the variance of medical spending herself, the wedge equals the risk premium she now bears that she did not before. The $\min$ takes whichever is smaller, because Maria will choose the cheaper option.
+
+The unemployed worker's flow value is now
+$$
+rW_0(x, h) \;=\; b \,-\, w_{\text{lock}}(h) \,+\, \lambda \int_{\mathcal{M}(h)} \big[\,W_1(x, y) - W_0(x, h)\,\big]\,dG(y),
+$$
+where $\mathcal{M}(h)$ is the acceptance set for a worker of type $(x, h)$. Holding the firm-side problem fixed, the lock wedge depresses $W_0$ point-for-point.
+
+***
+
+## How the Wedge Bends the Worker's Decisions
+
+The surplus of a match between worker $(x, h)$ and firm $y$ is, exactly as in `Search and Matching 2`,
+$$
+S(x, y, h) \;=\; \big[\,W_1(x, y) + \Pi_1(x, y)\,\big] \;-\; \big[\,W_0(x, h) + \Pi_0(y)\,\big].
+$$
+The match is accepted iff $S \ge 0$. The Bellman equation for the surplus in steady state takes the same form as before, namely
+$$
+(r + \delta)\,S(x, y, h) \;=\; f(x, y) \,-\, r W_0(x, h) \,-\, r \Pi_0(y).
+$$
+Substituting the modified $W_0$ and rearranging, we obtain the *baseline* surplus from the no-wedge model, plus a wedge term:
+$$
+S(x, y, h) \;=\; S^{\rm base}(x, y) \,+\, \frac{w_{\text{lock}}(h)}{r + \delta}.
+$$
+The acceptance set for a worker of health type $h$ is therefore
+$$
+\mathcal{M}(h) \;=\; \big\{\,(x, y)\,:\, S^{\rm base}(x, y) \,\ge\, -\,\tfrac{w_{\text{lock}}(h)}{r + \delta}\,\big\}.
+$$
+Two consequences follow directly.
+
+**The acceptance set expands in $h$.** Holding $(x, y)$ fixed, a worker with higher health risk has a larger $w_{\text{lock}}(h)$ and therefore a *more inclusive* threshold for accepting matches. They accept matches that a low-$h$ worker would reject because the alternative, being uninsured in the individual market, is worse for them.
+
+**The set is monotone.** If a match $(x, y)$ is accepted by a worker with health risk $h$, it is also accepted by every worker with health risk $h^\prime \ge h$. The boundary of $\mathcal{M}(h)$ is a contour of the *baseline* surplus function, displaced inward by an amount that scales with $w_{\text{lock}}(h)/(r + \delta)$.
+
+![](/assets/images/JL_1_acceptance_set.png)
+
+The figure illustrates the geometry for a multiplicative production function $f(x, y) = xy$. The black solid contour is the no-wedge acceptance boundary, the canonical Shimer-Smith threshold. The orange dashed contour is the ESI-wedge boundary for a high-$h$ worker, displaced inward. The shaded orange region is the set of matches that are accepted *only* under the wedge: matches that a healthy worker would refuse, but that a worker who would lose ESI by refusing finds acceptable.
+
+> The mechanism is not exotic. The wedge does not make the worker's wage higher. It makes the alternative *worse*. The same surplus inequality $S \ge 0$ is checked, but with a lower outside option on the right-hand side. Workers who would otherwise have been on the margin of leaving for a better match instead choose to stay, or workers who would otherwise have been on the margin of refusing an offer instead accept it.
+
+For Maria, the consequence is that she remains at her current firm even when the labor-market value of her time elsewhere is strictly higher than what she is being paid. The wedge has effectively shifted her reservation wage upward. Any startup offer below "current salary plus the value of the wedge" gets rejected, even though many such offers would, in a portability-neutral world, dominate her current position. The matches that would have happened do not happen, and the worker, the firm, and the economy all bear a piece of the mismatch.
+
+***
+
+## Three Comparative-Static Predictions
+
+The wedge framework produces three sharp predictions that organize what one looks for in the data.
+
+**Prediction 1: Mobility falls with health risk.** Workers with higher $h$ have a more inclusive $\mathcal{M}(h)$ and therefore *reject fewer* outside offers and *initiate fewer* moves. In a Bertrand-bidding model of the kind we developed in `Search and Matching 4`, this shows up as a lower job-to-job transition rate, conditional on receiving an outside offer.
+
+**Prediction 2: Wage gains from moves are smaller for high-$h$ workers.** A worker who is locked in is willing to accept a worse outside option to retain coverage. Conditional on moving, high-$h$ workers tend to move to firms whose insurance is at least as good as their incumbent's, even when this dominates the search over wage gains. The empirical signature is a flatter wage-gain distribution from job-to-job transitions among high-$h$ workers.
+
+**Prediction 3: Mismatch is larger for high-$h$ workers.** Because the acceptance set is larger, more matches that would not survive in a no-wedge world are formed and sustained. The economy-wide implication is a positive correlation between health risk and *match-quality dispersion* among employed workers. Some matches with high $f(x, y)$ are not realized because they would require a high-$h$ worker to first separate and then re-match. Instead, those workers remain in lower-surplus but coverage-providing matches.
+
+These three predictions are not independent. They all flow from the same comparative static $\partial \mathcal{M}(h) / \partial h \neq 0$. But they map to three different empirical objects (transition rates, conditional wage gains, match-quality distributions), each of which has been studied in the literature.
+
+***
+
+## Madrian's Original Framework
+
+The first credible empirical statement of these predictions in modern labor economics is Madrian (1994). Madrian used a standard difference-in-differences design exploiting whether workers had access to alternative coverage, most commonly through a spouse, to compare mobility between workers whose dependence on ESI was high versus low. The reasoning is exactly the comparative static above. Workers with alternative coverage have a smaller effective $w_{\text{lock}}(h)$ regardless of their underlying $h$, because the cost of losing the employer pool is buffered by the spouse's plan. Workers without alternative coverage carry the full wedge.
+
+Madrian's headline estimate was that job mobility was approximately 25 percent lower for workers without alternative coverage, with the gap concentrated among workers whose families had higher expected medical needs, consistent with Prediction 1 above. The result has been replicated, refined, and contested in subsequent work, and we will return to its identification challenges in `Job Lock 2`. For now, the conceptual contribution to note is that Madrian's design *operationalizes* the wedge: it uses access to alternative coverage as an instrument for the magnitude of the lock the worker would face on separation.
+
+In effect, Madrian compared "Maria with a spouse who works at a firm offering coverage" to "Maria without one." The first Maria can quit her job and still have insurance, so her wedge is small. The second Maria cannot, so her wedge is large. The difference in their mobility rates is the part of mobility attributable to ESI dependence.
+
+> The intellectual move from `Health Insurance 5` to `Madrian 1994` is precisely the move our framework makes formal. ESI creates a wedge in the value of unemployment. That wedge varies across workers in observable ways. And the variation can be used to identify the labor-market consequences of the wedge.
+
+***
+
+## A Reservation-Wage Reading
+
+The acceptance-set deformation has an equivalent reading as a *reservation-wage* shift. In a Burdett-Mortensen wage-posting environment of the kind we developed in `Search and Matching 4`, a worker accepts an outside offer iff the new wage exceeds their current wage. The lock simply modifies the comparison: a high-$h$ worker who is currently insured will only switch to a job with at least equivalent coverage *plus* a wage gain that exceeds their net wedge. Formally, the reservation wage at firm $y_1$ for a high-$h$ worker considering a move to firm $y_2$ becomes
+$$
+w^*_{\text{move}}(y_1, y_2; h) \;=\; w(y_1) \,+\, \big[\,c(y_1, h) - c(y_2, h)\,\big],
+$$
+where $c(y, h)$ is the worker's expected coverage value at firm $y$. The bracketed term is zero if both firms offer equivalent coverage and positive if the new firm's coverage is inferior. A high-$h$ worker therefore requires *additional* wage compensation to move to a less-generous-coverage firm, and rejects offers that a low-$h$ worker would accept on wage terms alone.
+
+Concretely for Maria, the bracketed term might be \$10,000 if the startup offers no coverage and her current plan is worth that much to her. The startup's offer of "current salary + \$10k" is just barely enough to clear the constraint. Anything below that and she rejects. From outside, this looks like she rejected a higher-paying offer for no apparent reason. The model tells us that the apparent paradox dissolves once we recognize the coverage component of total compensation.
+
+This reservation-wage form is the version of the model that has been taken to the data most often. It is observationally equivalent to the acceptance-set form for the predictions above but is more convenient for empirical work that uses wage transitions as the dependent variable.
+
+***
+
+## What's Next
+
+We now have an explicit model of the lock. What we do not have is a credible empirical strategy to *test* it.
+
+The fundamental difficulty is what the next note's title flags. Job lock is, in essence, the *absence* of a move that would otherwise have happened. The data show the moves that did occur and the wages of the workers who stayed, but the counterfactual move (the one the lock prevented) is not directly observable. Identification therefore requires variation that selectively relaxes the lock for some workers and not others, in a way unrelated to those workers' underlying labor-market preferences. The next note surveys the four most credible such sources of variation in the U.S. context, and explains why none of them, taken alone, gives a complete answer.
+
+***
+
+## References
+
+Currie, J., & Madrian, B. C. (1999). Health, Health Insurance and the Labor Market. In O. Ashenfelter & D. Card (Eds.), *Handbook of Labor Economics* (Vol. 3, Part C, pp. 3309–3416). Elsevier.
+
+Dey, M. S., & Flinn, C. J. (2005). An Equilibrium Model of Health Insurance Provision and Wage Determination. *Econometrica, 73*(2), 571–627.
+
+Madrian, B. C. (1994). Employment-Based Health Insurance and Job Mobility: Is There Evidence of Job-Lock? *Quarterly Journal of Economics, 109*(1), 27–54.
+
+Shimer, R., & Smith, L. (2000). Assortative Matching and Search. *Econometrica, 68*(2), 343–369.

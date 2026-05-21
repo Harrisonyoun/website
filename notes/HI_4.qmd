@@ -1,0 +1,132 @@
+---
+title: "The Contract That Changes the Patient"
+author: 'Harrison Youn<br><span style="font-size: 0.8em; color: #6c757d;">Health Insurance 4</span>'
+date: "2025-08-21T09:00:00Z"
+description: "Insurance changes how people use care. How much should the patient still pay out of pocket?"
+image: "/assets/images/HI_4.png"
+categories: [Health Economics, Health Insurance, Moral Hazard, RAND HIE, Oregon Experiment, Cost Sharing]
+format:
+  html:
+    toc: true
+    code-fold: true
+---
+
+## Introduction: Arrow's Optimum, Pauly's Objection
+
+Arrow (1963) ended `Health Insurance 1` with a clean prescription: if insurance is actuarially fair, the optimal contract is full coverage. Five years later, Mark Pauly (1968) wrote a famously short critique pointing out a hole in the argument. Arrow had treated the loss $\tilde{L}$ as exogenous, a fixed property of the worker's health, and asked how much of it should be financed by the insurer. But medical spending is not just realized. It is *chosen*. A worker who pays nothing at the point of service has every reason to demand more care than a worker who pays the full price, and the realized loss in the insured state is therefore endogenous to the contract itself.
+
+The everyday illustration is unmissable. Two people walk into a clinic with a mild cold. One has a comprehensive plan with a \$10 copay for any visit. The other pays the full \$200 out of pocket. The first is much more likely to come in for the visit at all, more likely to leave with a prescription she would not have bothered to fill if she were paying for it, and more likely to schedule a follow-up. The clinic ends up doing more work on the first patient than on the second, even though their underlying medical condition is the same.
+
+This is **moral hazard**: the contract that pays for the loss changes the behavior that generates the loss. Pauly's critique forced economists to recognize that the optimal contract is no longer a pure risk-bearing problem. It is now a problem of *balancing* the welfare gain from risk protection against the welfare loss from inefficient utilization. The trade-off has a clean geometry, two of the most consequential field experiments in twentieth-century economics weighed in on it, and a more recent literature has shown how to disentangle it from the selection effects we built up in `Health Insurance 3`.
+
+***
+
+## Ex-Ante and Ex-Post Moral Hazard
+
+The literature draws a distinction worth keeping crisp.
+
+**Ex-ante moral hazard.** Insurance lowers the marginal cost of bad outcomes, so the worker exerts less *precaution* before the bad state realizes. A driver with comprehensive car insurance may drive less carefully. A worker with generous disability insurance may take less care to avoid injury. In health, ex-ante moral hazard means insured workers invest less in preventive behavior (diet, exercise, screening) because the cost of a future health shock is partly borne by the insurer.
+
+**Ex-post moral hazard.** Insurance lowers the marginal cost of *treatment* once a health event has occurred. A worker with a low copayment for outpatient visits will demand more outpatient visits, conditional on the same underlying health state. The choice variable here is not precaution but utilization, and it operates *after* the random loss has begun to realize.
+
+A useful way to keep them apart: ex-ante moral hazard answers the question "will I bother to lock my bike?", while ex-post moral hazard answers "now that my bike is stolen, will I file a claim and demand a replacement bike at the high end of the eligible range?". Both channels are real, but the empirical literature has concentrated more heavily on ex-post moral hazard for two reasons. First, the utilization elasticity is more directly observable in claims data. Second, the welfare implications differ: ex-post moral hazard generates excess utilization that may have positive but small marginal value, whereas ex-ante moral hazard generates non-utilization of preventive care that may have large social returns. The optimal contract has to weigh both, but the standard cost-sharing analysis below is most easily stated in the ex-post case.
+
+***
+
+## The Optimal Cost-Sharing Trade-off
+
+Consider a proportional coinsurance contract under which the worker pays a fraction $c \in [0, 1]$ of every dollar of medical care consumed, and the insurer pays the remaining $1-c$. The polar cases $c = 0$ and $c = 1$ correspond, respectively, to full coverage and no coverage.
+
+The worker's welfare under coinsurance has two competing components.
+
+**Risk-protection value $R(c)$.** Lower $c$ means a smaller residual stake in the loss state, which by Pratt-Arrow reduces the risk premium the worker would otherwise have to absorb. $R(c)$ is therefore decreasing in $c$, with maximum at $c=0$. The Pratt-Arrow approximation gives a usable benchmark:
+$$
+R(c) \;\approx\; \tfrac{1}{2}\,c^2 \,\sigma^2_L\, A(\bar{w}),
+$$
+where the worker bears residual variance $c^2 \sigma_L^2$ on the loss. The risk-protection *value*, defined as how much risk premium is saved relative to no insurance, scales as $(1 - c^2)\sigma_L^2 A(\bar{w})/2$.
+
+**Moral-hazard cost $M(c)$.** Lower $c$ also means a lower out-of-pocket price for the worker at the point of service. Demand for medical care $q(p)$ slopes downward in the effective price $p$. If $\bar{p}$ is the true social marginal cost of care, the worker insured at rate $1-c$ faces effective price $c\bar{p}$ and consumes more care than at the full social price. The associated deadweight loss for the marginal unit of utilization is the Harberger triangle
+$$
+DWL(c) \;\approx\; \tfrac{1}{2}\,(\bar{p} - c\bar{p})\,\Delta q(c) \;=\; \tfrac{1}{2}\,\bar{p}^2\,(1-c)^2\,\eta\,\bar{q}\,/\,\bar{p},
+$$
+where $\eta = -\, dq/dp \cdot (p/q)$ is the price elasticity of demand for care evaluated near $\bar{p}$. The residual moral-hazard cost $M(c)$ is decreasing in $c$. More cost-sharing closes the wedge between the price the worker faces and the price society pays.
+
+The optimal coinsurance rate solves
+$$
+c^* \;=\; \arg\max_{c \in [0, 1]}\; R(c) \,-\, M(c).
+$$
+The first-order condition equates the marginal *cost* of higher cost-sharing in lost risk protection with the marginal *benefit* of reduced moral hazard:
+$$
+\frac{\partial R}{\partial c} \;=\; \frac{\partial M}{\partial c}.
+$$
+The interior solution $c^* \in (0, 1)$ is the cleanest theoretical justification for partial insurance. It is Mossin (1968) generalized to allow demand to respond to price, and it is what Zeckhauser (1970) wrote down as the canonical statement of the trade-off.
+
+![](/assets/images/HI_4_cost_sharing.png)
+
+The figure plots the two components and their net at illustrative scale. Net welfare is hump-shaped in $c$, with a unique interior maximum. The position of the peak depends entirely on two empirical objects: $A(\bar{w})\,\sigma_L^2$, which sets the curvature of $R$, and the elasticity $\eta$, which sets the curvature of $M$. The remainder of the empirical literature on moral hazard is, in large part, a sustained effort to measure these two objects credibly.
+
+What does the optimum look like in practice? Real-world U.S. health plans set $c$ at something like 20% on a typical service, with caps and deductibles in addition. The graph says this is roughly where the trade-off is best, neither full coverage (which would amplify utilization too much) nor no coverage (which would leave too much risk on the worker). Whether the real-world parameters justify exactly 20% is an empirical question, and the two field experiments below were designed to help answer it.
+
+***
+
+## The RAND Health Insurance Experiment
+
+The RAND Health Insurance Experiment, conducted between 1971 and 1982 and analyzed in Manning et al. (1987), is the single most important empirical study of $\eta$. RAND randomly assigned roughly 2,000 American families to health insurance plans with coinsurance rates of 0, 25, 50, and 95 percent (the last subject to a stop-loss). Random assignment broke the link between $c$ and unobserved health, allowing a clean estimate of how utilization responded to the worker's effective price.
+
+The headline finding was a price elasticity of demand for medical care of approximately $-0.2$, small in absolute value, but decisively non-zero. Families on the free-care plan used about 30 to 40 percent more services than families on the 95-percent coinsurance plan. The effect was concentrated on the *probability* of any use rather than on the intensity of use conditional on entering the medical system, which is a useful diagnostic about the nature of the response.
+
+![](/assets/images/HI_4_rand_elasticity.png)
+
+The figure shows the qualitative pattern in stylized form. Utilization indices are normalized to 100 for the free-care plan within each category of care. Across all categories, more cost-sharing produces less utilization. But the magnitude of the response varies sharply. Hospital admissions are relatively inelastic, because a person who needs to be hospitalized rarely does so on a whim. Mental health and preventive services are more elastic, because they involve more discretion on the patient's side and operate further from acute medical necessity. The single most important policy lesson of RAND is not the average elasticity, but this *heterogeneity* across categories.
+
+The crucial RAND result for welfare analysis was that, *for the average participant*, this extra utilization had **no detectable effect on health**. Free care produced more office visits but did not produce measurably better health outcomes, on the dimensions RAND could measure, for the population as a whole. The exception was a small subgroup of low-income participants with pre-existing hypertension, for whom free care produced statistically significant improvements in blood pressure control. This finding hardened a generation of policy thinking around the value of cost-sharing as a tool to discipline utilization without sacrificing measurable health.
+
+RAND's interpretive limits are also worth knowing. The sample was insured throughout, so the comparison was between *more and less* generous insurance, not between insured and uninsured. The trial pre-dated modern outpatient cost growth, integrated delivery systems, and high-deductible plans with health savings accounts. And the elasticity estimate was an average over services that almost certainly have very different elasticities (preventive care, emergency care, mental-health visits).
+
+***
+
+## The Oregon Medicaid Experiment
+
+Three decades after RAND, the Oregon Health Insurance Experiment, summarized in Finkelstein et al. (2012) and subsequent papers, used a lottery to allocate Medicaid coverage to low-income uninsured adults. Unlike RAND, the contrast was *insured versus uninsured* rather than more versus less generous coverage.
+
+The setup is worth picturing. In 2008, Oregon found itself with a limited budget for Medicaid expansion. It chose to ration access by lottery: of the 90,000 low-income adults who signed up, roughly 30,000 were randomly drawn to receive Medicaid. The remaining 60,000 stayed uninsured. From a research perspective this was a once-in-a-generation natural experiment. Random assignment broke the link between coverage and unobserved health, just as RAND had done for cost-sharing levels.
+
+The results have to be read against the question they answered, which was *the causal effect of having Medicaid coverage at all*. Coverage roughly doubled the probability of having any health-care use in the year following the lottery, lowered out-of-pocket medical spending, and produced clinically and statistically significant improvements in self-reported mental health (in particular, large reductions in depression). On a basket of objective physical health measures (blood pressure, cholesterol, glycated hemoglobin) the estimated effects were small and statistically indistinguishable from zero in the two-year follow-up.
+
+The Oregon evidence is consistent with RAND on the central elasticity result: more generous coverage produces substantially more utilization. It departs from RAND on the welfare interpretation, because the *baseline* in Oregon was no coverage at all, and the population was much poorer and sicker. The two experiments together suggest that the marginal value of additional coverage is highly heterogeneous in the underlying population, a fact the simple optimal-cost-sharing diagram suppresses by treating $A$, $\sigma_L^2$, and $\eta$ as scalars.
+
+***
+
+## Separating Moral Hazard from Selection
+
+`Health Insurance 3` showed that the cost curves $MC$ and $AC$ in a selection market reflect *who* enters the pool at each price. This note has shown that the realized claims of each insured worker reflect *how their behavior changes* under coverage. These two effects are observationally similar in cross-sectional data: workers with generous insurance have higher claims, and the question is whether they have higher claims because they are sicker (selection) or because the contract changed their behavior (moral hazard).
+
+Einav, Finkelstein, Ryan, Schrimpf, and Cullen (2013) develop the canonical structural separation. The key insight is that selection and moral hazard generate *different* responses to *different* contract margins. Moral hazard is identified from how utilization changes when a worker's own marginal price changes (e.g., crossing a deductible threshold). Selection is identified from how the *composition* of buyers changes when the average premium of the contract changes. With sufficient policy variation that distinguishes the two margins, the structural parameters of $A$, $\eta$, and the joint distribution of risk and willingness to pay become separately identified.
+
+A subtler complication is **selection on moral hazard**: workers may select into insurance based not only on their expected loss but on their own *elasticity* of utilization with respect to price. Einav and coauthors (2013, *QJE*) document this empirically. People who would respond more to a lower copayment also have higher willingness to pay for coverage. This breaks the standard EFC separation, because $MC(Q)$ is no longer determined solely by the underlying health distribution. It is determined by the joint distribution of health *and* responsiveness, a richer object that the structural framework must now estimate.
+
+> The methodological consequence is that any credible welfare evaluation of a selection market with moral hazard requires *price variation that moves both margins independently*. RAND moved the marginal price of care. Oregon moved the average price of coverage. Real-world reforms (the ACA marketplaces, Medicare Part D, Medicaid expansions) typically move both at once, which is why the most useful empirical work in this literature exploits *combinations* of policy variation rather than any single experiment.
+
+***
+
+## What's Next: The Institution That Bundles Coverage with Work
+
+We have now built a four-note picture of how the market for health insurance is supposed to work in theory and where it breaks down in practice. There is one institutional fact we have so far suppressed: in the United States, the dominant way most working-age adults obtain coverage is not through the individual market we have been analyzing. It is through their employer.
+
+That is not an accident, and it is not innocuous. Employer-sponsored insurance arose in part as a tax-policy artifact and in part as a way for firms to assemble risk pools that solve the Rothschild-Stiglitz unraveling problem. It also creates a connection between health coverage and *job mobility* that has no analogue in any of the standard models. The next note is about why your employer is in the business of insuring you, and the note after that begins the bridge to the labor series.
+
+***
+
+## References
+
+Arrow, K. J. (1963). Uncertainty and the Welfare Economics of Medical Care. *American Economic Review, 53*(5), 941–973.
+
+Einav, L., Finkelstein, A., Ryan, S. P., Schrimpf, P., & Cullen, M. R. (2013). Selection on Moral Hazard in Health Insurance. *American Economic Review, 103*(1), 178–219.
+
+Finkelstein, A., Taubman, S., Wright, B., Bernstein, M., Gruber, J., Newhouse, J. P., Allen, H., Baicker, K., & the Oregon Health Study Group (2012). The Oregon Health Insurance Experiment: Evidence from the First Year. *Quarterly Journal of Economics, 127*(3), 1057–1106.
+
+Manning, W. G., Newhouse, J. P., Duan, N., Keeler, E. B., Leibowitz, A., & Marquis, M. S. (1987). Health Insurance and the Demand for Medical Care: Evidence from a Randomized Experiment. *American Economic Review, 77*(3), 251–277.
+
+Pauly, M. V. (1968). The Economics of Moral Hazard: Comment. *American Economic Review, 58*(3), 531–537.
+
+Zeckhauser, R. (1970). Medical Insurance: A Case Study of the Tradeoff between Risk Spreading and Appropriate Incentives. *Journal of Economic Theory, 2*(1), 10–26.

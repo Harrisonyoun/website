@@ -1,7 +1,7 @@
 ---
 title: "When the Patient Knows More Than the Insurance Company"
 author: 'Harrison Youn<br><span style="font-size: 0.8em; color: #6c757d;">Health Insurance 2</span>'
-date: "2025-08-17T09:00:00Z"
+date: "2026-05-22T09:00:03Z"
 description: "When you know your own health better than the insurer does, the market can fall apart."
 image: "/assets/images/HI_2.png"
 categories: [Health Economics, Health Insurance, Adverse Selection, Asymmetric Information, Rothschild-Stiglitz]

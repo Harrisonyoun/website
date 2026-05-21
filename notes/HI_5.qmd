@@ -1,0 +1,117 @@
+---
+title: "Why Your Boss Buys Your Insurance"
+author: 'Harrison Youn<br><span style="font-size: 0.8em; color: #6c757d;">Health Insurance 5</span>'
+date: "2025-08-23T09:00:00Z"
+description: "Why health insurance in America is tied to your employer, and what that costs you."
+image: "/assets/images/HI_5.png"
+categories: [Health Economics, Health Insurance, ESI, Tax Wedge, Employer-Sponsored Insurance]
+format:
+  html:
+    toc: true
+    code-fold: true
+---
+
+## Introduction: A Coverage System Built on Top of Payroll
+
+In the United States, about sixty percent of working-age adults receive their health coverage through their employer. No other rich country relies on its labor market to deliver such a large share of its health-insurance pool. The arrangement is not an inevitable feature of how insurance markets work. It is the product of a specific tax rule and a specific solution to the Rothschild-Stiglitz unraveling problem we studied in `Health Insurance 2`.
+
+To get a feel for what this looks like at the population level, picture a single Sankey diagram of how working-age Americans get coverage.
+
+![](/assets/images/HI_5_coverage_sankey.png)
+
+The left side is labor-force status. The right side is the source of coverage. The dominant flow, by a wide margin, is from the employed to employer-sponsored insurance (ESI). A second large flow runs from people outside the labor force into Medicaid. A smaller but non-trivial set of flows ends in "Uninsured," cutting across every labor-force category. If a different country drew this picture, the dominant flow would land at a national health service or a regulated individual market, not at an employer. The U.S. picture is shaped almost entirely by the institution we are about to examine.
+
+This note explains why the institution exists, how its tax treatment shapes wages and coverage simultaneously, and why it imposes a *mobility cost* on workers that has no analogue in any of the canonical insurance models. The mobility cost is the door we walk through into the next series. Everything we built in the labor-economics notes (the outside option $W_0(x)$, the acceptance set $\{(x,y) : S(x,y) \ge 0\}$, the firm effect $\psi_j$ as a composite of three forces) will reappear once we model the lock-in.
+
+***
+
+## Historical Accident, Institutional Lock-In
+
+Employer-sponsored insurance (ESI) is a twentieth-century artifact with two anchors.
+
+The first is a wartime accident. During the Second World War, the U.S. government imposed wage controls on civilian employers to suppress inflation. Firms competing for scarce labor could not raise cash wages, so they began to offer non-wage benefits, chief among them health insurance, as a way to make their offers more attractive. The Internal Revenue Service then ruled, first administratively in 1943 and then by statute in the Internal Revenue Code of 1954, that employer-paid health premiums were excluded from the employee's taxable income. This **tax exclusion** is the single most important federal subsidy to health insurance in the United States. The Joint Committee on Taxation estimates its annual cost at roughly two to three hundred billion dollars in forgone revenue.
+
+The second is the Employee Retirement Income Security Act of 1974 (ERISA), which created the legal framework under which large employers could *self-insure* their workforce. ERISA exempts self-funded employer plans from most state-level insurance regulation, making it administratively feasible for large firms to operate their own risk pools rather than purchase coverage in the individual market. By the time the modern ACA marketplaces were created in 2014, this institutional architecture was already half a century old, and the fraction of the working-age population covered through employers had become the central institutional fact of U.S. health policy.
+
+The path-dependence here is important. There is no economic argument that *requires* health insurance to be bundled with employment. The institution exists because two policy choices made for unrelated reasons interacted to make the bundle privately attractive, and once the bundle was established, dismantling it is costly because it has been priced into wages, into firm size distributions, and into the structure of competing markets.
+
+***
+
+## The Tax Wedge
+
+The mechanics of the tax exclusion are stark when written down formally. Suppose a worker has marginal income-tax rate $\tau$, and consider two ways the firm can spend a marginal dollar on this worker's compensation.
+
+* **Cash wages.** Every \$1 paid as cash wage becomes \$$(1 - \tau)$ in the worker's pocket.
+* **Employer-paid insurance.** Every \$1 paid as a health-plan premium becomes \$1 of in-kind compensation that the worker would otherwise have to buy in after-tax dollars.
+
+The implicit subsidy to employer-paid coverage is therefore $\tau / (1 - \tau)$ in proportional terms. A worker facing a 30 percent combined marginal rate of federal income tax, payroll tax, and state income tax receives roughly \$1.43 of equivalent value from each dollar of ESI compared to cash. The wedge widens with income because marginal tax rates are progressive, which is why high-wage workers tend to receive disproportionately generous ESI packages.
+
+| Marginal tax rate $\tau$ | Take-home from \$1 cash | Take-home from \$1 ESI | Implicit ESI subsidy $\tau/(1-\tau)$ |
+|:---:|:---:|:---:|:---:|
+| 0%   | \$1.00 | \$1.00 | 0%    |
+| 15%  | \$0.85 | \$1.00 | 18%   |
+| 25%  | \$0.75 | \$1.00 | 33%   |
+| 35%  | \$0.65 | \$1.00 | 54%   |
+| 45%  | \$0.55 | \$1.00 | 82%   |
+
+Imagine a worker named Alex in the 35% marginal-rate bracket. His employer is deciding whether to spend an extra \$1,000 on his compensation. If the firm pays \$1,000 in cash, Alex takes home \$650 after tax. If the firm pays \$1,000 toward Alex's health plan instead, Alex receives \$1,000 worth of coverage. The pre-tax cost to the firm is the same in both cases. But the after-tax value to Alex is \$350 higher if it comes in the form of coverage. Multiply this across the workforce and you get the basic reason high-paying firms tend to offer generous health plans: it is a tax-efficient way to compensate workers, and the higher the worker's tax bracket, the more efficient it is.
+
+> The tax exclusion is, in effect, a regressive subsidy that pays workers more for receiving compensation in kind than in cash, with a larger marginal price wedge for those who face higher marginal tax rates. The fiscal cost is real. The equity profile is one of the most well-known critiques of the institution.
+
+The incidence question, that is, *who actually pays* for the employer's premium contribution, is the natural follow-on. Gruber (1994) used variation in state-level mandates that required employers to cover maternity care to estimate the incidence empirically. Wages of workers most affected by the mandate fell by roughly the cost of the mandated benefit, consistent with the textbook prediction that workers value the benefit at close to its cost and therefore bear its incidence in lower wages. This is the **compensating-differentials** logic we developed in `Search and Matching 5`, applied to the largest non-wage amenity in the U.S. labor market.
+
+***
+
+## Employer Pooling and the Rothschild-Stiglitz Escape
+
+The tax wedge explains why ESI is generous. It does not by itself explain why ESI exists as a *risk-pooling* institution at all. The complementary answer is institutional: the employer pool is a way to *avoid* the unraveling result of Rothschild and Stiglitz.
+
+Recall the R-S problem. In a competitive individual market with private information about risk, the low-risk type is rationed and pooling cannot survive entry. The collapse is driven by the *ability of workers to sort themselves into the contract that best matches their type*, which is what gives the cream-skimming deviation its bite.
+
+Within a firm, that sorting margin is closed off. The decision to take a job is driven by many things (wage, location, career trajectory), not solely by the value of the firm's health plan. Conditional on accepting employment, workers are typically enrolled in a default plan or choose from a small menu, and they cannot use plan-specific selection to undermine the pool the way they could in an individual marketplace. The firm therefore effectively acts as a *mandatory risk pool*, with the additional property that the pool's composition is determined by who chooses to work at the firm rather than by who chooses to buy each plan.
+
+A concrete illustration: at a typical mid-sized firm of two hundred employees, the pool includes the marathoner and the diabetic from `Health Insurance 2` together. Neither of them can switch into or out of the pool just because of their health risk. The marathoner cannot sign up for an individual plan that excludes the diabetic, because she is committed to working at the firm for other reasons. The diabetic cannot cherry-pick the firm just for its health plan, because hiring committees screen on more than insurance demand. The firm has, in effect, bundled enrollment with an unrelated decision (employment), and that bundling is what stabilizes the pool.
+
+This is not nothing. By bundling the insurance contract with a separate decision (the labor contract) on which workers have heterogeneous preferences, the firm pool is partially shielded from the cream-skimming dynamics that destroy the individual market. The size, demographics, and industrial composition of the firm all influence the resulting pool, and firms of different types end up offering different effective premiums to similar workers, which, in turn, becomes a piece of the firm effect $\psi_j$.
+
+***
+
+## The Hidden Cost: Loss of Portability
+
+Every institution has a price. The price of using employment as the gateway to the risk pool is that *leaving employment severs the worker from the pool*. A worker who quits, is laid off, or moves to a firm that does not offer comparable coverage loses access to the risk-pooling institution they had been participating in.
+
+Federal law mitigates this in fragmentary ways. COBRA (1985) allows workers to retain their former employer's coverage for a limited period after separation, but at the unsubsidized full premium, which, by the mechanics of the tax wedge above, makes the coverage substantially more expensive than it was while employed. HIPAA (1996) restricts pre-existing-condition exclusions when moving between group plans. The Affordable Care Act (2010) created exchange-based individual insurance with community rating, subsidies, and a guarantee-issue requirement. Each of these reforms addressed a piece of the portability problem, but none of them eliminated the basic asymmetry. While employed, the worker buys coverage with a tax subsidy and within a pre-assembled risk pool. While not employed, the worker buys coverage in a market that is more expensive, less generous, or both.
+
+For a worker whose health is good and whose alternative coverage options are plentiful, this asymmetry is a small distortion. For a worker with chronic conditions, dependents with high expected medical needs, or limited access to spousal or public alternatives, it is a *first-order* feature of how they make labor-market decisions. The decision to switch jobs is no longer a decision purely about wages, matching, and career trajectory. It is also a decision about whether the new firm's coverage is at least as good as the current one, and at what price.
+
+To put a face on the asymmetry: consider Maria, a fifty-year-old with Type 1 diabetes who works at a firm offering a generous health plan. She is offered a better-paying job at a startup that does not offer health insurance. In a country where coverage is portable (most rich countries), the job choice would be based on the merits of the role, the team, and the wage. In the U.S., Maria has to weigh the wage increase against the cost of buying her own insurance on the individual market. Even with ACA protections, the prospect of paying for her own coverage, plus the administrative friction of changing plans, may tip the balance back toward staying. The job she does not take is the silent footprint of the institution.
+
+This is **job lock**, the labor-market distortion induced by the non-portability of ESI. It is the central object of the next series.
+
+***
+
+## The Bridge to the Labor Series
+
+Let us close this note by stating the connection precisely. Recall from `Search and Matching 2` that a worker of type $x$ accepts a match with a firm of type $y$ if and only if the surplus is non-negative,
+$$
+S(x, y) \;\ge\; 0,
+$$
+where the surplus depends on the outside option $W_0(x)$. Job lock changes $W_0(x)$ in a structured way. For a worker with health risk $h$, the value of being in the unemployment-search pool is reduced because that pool comes without the firm's tax-subsidized risk-pooling. The effective outside option becomes
+$$
+W_0(x, h) \;=\; W_0(x) \;-\; w_{\text{lock}}(h),
+$$
+where $w_{\text{lock}}(h)$ is the *lock wedge*, increasing in $h$. The higher the worker's health risk, the more the absence of portable coverage depresses their willingness to leave their current job.
+
+This single modification to $W_0$ has consequences throughout the labor model. It deforms the acceptance set, distorts the AKM firm effect $\psi_j$ in a way we anticipated in `Search and Matching 5`, and changes how mobility responds to outside offers. The next three notes, the **Job Lock** bridge series, develop these consequences one at a time. The first builds the formal anatomy of the lock. The second turns to how it has been identified in the data. And the third returns to the question we left hanging in `Search and Matching 5`, of what the firm wage premium really measures when the institution of ESI is allowed to do its work.
+
+***
+
+## References
+
+Currie, J., & Madrian, B. C. (1999). Health, Health Insurance and the Labor Market. In O. Ashenfelter & D. Card (Eds.), *Handbook of Labor Economics* (Vol. 3, Part C, pp. 3309–3416). Elsevier.
+
+Gruber, J. (1994). The Incidence of Mandated Maternity Benefits. *American Economic Review, 84*(3), 622–641.
+
+Gruber, J. (2011). The Tax Exclusion for Employer-Sponsored Health Insurance. *National Tax Journal, 64*(2, Part 2), 511–530.
+
+Madrian, B. C. (1994). Employment-Based Health Insurance and Job Mobility: Is There Evidence of Job-Lock? *Quarterly Journal of Economics, 109*(1), 27–54.
