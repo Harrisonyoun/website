@@ -1,7 +1,7 @@
 ---
 title: "Why a Higher-Paying Job Isn't Always Better"
 author: 'Harrison Youn<br><span style="font-size: 0.8em; color: #6c757d;">Search and Matching 5</span>'
-date: "2025-08-12T09:00:00Z"
+date: "2026-05-22T09:00:00Z"
 description: "Three things shape what a firm actually pays you, and only one of them shows up as cash."
 image: "/assets/images/SEARCH_5_offset_wedge.png"
 categories: [Labor Economics, Search and Matching, AKM Model, Compensating Differentials, Hedonic Wages, Revealed Preference, Amenities]
