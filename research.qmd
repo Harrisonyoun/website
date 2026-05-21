@@ -47,7 +47,7 @@ class: research-page
 
 - “Killing Me Softly With Dinner: The Costs of Circadian Misalignment” <br><br>
 
-- “Provider Networks and Healthcare Innovation”
+- “Provider Networks and Healthcare Innovation” <br><br>
 
 - “Intergenerational Dilemma: Balancing Windfalls and Burdens of Public Transfers"
 <br>
