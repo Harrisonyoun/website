@@ -64,6 +64,13 @@ of care.</p>
   <p>For most U.S. workers, employment and health coverage are not separate decisions. This paper studies the impact of health insurance decoupling on the labor and insurance markets, using the Affordable Care Act's nationwide expansion of non-employer coverage in 2014 as a natural experiment. I find that coverage redistributed, with workers most dependent on employer coverage shifting to non-employer alternatives and a measurable share remaining uninsured. Worker mobility rose on measures the standard job-to-job mobility measure misses, producing upward sorting toward larger firms among workers who changed employers. Wages and employer health benefits move together across firms, contradicting the tradeoff that compensating-differentials theory predicts. This correlation does not grow when the price of leaving falls. Most of it reflects how firms set pay rather than worker sorting through job changes. These findings share one mechanism. Non-employer coverage is cheaper than before but otherwise falls short of employer coverage. Price reform redistributes coverage and unlocks worker mobility. The worker-firm matching equilibrium responds only on firm size, and the induced mobility does not amplify the cross-firm wage-benefit correlation through worker sorting.</p>
 </div>
 
+
+## Work in Progress
+
+- “Killing Me Softly With Dinner: The Costs of Circadian Misalignment” <br><br>
+
+- “Provider Networks and Healthcare Innovation” <br><br>
+
 - “Intergenerational Dilemma: Balancing Windfalls and Burdens of Public Transfers"
 <br>
 <button class="abstract-button">abstract</button>
@@ -73,12 +80,6 @@ of care.</p>
   <p>How should we achieve an intergenerational balance between the windfalls that benefit the elderly and the burdens that affect their children? While existing studies mainly focus on potential crowding-out effects for policy evaluations (Nikolov and Bonci, 2020), the literature is silent on “how recipients utilize the benefits they receive.” For example, if windfall gains of elderly parents are shared with their children, both parents’ and children’s net gains may vary. In this paper, I present new evidence on the importance of the impact of recipients’ shared benefits, which I term the spillover effect, alongside the crowding-out effect to understand net gains from public and family transfers in Korea, crucial for balancing windfalls and burdens in intergenerational public and household finances.</p>
   <p>I find evidence that BP benefits displaced the transfer burdens of adult children for elderly single households and resulted in net gains for both family members and recipients in elderly couple households living without children. However, elderly couples living with their children experienced net gains, with the wealth of their children being redistributed from non-coresident to coresident children. The findings suggest that considering how recipients utilized their benefits can alter policy evaluations, contrasting with current literature.</p>
 </div>
-
-## Work in Progress
-
-- “Killing Me Softly With Dinner: The Costs of Circadian Misalignment” <br><br>
-
-- “Provider Networks and Healthcare Innovation”
 
 <script>
 (function () {
