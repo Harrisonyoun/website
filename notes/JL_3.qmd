@@ -1,7 +1,7 @@
 ---
 title: "What a Wage Hides When Insurance Comes With the Job"
 author: 'Harrison Youn<br><span style="font-size: 0.8em; color: #6c757d;">Job Lock 3</span>'
-date: "2025-08-30T09:00:00Z"
+date: "2026-05-24T17:00:00Z"
 description: "When a job comes with health insurance, the wage stops meaning what we think it means. The synthesis."
 image: "/assets/images/JL_3.png"
 categories: [Labor Economics, Health Economics, Job Lock, Compensating Differentials, Wage Decomposition, Firm Effects]

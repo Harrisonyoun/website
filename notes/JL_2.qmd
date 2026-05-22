@@ -1,7 +1,7 @@
 ---
 title: "How Do You Measure a Job Change That Did Not Happen?"
 author: 'Harrison Youn<br><span style="font-size: 0.8em; color: #6c757d;">Job Lock 2</span>'
-date: "2025-08-28T09:00:00Z"
+date: "2026-05-24T16:00:00Z"
 description: "How do you measure the jobs people would have taken but did not? Natural experiments offer a way."
 image: "/assets/images/JL_2.png"
 categories: [Labor Economics, Health Economics, Job Lock, Difference-in-Differences, Event Study, ACA, Madrian]
