@@ -15,7 +15,7 @@ format:
 
 In the United States, about sixty percent of working-age adults receive their health coverage through their employer. No other rich country relies on its labor market to deliver such a large share of its health-insurance pool. The arrangement is not an inevitable feature of how insurance markets work. It is the product of a specific tax rule and a specific solution to the Rothschild-Stiglitz unraveling problem we studied in `Health Insurance 2`.
 
-To get a feel for what this looks like at the population level, picture a single Sankey diagram of how working-age Americans get coverage.
+To get a feel for what this looks like at the population level, picture how working-age Americans get coverage.
 
 ![](/assets/images/HI_5_coverage_sankey.png)
 
