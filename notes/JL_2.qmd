@@ -1,7 +1,7 @@
 ---
 title: "How Do You Measure a Job Change That Did Not Happen?"
 author: 'Harrison Youn<br><span style="font-size: 0.8em; color: #6c757d;">Job Lock 2</span>'
-date: "2026-05-24T16:00:00Z"
+date: "2026-05-24T09:00:00Z"
 description: "How do you measure the jobs people would have taken but did not? Natural experiments offer a way."
 image: "/assets/images/JL_2.png"
 categories: [Labor Economics, Health Economics, Job Lock, Difference-in-Differences, Event Study, ACA, Madrian]
@@ -11,7 +11,7 @@ format:
     code-fold: true
 ---
 
-## Introduction: The Counterfactual Problem
+## The Counterfactual Problem
 
 `Job Lock 1` developed an explicit model of how employer-sponsored insurance distorts the outside option in a search environment. The model produced three sharp comparative-static predictions about mobility, wage gains, and match quality. We did not, however, say anything about how to *test* those predictions in real data.
 
@@ -21,9 +21,9 @@ To get a feel for what successful identification looks like at the population le
 
 ![](/assets/images/JL_2_mover_sankey.png)
 
-The two panels show stylized mover flows in a Card-style cross-tabulation. The top panel is low health-risk workers. Their job-to-job moves spread roughly evenly across firm tiers (low / mid / high coverage), because their decision is not driven by the coverage margin. The bottom panel is high health-risk workers. Their moves are concentrated in flows that *retain* high-coverage status. Workers who start at a high-coverage firm overwhelmingly stay there. Workers who move out of low-coverage or mid-coverage firms preferentially move *toward* high-coverage firms. The Sankey makes the sorting visible in a way that an event-study coefficient cannot.
+The two panels show stylized mover transition matrices in a Card-style cross-tabulation. Rows are the worker's origin coverage tier (low / mid / high) and columns are the destination, so each row sums to 100% of moves originating in that tier. The left panel is low health-risk workers. Their moves spread roughly evenly across destination tiers, because the coverage margin is not the binding consideration in their decision. The right panel is high health-risk workers. The mass concentrates in the rightmost column: 40% of low-tier movers, 50% of mid-tier movers, and 80% of high-tier movers land at high-coverage firms. The lower triangle (moving down a tier) almost empties out. The heatmap makes the sorting visible in a way that a single event-study coefficient cannot. The high-$h$ panel is what the comparative statics of `Job Lock 1` predict: the acceptance set has expanded toward coverage-preserving firms and shrunk away from coverage-losing ones.
 
-Both figures in this note are stylized illustrations. The numbers are simulated, not estimated. The point is to fix what the design *looks like* when it works.
+All figures in this note are stylized illustrations. The numbers are simulated, not estimated. The point is to fix what the design *looks like* when it works.
 
 This note surveys the four most credible sources of variation in the U.S. context, the canonical estimating equation, and the reasons no single source can answer the full question on its own.
 
@@ -82,7 +82,15 @@ Madrian (1994), already discussed in `Job Lock 1`, was the prototype. Her design
 * **Direct measurement of the wedge.** Cooper and Monheit (1993) and others tried to directly measure the value workers placed on coverage, to construct a continuous measure of the wedge rather than a binary "locked vs. not" indicator. These efforts produced smaller but generally still positive estimates.
 * **Alternative outcomes.** Some papers measure entrepreneurship rather than job-to-job moves, on the grounds that leaving to start a business is the move most directly inhibited by losing employer coverage. Fairlie, Kapur, and Gates (2011) document a large jump in self-employment at age 65 attributable to Medicare-driven portability. A concrete reading: an aspiring entrepreneur cannot afford to walk away from a salaried job if it is also her only access to coverage. When she turns 65 and Medicare becomes available, she suddenly can. The visible spike in startup activity right at the 65 cutoff is the lock releasing.
 
-The cumulative weight of this literature is that *something* is going on. The basic mechanism in `Job Lock 1` is consistent with the data. But the magnitudes vary widely by design, sample, and outcome.
+The cumulative weight of this literature is that *something* is going on. The basic mechanism in `Job Lock 1` is consistent with the data. But the magnitudes vary widely by design, sample, and outcome, and the variation is *systematic*: estimates from spousal-coverage DiDs are larger than estimates from Medicaid expansions, which are in turn larger than estimates from the post-2014 ACA studies. The forest plot below collects representative point estimates from each of the four identification families.
+
+![](/assets/images/JL_2_literature_forest.png)
+
+The figure has two panels. The left panel collects mobility estimates, expressed as the percentage change in job-to-job transitions attributable to ESI dependence (negative values mean the lock binds). The right panel collects the much smaller entrepreneurship literature, expressed as the percentage-point change in self-employment around a portability shock. Three patterns are visible at a glance.
+
+First, the spousal-coverage DiD lineage (navy) delivers the largest absolute magnitudes, with Madrian's original 25% reduction sitting at the upper end of the band. Second, the natural-experiment designs centered on age 65 (slate) and Medicaid contractions or expansions (green) cluster in the 6%–14% range, smaller than the spousal estimates but consistently signed. Third, the post-2014 ACA estimates (orange) are noisy, small, and frequently straddle zero. This is the "puzzle of small effects" that the next section takes up. The right-panel entrepreneurship results show the same ordering: the Medicare-65 RD design of Fairlie et al. delivers a sharp positive jump, the Medicaid and ACA estimates are an order of magnitude smaller.
+
+Estimates have been standardized across papers for visual comparability and the confidence bands are illustrative of typical precision rather than exact replications. The structural fact the picture is trying to communicate is the *systematic ordering of magnitudes across designs*, not the precise coefficient of any one study.
 
 ***
 

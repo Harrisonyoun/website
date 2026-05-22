@@ -1,7 +1,7 @@
 ---
 title: "What a Wage Hides When Insurance Comes With the Job"
 author: 'Harrison Youn<br><span style="font-size: 0.8em; color: #6c757d;">Job Lock 3</span>'
-date: "2026-05-24T17:00:00Z"
+date: "2026-05-24T15:00:00Z"
 description: "When a job comes with health insurance, the wage stops meaning what we think it means. The synthesis."
 image: "/assets/images/JL_3.png"
 categories: [Labor Economics, Health Economics, Job Lock, Compensating Differentials, Wage Decomposition, Firm Effects]
@@ -11,7 +11,7 @@ format:
     code-fold: true
 ---
 
-## Introduction: Three Series, One Object
+## Three Series, One Object
 
 We have arrived at the synthesis. The labor-economics series ended in `Search and Matching 5` by re-reading the AKM firm effect $\psi_j$ as a composite of three forces: productivity rent, posted-wage rent, and amenity offset. The health-insurance series ended in `Health Insurance 5` by identifying the central institutional fact of the U.S. system: coverage is bundled with employment, and the bundle creates a tax-subsidized, partially portable, employer-mediated risk pool. The job-lock bridge has shown how that institutional fact distorts the outside option, the acceptance set, and the mobility margin.
 
@@ -21,7 +21,7 @@ Before we develop the argument, fix the conclusion as a single picture.
 
 ![](/assets/images/JL_3_psi_decomposition.png)
 
-The figure decomposes the firm wage premium $\psi_j$ into four components for three illustrative firm archetypes. The first three components (productivity rent, posted-wage rent, amenity offset) are the standard decomposition from `Search and Matching 5`. The fourth, in orange, is the **insurance retention rent**, the piece of the firm premium that exists *because* the firm controls a non-portable risk pool. The retention rent is zero at firms with no ESI to speak of, modest at mid-coverage firms, and substantial at the most generous-coverage firms. The net $\psi_j$ shown by the diamond is the same observed number an AKM regression would deliver. But its composition is now four-way, not three-way, and the new component is the one this synthesis introduces.
+The figure decomposes the firm wage premium $\psi_j$ into four components for three illustrative firm archetypes. The first three components — productivity rent (navy), posted-wage rent (slate), amenity offset (green) — are the standard decomposition from `Search and Matching 5`. The fourth, in orange, is the **insurance retention rent**, the piece of the firm premium that exists *because* the firm controls a non-portable risk pool. The retention rent is zero at the low-coverage firm, a modest +0.04 log points at the mid-coverage firm, and +0.09 log points at the high-coverage firm. The net $\psi_j$, marked by the diamond at the right of each bar, is the same observed number an AKM regression would deliver: +0.11, +0.15, and +0.18 respectively. Two firms with similar net $\psi_j$ can have completely different compositions; that observation will do most of the work in the section after next.
 
 The remainder of the note develops the analytics behind the figure, and asks three concrete questions that the empirical literature is poorly equipped to answer with its current tools.
 
@@ -93,6 +93,10 @@ Two corollaries follow.
 **Sorting estimates are biased.** Estimates of $\mathrm{Cov}(\theta_i, \psi_j)$, taken as evidence of assortative matching, conflate sorting on productivity with sorting on coverage. High-ability workers may sort into high-$\psi$ firms not only because those firms are productive, but because those firms offer better ESI, and because high-ability workers are also more likely to have the resources to negotiate or shop on coverage. The two channels are observationally similar in standard data, and the magnitude of the contamination depends on how much of the cross-firm variation in $\psi_j$ is driven by $\psi_j^{\text{coverage}}$.
 
 For a concrete reading, consider two firms that both have estimated $\psi_j \approx 0.18$ in a standard AKM regression. Firm A is a tech firm with high productivity and a barebones health plan. Firm B is a hospital system with average productivity but an extremely generous health plan. AKM does not distinguish them. The decomposition above does: firm A's premium is dominated by $\delta\, y_j$, firm B's by $\rho\, w^{\text{lock}}_j$. A policy reform that makes coverage portable would leave A's premium roughly unchanged but compress B's. Treating the two firms as interchangeable, as the unadorned AKM coefficient implicitly does, will misread the effect of any portability reform.
+
+![](/assets/images/JL_3_isopsi_scatter.png)
+
+The figure plots a simulated cross-section of firms in the $(\psi_j^{\text{match}}, \psi_j^{\text{coverage}})$ plane. Each light-blue dot is a firm. The dashed diagonal lines are iso-$\psi_j$ contours: any two firms lying on the same line are *observationally identical* to an AKM regression. The thick orange line is the iso-$\psi_j = 0.18$ contour. Firms A and B both sit on it. AKM cannot see the distance between them along the line, only the fact that both are at the same height above the origin. The arrows trace what a portability shock does to each: A barely moves (its premium is productivity, which the shock does not touch), while B's $\psi_j^{\text{coverage}}$ collapses toward zero and the firm slides down the iso-line to a lower-$\psi$ contour. Any empirical strategy that reads $\psi_j$ alone, without partitioning it, will average across firms that the policy is going to treat very differently.
 
 ***
 
