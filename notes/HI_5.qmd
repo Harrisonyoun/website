@@ -1,7 +1,7 @@
 ---
 title: "Why Your Boss Buys Your Insurance"
 author: 'Harrison Youn<br><span style="font-size: 0.8em; color: #6c757d;">Health Insurance 5</span>'
-date: "2026-05-23T09:05:06Z"
+date: "2026-05-23T09:05:00Z"
 description: "Why health insurance in America is tied to your employer, and what that costs you."
 image: "/assets/images/HI_5.png"
 categories: [Health Economics, Health Insurance, ESI, Tax Wedge, Employer-Sponsored Insurance]
@@ -15,11 +15,11 @@ format:
 
 In the United States, about sixty percent of working-age adults receive their health coverage through their employer. No other rich country relies on its labor market to deliver such a large share of its health-insurance pool. The arrangement is not an inevitable feature of how insurance markets work. It is the product of a specific tax rule and a specific solution to the Rothschild-Stiglitz unraveling problem we studied in `Health Insurance 2`.
 
-To get a feel for what this looks like at the population level, picture how working-age Americans get coverage.
+To get a feel for what this looks like at the population level, look at how each labor-force group sources its coverage.
 
 ![](/assets/images/HI_5_coverage_sankey.png)
 
-The left side is labor-force status. The right side is the source of coverage. The dominant flow, by a wide margin, is from the employed to employer-sponsored insurance (ESI). A second large flow runs from people outside the labor force into Medicaid. A smaller but non-trivial set of flows ends in "Uninsured," cutting across every labor-force category. If a different country drew this picture, the dominant flow would land at a national health service or a regulated individual market, not at an employer. The U.S. picture is shaped almost entirely by the institution we are about to examine.
+Each row is a labor-force status; the colored segments show the share of that group with each coverage type, summing to 100% within the row. The picture is dominated by a single fact: among full-time workers, roughly 82% are covered through their own employer, and another 7% ride on a spouse's or parent's plan. Employer-sponsored insurance (ESI) accounts for nearly nine in ten full-time workers. The other rows tell the rest of the story by negation. As soon as a worker steps off the full-time track, the orange ESI bar collapses. Part-timers fall back on a patchwork of spousal coverage, Medicaid, and the ACA marketplace, with close to a third uninsured. The self-employed lean heavily on the individual market the ACA built, but still leave more than a quarter uncovered. Among the unemployed, Medicaid picks up roughly 30%, while about half remain uninsured. Outside the labor force, Medicaid becomes the dominant source, supplemented by early Medicare for those near retirement. If a different country drew this picture, every row would be a single color, the source of coverage independent of work status. The U.S. picture is shaped almost entirely by the institution we are about to examine.
 
 This note explains why the institution exists, how its tax treatment shapes wages and coverage simultaneously, and why it imposes a *mobility cost* on workers that has no analogue in any of the canonical insurance models. The mobility cost is the door we walk through into the next series. Everything we built in the labor-economics notes (the outside option $W_0(x)$, the acceptance set $\{(x,y) : S(x,y) \ge 0\}$, the firm effect $\psi_j$ as a composite of three forces) will reappear once we model the lock-in.
 
