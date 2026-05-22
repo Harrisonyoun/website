@@ -1,7 +1,7 @@
 ---
 title: "The Contract That Changes the Patient"
 author: 'Harrison Youn<br><span style="font-size: 0.8em; color: #6c757d;">Health Insurance 4</span>'
-date: "2025-08-21T09:00:00Z"
+date: "2026-05-23T09:04:05Z"
 description: "Insurance changes how people use care. How much should the patient still pay out of pocket?"
 image: "/assets/images/HI_4.png"
 categories: [Health Economics, Health Insurance, Moral Hazard, RAND HIE, Oregon Experiment, Cost Sharing]
@@ -11,7 +11,7 @@ format:
     code-fold: true
 ---
 
-## Introduction: Arrow's Optimum, Pauly's Objection
+## Arrow's Optimum, Pauly's Objection
 
 Arrow (1963) ended `Health Insurance 1` with a clean prescription: if insurance is actuarially fair, the optimal contract is full coverage. Five years later, Mark Pauly (1968) wrote a famously short critique pointing out a hole in the argument. Arrow had treated the loss $\tilde{L}$ as exogenous, a fixed property of the worker's health, and asked how much of it should be financed by the insurer. But medical spending is not just realized. It is *chosen*. A worker who pays nothing at the point of service has every reason to demand more care than a worker who pays the full price, and the realized loss in the insured state is therefore endogenous to the contract itself.
 

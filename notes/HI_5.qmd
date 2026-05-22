@@ -1,7 +1,7 @@
 ---
 title: "Why Your Boss Buys Your Insurance"
 author: 'Harrison Youn<br><span style="font-size: 0.8em; color: #6c757d;">Health Insurance 5</span>'
-date: "2025-08-23T09:00:00Z"
+date: "2026-05-23T09:05:06Z"
 description: "Why health insurance in America is tied to your employer, and what that costs you."
 image: "/assets/images/HI_5.png"
 categories: [Health Economics, Health Insurance, ESI, Tax Wedge, Employer-Sponsored Insurance]
@@ -11,7 +11,7 @@ format:
     code-fold: true
 ---
 
-## Introduction: A Coverage System Built on Top of Payroll
+## A Coverage System Built on Top of Payroll
 
 In the United States, about sixty percent of working-age adults receive their health coverage through their employer. No other rich country relies on its labor market to deliver such a large share of its health-insurance pool. The arrangement is not an inevitable feature of how insurance markets work. It is the product of a specific tax rule and a specific solution to the Rothschild-Stiglitz unraveling problem we studied in `Health Insurance 2`.
 

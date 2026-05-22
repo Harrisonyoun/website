@@ -1,7 +1,7 @@
 ---
 title: "When Raising the Price Raises the Cost"
 author: 'Harrison Youn<br><span style="font-size: 0.8em; color: #6c757d;">Health Insurance 3</span>'
-date: "2025-08-19T09:00:00Z"
+date: "2026-05-23T09:01:04Z"
 description: "Why raising the price of insurance makes it more expensive to provide."
 image: "/assets/images/HI_3.png"
 categories: [Health Economics, Health Insurance, Selection Markets, Adverse Selection, Einav-Finkelstein]
@@ -11,7 +11,7 @@ format:
     code-fold: true
 ---
 
-## Introduction: A Market in Which Cost Depends on Price
+## A Market in Which Cost Depends on Price
 
 In every textbook supply-and-demand diagram, the cost of producing the marginal unit is a property of the *seller's* technology. Doubling the price brings in more producers willing to supply at the higher price, but the cost of making any individual unit does not depend on what price the firm charges.
 

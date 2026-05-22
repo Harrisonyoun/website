@@ -1,7 +1,7 @@
 ---
 title: "Why People Stay in Jobs They Would Rather Leave"
 author: 'Harrison Youn<br><span style="font-size: 0.8em; color: #6c757d;">Job Lock 1</span>'
-date: "2026-05-22T10:00:07Z"
+date: "2026-05-23T10:00:07Z"
 description: "If quitting means losing your health plan, leaving the job gets very expensive."
 image: "/assets/images/JL_1.png"
 categories: [Labor Economics, Health Economics, Job Lock, ESI, Search and Matching, Reservation Wage]

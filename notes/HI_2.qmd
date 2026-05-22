@@ -11,7 +11,7 @@ format:
     code-fold: true
 ---
 
-## Introduction: The Asymmetric Information Turn
+## The Asymmetric Information Turn
 
 In `Health Insurance 1` we built a world in which the worker and the insurer share the same beliefs about the loss distribution $F(\tilde{L})$. Under fair pricing, Arrow's theorem delivered full insurance. Under loaded pricing, the optimal contract had a deductible. In both cases, the *price* of insurance was a clean reflection of the *physical* risk.
 
