@@ -102,7 +102,7 @@ W_0(x, h) \;=\; W_0(x) \;-\; w_{\text{lock}}(h),
 $$
 where $w_{\text{lock}}(h)$ is the *lock wedge*, increasing in $h$. The higher the worker's health risk, the more the absence of portable coverage depresses their willingness to leave their current job.
 
-This single modification to $W_0$ has consequences throughout the labor model. It deforms the acceptance set, distorts the AKM firm effect $\psi_j$ in a way we anticipated in `Search and Matching 5`, and changes how mobility responds to outside offers. The next three notes, the **Job Lock** bridge series, develop these consequences one at a time. The first builds the formal anatomy of the lock. The second turns to how it has been identified in the data. And the third returns to the question we left hanging in `Search and Matching 5`, of what the firm wage premium really measures when the institution of ESI is allowed to do its work.
+This single modification to $W_0$ has consequences throughout the labor model. It deforms the acceptance set, distorts the AKM firm effect $\psi_j$ in a way we anticipated in `Search and Matching 5`, and changes how mobility responds to outside offers.
 
 ***
 
