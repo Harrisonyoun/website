@@ -68,7 +68,7 @@ The figure below shows a stylized version of what a clean event study should loo
 
 ![](/assets/images/JL_2_event_study.png)
 
-> The shape of the post-period response carries information about the *kind* of friction the lock generates. A sharp impact effect followed by a flat plateau is consistent with a binding constraint that workers had been waiting to release. A gradual ramp is consistent with a friction in match formation, where workers re-enter the search process but only realize gains as new matches are formed over time. A delayed or absent effect is consistent with a small lock, or with an offsetting channel (e.g., the new coverage option being too expensive to be attractive in equilibrium).
+The shape of the post-period response carries information about the *kind* of friction the lock generates. A sharp impact effect followed by a flat plateau is consistent with a binding constraint that workers had been waiting to release. A gradual ramp is consistent with a friction in match formation, where workers re-enter the search process but only realize gains as new matches are formed over time. A delayed or absent effect is consistent with a small lock, or with an offsetting channel (e.g., the new coverage option being too expensive to be attractive in equilibrium).
 
 This is a stylized illustration only. The numbers are simulated, and the figure should not be read as evidence about any specific policy. The point is to fix the geometry of what an event-study identification of job lock looks like when it works.
 
@@ -116,7 +116,7 @@ Several explanations have been offered for the small estimated effects. The firs
 
 The cumulative empirical picture from this literature is one of *modest and heterogeneous* job-lock effects, concentrated in the populations the theory says should be most affected. The qualitative story from `Job Lock 1` survives. The quantitative magnitude appears smaller than a naive reading of the model would predict.
 
-> The interpretive challenge is that "small estimated effects" is consistent with two very different conclusions. It could mean that job lock is a real but minor friction, in which case policy investments in portability yield small returns. Or it could mean that the empirical strategies are missing the part of the lock that operates through *sorting* rather than through *flows*: workers selecting *into* employer coverage in the first place, and into specific firm types within the employed pool, in ways that the standard DiD design cannot see. We return to this distinction in the next note.
+The interpretive challenge is that "small estimated effects" is consistent with two very different conclusions. It could mean that job lock is a real but minor friction, in which case policy investments in portability yield small returns. Or it could mean that the empirical strategies are missing the part of the lock that operates through *sorting* rather than through *flows*: workers selecting *into* employer coverage in the first place, and into specific firm types within the employed pool, in ways that the standard DiD design cannot see. We return to this distinction in the next note.
 
 ***
 

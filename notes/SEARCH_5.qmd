@@ -93,7 +93,7 @@ The crucial observation, and the one most often missed in applied work, is that 
 
 The figure below makes this concrete. We simulate 500 firms with $\mathrm{corr}(y, a) \approx 0.5$, hold $\delta$ fixed, and vary the offset rate $\beta$.
 
-![](/assets/images/SEARCH_5_offset_wedge.png)
+![](/assets/images/SEARCH_5_offset.png)
 
 <details>
 <summary>**Reproduce the figure**</summary>

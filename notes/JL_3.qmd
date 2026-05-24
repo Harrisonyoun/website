@@ -1,7 +1,7 @@
 ---
 title: "What a Wage Hides When Insurance Comes With the Job"
 author: 'Harrison Youn<br><span style="font-size: 0.8em; color: #6c757d;">Job Lock 3</span>'
-date: "2026-05-24T15:00:00Z"
+date: "2026-05-24T10:00:00Z"
 description: "When a job comes with health insurance, the wage stops meaning what we think it means. The synthesis."
 image: "/assets/images/JL_3.png"
 categories: [Labor Economics, Health Economics, Job Lock, Compensating Differentials, Wage Decomposition, Firm Effects]
@@ -68,7 +68,7 @@ $$
 $$
 where $w^{\text{lock}}_j$ is the firm-level pool-weighted lock wedge and $\rho \in [0, 1]$ is the share of retention rent that the firm passes back to workers.
 
-> The new term $\rho\, w^{\text{lock}}_j$ has the same *sign* as the productivity-rent and posted-wage-rent terms, but a different microfoundation. It is a wage premium *caused by* the firm's ability to retain workers through a non-portable amenity, not by its productivity or its position on the wage-posting distribution. It is the part of $\psi_j$ that is created by ESI itself.
+The new term $\rho\, w^{\text{lock}}_j$ has the same *sign* as the productivity-rent and posted-wage-rent terms, but a different microfoundation. It is a wage premium *caused by* the firm's ability to retain workers through a non-portable amenity, not by its productivity or its position on the wage-posting distribution. It is the part of $\psi_j$ that is created by ESI itself.
 
 The intuition is simple once stated. A firm that offers a great health plan retains its sick employees more cheaply than a firm without it. The firm therefore does not have to pay those workers their full marginal product to keep them. Some of that surplus the firm keeps for itself (as profit). Some of it flows back into wages, because in a frictional labor market firms compete on the whole package, and a firm with a generous plan can still attract sicker workers at a slightly higher wage than a firm without one. The net effect on $\psi_j$ is positive but partial. Part of the wedge becomes profit, part becomes a wage premium that is not productivity, not posted-wage rent, and not an offset.
 
@@ -108,7 +108,7 @@ If the labor market is partitioned by worker health type $h$, the revealed-prefe
 
 The difference between $\phi_j(h)$ for a high-$h$ subpopulation and $\phi_j(h)$ for a low-$h$ subpopulation therefore identifies the *health-risk-specific* component of the coverage premium. This is one direction in which the labor and health series literally combine, by partitioning Sorkin's analysis on a health-risk dimension that the canonical revealed-preference setup did not contain.
 
-> The point of this synthesis is not to claim that anyone has yet implemented this decomposition cleanly. It is to identify *what the right decomposition is*, and to flag that several of the standard objects in the firm-effects literature (variance shares, sorting covariances, revealed-preference rankings) change their welfare interpretation once the coverage premium is recognized as a distinct force.
+The point of this synthesis is not to claim that anyone has yet implemented this decomposition cleanly. It is to identify *what the right decomposition is*, and to flag that several of the standard objects in the firm-effects literature (variance shares, sorting covariances, revealed-preference rankings) change their welfare interpretation once the coverage premium is recognized as a distinct force.
 
 ***
 
