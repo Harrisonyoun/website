@@ -103,10 +103,12 @@ The key methodological point, and the correction to a tempting overstatement, is
 Here is the structural shape of every causal-inference result, stated once so the pattern is unmistakable:
 
 $$
-\underbrace{[\text{a counterfactual target}]}_{\text{lives in the space of potential outcomes}}
+\begin{gathered}
+\underbrace{\big[\,\text{a counterfactual target}\,\big]}_{\text{in the space of potential outcomes}}
 \;=\;
-\underbrace{[\text{a functional of the observed distribution } P(Y,D,X)]}_{\text{lives in the data}}
-\qquad \text{(under assumption } A\text{)}.
+\underbrace{\big[\,\text{a functional of } P(Y,D,X)\,\big]}_{\text{in the data}} \\[6pt]
+\text{(under assumption } A\text{).}
+\end{gathered}
 $$
 
 The left side is what we want and cannot see. The right side is what we can estimate. **Identification** is the assumption $A$ that welds them together. It is the bridge from Hume's safe shore (observable regularities) to Hume's forbidden shore (counterfactual dependence).
@@ -148,9 +150,11 @@ What separates the major research designs is *how* they justify the bridge, and 
 **Difference-in-differences / parallel trends.** This design wears its counterfactual on its sleeve. We compare the before-after change for a treated group to the before-after change for a control group. The identifying assumption is explicitly about a world that never happens:
 
 $$
-\underbrace{E\big[Y(0)_{\text{post}} - Y(0)_{\text{pre}} \mid \text{treated}\big]}_{\text{how the treated group } \textit{would have} \text{ moved absent treatment}}
-\;=\;
-\underbrace{E\big[Y(0)_{\text{post}} - Y(0)_{\text{pre}} \mid \text{control}\big]}_{\text{how the control group } \textit{did} \text{ move}}.
+\begin{gathered}
+\underbrace{E\big[Y(0)_{\text{post}} - Y(0)_{\text{pre}} \mid \text{treated}\big]}_{\text{how the treated group } \textit{would have} \text{ moved absent treatment}} \\[6pt]
+=\;
+\underbrace{E\big[Y(0)_{\text{post}} - Y(0)_{\text{pre}} \mid \text{control}\big]}_{\text{how the control group } \textit{did} \text{ move}}
+\end{gathered}
 $$
 
 The left-hand term is a pure counterfactual: the post-period outcome of the treated group *had it not been treated*, which, since the treated group *was* treated, never occurs. Parallel trends asserts the control group's observed trajectory is the right proxy for it. The familiar pre-trends check tries to make this assumption answer to evidence, and it is genuine, severe evidence in the Popperian sense of Part 3. But it is evidence, not proof: matching pre-trends does not *entail* matching counterfactual post-trends, because the post-period counterfactual is, by construction, unobservable. An honest difference-in-differences study therefore treats parallel trends not as a fact read off the data but as an assumption defended with institutional knowledge, placebo tests, and sensitivity analysis.
