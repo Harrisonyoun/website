@@ -27,7 +27,7 @@ This is the counterfactual turn, and it is where economics confronts a problem o
 
 ---
 
-## Hume's Challenge, in One Picture
+## Hume's Challenge
 
 David Hume asked a deceptively simple question: when we say one event *causes* another, what exactly are we entitled to claim?
 
