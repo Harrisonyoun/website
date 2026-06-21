@@ -206,7 +206,6 @@ So the right self-description is precise. The economist is not a metaphysician a
 - Lewis, D. (1973). *Counterfactuals*.
 - Pearl, J. (2009). *Causality: Models, Reasoning, and Inference* (2nd ed.).
 - Imbens, G. W. & Angrist, J. D. (1994). "Identification and Estimation of Local Average Treatment Effects." *Econometrica*.
-- Angrist, J. D. & Pischke, J.-S. (2009). *Mostly Harmless Econometrics*.
 - Heckman, J. J. (2005). "The Scientific Model of Causality." *Sociological Methodology*.
 - Manski, C. F. (2003). *Partial Identification of Probability Distributions*.
 - Rambachan, A. & Roth, J. (2023). "A More Credible Approach to Parallel Trends." *Review of Economic Studies*.
