@@ -4,7 +4,7 @@ author: 'Harrison Youn<br><span style="font-size: 0.8em; color: #6c757d;">Econom
 date: "2026-06-20"
 description: "If we only ever see one branch of history, how can economics speak about what would have happened otherwise?"
 image: "/assets/images/Economics_As_Science4.png"
-categories: [Economic Methodology, Philosophy of Science, Causal Inference, Econometrics, Scientific Knowledge]
+categories: [Economic Methodology, Philosophy of Science, Causal Inference, Scientific Knowledge]
 from: markdown+tex_math_dollars+tex_math_single_backslash
 format:
   html:
