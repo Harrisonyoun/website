@@ -82,7 +82,7 @@ This reframing is genuinely brilliant, because it converts a metaphysical puzzle
 
 Ordinary missing data is **epistemic**. A survey respondent's income exists; she simply declined to report it. The number is out there in the world, unrecorded. The missing counterfactual is stronger than that. For a worker who *did* enroll, her untreated earnings $Y_i(0)$ are not an unrecorded fact about the actual world; they are not a fact about the actual world at all. There is no event, anywhere in what actually happened, that fixes their value.
 
-So the missing-data framing does not dissolve the philosophical problem. It **relocates** it. The modal burden (the appeal to a world that did not happen) does not vanish; it gets packed into an *assumption about the missing-ness mechanism*, usually some form of "the unobserved counterfactual is distributed like the observed outcome of comparable units." The assumption is where the counterfactual content lives. Keep your eye on it; everything below turns on it.
+So the missing-data framing does not dissolve the philosophical problem. It **relocates** it. The modal burden (the appeal to a world that did not happen) does not vanish; it gets packed into an *assumption about the missing-ness mechanism*, usually some form of "the unobserved counterfactual is distributed like the observed outcome of comparable units." The assumption is where the counterfactual content lives. 
 
 This suggests a clean way to state what economists are actually committed to. They adopt a minimal **counterfactual grammar**: the notation $Y_i(d)$ and the discipline of reasoning with it. They are *not* thereby committed to any heavy metaphysics about parallel worlds. $Y_i(d)$ can be left as a **primitive**: the outcome that *would be* observed under treatment $d$, full stop, with no theory of what makes it true. Call this stance **modal instrumentalism**: use the counterfactual machinery because it is indispensable for stating the target, while staying agnostic about its ultimate furniture. For most of empirical economics, this stance is not a dodge. It is exactly the right amount of commitment. We will see precisely where it stops being enough.
 
@@ -177,7 +177,7 @@ The ladder is not just a taxonomy of questions; it is a hierarchy of how much mo
 
 **Rung 3 is not.** Consider genuinely unit-level counterfactual questions: the effect of treatment on a treated individual, mediation ("how much of the effect runs through this channel?"), or "the probability that the drug, not luck, caused *this* recovery." Each depends on the **joint** distribution of $(Y_i(0), Y_i(1))$ for the same unit. And the joint distribution is *not* determined by the two marginals. A primitive $Y_i(d)$, posited one potential outcome at a time, simply does not contain the information. To get it, you must add structure, a dependence assumption or a full structural model à la Pearl, and that structure resurrects exactly the truth-maker question modal instrumentalism had deferred. The deferred bill comes due, and it comes due precisely at rung 3.
 
-This is the operational meaning of a slogan worth keeping: **the amount of causal "necessity" you may claim is proportional to the amount of structure you are willing to import.** Most of the credibility revolution deliberately lives at rung 2, where less structure is needed and claims are more defensible. The ambition to climb to rung 3 is legitimate, but it is never free.
+**The amount of causal "necessity" you may claim is proportional to the amount of structure you are willing to import.** Most of the credibility revolution deliberately lives at rung 2, where less structure is needed and claims are more defensible. The ambition to climb to rung 3 is legitimate, but it is never free.
 
 ---
 
@@ -194,8 +194,6 @@ There is no free lunch and no single optimum. The exchange rate between sharpnes
 ---
 
 ## What "Causal" Can Mean for Economics
-
-Reassemble the four parts. Logical positivism (Part 1) asked what makes a claim *meaningful*. Haavelmo's probability approach (Part 2) asked what makes a model *identified*. Popper (Part 3) asked what makes a claim *scientific*, and answered: that it be put at risk. Causal inference (Part 4) asks the sharpest version of all three at once: what makes a claim about *what would have happened otherwise* something a non-experimental science may responsibly assert.
 
 The answer is not that economists have found a way to observe the unobservable, and it is not that they secretly traffic in possible-worlds metaphysics. It is more disciplined and more interesting than either. An economist running a causal study is buying a counterfactual claim with empirical currency, at an exchange rate fixed in advance by assumptions. Identification is that exchange rate. Honesty is stating it out loud: naming the bridge, conceding it is untestable, and using partial identification and sensitivity analysis to show how much the conclusion would move if the bridge were weaker than hoped.
 
