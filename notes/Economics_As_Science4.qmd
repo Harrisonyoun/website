@@ -1,0 +1,212 @@
+---
+title: "The Counterfactual Turn: Causal Inference Between Hume and the Credibility Revolution"
+author: 'Harrison Youn<br><span style="font-size: 0.8em; color: #6c757d;">Economics as Science 4</span>'
+date: "2026-06-20"
+description: "If we only ever see one branch of history, how can economics speak about what would have happened otherwise?"
+image: "/assets/images/Economics_As_Science4.png"
+categories: [Economic Methodology, Philosophy of Science, Causal Inference, Econometrics, Scientific Knowledge]
+from: markdown+tex_math_dollars+tex_math_single_backslash
+format:
+  html:
+    toc: true
+    toc-depth: 3
+    theme: cosmo
+    code-fold: true
+    html-math-method: mathjax
+---
+
+## From Risk to the Road Not Taken
+
+Part 3 left economics with a demanding ideal: a claim earns scientific standing not by being verified, but by surviving serious attempts to break it. That ideal is general. It applies to any empirical statement. But the empirical statements economists most want to make are of a particular and peculiar kind. They are **causal**.
+
+When an economist says that a job-training program *raised* participants' earnings, or that a minimum-wage increase *did not* reduce employment, or that a year of schooling *causes* higher wages, the claim is not a statement about a correlation that happened to appear in a dataset. It is a statement about **what would have happened otherwise**. The trained worker earns \$32,000. The claim "the program raised her earnings by \$4,000" asserts something about a world we never observed: the world in which the same worker did not take the program and earned \$28,000 instead.
+
+That other world is not in the data. It never happened. And yet the entire interpretive weight of the sentence rests on it.
+
+This is the counterfactual turn, and it is where economics confronts a problem older than economics. The problem is Hume's.
+
+---
+
+## Hume's Challenge, in One Picture
+
+David Hume asked a deceptively simple question: when we say one event *causes* another, what exactly are we entitled to claim?
+
+Picture a billiard ball striking a second ball, which then rolls away. We say the first ball's impact *caused* the second to move. Hume's unsettling observation is that no matter how carefully you watch, you never actually *see* the causing. You see one ball arrive. You see the other depart. You see this sequence repeat, reliably, every time. What you observe is **constant conjunction** — A is regularly followed by B. What you do not observe, anywhere in the sensory record, is the **necessary connection** — the "must," the fact that B *had* to follow.
+
+Hume's conclusion was deflationary: the feeling of necessity is something the mind *projects* onto a regularity it has gotten used to, not something it reads off the world. Causation, on the strict regularity view, is just pattern plus habit.
+
+But Hume also let slip a second, more fertile definition, almost as an aside: a cause is something such that, *if it had not occurred, the effect would not have occurred either*. This counterfactual formulation is the seed of the modern theory of causation — and, as we will see, the seed of modern econometrics. The irony is exact. Economics inherits both halves of Hume. Its **methods** are strictly Humean: everything is built up from observable regularities, the joint distribution of what we actually measure. Its **targets** are anti-Humean: the counterfactual dependence that Hume said was never in the data to begin with.
+
+The whole enterprise of causal inference is the engineering of a bridge between the two.
+
+---
+
+## The Potential Outcomes Framework: Two Worlds per Person
+
+The modern apparatus for stating causal claims precisely is the **potential outcomes** framework (Neyman, later Rubin). It is disarmingly simple, and its simplicity is the point.
+
+Take a binary treatment $D \in \{0,1\}$ — say, $D=1$ if a worker enrolls in the training program, $D=0$ if not. For each individual $i$, the framework posits *two* potential outcomes:
+
+$$
+Y_i(1) = \text{the earnings } i \text{ would have if treated}, \qquad
+Y_i(0) = \text{the earnings } i \text{ would have if untreated}.
+$$
+
+The crucial and easily overlooked feature is that **both are defined for every person, regardless of what they actually did.** For a worker who enrolled, $Y_i(0)$ — her earnings had she *not* enrolled — is still a well-defined object. It is simply not the one we get to see.
+
+What we observe is governed by the **switching equation**:
+
+$$
+Y_i = D_i \cdot Y_i(1) + (1 - D_i)\cdot Y_i(0).
+$$
+
+Treatment acts like a switch: it selects which of the two potential outcomes becomes the realized, recorded outcome $Y_i$, and hides the other. The individual causal effect we would love to know,
+
+$$
+\tau_i = Y_i(1) - Y_i(0),
+$$
+
+requires *both* numbers for the same person at the same time. We never have both. This is **Holland's fundamental problem of causal inference**: individual causal effects are, in principle, unobservable. Not hard to measure — *logically* unobservable.
+
+A concrete way to feel the bite: a patient takes a drug and recovers. Did the drug cause the recovery? To answer, you would need to know whether *this same patient, at this same moment, in this same condition* would have recovered without the drug. You cannot rewind her and rerun the day. The required comparison is to a version of the world that did not occur.
+
+---
+
+## A Missing-Data Problem — But a Strange One
+
+There is a famous and powerful reframing of Holland's problem: causal inference is just a **missing-data problem**. For every person we observe one potential outcome and "miss" the other. Lay the data out in a table with two columns, $Y_i(0)$ and $Y_i(1)$, and exactly half the cells are blank.
+
+This reframing is genuinely brilliant, because it converts a metaphysical puzzle into a statistical one we have tools for. But it is worth being honest that the conversion does some quiet work.
+
+Ordinary missing data is **epistemic**. A survey respondent's income exists; she simply declined to report it. The number is out there in the world, unrecorded. The missing counterfactual is stronger than that. For a worker who *did* enroll, her untreated earnings $Y_i(0)$ are not an unrecorded fact about the actual world — they are not a fact about the actual world at all. There is no event, anywhere in what actually happened, that fixes their value.
+
+So the missing-data framing does not dissolve the philosophical problem. It **relocates** it. The modal burden — the appeal to a world that did not happen — does not vanish; it gets packed into an *assumption about the missing-ness mechanism*, usually some form of "the unobserved counterfactual is distributed like the observed outcome of comparable units." The assumption is where the counterfactual content lives. Keep your eye on it; everything below turns on it.
+
+This suggests a clean way to state what economists are actually committed to. They adopt a minimal **counterfactual grammar** — the notation $Y_i(d)$ and the discipline of reasoning with it. They are *not* thereby committed to any heavy metaphysics about parallel worlds. $Y_i(d)$ can be left as a **primitive**: the outcome that *would be* observed under treatment $d$, full stop, with no theory of what makes it true. Call this stance **modal instrumentalism** — use the counterfactual machinery because it is indispensable for stating the target, while staying agnostic about its ultimate furniture. For most of empirical economics, this stance is not a dodge. It is exactly the right amount of commitment. We will see precisely where it stops being enough.
+
+---
+
+## Two Ways to Fill in the Blank: Lewis and Pearl
+
+If we are going to reason about $Y_i(0)$ for a treated unit, it helps to have *some* picture of what "the world where she wasn't treated" means. There are two influential ones, and the difference between them is instructive.
+
+**Lewis's nearest possible world.** The philosopher David Lewis analyzed "if $A$ had happened, $C$ would have happened" as a claim about similarity among possible worlds: take the world most similar to ours in which $A$ holds, and check whether $C$ holds there. Applied to our worker, $Y_i(0)$ is her earnings in the *closest* possible world in which she did not enroll — closest meaning: change as little as possible, then see what her earnings are. The picture is vivid and intuitively right. Its weakness is that "closest" is vague. Which similarities count? If she hadn't enrolled, would the labor market be the same, her motivation the same, her family circumstances the same? The truth value of the counterfactual wobbles with how we resolve "similar."
+
+**Pearl's structural surgery.** Judea Pearl replaces the similarity metaphor with something mechanical. Model the system as a set of structural equations — each variable a function of its direct causes plus an idiosyncratic noise term $U_i$. To evaluate the counterfactual, perform *surgery*: reach into the equation for $D$, overwrite it with $D := 0$ (the **do-operator**), hold the person's noise terms $U_i$ fixed, and let the rest of the system compute the resulting $Y$. This makes "the nearest world" precise: it is the world where we surgically set treatment to $0$, cut it off from its usual causes, and change nothing else about the person's idiosyncratic draw. Precision is bought at a price — you must commit to a structural model and to the stability of $U_i$, themselves untestable.
+
+The key methodological point — and the correction to a tempting overstatement — is this: **the potential-outcomes framework needs neither story to function.** It posits $Y_i(d)$ as a primitive and stays silent on how the nearest world is selected. Lewis and Pearl are two optional ways of *grounding* the primitive, each sufficient, neither required. The framework's agnosticism is a feature: it commits to less, so it survives disagreements about metaphysics that it does not need to resolve. The cost, which we are about to collect, is that the primitive is thin — and a thin primitive cannot answer every question we might ask of it.
+
+---
+
+## Identification: The Bridge from Data to Counterfactual
+
+Here is the structural shape of every causal-inference result, stated once so the pattern is unmistakable:
+
+$$
+\underbrace{[\text{a counterfactual target}]}_{\text{lives in the space of potential outcomes}}
+\;=\;
+\underbrace{[\text{a functional of the observed distribution } P(Y,D,X)]}_{\text{lives in the data}}
+\qquad \text{(under assumption } A\text{)}.
+$$
+
+The left side is what we want and cannot see. The right side is what we can estimate. **Identification** is the assumption $A$ that welds them together. It is the bridge from Hume's safe shore (observable regularities) to Hume's forbidden shore (counterfactual dependence).
+
+The canonical example is **unconfoundedness** (also called selection-on-observables). The target is the average treatment effect, $\text{ATE} = E[Y(1) - Y(0)]$. Assume:
+
+- **Unconfoundedness:** $\{Y(0), Y(1)\} \perp D \mid X$ — within cells defined by covariates $X$, who got treated is unrelated to their potential outcomes;
+- **Overlap:** $0 < P(D=1 \mid X=x) < 1$ — both treated and untreated units exist in every cell;
+- **Consistency:** the observed outcome is the potential outcome for the treatment received (the switching equation, plus no interference between units).
+
+Then, cell by cell:
+
+$$
+E[Y(1) \mid X=x]
+\;\underset{\text{(unconfoundedness)}}{=}\; E[Y(1) \mid D=1, X=x]
+\;\underset{\text{(consistency)}}{=}\; E[Y \mid D=1, X=x],
+$$
+
+and symmetrically for $Y(0)$, giving
+
+$$
+\text{ATE} = E_X\Big[\,E[Y \mid D=1, X] - E[Y \mid D=0, X]\,\Big].
+$$
+
+The right-hand side is entirely estimable from data. The counterfactual target on the left is now *identified*. But look at which step carries the load. The middle equality is just the switching equation — bookkeeping. The **first** equality is the leap: it asserts that the unobserved $Y(1)$ of the untreated units behaves, within each $X$-cell, like the observed $Y(1)$ of the treated. That is a statement about a joint distribution we can never fully see, because we never observe both potential outcomes for anyone. **It is not testable from the data it licenses.** Hume's point returns in modern dress: the necessity is not in the data; it is imported by an assumption the data cannot, by itself, underwrite.
+
+---
+
+## Bridges of Different Strength: The Econometric Toolkit
+
+What separates the major research designs is *how* they justify the bridge — and how exposed that justification is.
+
+**Randomized experiments.** Random assignment *constructs* $D \perp \{Y(0), Y(1)\}$ by design. Because the coin doesn't look at potential outcomes, the treated and untreated groups are, in expectation, exchangeable: the untreated group is a credible stand-in for the treated group's unlived "untreated world." This is the cleanest bridge precisely because the identifying assumption is made true by the procedure, not asserted about nature. It is why Holland's slogan — "no causation without manipulation" — has force: manipulation supplies a counterfactual with a trustworthy warrant.
+
+**Selection-on-observables.** With observational data, we *assume* that conditioning on measured $X$ recreates the experiment within cells. The bridge is the same shape, but its warrant is now an untestable claim that we have measured everything that jointly drives treatment and outcome. Plausible sometimes; never guaranteed.
+
+**Instrumental variables / LATE.** When an instrument $Z$ shifts treatment but affects the outcome only through treatment, we can identify an effect — but only for **compliers**, the subpopulation whose treatment status responds to $Z$. Imbens and Angrist's **monotonicity** assumption ("no defiers") is itself a counterfactual restriction on how units would respond across values of $Z$. So LATE is doubly modal: a counterfactual contrast (the effect) for a counterfactually-defined group (compliers, whom we cannot point to in the data).
+
+**Difference-in-differences / parallel trends.** This design wears its counterfactual on its sleeve. We compare the before-after change for a treated group to the before-after change for a control group. The identifying assumption is explicitly about a world that never happens:
+
+$$
+\underbrace{E\big[Y(0)_{\text{post}} - Y(0)_{\text{pre}} \mid \text{treated}\big]}_{\text{how the treated group } \textit{would have} \text{ moved absent treatment}}
+\;=\;
+\underbrace{E\big[Y(0)_{\text{post}} - Y(0)_{\text{pre}} \mid \text{control}\big]}_{\text{how the control group } \textit{did} \text{ move}}.
+$$
+
+The left-hand term is a pure counterfactual: the post-period outcome of the treated group *had it not been treated* — which, since the treated group *was* treated, never occurs. Parallel trends asserts the control group's observed trajectory is the right proxy for it. The familiar pre-trends check tries to make this assumption answer to evidence — and it is genuine, severe evidence in the Popperian sense of Part 3. But it is evidence, not proof: matching pre-trends does not *entail* matching counterfactual post-trends, because the post-period counterfactual is, by construction, unobservable. An honest difference-in-differences study therefore treats parallel trends not as a fact read off the data but as an assumption defended with institutional knowledge, placebo tests, and sensitivity analysis.
+
+---
+
+## Pearl's Ladder: Levels of Modal Commitment
+
+The single most clarifying idea for organizing all of this is Pearl's **ladder of causation**, three rungs of increasing modal ambition:
+
+1. **Association** — $P(Y \mid D)$. "Trained workers earn more." Pure observed regularity; no counterfactual content. This is the rung Hume was comfortable on.
+2. **Intervention** — $P(Y \mid \text{do}(D=d))$. "If we *enrolled* people, earnings would rise by this much." A claim about the effect of acting on the world. ATE and ATT live here.
+3. **Counterfactual** — $P(Y_d \mid Y', D')$. "This particular worker who enrolled and succeeded — *would she have succeeded anyway?*" A claim about a specific unit in a world contrary to fact.
+
+The ladder is not just a taxonomy of questions; it is a hierarchy of how much modal structure you must import to answer them. And it is exactly here that the limit of modal instrumentalism becomes sharp.
+
+**Rung 2 is safe for the instrumentalist.** ATE and ATT are averages — $E[Y(1)] - E[Y(0)]$ and its treated-subgroup analogue. They depend only on the two **marginal** distributions of $Y(0)$ and $Y(1)$. Treating $Y_i(d)$ as a thin primitive and defending an identification assumption is fully sufficient. You never need to ask what makes any individual $Y_i(0)$ true.
+
+**Rung 3 is not.** Genuinely unit-level counterfactual questions — the effect of treatment on a treated individual, mediation ("how much of the effect runs through this channel?"), "the probability that the drug, not luck, caused *this* recovery" — depend on the **joint** distribution of $(Y_i(0), Y_i(1))$ for the same unit. And the joint distribution is *not* determined by the two marginals. A primitive $Y_i(d)$, posited one potential outcome at a time, simply does not contain the information. To get it, you must add structure — a dependence assumption, or a full structural model à la Pearl — and that structure resurrects exactly the truth-maker question modal instrumentalism had deferred. The deferred bill comes due, and it comes due precisely at rung 3.
+
+This is the operational meaning of a slogan worth keeping: **the amount of causal "necessity" you may claim is proportional to the amount of structure you are willing to import.** Most of the credibility revolution deliberately lives at rung 2, where less structure is needed and claims are more defensible. The ambition to climb to rung 3 is legitimate, but it is never free.
+
+---
+
+## The Law of Decreasing Credibility
+
+If identifying assumptions are untestable bridges, the natural question is how to be honest about leaning on them. Charles Manski's answer organizes the modern methodological conscience: the **Law of Decreasing Credibility** — *the credibility of inference decreases with the strength of the assumptions maintained.* Strong assumptions buy sharp, point-identified answers at the cost of believability. Weak assumptions buy believability at the cost of sharpness.
+
+The constructive response is **partial identification**. Instead of forcing a single number out of assumptions too strong to defend, report the *set* of values consistent with assumptions you are willing to stand behind. Even with almost no assumptions, the data plus logic alone often bound the effect — the celebrated **no-assumptions bounds** — and each additional credible assumption shrinks the set. The identified set, not a false point estimate, is the honest object.
+
+**Rambachan and Roth** give difference-in-differences exactly this treatment. Since the post-period counterfactual trend is unobservable, they do not assume it away. They bound how *different* the post-period violation of parallel trends could be from the *observed* pre-period behavior, then report the set of treatment effects consistent with that bound. The unobservable gap is not hidden; it is parameterized and made the subject of explicit sensitivity analysis. This is the methodology of Part 3 — make survival costly, state what could break the claim — applied to the one assumption that the data structurally cannot check.
+
+There is no free lunch and no single optimum. The exchange rate between sharpness and credibility is governed by how much modal structure you import, and the only dishonest move is to pretend the rate is zero.
+
+---
+
+## What "Causal" Can Mean for Economics
+
+Reassemble the four parts. Logical positivism (Part 1) asked what makes a claim *meaningful*. Haavelmo's probability approach (Part 2) asked what makes a model *identified*. Popper (Part 3) asked what makes a claim *scientific* — answerable: that it be put at risk. Causal inference (Part 4) asks the sharpest version of all three at once: what makes a claim about *what would have happened otherwise* something a non-experimental science may responsibly assert.
+
+The answer is not that economists have found a way to observe the unobservable, and it is not that they secretly traffic in possible-worlds metaphysics. It is more disciplined and more interesting than either. An economist running a causal study is buying a counterfactual claim with empirical currency, at an exchange rate fixed in advance by assumptions. Identification is that exchange rate. Honesty is stating it out loud — naming the bridge, conceding it is untestable, and using partial identification and sensitivity analysis to show how much the conclusion would move if the bridge were weaker than hoped.
+
+So the right self-description is precise. The economist is not a metaphysician and not a mere curve-fitter. She is a **modal instrumentalist with her accounts open**: she reasons fluently about worlds that did not happen because her questions demand it, she keeps her commitments as thin as the question allows — rung 2 whenever possible — and when a question forces her up to rung 3, she pays the structural price explicitly rather than smuggling it in. The question "can we know what would have happened otherwise?" turns out to be the same question as "what is your identification strategy?" — and the most scientific answer is the one that states, rather than conceals, the depth of the well from which the counterfactual was drawn.
+
+---
+
+## References
+
+- Hume, D. (1748). *An Enquiry Concerning Human Understanding*.
+- Neyman, J. (1923/1990). "On the Application of Probability Theory to Agricultural Experiments."
+- Rubin, D. B. (1974). "Estimating Causal Effects of Treatments in Randomized and Nonrandomized Studies."
+- Holland, P. W. (1986). "Statistics and Causal Inference." *JASA*.
+- Lewis, D. (1973). *Counterfactuals*.
+- Pearl, J. (2009). *Causality: Models, Reasoning, and Inference* (2nd ed.).
+- Imbens, G. W. & Angrist, J. D. (1994). "Identification and Estimation of Local Average Treatment Effects." *Econometrica*.
+- Angrist, J. D. & Pischke, J.-S. (2009). *Mostly Harmless Econometrics*.
+- Heckman, J. J. (2005). "The Scientific Model of Causality." *Sociological Methodology*.
+- Manski, C. F. (2003). *Partial Identification of Probability Distributions*.
+- Rambachan, A. & Roth, J. (2023). "A More Credible Approach to Parallel Trends." *Review of Economic Studies*.
