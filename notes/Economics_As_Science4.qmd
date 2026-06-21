@@ -8,7 +8,10 @@ categories: [Economic Methodology, Philosophy of Science, Causal Inference, Scie
 format:
   html:
     toc: true
+    toc-depth: 3
+    theme: cosmo
     code-fold: true
+    html-math-method: mathjax
 ---
 
 ## From Risk to the Road Not Taken
