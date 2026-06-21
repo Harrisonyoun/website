@@ -1,5 +1,5 @@
 ---
-title: "The Counterfactual Turn: Causal Inference Between Hume and the Credibility Revolution"
+title: "The Counterfactual: Causal Inference Between Hume and the Credibility Revolution"
 author: 'Harrison Youn<br><span style="font-size: 0.8em; color: #6c757d;">Economics as Science 4</span>'
 date: "2026-06-20"
 description: "If we only ever see one branch of history, how can economics speak about what would have happened otherwise?"
