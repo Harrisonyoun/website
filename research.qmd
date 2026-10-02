@@ -6,7 +6,7 @@ class: research-page
 
 ## Publications
 
-- Fong and **Youn** (2023). [Assessing patterns and stability of ADL hierarchical scales for functional disability assessment.](https://academic.oup.com/gerontologist/article/63/4/773/6571520) In *The Gerontologist (Oxford University Press)*.
+- Joelle Fong and **Yongjoon Youn** (2023). [Assessing patterns and stability of ADL hierarchical scales for functional disability assessment.](https://academic.oup.com/gerontologist/article/63/4/773/6571520) In *The Gerontologist (Oxford University Press)*.
 <br>
 <button class="abstract-button">abstract</button>
 <div class="abstract-content">
@@ -89,6 +89,15 @@ Bruce Weinberg, and Saleh Zakerinia)"
   <p>How should we achieve an intergenerational balance between the windfalls that benefit the elderly and the burdens that affect their children? While existing studies mainly focus on potential crowding-out effects for policy evaluations (Nikolov and Bonci, 2020), the literature is silent on “how recipients utilize the benefits they receive.” For example, if windfall gains of elderly parents are shared with their children, both parents’ and children’s net gains may vary. In this paper, I present new evidence on the importance of the impact of recipients’ shared benefits, which I term the spillover effect, alongside the crowding-out effect to understand net gains from public and family transfers in Korea, crucial for balancing windfalls and burdens in intergenerational public and household finances.</p>
   <p>I find evidence that BP benefits displaced the transfer burdens of adult children for elderly single households and resulted in net gains for both family members and recipients in elderly couple households living without children. However, elderly couples living with their children experienced net gains, with the wealth of their children being redistributed from non-coresident to coresident children. The findings suggest that considering how recipients utilized their benefits can alter policy evaluations, contrasting with current literature.</p>
 </div>
+
+
+## Technical Reports
+
+- Tian Lou, Bruce Weinberg, **Harrison Yongjoon Youn**, and Julia Lane (2026). Characterizing AI “Headlight” Employers. In *Industries of Ideas Technical Documentation*.
+
+- Tian Lou, Audrey Yu, **Harrison Yongjoon Youn**, Bennett Otten, and Richard Hendra (2026). Tracking Earnings and Employment. In *Industries of Ideas Technical Documentation*.
+
+- Audrey Yu, Bennett Otten, Richard Hendra, Tian Lou, **Harrison Yongjoon Youn**, Bruce Weinberg, and Julia Lane (2026). Measures of Workforce Dynamics. In *Industries of Ideas Technical Documentation*.
 
 <script>
 (function () {
