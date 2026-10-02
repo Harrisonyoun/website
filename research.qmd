@@ -76,6 +76,7 @@ Bruce Weinberg, and Saleh Zakerinia)"
 </p>
 </div>
 
+::: {.spaced-list}
 - “The Demand Side Selection in Public Insurance"
 
 - “Killing Me Softly With Dinner: The Costs of Circadian Misalignment” 
@@ -89,19 +90,21 @@ Bruce Weinberg, and Saleh Zakerinia)"
   <p>How should we achieve an intergenerational balance between the windfalls that benefit the elderly and the burdens that affect their children? While existing studies mainly focus on potential crowding-out effects for policy evaluations (Nikolov and Bonci, 2020), the literature is silent on “how recipients utilize the benefits they receive.” For example, if windfall gains of elderly parents are shared with their children, both parents’ and children’s net gains may vary. In this paper, I present new evidence on the importance of the impact of recipients’ shared benefits, which I term the spillover effect, alongside the crowding-out effect to understand net gains from public and family transfers in Korea, crucial for balancing windfalls and burdens in intergenerational public and household finances.</p>
   <p>I find evidence that BP benefits displaced the transfer burdens of adult children for elderly single households and resulted in net gains for both family members and recipients in elderly couple households living without children. However, elderly couples living with their children experienced net gains, with the wealth of their children being redistributed from non-coresident to coresident children. The findings suggest that considering how recipients utilized their benefits can alter policy evaluations, contrasting with current literature.</p>
 </div>
-
+:::
 
 ## Technical Reports
-
+::: {.spaced-list}
 - Tian Lou, Bruce Weinberg, **Harrison Yongjoon Youn**, and Julia Lane (2026). Characterizing AI “Headlight” Employers. In *Industries of Ideas Technical Documentation*.
-<style>
-.spaced-list li { margin-bottom: 1.6em; }
-</style>
+
 - Tian Lou, Audrey Yu, **Harrison Yongjoon Youn**, Bennett Otten, and Richard Hendra (2026). Tracking Earnings and Employment. In *Industries of Ideas Technical Documentation*.
+
+- Audrey Yu, Bennett Otten, Richard Hendra, Tian Lou, **Harrison Yongjoon Youn**, Bruce Weinberg, and Julia Lane (2026). Measures of Workforce Dynamics. In *Industries of Ideas Technical Documentation*.
+:::
+
+
 <style>
 .spaced-list li { margin-bottom: 1.6em; }
 </style>
-- Audrey Yu, Bennett Otten, Richard Hendra, Tian Lou, **Harrison Yongjoon Youn**, Bruce Weinberg, and Julia Lane (2026). Measures of Workforce Dynamics. In *Industries of Ideas Technical Documentation*.
 
 <script>
 (function () {
