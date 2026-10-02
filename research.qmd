@@ -94,9 +94,13 @@ Bruce Weinberg, and Saleh Zakerinia)"
 ## Technical Reports
 
 - Tian Lou, Bruce Weinberg, **Harrison Yongjoon Youn**, and Julia Lane (2026). Characterizing AI “Headlight” Employers. In *Industries of Ideas Technical Documentation*.
-
+<style>
+.spaced-list li { margin-bottom: 1.6em; }
+</style>
 - Tian Lou, Audrey Yu, **Harrison Yongjoon Youn**, Bennett Otten, and Richard Hendra (2026). Tracking Earnings and Employment. In *Industries of Ideas Technical Documentation*.
-
+<style>
+.spaced-list li { margin-bottom: 1.6em; }
+</style>
 - Audrey Yu, Bennett Otten, Richard Hendra, Tian Lou, **Harrison Yongjoon Youn**, Bruce Weinberg, and Julia Lane (2026). Measures of Workforce Dynamics. In *Industries of Ideas Technical Documentation*.
 
 <script>
