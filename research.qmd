@@ -25,6 +25,15 @@ class: research-page
 
 
 ## Working Papers
+- “Unlocked or Locked? Labor Market Responses to Health Insurance Decoupling"
+<br>
+<span class="project-note"><em>Approved U.S. Census Bureau FSRDC Project No.&nbsp;3447</em></span>
+<br>
+<button class="abstract-button">abstract</button>
+<div class="abstract-content">
+  <p>Employer-sponsored health insurance (ESI) creates a non-portable component of compensation that can affect worker mobility, firm wage setting, and the allocation of labor across employers. I study these effects using restricted Census Longitudinal Employer-Household Dynamics (LEHD) data linked to detailed employer insurance costs and plan characteristics. The Affordable Care Act (ACA) provides variation in access to non-employer coverage across workers, firms, and local markets. I use this variation to estimate how greater insurance portability changes workers' career paths, including whether, when, and where they move and how their earnings evolve after separation. On the employer side, I examine how firms adjust compensation and employment when the cost and outside value of ESI change, and how these adjustments are distributed across workers within firms. I then use matched worker-firm histories to distinguish worker composition from firm pay premia and study how insurance portability changes sorting across employers. Finally, I use the empirical evidence from the worker and employer analyses to discipline a structural framework that quantifies how insurance portability reshapes workers’ outside options and firms’ wage-setting when switching employers no longer carries an insurance-related cost.</p>
+</div>
+
 - “From Continuity to Fragmentation: Evidence from Physicians’ Premature Deaths”
 <br>
 <span class="coauthor">(with Guanting Yi)</span>
@@ -57,19 +66,19 @@ of care.</p>
 </div>
 
 
-- “Unlocked or Locked? Labor Market Responses to Health Insurance Decoupling"
+## Work in Progress
+- “Inequality in Artificial Intelligence Training in Higher Education (with Sujin Lee, Tian Lou, Aiday Sikhova,
+Bruce Weinberg, and Saleh Zakerinia)"
 <br>
 <button class="abstract-button">abstract</button>
 <div class="abstract-content">
-  <p>Employer-sponsored health insurance (ESI) creates a non-portable component of compensation that can affect worker mobility, firm wage setting, and the allocation of labor across employers. I study these effects using restricted Census Longitudinal Employer-Household Dynamics (LEHD) data linked to detailed employer insurance costs and plan characteristics. The Affordable Care Act (ACA) provides variation in access to non-employer coverage across workers, firms, and local markets. I use this variation to estimate how greater insurance portability changes workers' career paths, including whether, when, and where they move and how their earnings evolve after separation. On the employer side, I examine how firms adjust compensation and employment when the cost and outside value of ESI change, and how these adjustments are distributed across workers within firms. I then use matched worker-firm histories to distinguish worker composition from firm pay premia and study how insurance portability changes sorting across employers. Finally, I use the empirical evidence from the worker and employer analyses to discipline a structural framework that quantifies how insurance portability reshapes workers’ outside options and firms’ wage-setting when switching employers no longer carries an insurance-related cost.</p>
+  <p>We examine the expansion of artificial intelligence (AI) education in higher education and its distribution across students. Using administrative student-level course enrollment records from Ohio public universities spanning more than two decades, we construct a novel measure of AI exposure. We identify AI-related courses using large language model (LLM) classifications of course descriptions and links to faculty engaged in AI research. To place the Ohio evidence in a broader context, we also classify AI-related fields of study by applying the same LLM-based approach to program descriptions and linking these classifications to Integrated Postsecondary Education Data System (IPEDS) data, allowing us to examine the growth and composition of AI degree programs nationwide. We find that AI education has expanded substantially over time, but not equally across students. Nationally, growth in AI-related degree programs has been concentrated at research-intensive universities, while community colleges have expanded more slowly and specialize in hardware- and infrastructure-related training. Within Ohio, AI exposure has increased through both greater course availability and shifts in students' major choices, but growth has been faster among men and students majoring in computer science and engineering. Our findings highlight how higher education shapes the development of AI-related human capital while reinforcing disparities before students enter the labor market.
+</p>
 </div>
 
+- “The Demand Side Selection in Public Insurance"
 
-## Work in Progress
-
-- “Killing Me Softly With Dinner: The Costs of Circadian Misalignment” <br><br>
-
-- “Provider Networks and Healthcare Innovation” <br><br>
+- “Killing Me Softly With Dinner: The Costs of Circadian Misalignment” 
 
 - “Intergenerational Dilemma: Balancing Windfalls and Burdens of Public Transfers"
 <br>
