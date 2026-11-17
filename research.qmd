@@ -67,10 +67,11 @@ of care.</p>
 
 
 ## Work in Progress
-- “The Circular Flow of Artificial Intelligence Talent Production and Exchange (with Bruce Weinberg(https://economics.osu.edu/people/weinberg.27), [Aiday Sikhova](https://www.aidaysikhova.com/), [Tian Lou](https://glenn.osu.edu/tian-lou), [Sujin Lee](https://sujinhome.github.io/), and [Saleh Zakerinia](https://zakerinia.github.io/))"
+::: {.spaced-list}
+- “The Circular Flow of Artificial Intelligence Talent Production and Exchange (with [Bruce Weinberg](https://economics.osu.edu/people/weinberg.27){.plain-link}, [Aiday Sikhova](https://www.aidaysikhova.com/){.plain-link}, [Tian Lou](https://glenn.osu.edu/tian-lou){.plain-link}, [Sujin Lee](https://sujinhome.github.io/){.plain-link}, and [Saleh Zakerinia](https://zakerinia.github.io/){.plain-link})"
 
-- “Inequality in Artificial Intelligence Training in Higher Education (with [Sujin Lee](https://sujinhome.github.io/), [Tian Lou](https://glenn.osu.edu/tian-lou), [Aiday Sikhova](https://www.aidaysikhova.com/),
-[Bruce Weinberg](https://economics.osu.edu/people/weinberg.27), and [Saleh Zakerinia](https://zakerinia.github.io/))"
+- “Inequality in Artificial Intelligence Training in Higher Education (with [Sujin Lee](https://sujinhome.github.io/){.plain-link}, [Tian Lou](https://glenn.osu.edu/tian-lou){.plain-link}, [Aiday Sikhova](https://www.aidaysikhova.com/){.plain-link},
+[Bruce Weinberg](https://economics.osu.edu/people/weinberg.27){.plain-link}, and [Saleh Zakerinia](https://zakerinia.github.io/){.plain-link})"
 <br>
 <button class="abstract-button">abstract</button>
 <div class="abstract-content">
@@ -78,7 +79,6 @@ of care.</p>
 </p>
 </div>
 
-::: {.spaced-list}
 - “The Demand Side Selection in Public Insurance"
 
 - “Killing Me Softly With Dinner: The Costs of Circadian Misalignment” 
