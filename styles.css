@@ -390,3 +390,14 @@ main {
   color: var(--c-accent-orange) !important;  
   background-color: transparent !important;  
 }
+
+a.plain-link,
+a.plain-link:visited {
+  color: inherit !important;
+  font-weight: inherit !important;
+  text-decoration: none;
+}
+
+a.plain-link:hover {
+  text-decoration: underline;
+}
