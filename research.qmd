@@ -68,7 +68,7 @@ of care.</p>
 
 ## Work in Progress
 ::: {.spaced-list}
-- “The Circular Flow of AI Talent Production and Exchange (with [Bruce Weinberg](https://economics.osu.edu/people/weinberg.27){.plain-link}, [Aiday Sikhova](https://www.aidaysikhova.com/){.plain-link}, [Tian Lou](https://glenn.osu.edu/tian-lou){.plain-link}, [Sujin Lee](https://sujinhome.github.io/){.plain-link}, and [Saleh Zakerinia](https://zakerinia.github.io/){.plain-link})"
+- “The Circular Flow of AI Talent Production and Exchange (with [Sujin Lee](https://sujinhome.github.io/){.plain-link}, [Tian Lou](https://glenn.osu.edu/tian-lou){.plain-link}, [Aiday Sikhova](https://www.aidaysikhova.com/){.plain-link}, and [Bruce Weinberg](https://economics.osu.edu/people/weinberg.27){.plain-link}"
 
 - “AI-Related Education Is Increasing and Widespread but Unequal (with [Sujin Lee](https://sujinhome.github.io/){.plain-link}, [Tian Lou](https://glenn.osu.edu/tian-lou){.plain-link}, [Aiday Sikhova](https://www.aidaysikhova.com/){.plain-link},
 [Bruce Weinberg](https://economics.osu.edu/people/weinberg.27){.plain-link}, and [Saleh Zakerinia](https://zakerinia.github.io/){.plain-link})"
